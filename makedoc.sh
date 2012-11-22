@@ -16,7 +16,7 @@ else
 fi
 
 pushd $WORKING_DIR/_momonga
-  git pull --rebase
+  git pull --rebase origin master
 popd
 
 ./vendor/bin/sami.php update "$WORKING_DIR/sami.php"
@@ -27,5 +27,5 @@ pushd $WORKING_DIR/_deploy
   git add .
   git add -u
   git commit -a -m 'Update document.'
-  #git push origin gh-pages
+  git push origin gh-pages
 popd
