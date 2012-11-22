@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XoopsMemberHandler | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>XoopsMemberHandler</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>XoopsMemberHandler</strong></p>
+
+            <div class="description">
+            <p>XOOPS member handler class.</p>
+            <p>This class provides simple interface (a facade class) for handling groups/users/<br />
+ membership data.</p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property__gHandler">
+                                                            
+                </td>
+                <td>$_gHandler</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__uHandler">
+                                                            
+                </td>
+                <td>$_uHandler</td>
+                <td class="last">holds reference to user handler(DAO) class</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__mHandler">
+                                                            
+                </td>
+                <td>$_mHandler</td>
+                <td class="last">holds reference to membership handler(DAO) class</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__members">
+                                                            
+                </td>
+                <td>$_members</td>
+                <td class="last">holds temporary user objects</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XoopsMemberHandler">XoopsMemberHandler</a>($db)
+                    <p>constructor</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    object
+                </td>
+                <td class="last">
+                    <a href="#method_createGroup">createGroup</a>()
+                    <p>create a new group</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    object
+                </td>
+                <td class="last">
+                    <a href="#method_createUser">createUser</a>()
+                    <p>create a new user</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    object
+                </td>
+                <td class="last">
+                    <a href="#method_getGroup">getGroup</a>(int $id)
+                    <p>retrieve a group</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    object
+                </td>
+                <td class="last">
+                    <a href="#method_getUser">getUser</a>(int $id)
+                    <p>retrieve a user</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getUserByEmail">getUserByEmail</a>($email)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_delete">delete</a>(<abbr title="$object">$object</abbr> $object)
+                    <p>Delete function.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_deleteGroup">deleteGroup</a>(object $group)
+                    <p>delete a group</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_deleteUser">deleteUser</a>(object $user)
+                    <p>delete a user</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_insertGroup">insertGroup</a>(object $group)
+                    <p>insert a group into the database</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_insertUser">insertUser</a>($user, $force = false)
+                    <p>insert a user into the database</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getGroups">getGroups</a>(object $criteria = null, bool $id_as_key = false)
+                    <p>retrieve groups from the database</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getUsers">getUsers</a>(object $criteria = null, bool $id_as_key = false)
+                    <p>retrieve users from the database</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getGroupList">getGroupList</a>(object $criteria = null)
+                    <p>get a list of groupnames and their IDs</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getUserList">getUserList</a>(object $criteria = null)
+                    <p>get a list of usernames and their IDs</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    object
+                </td>
+                <td class="last">
+                    <a href="#method_addUserToGroup">addUserToGroup</a>(int $group_id, int $user_id)
+                    <p>add a user to a group</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_removeUserFromGroup">removeUserFromGroup</a>(int $group_id, int $user_id)
+                    <p>remove a one user from a group.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_removeUsersFromGroup">removeUsersFromGroup</a>(int $group_id, array $user_ids = array())
+                    <p>remove a list of users from a group</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getUsersByGroup">getUsersByGroup</a>(int $group_id, bool $asobject = false, int $limit, int $start)
+                    <p>get a list of users belonging to a group</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getUsersByNoGroup">getUsersByNoGroup</a>($group_id, $asobject = false, $limit, $start)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getGroupsByUser">getGroupsByUser</a>(int $user_id, bool $asobject = false)
+                    <p>get a list of groups that a user is member of</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    object
+                </td>
+                <td class="last">
+                    <a href="#method_loginUser">loginUser</a>(string $uname, string $pwd)
+                    <p>log in a user</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    object
+                </td>
+                <td class="last">
+                    <a href="#method_loginUserMd5">loginUserMd5</a>(string $uname, string $md5pwd)
+                    <p>logs in a user with an md5 encrypted password</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getUserCount">getUserCount</a>(object $criteria = null)
+                    <p>count users matching certain conditions</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getUserCountByGroup">getUserCountByGroup</a>(int $group_id)
+                    <p>count users belonging to a group</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getUserCountByNoGroup">getUserCountByNoGroup</a>($group_id)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_updateUserByField">updateUserByField</a>(object $user, string $fieldName, string $fieldValue)
+                    <p>updates a single field in a users record</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_updateUsersByField">updateUsersByField</a>(string $fieldName, string $fieldValue, object $criteria = null)
+                    <p>updates a single field in a users record</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_activateUser">activateUser</a>(object $user)
+                    <p>activate a user</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_XoopsMemberHandler">
+        <div class="location">at line 42</div>
+        <code>            public            
+    <strong>XoopsMemberHandler</strong>($db)</code>
+    </h3>
+    <div class="details">
+        <p>constructor</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$db</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_createGroup">
+        <div class="location">at line 54</div>
+        <code>            public            object
+    <strong>createGroup</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>create a new group</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>object</td>
+            <td>XoopsGroup reference to the new group</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_createUser">
+        <div class="location">at line 65</div>
+        <code>            public            object
+    <strong>createUser</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>create a new user</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>object</td>
+            <td>XoopsUser reference to the new user</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getGroup">
+        <div class="location">at line 77</div>
+        <code>            public            object
+    <strong>getGroup</strong>(int $id)</code>
+    </h3>
+    <div class="details">
+        <p>retrieve a group</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td>ID for the group</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>object</td>
+            <td>XoopsGroup reference to the group</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getUser">
+        <div class="location">at line 89</div>
+        <code>            public            object
+    <strong>getUser</strong>(int $id)</code>
+    </h3>
+    <div class="details">
+        <p>retrieve a user</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td>ID for the user</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>object</td>
+            <td>XoopsUser reference to the user</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getUserByEmail">
+        <div class="location">at line 97</div>
+        <code>            public            
+    <strong>getUserByEmail</strong>($email)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$email</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_delete">
+        <div class="location">at line 118</div>
+        <code>            public            
+    <strong>delete</strong>(<abbr title="$object">$object</abbr> $object)</code>
+    </h3>
+    <div class="details">
+        <p>Delete function.</p>
+        <p>This function is virtual overload function.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$object">$object</abbr></td>
+                <td>$object</td>
+                <td>XoopsUser or XoopsGroup</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_deleteGroup">
+        <div class="location">at line 134</div>
+        <code>            public            bool
+    <strong>deleteGroup</strong>(object $group)</code>
+    </h3>
+    <div class="details">
+        <p>delete a group</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$group</td>
+                <td>reference to the group to delete</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>FALSE if failed</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_deleteUser">
+        <div class="location">at line 147</div>
+        <code>            public            bool
+    <strong>deleteUser</strong>(object $user)</code>
+    </h3>
+    <div class="details">
+        <p>delete a user</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$user</td>
+                <td>reference to the user to delete</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>FALSE if failed</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_insertGroup">
+        <div class="location">at line 161</div>
+        <code>            public            bool
+    <strong>insertGroup</strong>(object $group)</code>
+    </h3>
+    <div class="details">
+        <p>insert a group into the database</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$group</td>
+                <td>reference to the group to insert</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>TRUE if already in database and unchanged FALSE on failure</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_insertUser">
+        <div class="location">at line 173</div>
+        <code>            public            bool
+    <strong>insertUser</strong>($user, $force = false)</code>
+    </h3>
+    <div class="details">
+        <p>insert a user into the database</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$force</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>TRUE if already in database and unchanged FALSE on failure</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getGroups">
+        <div class="location">at line 185</div>
+        <code>            public            array
+    <strong>getGroups</strong>(object $criteria = null, bool $id_as_key = false)</code>
+    </h3>
+    <div class="details">
+        <p>retrieve groups from the database</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$criteria</td>
+                <td>{@link CriteriaElement}</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$id_as_key</td>
+                <td>use the group&#039;s ID as key for the array?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>array of {@link XoopsGroup} objects</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getUsers">
+        <div class="location">at line 198</div>
+        <code>            public            array
+    <strong>getUsers</strong>(object $criteria = null, bool $id_as_key = false)</code>
+    </h3>
+    <div class="details">
+        <p>retrieve users from the database</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$criteria</td>
+                <td>{@link CriteriaElement}</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$id_as_key</td>
+                <td>use the group&#039;s ID as key for the array?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>array of {@link XoopsUser} objects</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getGroupList">
+        <div class="location">at line 210</div>
+        <code>            public            array
+    <strong>getGroupList</strong>(object $criteria = null)</code>
+    </h3>
+    <div class="details">
+        <p>get a list of groupnames and their IDs</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$criteria</td>
+                <td>{@link CriteriaElement} object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>associative array of group-IDs and names</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getUserList">
+        <div class="location">at line 226</div>
+        <code>            public            array
+    <strong>getUserList</strong>(object $criteria = null)</code>
+    </h3>
+    <div class="details">
+        <p>get a list of usernames and their IDs</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$criteria</td>
+                <td>{@link CriteriaElement} object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>associative array of user-IDs and names</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addUserToGroup">
+        <div class="location">at line 243</div>
+        <code>            public            object
+    <strong>addUserToGroup</strong>(int $group_id, int $user_id)</code>
+    </h3>
+    <div class="details">
+        <p>add a user to a group</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>int</td>
+                <td>$group_id</td>
+                <td>ID of the group</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$user_id</td>
+                <td>ID of the user</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>object</td>
+            <td>XoopsMembership</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_removeUserFromGroup">
+        <div class="location">at line 263</div>
+        <code>            public            bool
+    <strong>removeUserFromGroup</strong>(int $group_id, int $user_id)</code>
+    </h3>
+    <div class="details">
+        <p>remove a one user from a group.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>int</td>
+                <td>$group_id</td>
+                <td>ID of the group</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$user_id</td>
+                <td>ID of the user</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>success?</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_removeUsersFromGroup">
+        <div class="location">at line 276</div>
+        <code>            public            bool
+    <strong>removeUsersFromGroup</strong>(int $group_id, array $user_ids = array())</code>
+    </h3>
+    <div class="details">
+        <p>remove a list of users from a group</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>int</td>
+                <td>$group_id</td>
+                <td>ID of the group</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$user_ids</td>
+                <td>array of user-IDs</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>success?</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getUsersByGroup">
+        <div class="location">at line 298</div>
+        <code>            public            array
+    <strong>getUsersByGroup</strong>(int $group_id, bool $asobject = false, int $limit, int $start)</code>
+    </h3>
+    <div class="details">
+        <p>get a list of users belonging to a group</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>int</td>
+                <td>$group_id</td>
+                <td>ID of the group</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$asobject</td>
+                <td>return the users as objects?</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$limit</td>
+                <td>number of users to return</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$start</td>
+                <td>index of the first user to return</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>Array of {@link XoopsUser} objects (if $asobject is TRUE) or of associative arrays matching the record structure in the database.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getUsersByNoGroup">
+        <div class="location">at line 319</div>
+        <code>            public            
+    <strong>getUsersByNoGroup</strong>($group_id, $asobject = false, $limit, $start)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$group_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$asobject</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$limit</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$start</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>getUsersByGroup</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_getGroupsByUser">
+        <div class="location">at line 344</div>
+        <code>            public            array
+    <strong>getGroupsByUser</strong>(int $user_id, bool $asobject = false)</code>
+    </h3>
+    <div class="details">
+        <p>get a list of groups that a user is member of</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>int</td>
+                <td>$user_id</td>
+                <td>ID of the user</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$asobject</td>
+                <td>return groups as {@link XoopsGroup} objects or arrays?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>array of objects or arrays</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_loginUser">
+        <div class="location">at line 365</div>
+        <code>            public            object
+    <strong>loginUser</strong>(string $uname, string $pwd)</code>
+    </h3>
+    <div class="details">
+        <p>log in a user</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$uname</td>
+                <td>username as entered in the login form</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pwd</td>
+                <td>password entered in the login form</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>object</td>
+            <td>XoopsUser reference to the logged in user. FALSE if failed to log in</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_loginUserMd5">
+        <div class="location">at line 384</div>
+        <code>            public            object
+    <strong>loginUserMd5</strong>(string $uname, string $md5pwd)</code>
+    </h3>
+    <div class="details">
+        <p>logs in a user with an md5 encrypted password</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$uname</td>
+                <td>username</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$md5pwd</td>
+                <td>password encrypted with md5</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>object</td>
+            <td>XoopsUser reference to the logged in user. FALSE if failed to log in</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getUserCount">
+        <div class="location">at line 402</div>
+        <code>            public            int
+    <strong>getUserCount</strong>(object $criteria = null)</code>
+    </h3>
+    <div class="details">
+        <p>count users matching certain conditions</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$criteria</td>
+                <td>{@link CriteriaElement} object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getUserCountByGroup">
+        <div class="location">at line 413</div>
+        <code>            public            int
+    <strong>getUserCountByGroup</strong>(int $group_id)</code>
+    </h3>
+    <div class="details">
+        <p>count users belonging to a group</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>int</td>
+                <td>$group_id</td>
+                <td>ID of the group</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getUserCountByNoGroup">
+        <div class="location">at line 422</div>
+        <code>            public            int
+    <strong>getUserCountByNoGroup</strong>($group_id)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$group_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>getUserCountByGroup</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_updateUserByField">
+        <div class="location">at line 452</div>
+        <code>            public            bool
+    <strong>updateUserByField</strong>(object $user, string $fieldName, string $fieldValue)</code>
+    </h3>
+    <div class="details">
+        <p>updates a single field in a users record</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$user</td>
+                <td>reference to the {@link XoopsUser} object</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$fieldName</td>
+                <td>name of the field to update</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$fieldValue</td>
+                <td>updated value for the field</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>TRUE if success or unchanged, FALSE on failure</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_updateUsersByField">
+        <div class="location">at line 466</div>
+        <code>            public            bool
+    <strong>updateUsersByField</strong>(string $fieldName, string $fieldValue, object $criteria = null)</code>
+    </h3>
+    <div class="details">
+        <p>updates a single field in a users record</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$fieldName</td>
+                <td>name of the field to update</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$fieldValue</td>
+                <td>updated value for the field</td>
+            </tr>
+                    <tr>
+                <td>object</td>
+                <td>$criteria</td>
+                <td>{@link CriteriaElement} object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>TRUE if success or unchanged, FALSE on failure</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_activateUser">
+        <div class="location">at line 477</div>
+        <code>            public            bool
+    <strong>activateUser</strong>(object $user)</code>
+    </h3>
+    <div class="details">
+        <p>activate a user</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$user</td>
+                <td>reference to the {@link XoopsUser} object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>successful?</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XCube_PageNavigator | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>XCube_PageNavigator</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>XCube_PageNavigator</strong></p>
+
+            <div class="description">
+            <p>This is a utility class which acquires page navigation informations --- sort, offset and limit --- semiautomatically.</p>
+            <p>And, the base modules may<br />
+ offer place holders which is able to connect with interfaces of this class.</p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_mAttributes">
+                                                            Array
+                </td>
+                <td>$mAttributes</td>
+                <td class="last">Array for extra informations.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mStart">
+                                                            int
+                </td>
+                <td>$mStart</td>
+                <td class="last">Offset.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mTotalItems">
+                                                            int
+                </td>
+                <td>$mTotalItems</td>
+                <td class="last">The max number of items which this navigator handles.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mPerpage">
+                                                            int
+                </td>
+                <td>$mPerpage</td>
+                <td class="last">Per page.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mPerpageFreeze">
+                                                            bool
+                </td>
+                <td>$mPerpageFreeze</td>
+                <td class="last">Flag indicating whether this class receives the perpage value specified by the request.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mSort">
+                                                            Array
+                </td>
+                <td>$mSort</td>
+                <td class="last">Array for sort.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mUrl">
+                                                            string
+                </td>
+                <td>$mUrl</td>
+                <td class="last">The base url for this navigator.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mPrefix">
+                                                            
+                </td>
+                <td>$mPrefix</td>
+                <td class="last">A prefix for variable names fetched by this navigator.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mExtra">
+                                                            
+                </td>
+                <td>$mExtra</td>
+                <td class="last">Array of string for re-building the query strings.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mFlags">
+                                                            
+                </td>
+                <td>$mFlags</td>
+                <td class="last">Options indicating what this navigator fetches automatically.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mFetch">
+                                                            
+                </td>
+                <td>$mFetch</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__mIsSpecifedTotalItems">
+                                                            bool
+                </td>
+                <td>$_mIsSpecifedTotalItems</td>
+                <td class="last">The value indicating whether the mTotal property already has been specified.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mGetTotalItems">
+                                                            <a href="XCube_Delegate.html"><abbr title="XCube_Delegate">XCube_Delegate</abbr></a>
+                </td>
+                <td>$mGetTotalItems</td>
+                <td class="last">This delegate is used in only case which mTotal isn&#039;t set yet.</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XCube_PageNavigator">XCube_PageNavigator</a>($url, $flags = XCUBE_PAGENAVI_START)
+                    <p>Constructor.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_fetch">fetch</a>()
+                    <p>Gets values which this navigator handles, from the request.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_fetchNaviControl">fetchNaviControl</a>($navi)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addExtra">addExtra</a>($key, $value)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_removeExtra">removeExtra</a>($key)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getRenderBaseUrl">getRenderBaseUrl</a>($mask = null)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getRenderUrl">getRenderUrl</a>($mask = null)
+                    <p>Return url string for navigation.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_renderUrlForSort">renderUrlForSort</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_renderUrlForPage">renderUrlForPage</a>($page = null)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_renderSortUrl">renderSortUrl</a>($mask = null)
+                    <p>Return url string for sort.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setStart">setStart</a>($start)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getStart">getStart</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setTotalItems">setTotalItems</a>($total)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getTotalItems">getTotalItems</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getTotalPages">getTotalPages</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setPerpage">setPerpage</a>($perpage)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_freezePerpage">freezePerpage</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getPerpage">getPerpage</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setPrefix">setPrefix</a>($prefix)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getPrefix">getPrefix</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getStartKey">getStartKey</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getPerpageKey">getPerpageKey</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getCurrentPage">getCurrentPage</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_hasPrivPage">hasPrivPage</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getPrivStart">getPrivStart</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_hasNextPage">hasNextPage</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getNextStart">getNextStart</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_XCube_PageNavigator">
+        <div class="location">at line 113</div>
+        <code>            public            
+    <strong>XCube_PageNavigator</strong>($url, $flags = XCUBE_PAGENAVI_START)</code>
+    </h3>
+    <div class="details">
+        <p>Constructor.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$flags</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_fetch">
+        <div class="location">at line 128</div>
+        <code>            public            
+    <strong>fetch</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets values which this navigator handles, from the request.</p>
+        <p>And, sets<br />
+ values to this object&#039;s properties.</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_fetchNaviControl">
+        <div class="location">at line 133</div>
+        <code>            public            
+    <strong>fetchNaviControl</strong>($navi)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$navi</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addExtra">
+        <div class="location">at line 155</div>
+        <code>            public            
+    <strong>addExtra</strong>($key, $value)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_removeExtra">
+        <div class="location">at line 160</div>
+        <code>            public            
+    <strong>removeExtra</strong>($key)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getRenderBaseUrl">
+        <div class="location">at line 180</div>
+        <code>            public            
+    <strong>getRenderBaseUrl</strong>($mask = null)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$mask</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getRenderUrl">
+        <div class="location">at line 220</div>
+        <code>            public            string
+    <strong>getRenderUrl</strong>($mask = null)</code>
+    </h3>
+    <div class="details">
+        <p>Return url string for navigation.</p>
+        <p>The return value is lose start value.<br />
+ The user need to add start value. For example, It is &quot;$navi-&gt;getRenderUrl().&#039;20&#039;&quot;.<br />
+ This method name is bad. I must rename this.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$mask</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_renderUrlForSort">
+        <div class="location">at line 236</div>
+        <code>            public            
+    <strong>renderUrlForSort</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_renderUrlForPage">
+        <div class="location">at line 259</div>
+        <code>            public            
+    <strong>renderUrlForPage</strong>($page = null)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$page</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_renderSortUrl">
+        <div class="location">at line 289</div>
+        <code>            public            
+    <strong>renderSortUrl</strong>($mask = null)</code>
+    </h3>
+    <div class="details">
+        <p>Return url string for sort.</p>
+        <p>The return value is complete style.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$mask</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setStart">
+        <div class="location">at line 294</div>
+        <code>            public            
+    <strong>setStart</strong>($start)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$start</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getStart">
+        <div class="location">at line 299</div>
+        <code>            public            
+    <strong>getStart</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setTotalItems">
+        <div class="location">at line 304</div>
+        <code>            public            
+    <strong>setTotalItems</strong>($total)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$total</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTotalItems">
+        <div class="location">at line 310</div>
+        <code>            public            
+    <strong>getTotalItems</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTotalPages">
+        <div class="location">at line 320</div>
+        <code>            public            
+    <strong>getTotalPages</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setPerpage">
+        <div class="location">at line 329</div>
+        <code>            public            
+    <strong>setPerpage</strong>($perpage)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$perpage</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_freezePerpage">
+        <div class="location">at line 334</div>
+        <code>            public            
+    <strong>freezePerpage</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getPerpage">
+        <div class="location">at line 339</div>
+        <code>            public            
+    <strong>getPerpage</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setPrefix">
+        <div class="location">at line 344</div>
+        <code>            public            
+    <strong>setPrefix</strong>($prefix)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$prefix</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getPrefix">
+        <div class="location">at line 349</div>
+        <code>            public            
+    <strong>getPrefix</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getStartKey">
+        <div class="location">at line 354</div>
+        <code>            public            
+    <strong>getStartKey</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getPerpageKey">
+        <div class="location">at line 359</div>
+        <code>            public            
+    <strong>getPerpageKey</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getCurrentPage">
+        <div class="location">at line 364</div>
+        <code>            public            
+    <strong>getCurrentPage</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_hasPrivPage">
+        <div class="location">at line 369</div>
+        <code>            public            
+    <strong>hasPrivPage</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getPrivStart">
+        <div class="location">at line 374</div>
+        <code>            public            
+    <strong>getPrivStart</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_hasNextPage">
+        <div class="location">at line 381</div>
+        <code>            public            
+    <strong>hasNextPage</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getNextStart">
+        <div class="location">at line 386</div>
+        <code>            public            
+    <strong>getNextStart</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

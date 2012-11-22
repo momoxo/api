@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Xcore_iGroupClientDelegate | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Interface</div>
+    <h1><a href=".html"></a>Xcore_iGroupClientDelegate</h1>
+    </div>
+        <div class="content">
+                <p>interface    <strong>Xcore_iGroupClientDelegate</strong></p>
+
+            <div class="description">
+            <p>Interface of group client delegate Modules which uses Xcore_Group must implement this interface.</p>
+            <p></p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    static&nbsp;
+                </td>
+                <td class="last">
+                    <a href="#method_getClientList">getClientList</a>(mixed[] $list, string $dirname)
+                    <p>getClientList	Xcore_GroupClient.{dirname}.GetClientList</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;
+                </td>
+                <td class="last">
+                    <a href="#method_getClientData">getClientData</a>(mixed[] $list, string $dirname, string $dataname, string $fieldname, int $groupId)
+                    <p>getClientData	Xcore_GroupClient.{dirname}.GetClientData Get client modules&#039; data to show them inside Xcore_Group module</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;
+                </td>
+                <td class="last">
+                    <a href="#method_getActionList">getActionList</a>(mixed[] $list, string $dirname, string $dataname)
+                    <p>getActionList	Xcore_GroupClient.{dirname}.GetActionList Get client module&#039;s actions(view, edit, etc) to set their permission by member&#039;s group rank.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_getClientList">
+        <div class="location">at line 19</div>
+        <code>        static    public            
+    <strong>getClientList</strong>(mixed[] $list, string $dirname)</code>
+    </h3>
+    <div class="details">
+        <p>getClientList	Xcore_GroupClient.{dirname}.GetClientList</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$list</td>
+                <td>&amp;$list list[][&#039;dirname&#039;] list[][&#039;dataname&#039;]</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dirname</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getClientData">
+        <div class="location">at line 38</div>
+        <code>        static    public            
+    <strong>getClientData</strong>(mixed[] $list, string $dirname, string $dataname, string $fieldname, int $groupId)</code>
+    </h3>
+    <div class="details">
+        <p>getClientData	Xcore_GroupClient.{dirname}.GetClientData Get client modules&#039; data to show them inside Xcore_Group module</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$list</td>
+                <td>&amp;$list list[][&#039;dirname&#039;]	string	client module&#039;s dirname list[][&#039;dataname&#039;]	string	client module&#039;s dataname(tablename) list[][&#039;title&#039;]	string		client module title list[][&#039;data&#039;]	mixed list[][&#039;template_name&#039;]	string</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dirname</td>
+                <td>client module&#039;s dirname</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dataname</td>
+                <td>client&#039;s target tablename</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$fieldname</td>
+                <td>client&#039;s target fieldname</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$groupId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getActionList">
+        <div class="location">at line 55</div>
+        <code>        static    public            
+    <strong>getActionList</strong>(mixed[] $list, string $dirname, string $dataname)</code>
+    </h3>
+    <div class="details">
+        <p>getActionList	Xcore_GroupClient.{dirname}.GetActionList Get client module&#039;s actions(view, edit, etc) to set their permission by member&#039;s group rank.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed[]</td>
+                <td>$list</td>
+                <td>&amp;$list $list[&#039;action&#039;][]	string $list[&#039;rank&#039;][]		Lenum_GroupRank $list[&#039;title&#039;][]	string $list[&#039;desctiption&#039;][]	string</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dirname</td>
+                <td>client module&#039;s dirname</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dataname</td>
+                <td>client module&#039;s dataname(tablename)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

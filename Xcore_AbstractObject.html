@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Xcore_AbstractObject | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>Xcore_AbstractObject</h1>
+    </div>
+        <div class="content">
+                <p>abstract class    <strong>Xcore_AbstractObject</strong>        extends <a href="XoopsSimpleObject.html"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a></p>
+
+            <div class="description">
+            <p>Xcore_AbstractObject</p>
+            <p></p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_mVars">
+                                                            
+                </td>
+                <td>$mVars</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mIsNew">
+                                                            
+                </td>
+                <td>$mIsNew</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mDirname">
+                                                            
+                </td>
+                <td>$mDirname</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mChildList">
+                                                            
+                </td>
+                <td>$mChildList</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mParentList">
+                                                            
+                </td>
+                <td>$mParentList</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mTable">
+                                                            
+                </td>
+                <td>$mTable</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mTag">
+                                                            
+                </td>
+                <td>$mTag</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mImage">
+                                                            
+                </td>
+                <td>$mImage</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XoopsSimpleObject">XoopsSimpleObject</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsSimpleObject.html#method_XoopsSimpleObject"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setNew">setNew</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsSimpleObject.html#method_setNew"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_unsetNew">unsetNew</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsSimpleObject.html#method_unsetNew"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_isNew">isNew</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsSimpleObject.html#method_isNew"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_initVar">initVar</a>($key, $dataType, $value = null, $required = false, $size = null)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsSimpleObject.html#method_initVar"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_assignVar">assignVar</a>($key, $value)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsSimpleObject.html#method_assignVar"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_assignVars">assignVars</a>(<abbr title="$values">$values</abbr> $values)
+                    <p>You should use this method to initilize object&#039;s properties.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsSimpleObject.html#method_assignVars"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_set">set</a>($key, $value)
+                    <p>You should use this method to change object&#039;s properties.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsSimpleObject.html#method_set"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_get">get</a>($key)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsSimpleObject.html#method_get"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_gets">gets</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsSimpleObject.html#method_gets"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setVar">setVar</a>($key, $value)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsSimpleObject.html#method_setVar"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setVars">setVars</a>($values)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsSimpleObject.html#method_setVars"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getVar">getVar</a>($key)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsSimpleObject.html#method_getVar"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getShow">getShow</a>($key)
+                    <p>Return HTML string for displaying only by HTML.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsSimpleObject.html#method_getShow"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getTypeInformations">getTypeInformations</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsSimpleObject.html#method_getTypeInformations"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getPurifiedHtml">getPurifiedHtml</a>($key, $encoding = null, $doctype = null)
+                    <p>getPurifiedHtml</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsSimpleObject.html#method_getPurifiedHtml"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getDirname">getDirname</a>()
+                    <p>getDirname</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsSimpleObject.html#method_getDirname"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>()
+                    <p>__construct</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_loadTable">loadTable</a>(string $table, string $dirname = null)
+                    <p>load</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getPrimary">getPrimary</a>()
+                    <p>getPrimary</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getDataname">getDataname</a>()
+                    <p>getDataname</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_renderUri">renderUri</a>(string $action = null)
+                    <p>renderUri</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_getImages">getImages</a>()
+                    <p>getImages</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getImageNumber">getImageNumber</a>()
+                    <p>get number of image used in this table</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_setupImages">setupImages</a>(bool $isPost = true)
+                    <p>Setup Image Objects linked to this object</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_loadTag">loadTag</a>()
+                    <p>load tag array related to this page</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_onWorkflow">onWorkflow</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_XoopsSimpleObject">
+        <div class="location">in <a href="XoopsSimpleObject.html#method_XoopsSimpleObject"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a> at line 778</div>
+        <code>            public            
+    <strong>XoopsSimpleObject</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setNew">
+        <div class="location">in <a href="XoopsSimpleObject.html#method_setNew"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a> at line 782</div>
+        <code>            public            
+    <strong>setNew</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_unsetNew">
+        <div class="location">in <a href="XoopsSimpleObject.html#method_unsetNew"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a> at line 787</div>
+        <code>            public            
+    <strong>unsetNew</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isNew">
+        <div class="location">in <a href="XoopsSimpleObject.html#method_isNew"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a> at line 792</div>
+        <code>            public            bool
+    <strong>isNew</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_initVar">
+        <div class="location">in <a href="XoopsSimpleObject.html#method_initVar"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a> at line 797</div>
+        <code>            public            
+    <strong>initVar</strong>($key, $dataType, $value = null, $required = false, $size = null)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$dataType</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$required</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_assignVar">
+        <div class="location">in <a href="XoopsSimpleObject.html#method_assignVar"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a> at line 815</div>
+        <code>            public            
+    <strong>assignVar</strong>($key, $value)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_assignVars">
+        <div class="location">in <a href="XoopsSimpleObject.html#method_assignVars"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a> at line 844</div>
+        <code>            public            
+    <strong>assignVars</strong>(<abbr title="$values">$values</abbr> $values)</code>
+    </h3>
+    <div class="details">
+        <p>You should use this method to initilize object&#039;s properties.</p>
+        <p>This method may not trigger setDirty().</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$values">$values</abbr></td>
+                <td>$values</td>
+                <td>array</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_set">
+        <div class="location">in <a href="XoopsSimpleObject.html#method_set"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a> at line 849</div>
+        <code>            public            
+    <strong>set</strong>($key, $value)</code>
+    </h3>
+    <div class="details">
+        <p>You should use this method to change object&#039;s properties.</p>
+        <p>This method may trigger setDirty().</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_get">
+        <div class="location">in <a href="XoopsSimpleObject.html#method_get"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a> at line 854</div>
+        <code>            public            
+    <strong>get</strong>($key)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_gets">
+        <div class="location">in <a href="XoopsSimpleObject.html#method_gets"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a> at line 859</div>
+        <code>            public            
+    <strong>gets</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setVar">
+        <div class="location">in <a href="XoopsSimpleObject.html#method_setVar"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a> at line 870</div>
+        <code>            public            
+    <strong>setVar</strong>($key, $value)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setVars">
+        <div class="location">in <a href="XoopsSimpleObject.html#method_setVars"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a> at line 875</div>
+        <code>            public            
+    <strong>setVars</strong>($values)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$values</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getVar">
+        <div class="location">in <a href="XoopsSimpleObject.html#method_getVar"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a> at line 883</div>
+        <code>            public            
+    <strong>getVar</strong>($key)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getShow">
+        <div class="location">in <a href="XoopsSimpleObject.html#method_getShow"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a> at line 892</div>
+        <code>            public            
+    <strong>getShow</strong>($key)</code>
+    </h3>
+    <div class="details">
+        <p>Return HTML string for displaying only by HTML.</p>
+        <p>The second parametor doesn&#039;t exist.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTypeInformations">
+        <div class="location">in <a href="XoopsSimpleObject.html#method_getTypeInformations"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a> at line 917</div>
+        <code>            public            
+    <strong>getTypeInformations</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getPurifiedHtml">
+        <div class="location">in <a href="XoopsSimpleObject.html#method_getPurifiedHtml"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a> at line 936</div>
+        <code>            public            
+    <strong>getPurifiedHtml</strong>($key, $encoding = null, $doctype = null)</code>
+    </h3>
+    <div class="details">
+        <p>getPurifiedHtml</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$encoding</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$doctype</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getDirname">
+        <div class="location">in <a href="XoopsSimpleObject.html#method_getDirname"><abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></a> at line 950</div>
+        <code>            public            
+    <strong>getDirname</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>getDirname</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method___construct">
+        <div class="location">at line 29</div>
+        <code>            public            void
+    <strong>__construct</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>__construct</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_loadTable">
+        <div class="location">at line 62</div>
+        <code>            public            void
+    <strong>loadTable</strong>(string $table, string $dirname = null)</code>
+    </h3>
+    <div class="details">
+        <p>load</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dirname</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getPrimary">
+        <div class="location">at line 91</div>
+        <code>            public            string
+    <strong>getPrimary</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>getPrimary</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getDataname">
+        <div class="location">at line 103</div>
+        <code>            public            string
+    <strong>getDataname</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>getDataname</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_renderUri">
+        <div class="location">at line 115</div>
+        <code>            public            string
+    <strong>renderUri</strong>(string $action = null)</code>
+    </h3>
+    <div class="details">
+        <p>renderUri</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$action</td>
+                <td>ex) &#039;edit&#039;, &#039;delete&#039;, &#039;view&#039;</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getImages">
+        <div class="location">at line 128</div>
+        <code>            public            void
+    <strong>getImages</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>getImages</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getImageNumber">
+        <div class="location">at line 144</div>
+        <code>            public            int
+    <strong>getImageNumber</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get number of image used in this table</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setupImages">
+        <div class="location">at line 156</div>
+        <code>            public            void
+    <strong>setupImages</strong>(bool $isPost = true)</code>
+    </h3>
+    <div class="details">
+        <p>Setup Image Objects linked to this object</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>bool</td>
+                <td>$isPost</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_loadTag">
+        <div class="location">at line 192</div>
+        <code>            public            void
+    <strong>loadTag</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>load tag array related to this page</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_onWorkflow">
+        <div class="location">at line 213</div>
+        <code>            public            
+    <strong>onWorkflow</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

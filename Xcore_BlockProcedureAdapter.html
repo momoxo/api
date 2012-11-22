@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Xcore_BlockProcedureAdapter | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>Xcore_BlockProcedureAdapter</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>Xcore_BlockProcedureAdapter</strong>        extends <a href="Xcore_BlockProcedure.html"><abbr title="Xcore_BlockProcedure">Xcore_BlockProcedure</abbr></a></p>
+
+            <div class="description">
+            <p>The adapter class for XoopsBlock objects of XOOPS2 JP.</p>
+            <p></p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_mRender">
+                                                            <a href="XCube_RenderTarget.html"><abbr title="XCube_RenderTarget">XCube_RenderTarget</abbr></a>
+                </td>
+                <td>$mRender</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__mBlock">
+                                                            <a href="XoopsBlock.html"><abbr title="XoopsBlock">XoopsBlock</abbr></a>
+                </td>
+                <td>$_mBlock</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__mDisplayFlag">
+                                                            
+                </td>
+                <td>$_mDisplayFlag</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_Xcore_BlockProcedure">Xcore_BlockProcedure</a>($block)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_BlockProcedure.html#method_Xcore_BlockProcedure"><abbr title="Xcore_BlockProcedure">Xcore_BlockProcedure</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_prepare">prepare</a>()
+                    <p>Preparation.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_BlockProcedure.html#method_prepare"><abbr title="Xcore_BlockProcedure">Xcore_BlockProcedure</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getId">getId</a>()
+                    <p>Gets a number as ID.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_BlockProcedure.html#method_getId"><abbr title="Xcore_BlockProcedure">Xcore_BlockProcedure</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getName">getName</a>()
+                    <p>Gets a name of this block.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_BlockProcedure.html#method_getName"><abbr title="Xcore_BlockProcedure">Xcore_BlockProcedure</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_isEnableCache">isEnableCache</a>()
+                    <p>Gets a value indicating whether the block can be cached.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_BlockProcedure.html#method_isEnableCache"><abbr title="Xcore_BlockProcedure">Xcore_BlockProcedure</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getCacheTime">getCacheTime</a>()
+                    <p>Return cache time</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_BlockProcedure.html#method_getCacheTime"><abbr title="Xcore_BlockProcedure">Xcore_BlockProcedure</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getTitle">getTitle</a>()
+                    <p>Gets a title of this block.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_BlockProcedure.html#method_getTitle"><abbr title="Xcore_BlockProcedure">Xcore_BlockProcedure</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getEntryIndex">getEntryIndex</a>()
+                    <p>Gets a column index of this block.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_BlockProcedure.html#method_getEntryIndex"><abbr title="Xcore_BlockProcedure">Xcore_BlockProcedure</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getWeight">getWeight</a>()
+                    <p>Gets a weight of this block.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_BlockProcedure.html#method_getWeight"><abbr title="Xcore_BlockProcedure">Xcore_BlockProcedure</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__hasVisibleOptionForm">_hasVisibleOptionForm</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getOptionForm">getOptionForm</a>()
+                    <p>Gets rendered HTML buffer for the option form of the control panel.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_execute">execute</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_isDisplay">isDisplay</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_Xcore_BlockProcedure">
+        <div class="location">in <a href="Xcore_BlockProcedure.html#method_Xcore_BlockProcedure"><abbr title="Xcore_BlockProcedure">Xcore_BlockProcedure</abbr></a> at line 158</div>
+        <code>            public            
+    <strong>Xcore_BlockProcedure</strong>($block)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_prepare">
+        <div class="location">in <a href="Xcore_BlockProcedure.html#method_prepare"><abbr title="Xcore_BlockProcedure">Xcore_BlockProcedure</abbr></a> at line 163</div>
+        <code>            public            bool
+    <strong>prepare</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Preparation.</p>
+        <p>If it&#039;s in exception case, returns false.</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getId">
+        <div class="location">in <a href="Xcore_BlockProcedure.html#method_getId"><abbr title="Xcore_BlockProcedure">Xcore_BlockProcedure</abbr></a> at line 168</div>
+        <code>            public            int
+    <strong>getId</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets a number as ID.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getName">
+        <div class="location">in <a href="Xcore_BlockProcedure.html#method_getName"><abbr title="Xcore_BlockProcedure">Xcore_BlockProcedure</abbr></a> at line 173</div>
+        <code>            public            string
+    <strong>getName</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets a name of this block.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isEnableCache">
+        <div class="location">in <a href="Xcore_BlockProcedure.html#method_isEnableCache"><abbr title="Xcore_BlockProcedure">Xcore_BlockProcedure</abbr></a> at line 178</div>
+        <code>            public            bool
+    <strong>isEnableCache</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets a value indicating whether the block can be cached.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getCacheTime">
+        <div class="location">in <a href="Xcore_BlockProcedure.html#method_getCacheTime"><abbr title="Xcore_BlockProcedure">Xcore_BlockProcedure</abbr></a> at line 183</div>
+        <code>            public            int
+    <strong>getCacheTime</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Return cache time</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTitle">
+        <div class="location">in <a href="Xcore_BlockProcedure.html#method_getTitle"><abbr title="Xcore_BlockProcedure">Xcore_BlockProcedure</abbr></a> at line 188</div>
+        <code>            public            string
+    <strong>getTitle</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets a title of this block.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getEntryIndex">
+        <div class="location">in <a href="Xcore_BlockProcedure.html#method_getEntryIndex"><abbr title="Xcore_BlockProcedure">Xcore_BlockProcedure</abbr></a> at line 193</div>
+        <code>            public            int
+    <strong>getEntryIndex</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets a column index of this block.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getWeight">
+        <div class="location">in <a href="Xcore_BlockProcedure.html#method_getWeight"><abbr title="Xcore_BlockProcedure">Xcore_BlockProcedure</abbr></a> at line 198</div>
+        <code>            public            int
+    <strong>getWeight</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets a weight of this block.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__hasVisibleOptionForm">
+        <div class="location">at line 264</div>
+        <code>            public            
+    <strong>_hasVisibleOptionForm</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getOptionForm">
+        <div class="location">at line 269</div>
+        <code>            public            string
+    <strong>getOptionForm</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets rendered HTML buffer for the option form of the control panel.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_execute">
+        <div class="location">at line 231</div>
+        <code>            public            
+    <strong>execute</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isDisplay">
+        <div class="location">at line 259</div>
+        <code>            public            
+    <strong>isDisplay</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

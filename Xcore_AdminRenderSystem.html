@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Xcore_AdminRenderSystem | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>Xcore_AdminRenderSystem</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>Xcore_AdminRenderSystem</strong>        extends <a href="Xcore_RenderSystem.html"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a></p>
+
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_mController">
+                                                            
+                </td>
+                <td>$mController</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mRenderMode">
+                                                            
+                </td>
+                <td>$mRenderMode</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mXoopsTpl">
+                                                            
+                </td>
+                <td>$mXoopsTpl</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mThemeRenderTarget">
+                                                            
+                </td>
+                <td>$mThemeRenderTarget</td>
+                <td class="last">Temporary</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mMainRenderTarget">
+                                                            
+                </td>
+                <td>$mMainRenderTarget</td>
+                <td class="last">Temporary</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__mContentsData">
+                                                            
+                </td>
+                <td>$_mContentsData</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mSetupXoopsTpl">
+                                                            
+                </td>
+                <td>$mSetupXoopsTpl</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__mIsActiveBanner">
+                                                            
+                </td>
+                <td>$_mIsActiveBanner</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mBeginRender">
+                                                            
+                </td>
+                <td>$mBeginRender</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mSmarty">
+                                                            
+                </td>
+                <td>$mSmarty</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__mStdoutBuffer">
+                                                            string
+                </td>
+                <td>$_mStdoutBuffer</td>
+                <td class="last">This is the buffer which stores standard output when the render-target in renderMain() doesn&#039;t use a template.</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_Xcore_RenderSystem">Xcore_RenderSystem</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_RenderSystem.html#method_Xcore_RenderSystem"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_prepare">prepare</a>(<a href="XCube_Controller.html"><abbr title="XCube_Controller">XCube_Controller</abbr></a> $controller)
+                    <p>Prepare.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setAttribute">setAttribute</a>($key, $value)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_RenderSystem.html#method_setAttribute"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getAttribute">getAttribute</a>($key)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_RenderSystem.html#method_getAttribute"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__commonPrepareRender">_commonPrepareRender</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_RenderSystem.html#method__commonPrepareRender"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_renderBlock">renderBlock</a>($target)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__render">_render</a>($target)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_RenderSystem.html#method__render"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_render">render</a>(<a href="XCube_RenderTarget.html"><abbr title="XCube_RenderTarget">XCube_RenderTarget</abbr></a> $target)
+                    <p>Render to $target.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_RenderSystem.html#method_render"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_renderMain">renderMain</a>($target)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_renderTheme">renderTheme</a>($target)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__getBlockShowFlag">_getBlockShowFlag</a>($area)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_RenderSystem.html#method__getBlockShowFlag"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_sendHeader">sendHeader</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_RenderSystem.html#method_sendHeader"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_showXoopsHeader">showXoopsHeader</a>($closeHead = true)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_RenderSystem.html#method_showXoopsHeader"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__renderHeader">_renderHeader</a>($closehead = true)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_RenderSystem.html#method__renderHeader"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__renderFooter">_renderFooter</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_RenderSystem.html#method__renderFooter"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_showXoopsFooter">showXoopsFooter</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_RenderSystem.html#method_showXoopsFooter"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="XCube_RenderTarget.html"><abbr title="XCube_RenderTarget">XCube_RenderTarget</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_createRenderTarget">createRenderTarget</a>($type = XCORE_RENDER_TARGET_TYPE_MAIN, $option = null)
+                    <p>Create an object of the render-target, and return it.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_RenderSystem.html#method_createRenderTarget"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getThemeRenderTarget">getThemeRenderTarget</a>($isDialog = false)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_RenderSystem.html#method_getThemeRenderTarget"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a></small></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_Xcore_RenderSystem">
+        <div class="location">in <a href="Xcore_RenderSystem.html#method_Xcore_RenderSystem"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a> at line 121</div>
+        <code>            public            
+    <strong>Xcore_RenderSystem</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_prepare">
+        <div class="location">at line 100</div>
+        <code>            public            
+    <strong>prepare</strong>(<a href="XCube_Controller.html"><abbr title="XCube_Controller">XCube_Controller</abbr></a> $controller)</code>
+    </h3>
+    <div class="details">
+        <p>Prepare.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="XCube_Controller.html"><abbr title="XCube_Controller">XCube_Controller</abbr></a></td>
+                <td>$controller</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setAttribute">
+        <div class="location">in <a href="Xcore_RenderSystem.html#method_setAttribute"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a> at line 216</div>
+        <code>            public            
+    <strong>setAttribute</strong>($key, $value)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getAttribute">
+        <div class="location">in <a href="Xcore_RenderSystem.html#method_getAttribute"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a> at line 221</div>
+        <code>            public            
+    <strong>getAttribute</strong>($key)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__commonPrepareRender">
+        <div class="location">in <a href="Xcore_RenderSystem.html#method__commonPrepareRender"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a> at line 230</div>
+        <code>            public            
+    <strong>_commonPrepareRender</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_renderBlock">
+        <div class="location">at line 122</div>
+        <code>            public            
+    <strong>renderBlock</strong>($target)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$target</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__render">
+        <div class="location">in <a href="Xcore_RenderSystem.html#method__render"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a> at line 282</div>
+        <code>            public            
+    <strong>_render</strong>($target)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$target</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_render">
+        <div class="location">in <a href="Xcore_RenderSystem.html#method_render"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a> at line 297</div>
+        <code>            public            
+    <strong>render</strong>(<a href="XCube_RenderTarget.html"><abbr title="XCube_RenderTarget">XCube_RenderTarget</abbr></a> $target)</code>
+    </h3>
+    <div class="details">
+        <p>Render to $target.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="XCube_RenderTarget.html"><abbr title="XCube_RenderTarget">XCube_RenderTarget</abbr></a></td>
+                <td>$target</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_renderMain">
+        <div class="location">at line 204</div>
+        <code>            public            
+    <strong>renderMain</strong>($target)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$target</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_renderTheme">
+        <div class="location">at line 142</div>
+        <code>            public            
+    <strong>renderTheme</strong>($target)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$target</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__getBlockShowFlag">
+        <div class="location">in <a href="Xcore_RenderSystem.html#method__getBlockShowFlag"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a> at line 436</div>
+        <code>            public            
+    <strong>_getBlockShowFlag</strong>($area)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$area</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_sendHeader">
+        <div class="location">in <a href="Xcore_RenderSystem.html#method_sendHeader"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a> at line 464</div>
+        <code>            public            
+    <strong>sendHeader</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_showXoopsHeader">
+        <div class="location">in <a href="Xcore_RenderSystem.html#method_showXoopsHeader"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a> at line 477</div>
+        <code>            public            
+    <strong>showXoopsHeader</strong>($closeHead = true)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$closeHead</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__renderHeader">
+        <div class="location">in <a href="Xcore_RenderSystem.html#method__renderHeader"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a> at line 495</div>
+        <code>            public            
+    <strong>_renderHeader</strong>($closehead = true)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$closehead</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__renderFooter">
+        <div class="location">in <a href="Xcore_RenderSystem.html#method__renderFooter"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a> at line 529</div>
+        <code>            public            
+    <strong>_renderFooter</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_showXoopsFooter">
+        <div class="location">in <a href="Xcore_RenderSystem.html#method_showXoopsFooter"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a> at line 538</div>
+        <code>            public            
+    <strong>showXoopsFooter</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_createRenderTarget">
+        <div class="location">in <a href="Xcore_RenderSystem.html#method_createRenderTarget"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a> at line 543</div>
+        <code>            public            <a href="XCube_RenderTarget.html"><abbr title="XCube_RenderTarget">XCube_RenderTarget</abbr></a>
+    <strong>createRenderTarget</strong>($type = XCORE_RENDER_TARGET_TYPE_MAIN, $option = null)</code>
+    </h3>
+    <div class="details">
+        <p>Create an object of the render-target, and return it.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="XCube_RenderTarget.html"><abbr title="XCube_RenderTarget">XCube_RenderTarget</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getThemeRenderTarget">
+        <div class="location">in <a href="Xcore_RenderSystem.html#method_getThemeRenderTarget"><abbr title="Xcore_RenderSystem">Xcore_RenderSystem</abbr></a> at line 567</div>
+        <code>            public            
+    <strong>getThemeRenderTarget</strong>($isDialog = false)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$isDialog</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>ShadePlus_SoapClient | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>ShadePlus_SoapClient</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>ShadePlus_SoapClient</strong>        extends <a href="XCube_AbstractServiceClient.html"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a></p>
+
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_mService">
+                                                            
+                </td>
+                <td>$mService</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mClientErrorStr">
+                                                            
+                </td>
+                <td>$mClientErrorStr</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mUser">
+                                                            
+                </td>
+                <td>$mUser</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mClient">
+                                                            
+                </td>
+                <td>$mClient</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XCube_AbstractServiceClient">XCube_AbstractServiceClient</a>($service)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_AbstractServiceClient.html#method_XCube_AbstractServiceClient"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_prepare">prepare</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_AbstractServiceClient.html#method_prepare"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setUser">setUser</a>($user)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_AbstractServiceClient.html#method_setUser"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_call">call</a>($operation, $args)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getOperationData">getOperationData</a>($operation)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_AbstractServiceClient.html#method_getOperationData"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setError">setError</a>($message)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_AbstractServiceClient.html#method_setError"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getError">getError</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_AbstractServiceClient.html#method_getError"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_ShadePlus_SoapClient">ShadePlus_SoapClient</a>($service)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__encodeUTF8">_encodeUTF8</a>($arr, $languageManager)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__decodeUTF8">_decodeUTF8</a>($arr, $languageManager)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_XCube_AbstractServiceClient">
+        <div class="location">in <a href="XCube_AbstractServiceClient.html#method_XCube_AbstractServiceClient"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a> at line 129</div>
+        <code>            public            
+    <strong>XCube_AbstractServiceClient</strong>($service)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$service</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_prepare">
+        <div class="location">in <a href="XCube_AbstractServiceClient.html#method_prepare"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a> at line 134</div>
+        <code>            public            
+    <strong>prepare</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setUser">
+        <div class="location">in <a href="XCube_AbstractServiceClient.html#method_setUser"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a> at line 138</div>
+        <code>            public            
+    <strong>setUser</strong>($user)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_call">
+        <div class="location">at line 14</div>
+        <code>            public            
+    <strong>call</strong>($operation, $args)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$operation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getOperationData">
+        <div class="location">in <a href="XCube_AbstractServiceClient.html#method_getOperationData"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a> at line 147</div>
+        <code>            public            
+    <strong>getOperationData</strong>($operation)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$operation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setError">
+        <div class="location">in <a href="XCube_AbstractServiceClient.html#method_setError"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a> at line 151</div>
+        <code>            public            
+    <strong>setError</strong>($message)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getError">
+        <div class="location">in <a href="XCube_AbstractServiceClient.html#method_getError"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a> at line 156</div>
+        <code>            public            
+    <strong>getError</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_ShadePlus_SoapClient">
+        <div class="location">at line 7</div>
+        <code>            public            
+    <strong>ShadePlus_SoapClient</strong>($service)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$service</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__encodeUTF8">
+        <div class="location">at line 32</div>
+        <code>            public            
+    <strong>_encodeUTF8</strong>($arr, $languageManager)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$arr</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$languageManager</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__decodeUTF8">
+        <div class="location">at line 46</div>
+        <code>            public            
+    <strong>_decodeUTF8</strong>($arr, $languageManager)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$arr</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$languageManager</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

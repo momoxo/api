@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>soap_parser | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>soap_parser</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>soap_parser</strong>        extends <a href="nusoap_parser.html"><abbr title="nusoap_parser">nusoap_parser</abbr></a></p>
+
+            <div class="description">
+            <p>Backward compatibility</p>
+            <p></p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_title">
+                                                            string
+                </td>
+                <td>$title</td>
+                <td class="last">Identification for HTTP headers.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_version">
+                                                            string
+                </td>
+                <td>$version</td>
+                <td class="last">Version for HTTP headers.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_revision">
+                                                            string
+                </td>
+                <td>$revision</td>
+                <td class="last">CVS revision for HTTP headers.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_error_str">
+                                                            string
+                </td>
+                <td>$error_str</td>
+                <td class="last">Current error string (manipulated by getError/setError)</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_debug_str">
+                                                            string
+                </td>
+                <td>$debug_str</td>
+                <td class="last">Current debug string (manipulated by debug/appendDebug/clearDebug/getDebug/getDebugAsXMLComment)</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_charencoding">
+                                                            boolean
+                </td>
+                <td>$charencoding</td>
+                <td class="last">toggles automatic encoding of special characters as entities (should always be true, I think)</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_debugLevel">
+                                                            
+                </td>
+                <td>$debugLevel</td>
+                <td class="last">the debug level for this instance</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_XMLSchemaVersion">
+                                                            string
+                </td>
+                <td>$XMLSchemaVersion</td>
+                <td class="last">set schema version</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_soap_defencoding">
+                                                            string
+                </td>
+                <td>$soap_defencoding</td>
+                <td class="last">charset encoding for outgoing messages</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_namespaces">
+                                                            
+                </td>
+                <td>$namespaces</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_usedNamespaces">
+                                                            array
+                </td>
+                <td>$usedNamespaces</td>
+                <td class="last">namespaces used in the current context, e.g.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_typemap">
+                                                            array
+                </td>
+                <td>$typemap</td>
+                <td class="last">XML Schema types in an array of uri =&gt; (array of xml type =&gt; php type) is this Legacy yet? no, this is used by the nusoap_xmlschema class to verify type =&gt; namespace mappings.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_xmlEntities">
+                                                            array
+                </td>
+                <td>$xmlEntities</td>
+                <td class="last">XML entities to convert</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_xml">
+                                                            
+                </td>
+                <td>$xml</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_xml_encoding">
+                                                            
+                </td>
+                <td>$xml_encoding</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_method">
+                                                            
+                </td>
+                <td>$method</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_root_struct">
+                                                            
+                </td>
+                <td>$root_struct</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_root_struct_name">
+                                                            
+                </td>
+                <td>$root_struct_name</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_root_struct_namespace">
+                                                            
+                </td>
+                <td>$root_struct_namespace</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_root_header">
+                                                            
+                </td>
+                <td>$root_header</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_document">
+                                                            
+                </td>
+                <td>$document</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_status">
+                                                            
+                </td>
+                <td>$status</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_position">
+                                                            
+                </td>
+                <td>$position</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_depth">
+                                                            
+                </td>
+                <td>$depth</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_default_namespace">
+                                                            
+                </td>
+                <td>$default_namespace</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_message">
+                                                            
+                </td>
+                <td>$message</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parent">
+                                                            
+                </td>
+                <td>$parent</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fault">
+                                                            
+                </td>
+                <td>$fault</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fault_code">
+                                                            
+                </td>
+                <td>$fault_code</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fault_str">
+                                                            
+                </td>
+                <td>$fault_str</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fault_detail">
+                                                            
+                </td>
+                <td>$fault_detail</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_depth_array">
+                                                            
+                </td>
+                <td>$depth_array</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_debug_flag">
+                                                            
+                </td>
+                <td>$debug_flag</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_soapresponse">
+                                                            
+                </td>
+                <td>$soapresponse</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_soapheader">
+                                                            
+                </td>
+                <td>$soapheader</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_responseHeaders">
+                                                            
+                </td>
+                <td>$responseHeaders</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_body_position">
+                                                            
+                </td>
+                <td>$body_position</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_ids">
+                                                            
+                </td>
+                <td>$ids</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_multirefs">
+                                                            
+                </td>
+                <td>$multirefs</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_decode_utf8">
+                                                            
+                </td>
+                <td>$decode_utf8</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_nusoap_parser">nusoap_parser</a>(string $xml, string $encoding = &#039;UTF-8&#039;, string $method = &#039;&#039;, string $decode_utf8 = true)
+                    <p>constructor that actually does the parsing</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_parser.html#method_nusoap_parser"><abbr title="nusoap_parser">nusoap_parser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_start_element">start_element</a>(<abbr title="resource">resource</abbr> $parser, string $name, array $attrs)
+                    <p>start-element handler</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_parser.html#method_start_element"><abbr title="nusoap_parser">nusoap_parser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_end_element">end_element</a>(<abbr title="resource">resource</abbr> $parser, string $name)
+                    <p>end-element handler</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_parser.html#method_end_element"><abbr title="nusoap_parser">nusoap_parser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_character_data">character_data</a>(<abbr title="resource">resource</abbr> $parser, string $data)
+                    <p>element content handler</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_parser.html#method_character_data"><abbr title="nusoap_parser">nusoap_parser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_get_response">get_response</a>()
+                    <p>get the parsed message (SOAP Body)</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_parser.html#method_get_response"><abbr title="nusoap_parser">nusoap_parser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_get_soapbody">get_soapbody</a>()
+                    <p>get the parsed SOAP Body (NULL if there was none)</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_parser.html#method_get_soapbody"><abbr title="nusoap_parser">nusoap_parser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_get_soapheader">get_soapheader</a>()
+                    <p>get the parsed SOAP Header (NULL if there was none)</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_parser.html#method_get_soapheader"><abbr title="nusoap_parser">nusoap_parser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getHeaders">getHeaders</a>()
+                    <p>get the unparsed SOAP Header</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_parser.html#method_getHeaders"><abbr title="nusoap_parser">nusoap_parser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_decodeSimple">decodeSimple</a>(string $value, string $type, string $typens)
+                    <p>decodes simple types into PHP variables</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_parser.html#method_decodeSimple"><abbr title="nusoap_parser">nusoap_parser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_buildVal">buildVal</a>(integer $pos)
+                    <p>builds response structures for compound values (arrays/structs) and scalars</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_parser.html#method_buildVal"><abbr title="nusoap_parser">nusoap_parser</abbr></a></small></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_nusoap_parser">
+        <div class="location">in <a href="nusoap_parser.html#method_nusoap_parser"><abbr title="nusoap_parser">nusoap_parser</abbr></a> at line 6577</div>
+        <code>            public            
+    <strong>nusoap_parser</strong>(string $xml, string $encoding = &#039;UTF-8&#039;, string $method = &#039;&#039;, string $decode_utf8 = true)</code>
+    </h3>
+    <div class="details">
+        <p>constructor that actually does the parsing</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$xml</td>
+                <td>SOAP message</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$encoding</td>
+                <td>character encoding scheme of message</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>method for which XML is parsed (unused?)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$decode_utf8</td>
+                <td>whether to decode UTF-8 to ISO-8859-1</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_start_element">
+        <div class="location">in <a href="nusoap_parser.html#method_start_element"><abbr title="nusoap_parser">nusoap_parser</abbr></a> at line 6671</div>
+        <code>            public            
+    <strong>start_element</strong>(<abbr title="resource">resource</abbr> $parser, string $name, array $attrs)</code>
+    </h3>
+    <div class="details">
+        <p>start-element handler</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="resource">resource</abbr></td>
+                <td>$parser</td>
+                <td>XML parser object</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>element name</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$attrs</td>
+                <td>associative array of attributes</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_end_element">
+        <div class="location">in <a href="nusoap_parser.html#method_end_element"><abbr title="nusoap_parser">nusoap_parser</abbr></a> at line 6826</div>
+        <code>            public            
+    <strong>end_element</strong>(<abbr title="resource">resource</abbr> $parser, string $name)</code>
+    </h3>
+    <div class="details">
+        <p>end-element handler</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="resource">resource</abbr></td>
+                <td>$parser</td>
+                <td>XML parser object</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>element name</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_character_data">
+        <div class="location">in <a href="nusoap_parser.html#method_character_data"><abbr title="nusoap_parser">nusoap_parser</abbr></a> at line 6932</div>
+        <code>            public            
+    <strong>character_data</strong>(<abbr title="resource">resource</abbr> $parser, string $data)</code>
+    </h3>
+    <div class="details">
+        <p>element content handler</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="resource">resource</abbr></td>
+                <td>$parser</td>
+                <td>XML parser object</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$data</td>
+                <td>element content</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_get_response">
+        <div class="location">in <a href="nusoap_parser.html#method_get_response"><abbr title="nusoap_parser">nusoap_parser</abbr></a> at line 6958</div>
+        <code>            public            
+    <strong>get_response</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get the parsed message (SOAP Body)</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_get_soapbody">
+        <div class="location">in <a href="nusoap_parser.html#method_get_soapbody"><abbr title="nusoap_parser">nusoap_parser</abbr></a> at line 6968</div>
+        <code>            public            
+    <strong>get_soapbody</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get the parsed SOAP Body (NULL if there was none)</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_get_soapheader">
+        <div class="location">in <a href="nusoap_parser.html#method_get_soapheader"><abbr title="nusoap_parser">nusoap_parser</abbr></a> at line 6978</div>
+        <code>            public            
+    <strong>get_soapheader</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get the parsed SOAP Header (NULL if there was none)</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getHeaders">
+        <div class="location">in <a href="nusoap_parser.html#method_getHeaders"><abbr title="nusoap_parser">nusoap_parser</abbr></a> at line 6988</div>
+        <code>            public            
+    <strong>getHeaders</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get the unparsed SOAP Header</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_decodeSimple">
+        <div class="location">in <a href="nusoap_parser.html#method_decodeSimple"><abbr title="nusoap_parser">nusoap_parser</abbr></a> at line 7001</div>
+        <code>            public            
+    <strong>decodeSimple</strong>(string $value, string $type, string $typens)</code>
+    </h3>
+    <div class="details">
+        <p>decodes simple types into PHP variables</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td>value to decode</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>XML type to decode</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$typens</td>
+                <td>XML type namespace to decode</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_buildVal">
+        <div class="location">in <a href="nusoap_parser.html#method_buildVal"><abbr title="nusoap_parser">nusoap_parser</abbr></a> at line 7045</div>
+        <code>            public            
+    <strong>buildVal</strong>(integer $pos)</code>
+    </h3>
+    <div class="details">
+        <p>builds response structures for compound values (arrays/structs) and scalars</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$pos</td>
+                <td>position in node tree</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

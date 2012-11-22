@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Xcore_iTagDelegate | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Interface</div>
+    <h1><a href=".html"></a>Xcore_iTagDelegate</h1>
+    </div>
+        <div class="content">
+                <p>interface    <strong>Xcore_iTagDelegate</strong></p>
+
+            <div class="description">
+            <p>Interface of tag delegate</p>
+            <p></p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    static&nbsp;
+                </td>
+                <td class="last">
+                    <a href="#method_setTags">setTags</a>(bool $result, string $tDirname, string $dirname, string $dataname, int $dataId, int $posttime, string[] $tagArr)
+                    <p>setTags	Xcore_Tag.{dirname}.SetTags</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;
+                </td>
+                <td class="last">
+                    <a href="#method_getTags">getTags</a>(string[] $tagArr, string $tDirname, string $dirname, string $dataname, int $dataId)
+                    <p>getTags	Xcore_Tag.{dirname}.GetTags get tags from dirname/dataname/data_id</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;
+                </td>
+                <td class="last">
+                    <a href="#method_getTagCloudSrc">getTagCloudSrc</a>(mixed $cloud, string $tDirname, string $dirname = null, string $dataname = null, int[] $uidList = array())
+                    <p>getTagCloudSrc	Xcore_Tag.{dirname}.GetTagCloudSrc</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;
+                </td>
+                <td class="last">
+                    <a href="#method_getDataIdListByTags">getDataIdListByTags</a>(int[] $list, string $tDirname, string[] $tagArr, string $dirname, string $dataname)
+                    <p>getDataIdListByTags	Xcore_Tag.{dirname}.GetDataIdListByTags</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_setTags">
+        <div class="location">at line 19</div>
+        <code>        static    public            
+    <strong>setTags</strong>(bool $result, string $tDirname, string $dirname, string $dataname, int $dataId, int $posttime, string[] $tagArr)</code>
+    </h3>
+    <div class="details">
+        <p>setTags	Xcore_Tag.{dirname}.SetTags</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>bool</td>
+                <td>$result</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$tDirname</td>
+                <td>Xcore_Tag module&#039;s dirname</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dirname</td>
+                <td>client module dirname</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dataname</td>
+                <td>client module dataname(tablename)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$dataId</td>
+                <td>client module primary key</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$posttime</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string[]</td>
+                <td>$tagArr</td>
+                <td>tags for this data</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTags">
+        <div class="location">at line 31</div>
+        <code>        static    public            
+    <strong>getTags</strong>(string[] $tagArr, string $tDirname, string $dirname, string $dataname, int $dataId)</code>
+    </h3>
+    <div class="details">
+        <p>getTags	Xcore_Tag.{dirname}.GetTags get tags from dirname/dataname/data_id</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string[]</td>
+                <td>$tagArr</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$tDirname</td>
+                <td>Xcore_Tag module&#039;s dirname</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dirname</td>
+                <td>client module dirname</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dataname</td>
+                <td>client module dataname(tablename)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$dataId</td>
+                <td>client module primary key</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTagCloudSrc">
+        <div class="location">at line 43</div>
+        <code>        static    public            
+    <strong>getTagCloudSrc</strong>(mixed $cloud, string $tDirname, string $dirname = null, string $dataname = null, int[] $uidList = array())</code>
+    </h3>
+    <div class="details">
+        <p>getTagCloudSrc	Xcore_Tag.{dirname}.GetTagCloudSrc</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$cloud</td>
+                <td>$cloud[$tag] = $count</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$tDirname</td>
+                <td>Xcore_Tag module&#039;s dirname</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dirname</td>
+                <td>client module dirname</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dataname</td>
+                <td>client module dataname</td>
+            </tr>
+                    <tr>
+                <td>int[]</td>
+                <td>$uidList</td>
+                <td>whose tags you want</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getDataIdListByTags">
+        <div class="location">at line 54</div>
+        <code>        static    public            
+    <strong>getDataIdListByTags</strong>(int[] $list, string $tDirname, string[] $tagArr, string $dirname, string $dataname)</code>
+    </h3>
+    <div class="details">
+        <p>getDataIdListByTags	Xcore_Tag.{dirname}.GetDataIdListByTags</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>int[]</td>
+                <td>$list</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$tDirname</td>
+                <td>Xcore_Tag module&#039;s dirname</td>
+            </tr>
+                    <tr>
+                <td>string[]</td>
+                <td>$tagArr</td>
+                <td>tag list</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dirname</td>
+                <td>client module dirname</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dataname</td>
+                <td>client module dataname</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

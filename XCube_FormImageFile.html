@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XCube_FormImageFile | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>XCube_FormImageFile</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>XCube_FormImageFile</strong>        extends <a href="XCube_FormFile.html"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a></p>
+
+            <div class="description">
+            <p>The sub-class of XCube_FormFile to handle image upload file easily.</p>
+            <p></p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_mName">
+                                                            
+                </td>
+                <td>$mName</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mKey">
+                                                            
+                </td>
+                <td>$mKey</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mContentType">
+                                                            
+                </td>
+                <td>$mContentType</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mFileName">
+                                                            
+                </td>
+                <td>$mFileName</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mFileSize">
+                                                            
+                </td>
+                <td>$mFileSize</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__mTmpFileName">
+                                                            
+                </td>
+                <td>$_mTmpFileName</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mUploadFileFlag">
+                                                            
+                </td>
+                <td>$mUploadFileFlag</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XCube_FormFile">XCube_FormFile</a>($name = null, $key = null)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_FormFile.html#method_XCube_FormFile"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_fetch">fetch</a>()
+                    <p>Fetch necessary information from $_FILES by $mName</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_hasUploadFile">hasUploadFile</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_FormFile.html#method_hasUploadFile"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getContentType">getContentType</a>()
+                    <p>Return content type</p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_FormFile.html#method_getContentType"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getFileData">getFileData</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_FormFile.html#method_getFileData"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getFileName">getFileName</a>()
+                    <p>Return file name.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_FormFile.html#method_getFileName"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getFileSize">getFileSize</a>()
+                    <p>Return file size.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_FormFile.html#method_getFileSize"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getExtension">getExtension</a>()
+                    <p>Return extension from file name.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_FormFile.html#method_getExtension"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_setExtension">setExtension</a>($ext)
+                    <p>Set extension.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_FormFile.html#method_setExtension"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setContentType">setContentType</a>(<abbr title="$contenttype">$contenttype</abbr> $contenttype)
+                    <p>Set content type</p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_FormFile.html#method_setContentType"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setFileName">setFileName</a>(<abbr title="$filename">$filename</abbr> $filename)
+                    <p>Set file name</p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_FormFile.html#method_setFileName"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setFileSize">setFileSize</a>(<abbr title="$filesize">$filesize</abbr> $filesize)
+                    <p>Set file size</p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_FormFile.html#method_setFileSize"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setBodyName">setBodyName</a>(<abbr title="$bodyname">$bodyname</abbr> $bodyname)
+                    <p>Set file body name.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_FormFile.html#method_setBodyName"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getBodyName">getBodyName</a>()
+                    <p>Get file body name.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_FormFile.html#method_getBodyName"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setRandomToBodyName">setRandomToBodyName</a>(<abbr title="$prefix">$prefix</abbr> $prefix, <abbr title="$salt">$salt</abbr> $salt = &#039;&#039;)
+                    <p>Set random string to file body name.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_FormFile.html#method_setRandomToBodyName"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setRandomToFilename">setRandomToFilename</a>(<abbr title="$prefix">$prefix</abbr> $prefix, <abbr title="$salt">$salt</abbr> $salt = &#039;&#039;)
+                    <p>Set random string to file body name.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_FormFile.html#method_setRandomToFilename"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method__getRandomString">_getRandomString</a>(<abbr title="$salt">$salt</abbr> $salt = &#039;&#039;)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_FormFile.html#method__getRandomString"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_saveAs">saveAs</a>(<abbr title="$file">$file</abbr> $file)
+                    <p>Name this, and store it.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_FormFile.html#method_saveAs"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_saveAsRandBody">saveAsRandBody</a>(<abbr title="$dir">$dir</abbr> $dir, <abbr title="$prefix">$prefix</abbr> $prefix = &#039;&#039;, <abbr title="$salt">$salt</abbr> $salt = &#039;&#039;)
+                    <p>Set random string to file body name, and store it.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_FormFile.html#method_saveAsRandBody"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_saveAsRand">saveAsRand</a>(<abbr title="$dir">$dir</abbr> $dir, <abbr title="$prefix">$prefix</abbr> $prefix = &#039;&#039;, <abbr title="$salt">$salt</abbr> $salt = &#039;&#039;)
+                    <p>Set random string to file name, and store it.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_FormFile.html#method_saveAsRand"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getWidth">getWidth</a>()
+                    <p>Gets a width of the uploaded file.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getHeight">getHeight</a>()
+                    <p>Gets a height of the uploaded file.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method__checkFormat">_checkFormat</a>()
+                    <p>Gets a value indicating whether a format of the uploaded file is allowed.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_XCube_FormFile">
+        <div class="location">in <a href="XCube_FormFile.html#method_XCube_FormFile"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a> at line 38</div>
+        <code>            public            
+    <strong>XCube_FormFile</strong>($name = null, $key = null)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_fetch">
+        <div class="location">at line 283</div>
+        <code>            public            
+    <strong>fetch</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Fetch necessary information from $_FILES by $mName</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_hasUploadFile">
+        <div class="location">in <a href="XCube_FormFile.html#method_hasUploadFile"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a> at line 68</div>
+        <code>            public            
+    <strong>hasUploadFile</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getContentType">
+        <div class="location">in <a href="XCube_FormFile.html#method_getContentType"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a> at line 77</div>
+        <code>            public            string
+    <strong>getContentType</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Return content type</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getFileData">
+        <div class="location">in <a href="XCube_FormFile.html#method_getFileData"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a> at line 82</div>
+        <code>            public            
+    <strong>getFileData</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getFileName">
+        <div class="location">in <a href="XCube_FormFile.html#method_getFileName"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a> at line 91</div>
+        <code>            public            string
+    <strong>getFileName</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Return file name.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getFileSize">
+        <div class="location">in <a href="XCube_FormFile.html#method_getFileSize"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a> at line 100</div>
+        <code>            public            int
+    <strong>getFileSize</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Return file size.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getExtension">
+        <div class="location">in <a href="XCube_FormFile.html#method_getExtension"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a> at line 109</div>
+        <code>            public            string
+    <strong>getExtension</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Return extension from file name.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setExtension">
+        <div class="location">in <a href="XCube_FormFile.html#method_setExtension"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a> at line 124</div>
+        <code>            public            string
+    <strong>setExtension</strong>($ext)</code>
+    </h3>
+    <div class="details">
+        <p>Set extension.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$ext</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setContentType">
+        <div class="location">in <a href="XCube_FormFile.html#method_setContentType"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a> at line 135</div>
+        <code>            public            
+    <strong>setContentType</strong>(<abbr title="$contenttype">$contenttype</abbr> $contenttype)</code>
+    </h3>
+    <div class="details">
+        <p>Set content type</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$contenttype">$contenttype</abbr></td>
+                <td>$contenttype</td>
+                <td>string</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setFileName">
+        <div class="location">in <a href="XCube_FormFile.html#method_setFileName"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a> at line 144</div>
+        <code>            public            
+    <strong>setFileName</strong>(<abbr title="$filename">$filename</abbr> $filename)</code>
+    </h3>
+    <div class="details">
+        <p>Set file name</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$filename">$filename</abbr></td>
+                <td>$filename</td>
+                <td>string</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setFileSize">
+        <div class="location">in <a href="XCube_FormFile.html#method_setFileSize"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a> at line 153</div>
+        <code>            public            
+    <strong>setFileSize</strong>(<abbr title="$filesize">$filesize</abbr> $filesize)</code>
+    </h3>
+    <div class="details">
+        <p>Set file size</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$filesize">$filesize</abbr></td>
+                <td>$filesize</td>
+                <td>int</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setBodyName">
+        <div class="location">in <a href="XCube_FormFile.html#method_setBodyName"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a> at line 162</div>
+        <code>            public            
+    <strong>setBodyName</strong>(<abbr title="$bodyname">$bodyname</abbr> $bodyname)</code>
+    </h3>
+    <div class="details">
+        <p>Set file body name.</p>
+        <p>The extension is never changed.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$bodyname">$bodyname</abbr></td>
+                <td>$bodyname</td>
+                <td>string</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getBodyName">
+        <div class="location">in <a href="XCube_FormFile.html#method_getBodyName"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a> at line 171</div>
+        <code>            public            string
+    <strong>getBodyName</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get file body name.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setRandomToBodyName">
+        <div class="location">in <a href="XCube_FormFile.html#method_setRandomToBodyName"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a> at line 185</div>
+        <code>            public            
+    <strong>setRandomToBodyName</strong>(<abbr title="$prefix">$prefix</abbr> $prefix, <abbr title="$salt">$salt</abbr> $salt = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>Set random string to file body name.</p>
+        <p>The extension is never changed.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$prefix">$prefix</abbr></td>
+                <td>$prefix</td>
+                <td>string Prefix for random string.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="$salt">$salt</abbr></td>
+                <td>$salt</td>
+                <td>string Salt for generating token.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setRandomToFilename">
+        <div class="location">in <a href="XCube_FormFile.html#method_setRandomToFilename"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a> at line 196</div>
+        <code>            public            
+    <strong>setRandomToFilename</strong>(<abbr title="$prefix">$prefix</abbr> $prefix, <abbr title="$salt">$salt</abbr> $salt = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>Set random string to file body name.</p>
+        <p>The extension is changed.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$prefix">$prefix</abbr></td>
+                <td>$prefix</td>
+                <td>string Prefix for random string.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="$salt">$salt</abbr></td>
+                <td>$salt</td>
+                <td>string Salt for generating token.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__getRandomString">
+        <div class="location">in <a href="XCube_FormFile.html#method__getRandomString"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a> at line 207</div>
+        <code>            public            string
+    <strong>_getRandomString</strong>(<abbr title="$salt">$salt</abbr> $salt = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$salt">$salt</abbr></td>
+                <td>$salt</td>
+                <td>string Salt for generating token.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_saveAs">
+        <div class="location">in <a href="XCube_FormFile.html#method_saveAs"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a> at line 224</div>
+        <code>            public            bool
+    <strong>saveAs</strong>(<abbr title="$file">$file</abbr> $file)</code>
+    </h3>
+    <div class="details">
+        <p>Name this, and store it.</p>
+        <p>If the name is specified as complete file name, store it as the same name.<br />
+ If the name is specified as directory name, store it as the own name to the directory specified.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$file">$file</abbr></td>
+                <td>$file</td>
+                <td>Directory path or file path.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_saveAsRandBody">
+        <div class="location">in <a href="XCube_FormFile.html#method_saveAsRandBody"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a> at line 256</div>
+        <code>            public            bool
+    <strong>saveAsRandBody</strong>(<abbr title="$dir">$dir</abbr> $dir, <abbr title="$prefix">$prefix</abbr> $prefix = &#039;&#039;, <abbr title="$salt">$salt</abbr> $salt = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>Set random string to file body name, and store it.</p>
+        <p>The extension is never changed.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$dir">$dir</abbr></td>
+                <td>$dir</td>
+                <td>Directory for store.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="$prefix">$prefix</abbr></td>
+                <td>$prefix</td>
+                <td>string Prefix for random string.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="$salt">$salt</abbr></td>
+                <td>$salt</td>
+                <td>string Salt for generating token.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>saveAs()</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>setRandomToBodyName()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_saveAsRand">
+        <div class="location">in <a href="XCube_FormFile.html#method_saveAsRand"><abbr title="XCube_FormFile">XCube_FormFile</abbr></a> at line 271</div>
+        <code>            public            bool
+    <strong>saveAsRand</strong>(<abbr title="$dir">$dir</abbr> $dir, <abbr title="$prefix">$prefix</abbr> $prefix = &#039;&#039;, <abbr title="$salt">$salt</abbr> $salt = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>Set random string to file name, and store it.</p>
+        <p>The extension is never changed.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$dir">$dir</abbr></td>
+                <td>$dir</td>
+                <td>Directory for store.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="$prefix">$prefix</abbr></td>
+                <td>$prefix</td>
+                <td>string Prefix for random string.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="$salt">$salt</abbr></td>
+                <td>$salt</td>
+                <td>string Salt for generating token.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>saveAs()</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>setRandomToFileName()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_getWidth">
+        <div class="location">at line 298</div>
+        <code>            public            int
+    <strong>getWidth</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets a width of the uploaded file.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getHeight">
+        <div class="location">at line 308</div>
+        <code>            public            int
+    <strong>getHeight</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets a height of the uploaded file.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__checkFormat">
+        <div class="location">at line 319</div>
+        <code>            public            bool
+    <strong>_checkFormat</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets a value indicating whether a format of the uploaded file is allowed.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

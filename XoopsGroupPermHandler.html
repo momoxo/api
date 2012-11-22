@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XoopsGroupPermHandler | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>XoopsGroupPermHandler</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>XoopsGroupPermHandler</strong>        extends <a href="XoopsObjectHandler.html"><abbr title="XoopsObjectHandler">XoopsObjectHandler</abbr></a></p>
+
+            <div class="description">
+            <p>XOOPS group permission handler class.</p>
+            <p>This class is responsible for providing data access mechanisms to the data source <br />
+ of XOOPS group permission class objects. <br />
+ This class is an abstract class to be implemented by child group permission classes.</p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_db">
+                                                            object
+                </td>
+                <td>$db</td>
+                <td class="last">holds referenced to {@link XoopsDatabase} class object</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XoopsObjectHandler">XoopsObjectHandler</a>(object $db)
+                    <p>called from child classes only</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsObjectHandler.html#method_XoopsObjectHandler"><abbr title="XoopsObjectHandler">XoopsObjectHandler</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_create">create</a>($isNew = true)
+                    <p>Create a new {@link XoopsGroupPerm}</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_get">get</a>($id)
+                    <p>Retrieve a group permission</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_insert">insert</a>($perm)
+                    <p>Store a {@link XoopsGroupPerm}</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_delete">delete</a>($perm)
+                    <p>Delete a {@link XoopsGroupPerm}</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getObjects">getObjects</a>($criteria = null, $id_as_key = false)
+                    <p>Retrieve multiple {@link XoopsGroupPerm}s</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getCount">getCount</a>($criteria = null)
+                    <p>Count some {@link XoopsGroupPerm}s</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_deleteAll">deleteAll</a>($criteria = null)
+                    <p>Delete all permissions by a certain criteria</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_deleteByGroup">deleteByGroup</a>($gperm_groupid, $gperm_modid = null)
+                    <p>Delete all module specific permissions assigned for a group</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_deleteByModule">deleteByModule</a>($gperm_modid, $gperm_name = null, $gperm_itemid = null)
+                    <p>Delete all module specific permissions</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_deleteBasicPermission">deleteBasicPermission</a>($gperm_groupid)
+                    <p>Delete</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_checkRight">checkRight</a>($gperm_name, $gperm_itemid, $gperm_groupid, $gperm_modid = 1, $bypass_admincheck = false)
+                    <p>Check permission</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addRight">addRight</a>($gperm_name, $gperm_itemid, $gperm_groupid, $gperm_modid = 1)
+                    <p>Add a permission</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_removeRight">removeRight</a>($gperm_name, $gperm_itemid, $gperm_groupid, $gperm_modid = 1)
+                    <p>Remove a permission</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getItemIds">getItemIds</a>($gperm_name, $gperm_groupid, $gperm_modid = 1)
+                    <p>Get all item IDs that a group is assigned a specific permission</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getGroupIds">getGroupIds</a>($gperm_name, $gperm_itemid, $gperm_modid = 1)
+                    <p>Get all group IDs assigned a specific permission for a particular item</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getCriteria">getCriteria</a>($gperm_name, $gperm_itemid, $gperm_groupid, $gperm_modid = 1)
+                    <p>Generate a criteria from given params</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_XoopsObjectHandler">
+        <div class="location">in <a href="XoopsObjectHandler.html#method_XoopsObjectHandler"><abbr title="XoopsObjectHandler">XoopsObjectHandler</abbr></a> at line 702</div>
+        <code>            public            
+    <strong>XoopsObjectHandler</strong>(object $db)</code>
+    </h3>
+    <div class="details">
+        <p>called from child classes only</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$db</td>
+                <td>reference to the {@link XoopsDatabase} object</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_create">
+        <div class="location">at line 115</div>
+        <code>            public            
+    <strong>create</strong>($isNew = true)</code>
+    </h3>
+    <div class="details">
+        <p>Create a new {@link XoopsGroupPerm}</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$isNew</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_get">
+        <div class="location">at line 131</div>
+        <code>            public            
+    <strong>get</strong>($id)</code>
+    </h3>
+    <div class="details">
+        <p>Retrieve a group permission</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_insert">
+        <div class="location">at line 156</div>
+        <code>            public            
+    <strong>insert</strong>($perm)</code>
+    </h3>
+    <div class="details">
+        <p>Store a {@link XoopsGroupPerm}</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$perm</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_delete">
+        <div class="location">at line 191</div>
+        <code>            public            
+    <strong>delete</strong>($perm)</code>
+    </h3>
+    <div class="details">
+        <p>Delete a {@link XoopsGroupPerm}</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$perm</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getObjects">
+        <div class="location">at line 211</div>
+        <code>            public            
+    <strong>getObjects</strong>($criteria = null, $id_as_key = false)</code>
+    </h3>
+    <div class="details">
+        <p>Retrieve multiple {@link XoopsGroupPerm}s</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$criteria</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$id_as_key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getCount">
+        <div class="location">at line 246</div>
+        <code>            public            
+    <strong>getCount</strong>($criteria = null)</code>
+    </h3>
+    <div class="details">
+        <p>Count some {@link XoopsGroupPerm}s</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$criteria</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_deleteAll">
+        <div class="location">at line 268</div>
+        <code>            public            
+    <strong>deleteAll</strong>($criteria = null)</code>
+    </h3>
+    <div class="details">
+        <p>Delete all permissions by a certain criteria</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$criteria</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_deleteByGroup">
+        <div class="location">at line 287</div>
+        <code>            public            
+    <strong>deleteByGroup</strong>($gperm_groupid, $gperm_modid = null)</code>
+    </h3>
+    <div class="details">
+        <p>Delete all module specific permissions assigned for a group</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$gperm_groupid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$gperm_modid</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_deleteByModule">
+        <div class="location">at line 305</div>
+        <code>            public            
+    <strong>deleteByModule</strong>($gperm_modid, $gperm_name = null, $gperm_itemid = null)</code>
+    </h3>
+    <div class="details">
+        <p>Delete all module specific permissions</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$gperm_modid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$gperm_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$gperm_itemid</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_deleteBasicPermission">
+        <div class="location">at line 321</div>
+        <code>            public            
+    <strong>deleteBasicPermission</strong>($gperm_groupid)</code>
+    </h3>
+    <div class="details">
+        <p>Delete</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$gperm_groupid</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_checkRight">
+        <div class="location">at line 344</div>
+        <code>            public            
+    <strong>checkRight</strong>($gperm_name, $gperm_itemid, $gperm_groupid, $gperm_modid = 1, $bypass_admincheck = false)</code>
+    </h3>
+    <div class="details">
+        <p>Check permission</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$gperm_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$gperm_itemid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$gperm_groupid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$gperm_modid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$bypass_admincheck</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addRight">
+        <div class="location">at line 372</div>
+        <code>            public            
+    <strong>addRight</strong>($gperm_name, $gperm_itemid, $gperm_groupid, $gperm_modid = 1)</code>
+    </h3>
+    <div class="details">
+        <p>Add a permission</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$gperm_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$gperm_itemid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$gperm_groupid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$gperm_modid</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_removeRight">
+        <div class="location">at line 402</div>
+        <code>            public            
+    <strong>removeRight</strong>($gperm_name, $gperm_itemid, $gperm_groupid, $gperm_modid = 1)</code>
+    </h3>
+    <div class="details">
+        <p>Remove a permission</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$gperm_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$gperm_itemid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$gperm_groupid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$gperm_modid</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getItemIds">
+        <div class="location">at line 417</div>
+        <code>            public            array
+    <strong>getItemIds</strong>($gperm_name, $gperm_groupid, $gperm_modid = 1)</code>
+    </h3>
+    <div class="details">
+        <p>Get all item IDs that a group is assigned a specific permission</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$gperm_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$gperm_groupid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$gperm_modid</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>array of item IDs</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getGroupIds">
+        <div class="location">at line 439</div>
+        <code>            public            array
+    <strong>getGroupIds</strong>($gperm_name, $gperm_itemid, $gperm_modid = 1)</code>
+    </h3>
+    <div class="details">
+        <p>Get all group IDs assigned a specific permission for a particular item</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$gperm_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$gperm_itemid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$gperm_modid</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>array of group IDs</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getCriteria">
+        <div class="location">at line 462</div>
+        <code>            public            
+    <strong>getCriteria</strong>($gperm_name, $gperm_itemid, $gperm_groupid, $gperm_modid = 1)</code>
+    </h3>
+    <div class="details">
+        <p>Generate a criteria from given params</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$gperm_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$gperm_itemid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$gperm_groupid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$gperm_modid</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

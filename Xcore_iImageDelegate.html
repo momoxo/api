@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Xcore_iImageDelegate | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Interface</div>
+    <h1><a href=".html"></a>Xcore_iImageDelegate</h1>
+    </div>
+        <div class="content">
+                <p>interface    <strong>Xcore_iImageDelegate</strong></p>
+
+            <div class="description">
+            <p>Interface of Image delegate Xcore_Image module must be unique.</p>
+            <p>You can get its dirname by constant XCORE_IMAGE_DIRNAME</p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    static&nbsp;
+                </td>
+                <td class="last">
+                    <a href="#method_createImageObject">createImageObject</a>(<a href="Xcore_AbstractImageObject.html"><abbr title="Xcore_AbstractImageObject">Xcore_AbstractImageObject</abbr></a> $obj)
+                    <p>createImageObject	Xcore_Image.CreateImageObject Create new Image Object must be &#039;setNew()&#039;.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;
+                </td>
+                <td class="last">
+                    <a href="#method_saveImage">saveImage</a>(bool $ret, <abbr title="Abstract_ImageObject">Abstract_ImageObject</abbr> $obj)
+                    <p>saveImage	Xcore_Image.SaveImage 1) insert Xcore_AbstractImageObject to database 2) copy image from upload file($_FILES[&#039;xcore_image&#039;]) to upload directory 3) create thumbnail if needed.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;
+                </td>
+                <td class="last">
+                    <a href="#method_deleteImage">deleteImage</a>(bool $ret, <abbr title="Abstract_ImageObject">Abstract_ImageObject</abbr> $obj)
+                    <p>deleteImage	Xcore_Image.DeleteImage 1) delete thumbnails 2) delete image file 3) delete image data from database</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;
+                </td>
+                <td class="last">
+                    <a href="#method_getImageObjects">getImageObjects</a>(<a href="Xcore_AbstractImageObject.html"><abbr title="Xcore_AbstractImageObject">Xcore_AbstractImageObject</abbr></a>[] $objects, string $dirname, string $dataname, int $dataId, int $num, int $limit = 10, int $start)
+                    <p>getImageObjects	Xcore_Image.GetImageObjects return requested image objects</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_createImageObject">
+        <div class="location">at line 19</div>
+        <code>        static    public            
+    <strong>createImageObject</strong>(<a href="Xcore_AbstractImageObject.html"><abbr title="Xcore_AbstractImageObject">Xcore_AbstractImageObject</abbr></a> $obj)</code>
+    </h3>
+    <div class="details">
+        <p>createImageObject	Xcore_Image.CreateImageObject Create new Image Object must be &#039;setNew()&#039;.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="Xcore_AbstractImageObject.html"><abbr title="Xcore_AbstractImageObject">Xcore_AbstractImageObject</abbr></a></td>
+                <td>$obj</td>
+                <td>&amp;$obj</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_saveImage">
+        <div class="location">at line 32</div>
+        <code>        static    public            
+    <strong>saveImage</strong>(bool $ret, <abbr title="Abstract_ImageObject">Abstract_ImageObject</abbr> $obj)</code>
+    </h3>
+    <div class="details">
+        <p>saveImage	Xcore_Image.SaveImage 1) insert Xcore_AbstractImageObject to database 2) copy image from upload file($_FILES[&#039;xcore_image&#039;]) to upload directory 3) create thumbnail if needed.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>bool</td>
+                <td>$ret</td>
+                <td>&amp;$ret</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Abstract_ImageObject">Abstract_ImageObject</abbr></td>
+                <td>$obj</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_deleteImage">
+        <div class="location">at line 45</div>
+        <code>        static    public            
+    <strong>deleteImage</strong>(bool $ret, <abbr title="Abstract_ImageObject">Abstract_ImageObject</abbr> $obj)</code>
+    </h3>
+    <div class="details">
+        <p>deleteImage	Xcore_Image.DeleteImage 1) delete thumbnails 2) delete image file 3) delete image data from database</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>bool</td>
+                <td>$ret</td>
+                <td>&amp;$ret</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Abstract_ImageObject">Abstract_ImageObject</abbr></td>
+                <td>$obj</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getImageObjects">
+        <div class="location">at line 61</div>
+        <code>        static    public            
+    <strong>getImageObjects</strong>(<a href="Xcore_AbstractImageObject.html"><abbr title="Xcore_AbstractImageObject">Xcore_AbstractImageObject</abbr></a>[] $objects, string $dirname, string $dataname, int $dataId, int $num, int $limit = 10, int $start)</code>
+    </h3>
+    <div class="details">
+        <p>getImageObjects	Xcore_Image.GetImageObjects return requested image objects</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="Xcore_AbstractImageObject.html"><abbr title="Xcore_AbstractImageObject">Xcore_AbstractImageObject</abbr></a>[]</td>
+                <td>$objects</td>
+                <td>&amp;$objects</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dirname</td>
+                <td>client module dirname</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dataname</td>
+                <td>client module dataname</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$dataId</td>
+                <td>client module primary key</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$num</td>
+                <td>image serial number in a client data</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$limit</td>
+                <td>the number of images</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$start</td>
+                <td>offset value</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>
