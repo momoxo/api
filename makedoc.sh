@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
+set -eux
+
 ## MEMO
+# git submodule update --init
 # hub clone -p -b gh-pages momonga-project/api _deploy
 ##
 
