@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>tar | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>tar</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>tar</strong></p>
+
+            <div class="description">
+            <p>tar Class</p>
+            <p>This class reads and writes Tape-Archive (TAR) Files and Gzip<br />
+ compressed TAR files, which are mainly used on UNIX systems.<br />
+ This class works on both windows AND unix systems, and does<br />
+ NOT rely on external applications!! Woohoo!</p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_filename">
+                                                            
+                </td>
+                <td>$filename</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_isGzipped">
+                                                            
+                </td>
+                <td>$isGzipped</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_tar_file">
+                                                            
+                </td>
+                <td>$tar_file</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_files">
+                                                            
+                </td>
+                <td>$files</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_directories">
+                                                            
+                </td>
+                <td>$directories</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_numFiles">
+                                                            
+                </td>
+                <td>$numFiles</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_numDirectories">
+                                                            
+                </td>
+                <td>$numDirectories</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_tar">tar</a>()
+                    <p>Class Constructor -- Does nothing...</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___computeUnsignedChecksum">__computeUnsignedChecksum</a>($bytestring)
+                    <p>Computes the unsigned Checksum of a file&#039;s header to try to ensure valid file</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method___parseNullPaddedString">__parseNullPaddedString</a>(string $string)
+                    <p>Converts a NULL padded string to a non-NULL padded string</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method___parseTar">__parseTar</a>()
+                    <p>This function parses the current TAR file</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method___readTar">__readTar</a>(string $filename = &#039;&#039;)
+                    <p>Read a non gzipped tar file in for processing.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method___generateTAR">__generateTAR</a>()
+                    <p>Generates a TAR file from the processed data</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_openTAR">openTAR</a>(string $filename)
+                    <p>Open a TAR file</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_appendTar">appendTar</a>(string $filename)
+                    <p>Appends a tar file to the end of the currently opened tar file.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getFile">getFile</a>(string $filename)
+                    <p>Retrieves information about a file in the current tar archive</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getDirectory">getDirectory</a>(string $dirname)
+                    <p>Retrieves information about a directory in the current tar archive</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_containsFile">containsFile</a>(string $filename)
+                    <p>Check if this tar archive contains a specific file</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_containsDirectory">containsDirectory</a>(string $dirname)
+                    <p>Check if this tar archive contains a specific directory</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_addDirectory">addDirectory</a>(string $dirname)
+                    <p>Add a directory to this tar archive</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_addFile">addFile</a>(string $filename, boolean $binary = false)
+                    <p>Add a file to the tar archive</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_removeFile">removeFile</a>(string $filename)
+                    <p>Remove a file from the tar archive</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_removeDirectory">removeDirectory</a>(string $dirname)
+                    <p>Remove a directory from the tar archive</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_saveTar">saveTar</a>()
+                    <p>Write the currently loaded tar archive to disk</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_toTar">toTar</a>(string $filename, bool $useGzip)
+                    <p>Saves tar archive to a different file than the current file</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_toTarOutput">toTarOutput</a>(string $filename, bool $useGzip)
+                    <p>Sends tar archive to stdout</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_tar">
+        <div class="location">at line 116</div>
+        <code>            public            
+    <strong>tar</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Class Constructor -- Does nothing...</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method___computeUnsignedChecksum">
+        <div class="location">at line 129</div>
+        <code>            public            
+    <strong>__computeUnsignedChecksum</strong>($bytestring)</code>
+    </h3>
+    <div class="details">
+        <p>Computes the unsigned Checksum of a file&#039;s header to try to ensure valid file</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$bytestring</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method___parseNullPaddedString">
+        <div class="location">at line 151</div>
+        <code>            public            string
+    <strong>__parseNullPaddedString</strong>(string $string)</code>
+    </h3>
+    <div class="details">
+        <p>Converts a NULL padded string to a non-NULL padded string</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method___parseTar">
+        <div class="location">at line 164</div>
+        <code>            public            bool
+    <strong>__parseTar</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>This function parses the current TAR file</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>always TRUE</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method___readTar">
+        <div class="location">at line 271</div>
+        <code>            public            bool
+    <strong>__readTar</strong>(string $filename = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>Read a non gzipped tar file in for processing.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$filename</td>
+                <td>full filename</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>always TRUE</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method___generateTAR">
+        <div class="location">at line 304</div>
+        <code>            public            bool
+    <strong>__generateTAR</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Generates a TAR file from the processed data</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>always TRUE</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_openTAR">
+        <div class="location">at line 402</div>
+        <code>            public            bool
+    <strong>openTAR</strong>(string $filename)</code>
+    </h3>
+    <div class="details">
+        <p>Open a TAR file</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$filename</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_appendTar">
+        <div class="location">at line 431</div>
+        <code>            public            bool
+    <strong>appendTar</strong>(string $filename)</code>
+    </h3>
+    <div class="details">
+        <p>Appends a tar file to the end of the currently opened tar file.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$filename</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getFile">
+        <div class="location">at line 448</div>
+        <code>            public            string
+    <strong>getFile</strong>(string $filename)</code>
+    </h3>
+    <div class="details">
+        <p>Retrieves information about a file in the current tar archive</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$filename</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>FALSE on fail</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getDirectory">
+        <div class="location">at line 466</div>
+        <code>            public            string
+    <strong>getDirectory</strong>(string $dirname)</code>
+    </h3>
+    <div class="details">
+        <p>Retrieves information about a directory in the current tar archive</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$dirname</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>FALSE on fail</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_containsFile">
+        <div class="location">at line 484</div>
+        <code>            public            bool
+    <strong>containsFile</strong>(string $filename)</code>
+    </h3>
+    <div class="details">
+        <p>Check if this tar archive contains a specific file</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$filename</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_containsDirectory">
+        <div class="location">at line 501</div>
+        <code>            public            bool
+    <strong>containsDirectory</strong>(string $dirname)</code>
+    </h3>
+    <div class="details">
+        <p>Check if this tar archive contains a specific directory</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$dirname</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addDirectory">
+        <div class="location">at line 519</div>
+        <code>            public            bool
+    <strong>addDirectory</strong>(string $dirname)</code>
+    </h3>
+    <div class="details">
+        <p>Add a directory to this tar archive</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$dirname</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addFile">
+        <div class="location">at line 548</div>
+        <code>            public            bool
+    <strong>addFile</strong>(string $filename, boolean $binary = false)</code>
+    </h3>
+    <div class="details">
+        <p>Add a file to the tar archive</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$filename</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$binary</td>
+                <td>Binary file?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_removeFile">
+        <div class="location">at line 597</div>
+        <code>            public            bool
+    <strong>removeFile</strong>(string $filename)</code>
+    </h3>
+    <div class="details">
+        <p>Remove a file from the tar archive</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$filename</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_removeDirectory">
+        <div class="location">at line 617</div>
+        <code>            public            bool
+    <strong>removeDirectory</strong>(string $dirname)</code>
+    </h3>
+    <div class="details">
+        <p>Remove a directory from the tar archive</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$dirname</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_saveTar">
+        <div class="location">at line 636</div>
+        <code>            public            bool
+    <strong>saveTar</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Write the currently loaded tar archive to disk</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_toTar">
+        <div class="location">at line 655</div>
+        <code>            public            bool
+    <strong>toTar</strong>(string $filename, bool $useGzip)</code>
+    </h3>
+    <div class="details">
+        <p>Saves tar archive to a different file than the current file</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$filename</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$useGzip</td>
+                <td>Use GZ compression?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_toTarOutput">
+        <div class="location">at line 691</div>
+        <code>            public            string
+    <strong>toTarOutput</strong>(string $filename, bool $useGzip)</code>
+    </h3>
+    <div class="details">
+        <p>Sends tar archive to stdout</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$filename</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$useGzip</td>
+                <td>Use GZ compression?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>UserMailjobObject | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>UserMailjobObject</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>UserMailjobObject</strong>        extends <abbr title="XoopsSimpleObject">XoopsSimpleObject</abbr></p>
+
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_mUsers">
+                                                            
+                </td>
+                <td>$mUsers</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__mUsersLoadedFlag">
+                                                            
+                </td>
+                <td>$_mUsersLoadedFlag</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mUserCount">
+                                                            
+                </td>
+                <td>$mUserCount</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__mUserCountLoadedFlag">
+                                                            
+                </td>
+                <td>$_mUserCountLoadedFlag</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mGetReplaceTitle">
+                                                            <abbr title="XCube_Delegate">XCube_Delegate</abbr>
+                </td>
+                <td>$mGetReplaceTitle</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mGetReplaceBody">
+                                                            <abbr title="XCube_Delegate">XCube_Delegate</abbr>
+                </td>
+                <td>$mGetReplaceBody</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mSend">
+                                                            <abbr title="XCube_Delegate">XCube_Delegate</abbr>
+                </td>
+                <td>$mSend</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_UserMailjobObject">UserMailjobObject</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_loadUserCount">loadUserCount</a>()
+                    <p>Count the number of target users, and set it to mUserCount.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_loadUser">loadUser</a>()
+                    <p>Load the uid list of target users.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getUsers">getUsers</a>(int $retry)
+                    <p>Gets users who this mailjob will send mail to, with $retry number.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getUserCount">getUserCount</a>()
+                    <p>Gets count of users who this mailjob will send mail to.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_send">send</a>($from_user)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getReplaceTitle">getReplaceTitle</a>($to_user, $from_user)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getReplaceBody">getReplaceBody</a>($to_user, $from_user)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getCurrentRetry">getCurrentRetry</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_UserMailjobObject">
+        <div class="location">at line 27</div>
+        <code>            public            
+    <strong>UserMailjobObject</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_loadUserCount">
+        <div class="location">at line 57</div>
+        <code>            public            
+    <strong>loadUserCount</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Count the number of target users, and set it to mUserCount.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_loadUser">
+        <div class="location">at line 70</div>
+        <code>            public            
+    <strong>loadUser</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Load the uid list of target users.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getUsers">
+        <div class="location">at line 83</div>
+        <code>            public            
+    <strong>getUsers</strong>(int $retry)</code>
+    </h3>
+    <div class="details">
+        <p>Gets users who this mailjob will send mail to, with $retry number.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>int</td>
+                <td>$retry</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getUserCount">
+        <div class="location">at line 100</div>
+        <code>            public            int
+    <strong>getUserCount</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets count of users who this mailjob will send mail to.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td>count of users</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_send">
+        <div class="location">at line 106</div>
+        <code>            public            
+    <strong>send</strong>($from_user)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$from_user</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getReplaceTitle">
+        <div class="location">at line 137</div>
+        <code>            public            
+    <strong>getReplaceTitle</strong>($to_user, $from_user)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$to_user</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$from_user</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getReplaceBody">
+        <div class="location">at line 142</div>
+        <code>            public            
+    <strong>getReplaceBody</strong>($to_user, $from_user)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$to_user</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$from_user</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getCurrentRetry">
+        <div class="location">at line 158</div>
+        <code>            public            
+    <strong>getCurrentRetry</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

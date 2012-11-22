@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>zipfile | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>zipfile</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>zipfile</strong></p>
+
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_datasec">
+                                                            array
+                </td>
+                <td>$datasec</td>
+                <td class="last">Array to store compressed data</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_ctrl_dir">
+                                                            array
+                </td>
+                <td>$ctrl_dir</td>
+                <td class="last">Central directory</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_eof_ctrl_dir">
+                                                            string
+                </td>
+                <td>$eof_ctrl_dir</td>
+                <td class="last">End of central directory record</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_old_offset">
+                                                            integer
+                </td>
+                <td>$old_offset</td>
+                <td class="last">Last offset position</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    integer
+                </td>
+                <td class="last">
+                    <a href="#method_unix2DosTime">unix2DosTime</a>(integer $unixtime)
+                    <p>Converts an Unix timestamp to a four byte DOS date and time format (date in high two bytes, time in low two bytes allowing magnitude comparison).</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addFile">addFile</a>(string $data, string $name, integer $time)
+                    <p>Adds &quot;file&quot; to archive</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_file">file</a>()
+                    <p>Dumps out file</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_unix2DosTime">
+        <div class="location">at line 73</div>
+        <code>            public            integer
+    <strong>unix2DosTime</strong>(integer $unixtime)</code>
+    </h3>
+    <div class="details">
+        <p>Converts an Unix timestamp to a four byte DOS date and time format (date in high two bytes, time in low two bytes allowing magnitude comparison).</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$unixtime</td>
+                <td>the current Unix timestamp</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>integer</td>
+            <td>the current date in a four byte DOS format</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addFile">
+        <div class="location">at line 100</div>
+        <code>            public            
+    <strong>addFile</strong>(string $data, string $name, integer $time)</code>
+    </h3>
+    <div class="details">
+        <p>Adds &quot;file&quot; to archive</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$data</td>
+                <td>file contents</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>name of the file in the archive (may contains the path)</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$time</td>
+                <td>the current timestamp</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_file">
+        <div class="location">at line 178</div>
+        <code>            public            string
+    <strong>file</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Dumps out file</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>the zipped file</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

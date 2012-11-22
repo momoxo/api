@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XoopsFormSelectMatchOption | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>XoopsFormSelectMatchOption</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>XoopsFormSelectMatchOption</strong>        extends <a href="XoopsFormSelect.html"><abbr title="XoopsFormSelect">XoopsFormSelect</abbr></a></p>
+
+            <div class="description">
+            <p>A selection box with options for matching search terms.</p>
+            <p></p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property__name">
+                                                            string
+                </td>
+                <td>$_name</td>
+                <td class="last">&quot;name&quot; attribute of the element</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__caption">
+                                                            
+                </td>
+                <td>$_caption</td>
+                <td class="last">caption of the element</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__accesskey">
+                                                            
+                </td>
+                <td>$_accesskey</td>
+                <td class="last">Accesskey for this element</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__class">
+                                                            
+                </td>
+                <td>$_class</td>
+                <td class="last">HTML class for this element</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__hidden">
+                                                            
+                </td>
+                <td>$_hidden</td>
+                <td class="last">hidden?</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__extra">
+                                                            
+                </td>
+                <td>$_extra</td>
+                <td class="last">extra attributes to go in the tag</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__required">
+                                                            
+                </td>
+                <td>$_required</td>
+                <td class="last">required field?</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__description">
+                                                            
+                </td>
+                <td>$_description</td>
+                <td class="last">description of the field</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__id">
+                                                            string
+                </td>
+                <td>$_id</td>
+                <td class="last">specified id for the form.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__options">
+                                                            array
+                </td>
+                <td>$_options</td>
+                <td class="last">Options</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__multiple">
+                                                            
+                </td>
+                <td>$_multiple</td>
+                <td class="last">Allow multiple selections?</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__size">
+                                                            
+                </td>
+                <td>$_size</td>
+                <td class="last">Number of rows.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__value">
+                                                            
+                </td>
+                <td>$_value</td>
+                <td class="last">Pre-selcted values</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XoopsFormSelect">XoopsFormSelect</a>($caption, $name, $value = null, $size = 1, $multiple = false)
+                    <p>Constructor</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormSelect.html#method_XoopsFormSelect"><abbr title="XoopsFormSelect">XoopsFormSelect</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_isMultiple">isMultiple</a>()
+                    <p>Are multiple selections allowed?</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormSelect.html#method_isMultiple"><abbr title="XoopsFormSelect">XoopsFormSelect</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getSize">getSize</a>()
+                    <p>Get the size</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormSelect.html#method_getSize"><abbr title="XoopsFormSelect">XoopsFormSelect</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getValue">getValue</a>()
+                    <p>Get an array of pre-selected values</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormSelect.html#method_getValue"><abbr title="XoopsFormSelect">XoopsFormSelect</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setValue">setValue</a>($value)
+                    <p>Set pre-selected values</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormSelect.html#method_setValue"><abbr title="XoopsFormSelect">XoopsFormSelect</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addOption">addOption</a>($value, $name = &#039;&#039;)
+                    <p>Add an option</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormSelect.html#method_addOption"><abbr title="XoopsFormSelect">XoopsFormSelect</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addOptionArray">addOptionArray</a>($options)
+                    <p>Add multiple options</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormSelect.html#method_addOptionArray"><abbr title="XoopsFormSelect">XoopsFormSelect</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getOptions">getOptions</a>()
+                    <p>Get all options</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormSelect.html#method_getOptions"><abbr title="XoopsFormSelect">XoopsFormSelect</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_render">render</a>()
+                    <p>Prepare HTML for output</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormSelect.html#method_render"><abbr title="XoopsFormSelect">XoopsFormSelect</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XoopsFormSelectMatchOption">XoopsFormSelectMatchOption</a>($caption, $name, $value = null, $size = 1)
+                    <p>Constructor</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_XoopsFormSelect">
+        <div class="location">in <a href="XoopsFormSelect.html#method_XoopsFormSelect"><abbr title="XoopsFormSelect">XoopsFormSelect</abbr></a> at line 90</div>
+        <code>            public            
+    <strong>XoopsFormSelect</strong>($caption, $name, $value = null, $size = 1, $multiple = false)</code>
+    </h3>
+    <div class="details">
+        <p>Constructor</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$caption</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$multiple</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isMultiple">
+        <div class="location">in <a href="XoopsFormSelect.html#method_isMultiple"><abbr title="XoopsFormSelect">XoopsFormSelect</abbr></a> at line 105</div>
+        <code>            public            
+    <strong>isMultiple</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Are multiple selections allowed?</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getSize">
+        <div class="location">in <a href="XoopsFormSelect.html#method_getSize"><abbr title="XoopsFormSelect">XoopsFormSelect</abbr></a> at line 114</div>
+        <code>            public            
+    <strong>getSize</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the size</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getValue">
+        <div class="location">in <a href="XoopsFormSelect.html#method_getValue"><abbr title="XoopsFormSelect">XoopsFormSelect</abbr></a> at line 123</div>
+        <code>            public            
+    <strong>getValue</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get an array of pre-selected values</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setValue">
+        <div class="location">in <a href="XoopsFormSelect.html#method_setValue"><abbr title="XoopsFormSelect">XoopsFormSelect</abbr></a> at line 132</div>
+        <code>            public            
+    <strong>setValue</strong>($value)</code>
+    </h3>
+    <div class="details">
+        <p>Set pre-selected values</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addOption">
+        <div class="location">in <a href="XoopsFormSelect.html#method_addOption"><abbr title="XoopsFormSelect">XoopsFormSelect</abbr></a> at line 148</div>
+        <code>            public            
+    <strong>addOption</strong>($value, $name = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>Add an option</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addOptionArray">
+        <div class="location">in <a href="XoopsFormSelect.html#method_addOptionArray"><abbr title="XoopsFormSelect">XoopsFormSelect</abbr></a> at line 161</div>
+        <code>            public            
+    <strong>addOptionArray</strong>($options)</code>
+    </h3>
+    <div class="details">
+        <p>Add multiple options</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getOptions">
+        <div class="location">in <a href="XoopsFormSelect.html#method_getOptions"><abbr title="XoopsFormSelect">XoopsFormSelect</abbr></a> at line 174</div>
+        <code>            public            
+    <strong>getOptions</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get all options</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_render">
+        <div class="location">in <a href="XoopsFormSelect.html#method_render"><abbr title="XoopsFormSelect">XoopsFormSelect</abbr></a> at line 183</div>
+        <code>            public            
+    <strong>render</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Prepare HTML for output</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_XoopsFormSelectMatchOption">
+        <div class="location">at line 67</div>
+        <code>            public            
+    <strong>XoopsFormSelectMatchOption</strong>($caption, $name, $value = null, $size = 1)</code>
+    </h3>
+    <div class="details">
+        <p>Constructor</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$caption</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

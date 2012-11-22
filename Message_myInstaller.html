@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Message_myInstaller | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>Message_myInstaller</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>Message_myInstaller</strong>        extends <a href="Xcore_ModuleInstaller.html"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a></p>
+
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_mLog">
+                                                            
+                </td>
+                <td>$mLog</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__mForceMode">
+                                                            
+                </td>
+                <td>$_mForceMode</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__mXoopsModule">
+                                                            <a href="XoopsModule.html"><abbr title="XoopsModule">XoopsModule</abbr></a>
+                </td>
+                <td>$_mXoopsModule</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_Xcore_ModuleInstaller">Xcore_ModuleInstaller</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModuleInstaller.html#method_Xcore_ModuleInstaller"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setCurrentXoopsModule">setCurrentXoopsModule</a>($xoopsModule)
+                    <p>Sets the current XoopsModule.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModuleInstaller.html#method_setCurrentXoopsModule"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setForceMode">setForceMode</a>(bool $isForceMode)
+                    <p>Sets a value indicating whether the force mode is on.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModuleInstaller.html#method_setForceMode"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__installTables">_installTables</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModuleInstaller.html#method__installTables"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__installModule">_installModule</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModuleInstaller.html#method__installModule"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__createPermission">_createPermission</a>(<abbr title="$group">$group</abbr> $group)
+                    <p>Create a permission object which has been initialized for admin.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModuleInstaller.html#method__createPermission"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__installTemplates">_installTemplates</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModuleInstaller.html#method__installTemplates"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__installBlocks">_installBlocks</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModuleInstaller.html#method__installBlocks"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__installPreferences">_installPreferences</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModuleInstaller.html#method__installPreferences"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__processScript">_processScript</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__processReport">_processReport</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModuleInstaller.html#method__processReport"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_executeInstall">executeInstall</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_Message_myInstaller">Message_myInstaller</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_check_pm">check_pm</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_Xcore_ModuleInstaller">
+        <div class="location">in <a href="Xcore_ModuleInstaller.html#method_Xcore_ModuleInstaller"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a> at line 25</div>
+        <code>            public            
+    <strong>Xcore_ModuleInstaller</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setCurrentXoopsModule">
+        <div class="location">in <a href="Xcore_ModuleInstaller.html#method_setCurrentXoopsModule"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a> at line 36</div>
+        <code>            public            
+    <strong>setCurrentXoopsModule</strong>($xoopsModule)</code>
+    </h3>
+    <div class="details">
+        <p>Sets the current XoopsModule.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$xoopsModule</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setForceMode">
+        <div class="location">in <a href="Xcore_ModuleInstaller.html#method_setForceMode"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a> at line 45</div>
+        <code>            public            
+    <strong>setForceMode</strong>(bool $isForceMode)</code>
+    </h3>
+    <div class="details">
+        <p>Sets a value indicating whether the force mode is on.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>bool</td>
+                <td>$isForceMode</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__installTables">
+        <div class="location">in <a href="Xcore_ModuleInstaller.html#method__installTables"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a> at line 50</div>
+        <code>            public            
+    <strong>_installTables</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__installModule">
+        <div class="location">in <a href="Xcore_ModuleInstaller.html#method__installModule"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a> at line 58</div>
+        <code>            public            
+    <strong>_installModule</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__createPermission">
+        <div class="location">in <a href="Xcore_ModuleInstaller.html#method__createPermission"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a> at line 148</div>
+        <code>            public            
+    <strong>_createPermission</strong>(<abbr title="$group">$group</abbr> $group)</code>
+    </h3>
+    <div class="details">
+        <p>Create a permission object which has been initialized for admin.</p>
+        <p>For flexibility, creation only and not save it.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$group">$group</abbr></td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__installTemplates">
+        <div class="location">in <a href="Xcore_ModuleInstaller.html#method__installTemplates"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a> at line 164</div>
+        <code>            public            
+    <strong>_installTemplates</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__installBlocks">
+        <div class="location">in <a href="Xcore_ModuleInstaller.html#method__installBlocks"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a> at line 169</div>
+        <code>            public            
+    <strong>_installBlocks</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__installPreferences">
+        <div class="location">in <a href="Xcore_ModuleInstaller.html#method__installPreferences"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a> at line 174</div>
+        <code>            public            
+    <strong>_installPreferences</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__processScript">
+        <div class="location">at line 40</div>
+        <code>            public            
+    <strong>_processScript</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__processReport">
+        <div class="location">in <a href="Xcore_ModuleInstaller.html#method__processReport"><abbr title="Xcore_ModuleInstaller">Xcore_ModuleInstaller</abbr></a> at line 203</div>
+        <code>            public            
+    <strong>_processReport</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_executeInstall">
+        <div class="location">at line 17</div>
+        <code>            public            
+    <strong>executeInstall</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_Message_myInstaller">
+        <div class="location">at line 12</div>
+        <code>            public            
+    <strong>Message_myInstaller</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_check_pm">
+        <div class="location">at line 29</div>
+        <code>            public            
+    <strong>check_pm</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

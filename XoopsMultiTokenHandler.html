@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XoopsMultiTokenHandler | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>XoopsMultiTokenHandler</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>XoopsMultiTokenHandler</strong>        extends <a href="XoopsTokenHandler.html"><abbr title="XoopsTokenHandler">XoopsTokenHandler</abbr></a></p>
+
+            <div class="description">
+            <p>This class publish a token of the different same name of a serial number for the tab browser.</p>
+            <p></p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property__prefix">
+                                                            
+                </td>
+                <td>$_prefix</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_create">create</a>(<abbr title="$name">$name</abbr> $name, <abbr title="$timeout">$timeout</abbr> $timeout = XOOPS_TOKEN_TIMEOUT)
+                    <p>Create XoopsToken instance, regist(keep to server), and returns it.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="XoopsToken.html"><abbr title="XoopsToken">XoopsToken</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_fetch">fetch</a>(<abbr title="$name">$name</abbr> $name, $serial_number)
+                    <p>Fetches from server side, and returns it.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_register">register</a>($token)
+                    <p>Register token to session.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_unregister">unregister</a>($token)
+                    <p>Unregister token to session.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_isRegistered">isRegistered</a>(<abbr title="$name">$name</abbr> $name, $serial_number)
+                    <p>If a token of the name that equal $name is registered on session, this method will return true.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_validate">validate</a>(<abbr title="$token">$token</abbr> $token, <abbr title="$clearIfValid">$clearIfValid</abbr> $clearIfValid)
+                    <p>This method takes out token&#039;s string from Request, and validate token with it.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsTokenHandler.html#method_validate"><abbr title="XoopsTokenHandler">XoopsTokenHandler</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_autoValidate">autoValidate</a>($name, $clearIfValid = true)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_quickCreate">quickCreate</a>($name, $timeout = XOOPS_TOKEN_TIMEOUT)
+                    <p>static method.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_quickValidate">quickValidate</a>($name, $clearIfValid = true)
+                    <p>static method.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getRequestNumber">getRequestNumber</a>(<abbr title="$name">$name</abbr> $name)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getUniqueSerial">getUniqueSerial</a>($name)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_create">
+        <div class="location">at line 319</div>
+        <code>            public            
+    <strong>create</strong>(<abbr title="$name">$name</abbr> $name, <abbr title="$timeout">$timeout</abbr> $timeout = XOOPS_TOKEN_TIMEOUT)</code>
+    </h3>
+    <div class="details">
+        <p>Create XoopsToken instance, regist(keep to server), and returns it.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$name">$name</abbr></td>
+                <td>$name</td>
+                <td>this token&#039;s name string.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="$timeout">$timeout</abbr></td>
+                <td>$timeout</td>
+                <td>effective time(if $timeout equal 0, this token will become unlimited)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_fetch">
+        <div class="location">at line 327</div>
+        <code>            public            <a href="XoopsToken.html"><abbr title="XoopsToken">XoopsToken</abbr></a>
+    <strong>fetch</strong>(<abbr title="$name">$name</abbr> $name, $serial_number)</code>
+    </h3>
+    <div class="details">
+        <p>Fetches from server side, and returns it.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$name">$name</abbr></td>
+                <td>$name</td>
+                <td>token&#039;s name string.</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$serial_number</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="XoopsToken.html"><abbr title="XoopsToken">XoopsToken</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_register">
+        <div class="location">at line 336</div>
+        <code>            public            
+    <strong>register</strong>($token)</code>
+    </h3>
+    <div class="details">
+        <p>Register token to session.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$token</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_unregister">
+        <div class="location">at line 341</div>
+        <code>            public            
+    <strong>unregister</strong>($token)</code>
+    </h3>
+    <div class="details">
+        <p>Unregister token to session.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$token</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isRegistered">
+        <div class="location">at line 346</div>
+        <code>            public            bool
+    <strong>isRegistered</strong>(<abbr title="$name">$name</abbr> $name, $serial_number)</code>
+    </h3>
+    <div class="details">
+        <p>If a token of the name that equal $name is registered on session, this method will return true.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$name">$name</abbr></td>
+                <td>$name</td>
+                <td>token&#039;s name string.</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$serial_number</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_validate">
+        <div class="location">in <a href="XoopsTokenHandler.html#method_validate"><abbr title="XoopsTokenHandler">XoopsTokenHandler</abbr></a> at line 259</div>
+        <code>            public            bool
+    <strong>validate</strong>(<abbr title="$token">$token</abbr> $token, <abbr title="$clearIfValid">$clearIfValid</abbr> $clearIfValid)</code>
+    </h3>
+    <div class="details">
+        <p>This method takes out token&#039;s string from Request, and validate token with it.</p>
+        <p>if it passed validation, this method will return true.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$token">$token</abbr></td>
+                <td>$token</td>
+                <td>XoopsToken</td>
+            </tr>
+                    <tr>
+                <td><abbr title="$clearIfValid">$clearIfValid</abbr></td>
+                <td>$clearIfValid</td>
+                <td>If token passed validation, $token will be unregistered.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_autoValidate">
+        <div class="location">at line 351</div>
+        <code>            public            
+    <strong>autoValidate</strong>($name, $clearIfValid = true)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$clearIfValid</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_quickCreate">
+        <div class="location">at line 369</div>
+        <code>            public            
+    <strong>quickCreate</strong>($name, $timeout = XOOPS_TOKEN_TIMEOUT)</code>
+    </h3>
+    <div class="details">
+        <p>static method.</p>
+        <p>This method was created for quick protection of default modules.<br />
+ this method will be deleted in the near future.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$timeout</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_quickValidate">
+        <div class="location">at line 383</div>
+        <code>            public            
+    <strong>quickValidate</strong>($name, $clearIfValid = true)</code>
+    </h3>
+    <div class="details">
+        <p>static method.</p>
+        <p>This method was created for quick protection of default modules.<br />
+ this method will be deleted in the near future.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$clearIfValid</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getRequestNumber">
+        <div class="location">at line 393</div>
+        <code>            public            int
+    <strong>getRequestNumber</strong>(<abbr title="$name">$name</abbr> $name)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$name">$name</abbr></td>
+                <td>$name</td>
+                <td>string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getUniqueSerial">
+        <div class="location">at line 404</div>
+        <code>            public            
+    <strong>getUniqueSerial</strong>($name)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

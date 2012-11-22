@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Profile_AbstractViewAction | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>Profile_AbstractViewAction</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>Profile_AbstractViewAction</strong>        extends <a href="Profile_AbstractAction.html"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a></p>
+
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_mRoot">
+                                                            
+                </td>
+                <td>$mRoot</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mModule">
+                                                            
+                </td>
+                <td>$mModule</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mAsset">
+                                                            
+                </td>
+                <td>$mAsset</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mObject">
+                                                            
+                </td>
+                <td>$mObject</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mObjectHandler">
+                                                            
+                </td>
+                <td>$mObjectHandler</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__getHandler">_getHandler</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_Profile_AbstractAction">Profile_AbstractAction</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Profile_AbstractAction.html#method_Profile_AbstractAction"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_isMemberOnly">isMemberOnly</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Profile_AbstractAction.html#method_isMemberOnly"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_isAdminOnly">isAdminOnly</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Profile_AbstractAction.html#method_isAdminOnly"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_prepare">prepare</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_hasPermission">hasPermission</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Profile_AbstractAction.html#method_hasPermission"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getDefaultView">getDefaultView</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_execute">execute</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_executeViewSuccess">executeViewSuccess</a>($controller, $render)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Profile_AbstractAction.html#method_executeViewSuccess"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_executeViewError">executeViewError</a>($render)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Profile_AbstractAction.html#method_executeViewError"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_executeViewIndex">executeViewIndex</a>($render)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Profile_AbstractAction.html#method_executeViewIndex"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_executeViewInput">executeViewInput</a>($render)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Profile_AbstractAction.html#method_executeViewInput"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_executeViewPreview">executeViewPreview</a>($render)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Profile_AbstractAction.html#method_executeViewPreview"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_executeViewCancel">executeViewCancel</a>($render)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Profile_AbstractAction.html#method_executeViewCancel"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__getId">_getId</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__setupObject">_setupObject</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method__getHandler">
+        <div class="location">at line 25</div>
+        <code>            public            
+    <strong>_getHandler</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_Profile_AbstractAction">
+        <div class="location">in <a href="Profile_AbstractAction.html#method_Profile_AbstractAction"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a> at line 21</div>
+        <code>            public            
+    <strong>Profile_AbstractAction</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isMemberOnly">
+        <div class="location">in <a href="Profile_AbstractAction.html#method_isMemberOnly"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a> at line 26</div>
+        <code>            public            
+    <strong>isMemberOnly</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isAdminOnly">
+        <div class="location">in <a href="Profile_AbstractAction.html#method_isAdminOnly"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a> at line 29</div>
+        <code>            public            
+    <strong>isAdminOnly</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_prepare">
+        <div class="location">at line 44</div>
+        <code>            public            
+    <strong>prepare</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_hasPermission">
+        <div class="location">in <a href="Profile_AbstractAction.html#method_hasPermission"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a> at line 36</div>
+        <code>            public            
+    <strong>hasPermission</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getDefaultView">
+        <div class="location">at line 53</div>
+        <code>            public            
+    <strong>getDefaultView</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_execute">
+        <div class="location">at line 65</div>
+        <code>            public            
+    <strong>execute</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_executeViewSuccess">
+        <div class="location">in <a href="Profile_AbstractAction.html#method_executeViewSuccess"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a> at line 48</div>
+        <code>            public            
+    <strong>executeViewSuccess</strong>($controller, $render)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$controller</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$render</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_executeViewError">
+        <div class="location">in <a href="Profile_AbstractAction.html#method_executeViewError"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a> at line 51</div>
+        <code>            public            
+    <strong>executeViewError</strong>($render)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$render</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_executeViewIndex">
+        <div class="location">in <a href="Profile_AbstractAction.html#method_executeViewIndex"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a> at line 54</div>
+        <code>            public            
+    <strong>executeViewIndex</strong>($render)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$render</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_executeViewInput">
+        <div class="location">in <a href="Profile_AbstractAction.html#method_executeViewInput"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a> at line 57</div>
+        <code>            public            
+    <strong>executeViewInput</strong>($render)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$render</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_executeViewPreview">
+        <div class="location">in <a href="Profile_AbstractAction.html#method_executeViewPreview"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a> at line 60</div>
+        <code>            public            
+    <strong>executeViewPreview</strong>($render)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$render</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_executeViewCancel">
+        <div class="location">in <a href="Profile_AbstractAction.html#method_executeViewCancel"><abbr title="Profile_AbstractAction">Profile_AbstractAction</abbr></a> at line 63</div>
+        <code>            public            
+    <strong>executeViewCancel</strong>($render)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$render</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__getId">
+        <div class="location">at line 18</div>
+        <code>            public            
+    <strong>_getId</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__setupObject">
+        <div class="location">at line 32</div>
+        <code>            public            
+    <strong>_setupObject</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

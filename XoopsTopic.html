@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XoopsTopic | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>XoopsTopic</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>XoopsTopic</strong></p>
+
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_table">
+                                                            
+                </td>
+                <td>$table</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_topic_id">
+                                                            
+                </td>
+                <td>$topic_id</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_topic_pid">
+                                                            
+                </td>
+                <td>$topic_pid</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_topic_title">
+                                                            
+                </td>
+                <td>$topic_title</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_topic_imgurl">
+                                                            
+                </td>
+                <td>$topic_imgurl</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_prefix">
+                                                            
+                </td>
+                <td>$prefix</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_use_permission">
+                                                            
+                </td>
+                <td>$use_permission</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mid">
+                                                            
+                </td>
+                <td>$mid</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XoopsTopic">XoopsTopic</a>($table, $topicid)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setTopicTitle">setTopicTitle</a>($value)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setTopicImgurl">setTopicImgurl</a>($value)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setTopicPid">setTopicPid</a>($value)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getTopic">getTopic</a>($topicid)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_makeTopic">makeTopic</a>($array)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_usePermission">usePermission</a>($mid)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_store">store</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_delete">delete</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_topic_id">topic_id</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_topic_pid">topic_pid</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_topic_title">topic_title</a>($format = &#039;S&#039;)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_topic_imgurl">topic_imgurl</a>($format = &#039;S&#039;)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_prefix">prefix</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getFirstChildTopics">getFirstChildTopics</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getAllChildTopics">getAllChildTopics</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getChildTopicsTreeArray">getChildTopicsTreeArray</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_makeTopicSelBox">makeTopicSelBox</a>($none, $seltopic = -1, $selname = &#039;&#039;, $onchange = &#039;&#039;)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getNiceTopicPathFromId">getNiceTopicPathFromId</a>($funcURL)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getAllChildTopicsId">getAllChildTopicsId</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getTopicsList">getTopicsList</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_topicExists">topicExists</a>($pid, $title)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_XoopsTopic">
+        <div class="location">at line 47</div>
+        <code>            public            
+    <strong>XoopsTopic</strong>($table, $topicid)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$table</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$topicid</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setTopicTitle">
+        <div class="location">at line 60</div>
+        <code>            public            
+    <strong>setTopicTitle</strong>($value)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setTopicImgurl">
+        <div class="location">at line 65</div>
+        <code>            public            
+    <strong>setTopicImgurl</strong>($value)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setTopicPid">
+        <div class="location">at line 70</div>
+        <code>            public            
+    <strong>setTopicPid</strong>($value)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTopic">
+        <div class="location">at line 75</div>
+        <code>            public            
+    <strong>getTopic</strong>($topicid)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$topicid</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_makeTopic">
+        <div class="location">at line 82</div>
+        <code>            public            
+    <strong>makeTopic</strong>($array)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$array</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_usePermission">
+        <div class="location">at line 89</div>
+        <code>            public            
+    <strong>usePermission</strong>($mid)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$mid</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_store">
+        <div class="location">at line 95</div>
+        <code>            public            
+    <strong>store</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_delete">
+        <div class="location">at line 189</div>
+        <code>            public            
+    <strong>delete</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_topic_id">
+        <div class="location">at line 195</div>
+        <code>            public            
+    <strong>topic_id</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_topic_pid">
+        <div class="location">at line 200</div>
+        <code>            public            
+    <strong>topic_pid</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_topic_title">
+        <div class="location">at line 205</div>
+        <code>            public            
+    <strong>topic_title</strong>($format = &#039;S&#039;)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_topic_imgurl">
+        <div class="location">at line 225</div>
+        <code>            public            
+    <strong>topic_imgurl</strong>($format = &#039;S&#039;)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_prefix">
+        <div class="location">at line 245</div>
+        <code>            public            
+    <strong>prefix</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getFirstChildTopics">
+        <div class="location">at line 252</div>
+        <code>            public            
+    <strong>getFirstChildTopics</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getAllChildTopics">
+        <div class="location">at line 265</div>
+        <code>            public            
+    <strong>getAllChildTopics</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getChildTopicsTreeArray">
+        <div class="location">at line 278</div>
+        <code>            public            
+    <strong>getChildTopicsTreeArray</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_makeTopicSelBox">
+        <div class="location">at line 291</div>
+        <code>            public            
+    <strong>makeTopicSelBox</strong>($none, $seltopic = -1, $selname = &#039;&#039;, $onchange = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$none</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$seltopic</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$selname</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$onchange</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getNiceTopicPathFromId">
+        <div class="location">at line 304</div>
+        <code>            public            
+    <strong>getNiceTopicPathFromId</strong>($funcURL)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$funcURL</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getAllChildTopicsId">
+        <div class="location">at line 311</div>
+        <code>            public            
+    <strong>getAllChildTopicsId</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTopicsList">
+        <div class="location">at line 318</div>
+        <code>            public            
+    <strong>getTopicsList</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_topicExists">
+        <div class="location">at line 329</div>
+        <code>            public            
+    <strong>topicExists</strong>($pid, $title)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$pid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$title</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

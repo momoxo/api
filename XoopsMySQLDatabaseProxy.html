@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XoopsMySQLDatabaseProxy | Momonga API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momonga API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>XoopsMySQLDatabaseProxy</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>XoopsMySQLDatabaseProxy</strong>        extends <a href="XoopsMySQLDatabase.html"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></p>
+
+            <div class="description">
+            <p>Read-Only connection to a MySQL database.</p>
+            <p>This class allows only SELECT queries to be performed through its <br />
+ {@link query()} method for security reasons.</p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_prefix">
+                                                            string
+                </td>
+                <td>$prefix</td>
+                <td class="last">Prefix for tables in the database</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_logger">
+                                                            object
+                </td>
+                <td>$logger</td>
+                <td class="last">reference to a {@link XoopsLogger} object</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_conn">
+                                                            <abbr title="resource">resource</abbr>
+                </td>
+                <td>$conn</td>
+                <td class="last">Database connection</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mPrepareQuery">
+                                                            string
+                </td>
+                <td>$mPrepareQuery</td>
+                <td class="last">String for Emulation prepare</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_connect">connect</a>(bool $selectdb = true)
+                    <p>connect to the database</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_connect"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_genId">genId</a>(string $sequence)
+                    <p>generate an ID for a new row  This is for compatibility only.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_genId"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_fetchRow">fetchRow</a>(<abbr title="resource">resource</abbr> $result)
+                    <p>Get a result row as an enumerated array</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_fetchRow"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_fetchArray">fetchArray</a>($result)
+                    <p>Fetch a result row as an associative array</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_fetchArray"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_fetchBoth">fetchBoth</a>($result)
+                    <p>Fetch a result row as an associative array</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_fetchBoth"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getInsertId">getInsertId</a>()
+                    <p>Get the ID generated from the previous INSERT operation</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_getInsertId"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getRowsNum">getRowsNum</a>(<abbr title="resource">resource</abbr> $result)
+                    <p>Get number of rows in result</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_getRowsNum"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getAffectedRows">getAffectedRows</a>()
+                    <p>Get number of affected rows</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_getAffectedRows"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_close">close</a>()
+                    <p>Close MySQL connection</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_close"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_freeRecordSet">freeRecordSet</a>(<abbr title="resource">resource</abbr> $result)
+                    <p>will free all memory associated with the result identifier result.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_freeRecordSet"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_error">error</a>()
+                    <p>Returns the text of the error message from previous MySQL operation</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_error"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_errno">errno</a>()
+                    <p>Returns the numerical value of the error message from previous MySQL operation</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_errno"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_quoteString">quoteString</a>(string $str)
+                    <p>Returns escaped string text with single quotes around it to be safely stored in database</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_quoteString"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="resource">resource</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_queryF">queryF</a>(string $sql, int $limit, int $start)
+                    <p>perform a query on the database</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_queryF"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="resource">resource</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_query">query</a>(string $sql, int $limit, int $start)
+                    <p>perform a query on the database  this method allows only SELECT queries for safety.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_queryFromFile">queryFromFile</a>(string $file)
+                    <p>perform queries from SQL dump file in a batch</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_queryFromFile"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getFieldName">getFieldName</a>(<abbr title="resource">resource</abbr> $result, int $offset)
+                    <p>Get field name</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_getFieldName"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getFieldType">getFieldType</a>(<abbr title="resource">resource</abbr> $result, int $offset)
+                    <p>Get field type</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_getFieldType"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getFieldsNum">getFieldsNum</a>(<abbr title="resource">resource</abbr> $result)
+                    <p>Get number of fields in result</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_getFieldsNum"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_prepare">prepare</a>($query)
+                    <p>Emulates prepare(), but this is TEST API.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_prepare"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_bind_param">bind_param</a>()
+                    <p>Emulates bind_param(), but this is TEST API.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_bind_param"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_execute">execute</a>()
+                    <p>Executes prepared SQL with query(), but this is TEST API.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_execute"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_executeF">executeF</a>()
+                    <p>Executes prepared SQL with queryF(), but this is TEST API.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsMySQLDatabase.html#method_executeF"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a></small></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_connect">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_connect"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 81</div>
+        <code>            public            bool
+    <strong>connect</strong>(bool $selectdb = true)</code>
+    </h3>
+    <div class="details">
+        <p>connect to the database</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>bool</td>
+                <td>$selectdb</td>
+                <td>select the database now?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>successful?</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_genId">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_genId"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 112</div>
+        <code>            public            int
+    <strong>genId</strong>(string $sequence)</code>
+    </h3>
+    <div class="details">
+        <p>generate an ID for a new row  This is for compatibility only.</p>
+        <p>Will always return 0, because MySQL supports<br />
+ autoincrement for primary keys.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$sequence</td>
+                <td>name of the sequence from which to get the next ID</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td>always 0, because mysql has support for autoincrement</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_fetchRow">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_fetchRow"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 123</div>
+        <code>            public            array
+    <strong>fetchRow</strong>(<abbr title="resource">resource</abbr> $result)</code>
+    </h3>
+    <div class="details">
+        <p>Get a result row as an enumerated array</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="resource">resource</abbr></td>
+                <td>$result</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_fetchArray">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_fetchArray"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 133</div>
+        <code>            public            array
+    <strong>fetchArray</strong>($result)</code>
+    </h3>
+    <div class="details">
+        <p>Fetch a result row as an associative array</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$result</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_fetchBoth">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_fetchBoth"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 143</div>
+        <code>            public            array
+    <strong>fetchBoth</strong>($result)</code>
+    </h3>
+    <div class="details">
+        <p>Fetch a result row as an associative array</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$result</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getInsertId">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_getInsertId"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 153</div>
+        <code>            public            int
+    <strong>getInsertId</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the ID generated from the previous INSERT operation</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getRowsNum">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_getRowsNum"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 164</div>
+        <code>            public            int
+    <strong>getRowsNum</strong>(<abbr title="resource">resource</abbr> $result)</code>
+    </h3>
+    <div class="details">
+        <p>Get number of rows in result</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="resource">resource</abbr></td>
+                <td>$result</td>
+                <td>query result</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getAffectedRows">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_getAffectedRows"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 174</div>
+        <code>            public            int
+    <strong>getAffectedRows</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get number of affected rows</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_close">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_close"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 183</div>
+        <code>            public            
+    <strong>close</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Close MySQL connection</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_freeRecordSet">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_freeRecordSet"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 194</div>
+        <code>            public            bool
+    <strong>freeRecordSet</strong>(<abbr title="resource">resource</abbr> $result)</code>
+    </h3>
+    <div class="details">
+        <p>will free all memory associated with the result identifier result.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="resource">resource</abbr></td>
+                <td>$result</td>
+                <td>query result</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>TRUE on success or FALSE on failure.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_error">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_error"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 204</div>
+        <code>            public            bool
+    <strong>error</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns the text of the error message from previous MySQL operation</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>Returns the error text from the last MySQL function, or &#039;&#039; (the empty string) if no error occurred.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_errno">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_errno"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 214</div>
+        <code>            public            int
+    <strong>errno</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns the numerical value of the error message from previous MySQL operation</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td>Returns the error number from the last MySQL function, or 0 (zero) if no error occurred.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_quoteString">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_quoteString"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 225</div>
+        <code>            public            string
+    <strong>quoteString</strong>(string $str)</code>
+    </h3>
+    <div class="details">
+        <p>Returns escaped string text with single quotes around it to be safely stored in database</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$str</td>
+                <td>unescaped string text</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>escaped string text with single quotes around</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_queryF">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_queryF"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 240</div>
+        <code>            public            <abbr title="resource">resource</abbr>
+    <strong>queryF</strong>(string $sql, int $limit, int $start)</code>
+    </h3>
+    <div class="details">
+        <p>perform a query on the database</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>a valid MySQL query</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$limit</td>
+                <td>number of records to return</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$start</td>
+                <td>offset of first record to return</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="resource">resource</abbr></td>
+            <td>query result or FALSE if successful or TRUE if successful and no result</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_query">
+        <div class="location">at line 476</div>
+        <code>            public            <abbr title="resource">resource</abbr>
+    <strong>query</strong>(string $sql, int $limit, int $start)</code>
+    </h3>
+    <div class="details">
+        <p>perform a query on the database  this method allows only SELECT queries for safety.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>a valid MySQL query</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$limit</td>
+                <td>number of records to return</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$start</td>
+                <td>offset of first record to return</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="resource">resource</abbr></td>
+            <td>query result or FALSE if unsuccessful</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_queryFromFile">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_queryFromFile"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 286</div>
+        <code>            public            bool
+    <strong>queryFromFile</strong>(string $file)</code>
+    </h3>
+    <div class="details">
+        <p>perform queries from SQL dump file in a batch</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$file</td>
+                <td>file path to an SQL dump file</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>FALSE if failed reading SQL file or TRUE if the file has been read and queries executed</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getFieldName">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_getFieldName"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 311</div>
+        <code>            public            string
+    <strong>getFieldName</strong>(<abbr title="resource">resource</abbr> $result, int $offset)</code>
+    </h3>
+    <div class="details">
+        <p>Get field name</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="resource">resource</abbr></td>
+                <td>$result</td>
+                <td>query result</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$offset</td>
+                <td>numerical field index</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getFieldType">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_getFieldType"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 323</div>
+        <code>            public            string
+    <strong>getFieldType</strong>(<abbr title="resource">resource</abbr> $result, int $offset)</code>
+    </h3>
+    <div class="details">
+        <p>Get field type</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="resource">resource</abbr></td>
+                <td>$result</td>
+                <td>query result</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$offset</td>
+                <td>numerical field index</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getFieldsNum">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_getFieldsNum"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 334</div>
+        <code>            public            int
+    <strong>getFieldsNum</strong>(<abbr title="resource">resource</abbr> $result)</code>
+    </h3>
+    <div class="details">
+        <p>Get number of fields in result</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="resource">resource</abbr></td>
+                <td>$result</td>
+                <td>query result</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_prepare">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_prepare"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 343</div>
+        <code>            public            
+    <strong>prepare</strong>($query)</code>
+    </h3>
+    <div class="details">
+        <p>Emulates prepare(), but this is TEST API.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_bind_param">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_bind_param"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 362</div>
+        <code>            public            
+    <strong>bind_param</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Emulates bind_param(), but this is TEST API.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_execute">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_execute"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 402</div>
+        <code>            public            
+    <strong>execute</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Executes prepared SQL with query(), but this is TEST API.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_executeF">
+        <div class="location">in <a href="XoopsMySQLDatabase.html#method_executeF"><abbr title="XoopsMySQLDatabase">XoopsMySQLDatabase</abbr></a> at line 413</div>
+        <code>            public            
+    <strong>executeF</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Executes prepared SQL with queryF(), but this is TEST API.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>
