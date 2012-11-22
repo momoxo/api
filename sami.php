@@ -13,7 +13,7 @@ $iterator = Finder::create()
 
 return new Sami($iterator, array(
 	"title"                => "Momonga API",
-	"build_dir"            => __DIR__ . "/_deploy",
+	"build_dir"            => __DIR__ . "/tmp",
 	"cache_dir"            => __DIR__ . "/cache",
 	"default_opened_level" => 2,
 ));
