@@ -1,0 +1,3 @@
+[submodule "_momonga"]
+	path = _momonga
+	url = git://github.com/momonga-project/momonga.git
