@@ -8,7 +8,7 @@ $iterator = Finder::create()
 	->name("*.php")
 	->exclude("Resources")
 	->exclude("Tests")
-	->in(__DIR__ . "/_momonga/html/modules/xcore")
+	->in(__DIR__ . "/_momonga/html")
 ;
 
 return new Sami($iterator, array(
