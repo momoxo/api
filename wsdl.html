@@ -1,0 +1,2636 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>wsdl | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>wsdl</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>wsdl</strong>        extends <a href="nusoap_base.html"><abbr title="nusoap_base">nusoap_base</abbr></a></p>
+
+            <div class="description">
+            <p>parses a WSDL file, allows access to it&#039;s data, other utility methods.</p>
+            <p>also builds WSDL structures programmatically.</p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_title">
+                                                            string
+                </td>
+                <td>$title</td>
+                <td class="last">Identification for HTTP headers.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_version">
+                                                            string
+                </td>
+                <td>$version</td>
+                <td class="last">Version for HTTP headers.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_revision">
+                                                            string
+                </td>
+                <td>$revision</td>
+                <td class="last">CVS revision for HTTP headers.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_error_str">
+                                                            string
+                </td>
+                <td>$error_str</td>
+                <td class="last">Current error string (manipulated by getError/setError)</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_debug_str">
+                                                            string
+                </td>
+                <td>$debug_str</td>
+                <td class="last">Current debug string (manipulated by debug/appendDebug/clearDebug/getDebug/getDebugAsXMLComment)</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_charencoding">
+                                                            boolean
+                </td>
+                <td>$charencoding</td>
+                <td class="last">toggles automatic encoding of special characters as entities (should always be true, I think)</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_debugLevel">
+                                                            
+                </td>
+                <td>$debugLevel</td>
+                <td class="last">the debug level for this instance</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_XMLSchemaVersion">
+                                                            string
+                </td>
+                <td>$XMLSchemaVersion</td>
+                <td class="last">set schema version</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_soap_defencoding">
+                                                            string
+                </td>
+                <td>$soap_defencoding</td>
+                <td class="last">charset encoding for outgoing messages</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_namespaces">
+                                                            array
+                </td>
+                <td>$namespaces</td>
+                <td class="last">namespaces in an array of prefix =&gt; uri</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_usedNamespaces">
+                                                            array
+                </td>
+                <td>$usedNamespaces</td>
+                <td class="last">namespaces used in the current context, e.g.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_typemap">
+                                                            array
+                </td>
+                <td>$typemap</td>
+                <td class="last">XML Schema types in an array of uri =&gt; (array of xml type =&gt; php type) is this Legacy yet? no, this is used by the nusoap_xmlschema class to verify type =&gt; namespace mappings.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_xmlEntities">
+                                                            array
+                </td>
+                <td>$xmlEntities</td>
+                <td class="last">XML entities to convert</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_wsdl">
+                                                            
+                </td>
+                <td>$wsdl</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_schemas">
+                                                            
+                </td>
+                <td>$schemas</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_currentSchema">
+                                                            
+                </td>
+                <td>$currentSchema</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_message">
+                                                            
+                </td>
+                <td>$message</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_complexTypes">
+                                                            
+                </td>
+                <td>$complexTypes</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_messages">
+                                                            
+                </td>
+                <td>$messages</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_currentMessage">
+                                                            
+                </td>
+                <td>$currentMessage</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_currentOperation">
+                                                            
+                </td>
+                <td>$currentOperation</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_portTypes">
+                                                            
+                </td>
+                <td>$portTypes</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_currentPortType">
+                                                            
+                </td>
+                <td>$currentPortType</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bindings">
+                                                            
+                </td>
+                <td>$bindings</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_currentBinding">
+                                                            
+                </td>
+                <td>$currentBinding</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_ports">
+                                                            
+                </td>
+                <td>$ports</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_currentPort">
+                                                            
+                </td>
+                <td>$currentPort</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_opData">
+                                                            
+                </td>
+                <td>$opData</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_status">
+                                                            
+                </td>
+                <td>$status</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_documentation">
+                                                            
+                </td>
+                <td>$documentation</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_endpoint">
+                                                            
+                </td>
+                <td>$endpoint</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_import">
+                                                            
+                </td>
+                <td>$import</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parser">
+                                                            
+                </td>
+                <td>$parser</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_position">
+                                                            
+                </td>
+                <td>$position</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_depth">
+                                                            
+                </td>
+                <td>$depth</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_depth_array">
+                                                            
+                </td>
+                <td>$depth_array</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_proxyhost">
+                                                            
+                </td>
+                <td>$proxyhost</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_proxyport">
+                                                            
+                </td>
+                <td>$proxyport</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_proxyusername">
+                                                            
+                </td>
+                <td>$proxyusername</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_proxypassword">
+                                                            
+                </td>
+                <td>$proxypassword</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_timeout">
+                                                            
+                </td>
+                <td>$timeout</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_response_timeout">
+                                                            
+                </td>
+                <td>$response_timeout</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_curl_options">
+                                                            
+                </td>
+                <td>$curl_options</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_use_curl">
+                                                            
+                </td>
+                <td>$use_curl</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_username">
+                                                            
+                </td>
+                <td>$username</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_password">
+                                                            
+                </td>
+                <td>$password</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_authtype">
+                                                            
+                </td>
+                <td>$authtype</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_certRequest">
+                                                            
+                </td>
+                <td>$certRequest</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_nusoap_base">nusoap_base</a>()
+                    <p>constructor</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_nusoap_base"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getGlobalDebugLevel">getGlobalDebugLevel</a>()
+                    <p>gets the global debug level, which applies to future instances</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_getGlobalDebugLevel"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setGlobalDebugLevel">setGlobalDebugLevel</a>($level)
+                    <p>sets the global debug level, which applies to future instances</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_setGlobalDebugLevel"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getDebugLevel">getDebugLevel</a>()
+                    <p>gets the debug level for this instance</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_getDebugLevel"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setDebugLevel">setDebugLevel</a>($level)
+                    <p>sets the debug level for this instance</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_setDebugLevel"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_debug">debug</a>(string $string)
+                    <p>adds debug data to the instance debug string with formatting</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_debug"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_appendDebug">appendDebug</a>(string $string)
+                    <p>adds debug data to the instance debug string without formatting</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_appendDebug"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_clearDebug">clearDebug</a>()
+                    <p>clears the current debug data for this instance</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_clearDebug"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="debug">debug</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_getDebug">getDebug</a>()
+                    <p>gets the current debug data for this instance</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_getDebug"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="debug">debug</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_getDebugAsXMLComment">getDebugAsXMLComment</a>()
+                    <p>gets the current debug data for this instance as an XML comment this may change the contents of the debug data</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_getDebugAsXMLComment"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_expandEntities">expandEntities</a>($val)
+                    <p>expands entities, e.g.</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_expandEntities"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_getError">getError</a>()
+                    <p>returns error string if present</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_getError"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_setError">setError</a>($str)
+                    <p>sets error string</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_setError"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_isArraySimpleOrStruct">isArraySimpleOrStruct</a>($val)
+                    <p>detect if array is a simple array or a struct (associative array)</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_isArraySimpleOrStruct"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_serialize_val">serialize_val</a>($val, $name = false, $type = false, $name_ns = false, $type_ns = false, $attributes = false, $use = &#039;encoded&#039;, $soapval = false)
+                    <p>serializes PHP values in accordance w/ section 5.</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_serialize_val"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_serializeEnvelope">serializeEnvelope</a>(string $body, mixed $headers = false, array $namespaces = array(), string $style = &#039;rpc&#039;, string $use = &#039;encoded&#039;, string $encodingStyle = &#039;http://schemas.xmlsoap.org/soap/encoding/&#039;)
+                    <p>serializes a message</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_serializeEnvelope"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_formatDump">formatDump</a>(string $str)
+                    <p>formats a string to be inserted into an HTML stream</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_formatDump"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_contractQname">contractQname</a>(string $qname)
+                    <p>contracts (changes namespace to prefix) a qualified name</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_contractQname"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_expandQname">expandQname</a>(string $qname)
+                    <p>expands (changes prefix to namespace) a qualified name</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_expandQname"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getLocalPart">getLocalPart</a>(string $str)
+                    <p>returns the local part of a prefixed string returns the original string, if not prefixed</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_getLocalPart"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_getPrefix">getPrefix</a>(string $str)
+                    <p>returns the prefix part of a prefixed string returns false, if not prefixed</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_getPrefix"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_getNamespaceFromPrefix">getNamespaceFromPrefix</a>(string $prefix)
+                    <p>pass it a prefix, it returns a namespace</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_getNamespaceFromPrefix"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_getPrefixFromNamespace">getPrefixFromNamespace</a>(string $ns)
+                    <p>returns the prefix for a given namespace (or prefix) or false if no prefixes registered for the given namespace</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_getPrefixFromNamespace"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getmicrotime">getmicrotime</a>()
+                    <p>returns the time in ODBC canonical form with microseconds</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_getmicrotime"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_varDump">varDump</a>(mixed $data)
+                    <p>Returns a string with the output of var_dump</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method_varDump"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___toString">__toString</a>()
+                    <p>represents the object as a string</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_base.html#method___toString"><abbr title="nusoap_base">nusoap_base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_wsdl">wsdl</a>(string $wsdl = &#039;&#039;, string $proxyhost = false, string $proxyport = false, string $proxyusername = false, string $proxypassword = false, integer $timeout, integer $response_timeout = 30, array $curl_options = null, boolean $use_curl = false)
+                    <p>constructor</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_fetchWSDL">fetchWSDL</a>($wsdl)
+                    <p>fetches the WSDL document and parses it</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_parseWSDL">parseWSDL</a>(string $wsdl = &#039;&#039;)
+                    <p>parses the wsdl document</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_start_element">start_element</a>(string $parser, string $name, string $attrs)
+                    <p>start-element handler</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_end_element">end_element</a>(string $parser, string $name)
+                    <p>end-element handler</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_character_data">character_data</a>(string $parser, string $data)
+                    <p>element content handler</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setCredentials">setCredentials</a>($username, $password, $authtype = &#039;basic&#039;, $certRequest = array())
+                    <p>if authenticating, set user credentials here</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getBindingData">getBindingData</a>($binding)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getOperations">getOperations</a>(string $portName = &#039;&#039;, string $bindingType = &#039;soap&#039;)
+                    <p>returns an assoc array of operation names =&gt; operation data</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getOperationData">getOperationData</a>(string $operation, string $bindingType = &#039;soap&#039;)
+                    <p>returns an associative array of data necessary for calling an operation</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getOperationDataForSoapAction">getOperationDataForSoapAction</a>(string $soapAction, string $bindingType = &#039;soap&#039;)
+                    <p>returns an associative array of data necessary for calling an operation</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_getTypeDef">getTypeDef</a>(string $type, string $ns)
+                    <p>returns an array of information about a given type returns false if no type exists by the given name</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_webDescription">webDescription</a>()
+                    <p>prints html description of services</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_serialize">serialize</a>(mixed $debug)
+                    <p>serialize the parsed wsdl</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_parametersMatchWrapped">parametersMatchWrapped</a>(string $type, array $parameters)
+                    <p>determine whether a set of parameters are unwrapped when they are expect to be wrapped, Microsoft-style.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_serializeRPCParameters">serializeRPCParameters</a>(string $operation, string $direction, mixed $parameters, string $bindingType = &#039;soap&#039;)
+                    <p>serialize PHP values according to a WSDL message definition contrary to the method name, this is not limited to RPC</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_serializeParameters">serializeParameters</a>(string $operation, string $direction, mixed $parameters)
+                    <p>serialize a PHP value according to a WSDL message definition  TODO - multi-ref serialization - validate PHP values against type definitions, return errors if invalid</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_serializeType">serializeType</a>(string $name, string $type, mixed $value, string $use = &#039;encoded&#039;, string $encodingStyle = false, boolean $unqualified = false)
+                    <p>serializes a PHP value according a given type definition</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_serializeComplexTypeAttributes">serializeComplexTypeAttributes</a>(array $typeDef, mixed $value, string $ns, string $uqType)
+                    <p>serializes the attributes for a complexType</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_serializeComplexTypeElements">serializeComplexTypeElements</a>(array $typeDef, mixed $value, string $ns, string $uqType, string $use = &#039;encoded&#039;, string $encodingStyle = false)
+                    <p>serializes the elements for a complexType</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addComplexType">addComplexType</a>(string $name, string $typeClass = &#039;complexType&#039;, string $phpType = &#039;array&#039;, string $compositor = &#039;&#039;, string $restrictionBase = &#039;&#039;, array $elements = array(), array $attrs = array(), string $arrayType = &#039;&#039;)
+                    <p>adds an XML Schema complex type to the WSDL types</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addSimpleType">addSimpleType</a>(string $name, string $restrictionBase = &#039;&#039;, string $typeClass = &#039;simpleType&#039;, string $phpType = &#039;scalar&#039;, array $enumeration = array())
+                    <p>adds an XML Schema simple type to the WSDL types</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addElement">addElement</a>(array $attrs)
+                    <p>adds an element to the WSDL types</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addOperation">addOperation</a>(string $name, array $in = false, array $out = false, string $namespace = false, string $soapaction = false, string $style = &#039;rpc&#039;, string $use = &#039;encoded&#039;, string $documentation = &#039;&#039;, string $encodingStyle = &#039;&#039;)
+                    <p>register an operation with the server</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_nusoap_base">
+        <div class="location">in <a href="nusoap_base.html#method_nusoap_base"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 225</div>
+        <code>            public            
+    <strong>nusoap_base</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>constructor</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getGlobalDebugLevel">
+        <div class="location">in <a href="nusoap_base.html#method_getGlobalDebugLevel"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 235</div>
+        <code>            public            
+    <strong>getGlobalDebugLevel</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>gets the global debug level, which applies to future instances</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setGlobalDebugLevel">
+        <div class="location">in <a href="nusoap_base.html#method_setGlobalDebugLevel"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 245</div>
+        <code>            public            
+    <strong>setGlobalDebugLevel</strong>($level)</code>
+    </h3>
+    <div class="details">
+        <p>sets the global debug level, which applies to future instances</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$level</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getDebugLevel">
+        <div class="location">in <a href="nusoap_base.html#method_getDebugLevel"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 255</div>
+        <code>            public            
+    <strong>getDebugLevel</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>gets the debug level for this instance</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setDebugLevel">
+        <div class="location">in <a href="nusoap_base.html#method_setDebugLevel"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 265</div>
+        <code>            public            
+    <strong>setDebugLevel</strong>($level)</code>
+    </h3>
+    <div class="details">
+        <p>sets the debug level for this instance</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$level</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_debug">
+        <div class="location">in <a href="nusoap_base.html#method_debug"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 275</div>
+        <code>            public            
+    <strong>debug</strong>(string $string)</code>
+    </h3>
+    <div class="details">
+        <p>adds debug data to the instance debug string with formatting</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>debug data</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_appendDebug">
+        <div class="location">in <a href="nusoap_base.html#method_appendDebug"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 287</div>
+        <code>            public            
+    <strong>appendDebug</strong>(string $string)</code>
+    </h3>
+    <div class="details">
+        <p>adds debug data to the instance debug string without formatting</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>debug data</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_clearDebug">
+        <div class="location">in <a href="nusoap_base.html#method_clearDebug"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 300</div>
+        <code>            public            
+    <strong>clearDebug</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>clears the current debug data for this instance</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getDebug">
+        <div class="location">in <a href="nusoap_base.html#method_getDebug"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 312</div>
+        <code>            public            <abbr title="debug">debug</abbr>
+    <strong>getDebug</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>gets the current debug data for this instance</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="debug">debug</abbr></td>
+            <td>data</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getDebugAsXMLComment">
+        <div class="location">in <a href="nusoap_base.html#method_getDebugAsXMLComment"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 325</div>
+        <code>            public            <abbr title="debug">debug</abbr>
+    <strong>getDebugAsXMLComment</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>gets the current debug data for this instance as an XML comment this may change the contents of the debug data</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="debug">debug</abbr></td>
+            <td>data as an XML comment</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_expandEntities">
+        <div class="location">in <a href="nusoap_base.html#method_expandEntities"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 341</div>
+        <code>            public            
+    <strong>expandEntities</strong>($val)</code>
+    </h3>
+    <div class="details">
+        <p>expands entities, e.g.</p>
+        <p>changes &#039;&lt;&#039; to &#039;&amp;lt;&#039;.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$val</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getError">
+        <div class="location">in <a href="nusoap_base.html#method_getError"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 358</div>
+        <code>            public            mixed
+    <strong>getError</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>returns error string if present</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>error string or false</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setError">
+        <div class="location">in <a href="nusoap_base.html#method_setError"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 371</div>
+        <code>            public            boolean
+    <strong>setError</strong>($str)</code>
+    </h3>
+    <div class="details">
+        <p>sets error string</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$str</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>$string error string</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isArraySimpleOrStruct">
+        <div class="location">in <a href="nusoap_base.html#method_isArraySimpleOrStruct"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 382</div>
+        <code>            public            
+    <strong>isArraySimpleOrStruct</strong>($val)</code>
+    </h3>
+    <div class="details">
+        <p>detect if array is a simple array or a struct (associative array)</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$val</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_serialize_val">
+        <div class="location">in <a href="nusoap_base.html#method_serialize_val"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 407</div>
+        <code>            public            
+    <strong>serialize_val</strong>($val, $name = false, $type = false, $name_ns = false, $type_ns = false, $attributes = false, $use = &#039;encoded&#039;, $soapval = false)</code>
+    </h3>
+    <div class="details">
+        <p>serializes PHP values in accordance w/ section 5.</p>
+        <p>Type information is<br />
+ not serialized if $use == &#039;literal&#039;.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$val</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$name_ns</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$type_ns</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$use</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$soapval</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_serializeEnvelope">
+        <div class="location">in <a href="nusoap_base.html#method_serializeEnvelope"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 673</div>
+        <code>            public            string
+    <strong>serializeEnvelope</strong>(string $body, mixed $headers = false, array $namespaces = array(), string $style = &#039;rpc&#039;, string $use = &#039;encoded&#039;, string $encodingStyle = &#039;http://schemas.xmlsoap.org/soap/encoding/&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>serializes a message</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$body</td>
+                <td>the XML of the SOAP body</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$headers</td>
+                <td>optional string of XML with SOAP header content, or array of soapval objects for SOAP headers, or associative array</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$namespaces</td>
+                <td>optional the namespaces used in generating the body and headers</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$style</td>
+                <td>optional (rpc|document)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$use</td>
+                <td>optional (encoded|literal)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$encodingStyle</td>
+                <td>optional (usually &#039;http://schemas.xmlsoap.org/soap/encoding/&#039; for encoded)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>the message</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_formatDump">
+        <div class="location">in <a href="nusoap_base.html#method_formatDump"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 728</div>
+        <code>            public            string
+    <strong>formatDump</strong>(string $str)</code>
+    </h3>
+    <div class="details">
+        <p>formats a string to be inserted into an HTML stream</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$str</td>
+                <td>The string to format</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The formatted string</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_contractQname">
+        <div class="location">in <a href="nusoap_base.html#method_contractQname"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 740</div>
+        <code>            public            
+    <strong>contractQname</strong>(string $qname)</code>
+    </h3>
+    <div class="details">
+        <p>contracts (changes namespace to prefix) a qualified name</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$qname</td>
+                <td>qname</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_expandQname">
+        <div class="location">in <a href="nusoap_base.html#method_expandQname"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 765</div>
+        <code>            public            
+    <strong>expandQname</strong>(string $qname)</code>
+    </h3>
+    <div class="details">
+        <p>expands (changes prefix to namespace) a qualified name</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$qname</td>
+                <td>qname</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getLocalPart">
+        <div class="location">in <a href="nusoap_base.html#method_getLocalPart"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 790</div>
+        <code>            public            string
+    <strong>getLocalPart</strong>(string $str)</code>
+    </h3>
+    <div class="details">
+        <p>returns the local part of a prefixed string returns the original string, if not prefixed</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$str</td>
+                <td>The prefixed string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The local part</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getPrefix">
+        <div class="location">in <a href="nusoap_base.html#method_getPrefix"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 807</div>
+        <code>            public            mixed
+    <strong>getPrefix</strong>(string $str)</code>
+    </h3>
+    <div class="details">
+        <p>returns the prefix part of a prefixed string returns false, if not prefixed</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$str</td>
+                <td>The prefixed string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>The prefix or false if there is no prefix</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getNamespaceFromPrefix">
+        <div class="location">in <a href="nusoap_base.html#method_getNamespaceFromPrefix"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 822</div>
+        <code>            public            mixed
+    <strong>getNamespaceFromPrefix</strong>(string $prefix)</code>
+    </h3>
+    <div class="details">
+        <p>pass it a prefix, it returns a namespace</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$prefix</td>
+                <td>The prefix</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>The namespace, false if no namespace has the specified prefix</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getPrefixFromNamespace">
+        <div class="location">in <a href="nusoap_base.html#method_getPrefixFromNamespace"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 838</div>
+        <code>            public            mixed
+    <strong>getPrefixFromNamespace</strong>(string $ns)</code>
+    </h3>
+    <div class="details">
+        <p>returns the prefix for a given namespace (or prefix) or false if no prefixes registered for the given namespace</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$ns</td>
+                <td>The namespace</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>The prefix, false if the namespace has no prefixes</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getmicrotime">
+        <div class="location">in <a href="nusoap_base.html#method_getmicrotime"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 854</div>
+        <code>            public            string
+    <strong>getmicrotime</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>returns the time in ODBC canonical form with microseconds</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The time in ODBC canonical form with microseconds</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_varDump">
+        <div class="location">in <a href="nusoap_base.html#method_varDump"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 873</div>
+        <code>            public            string
+    <strong>varDump</strong>(mixed $data)</code>
+    </h3>
+    <div class="details">
+        <p>Returns a string with the output of var_dump</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>The variable to var_dump</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The output of var_dump</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method___toString">
+        <div class="location">in <a href="nusoap_base.html#method___toString"><abbr title="nusoap_base">nusoap_base</abbr></a> at line 887</div>
+        <code>            public            
+    <strong>__toString</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>represents the object as a string</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_wsdl">
+        <div class="location">at line 4654</div>
+        <code>            public            
+    <strong>wsdl</strong>(string $wsdl = &#039;&#039;, string $proxyhost = false, string $proxyport = false, string $proxyusername = false, string $proxypassword = false, integer $timeout, integer $response_timeout = 30, array $curl_options = null, boolean $use_curl = false)</code>
+    </h3>
+    <div class="details">
+        <p>constructor</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$wsdl</td>
+                <td>WSDL document URL</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$proxyhost</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$proxyport</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$proxyusername</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$proxypassword</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$timeout</td>
+                <td>set the connection timeout</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$response_timeout</td>
+                <td>set the response timeout</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$curl_options</td>
+                <td>user-specified cURL options</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$use_curl</td>
+                <td>try to use cURL</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_fetchWSDL">
+        <div class="location">at line 4674</div>
+        <code>            public            
+    <strong>fetchWSDL</strong>($wsdl)</code>
+    </h3>
+    <div class="details">
+        <p>fetches the WSDL document and parses it</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$wsdl</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_parseWSDL">
+        <div class="location">at line 4777</div>
+        <code>            public            
+    <strong>parseWSDL</strong>(string $wsdl = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>parses the wsdl document</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$wsdl</td>
+                <td>path or URL</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_start_element">
+        <div class="location">at line 4881</div>
+        <code>            public            
+    <strong>start_element</strong>(string $parser, string $name, string $attrs)</code>
+    </h3>
+    <div class="details">
+        <p>start-element handler</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$parser</td>
+                <td>XML parser object</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>element name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$attrs</td>
+                <td>associative array of attributes</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_end_element">
+        <div class="location">at line 5094</div>
+        <code>            public            
+    <strong>end_element</strong>(string $parser, string $name)</code>
+    </h3>
+    <div class="details">
+        <p>end-element handler</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$parser</td>
+                <td>XML parser object</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>element name</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_character_data">
+        <div class="location">at line 5124</div>
+        <code>            public            
+    <strong>character_data</strong>(string $parser, string $data)</code>
+    </h3>
+    <div class="details">
+        <p>element content handler</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$parser</td>
+                <td>XML parser object</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$data</td>
+                <td>element content</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setCredentials">
+        <div class="location">at line 5144</div>
+        <code>            public            
+    <strong>setCredentials</strong>($username, $password, $authtype = &#039;basic&#039;, $certRequest = array())</code>
+    </h3>
+    <div class="details">
+        <p>if authenticating, set user credentials here</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$password</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$authtype</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$certRequest</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getBindingData">
+        <div class="location">at line 5153</div>
+        <code>            public            
+    <strong>getBindingData</strong>($binding)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$binding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getOperations">
+        <div class="location">at line 5168</div>
+        <code>            public            array
+    <strong>getOperations</strong>(string $portName = &#039;&#039;, string $bindingType = &#039;soap&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>returns an assoc array of operation names =&gt; operation data</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$portName</td>
+                <td>WSDL port name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$bindingType</td>
+                <td>eg: soap, smtp, dime (only soap and soap12 are currently supported)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getOperationData">
+        <div class="location">at line 5208</div>
+        <code>            public            array
+    <strong>getOperationData</strong>(string $operation, string $bindingType = &#039;soap&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>returns an associative array of data necessary for calling an operation</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$operation</td>
+                <td>name of operation</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$bindingType</td>
+                <td>type of binding eg: soap, soap12</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getOperationDataForSoapAction">
+        <div class="location">at line 5240</div>
+        <code>            public            array
+    <strong>getOperationDataForSoapAction</strong>(string $soapAction, string $bindingType = &#039;soap&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>returns an associative array of data necessary for calling an operation</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$soapAction</td>
+                <td>soapAction for operation</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$bindingType</td>
+                <td>type of binding eg: soap, soap12</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTypeDef">
+        <div class="location">at line 5278</div>
+        <code>            public            mixed
+    <strong>getTypeDef</strong>(string $type, string $ns)</code>
+    </h3>
+    <div class="details">
+        <p>returns an array of information about a given type returns false if no type exists by the given name</p>
+        <p>typeDef = array(<br />
+	 &#039;elements&#039; =&gt; array(), // refs to elements array<br />
+	&#039;restrictionBase&#039; =&gt; &#039;&#039;,<br />
+	&#039;phpType&#039; =&gt; &#039;&#039;,<br />
+	&#039;order&#039; =&gt; &#039;(sequence|all)&#039;,<br />
+	&#039;attrs&#039; =&gt; array() // refs to attributes array<br />
+	)</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>the type</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$ns</td>
+                <td>namespace (not prefix) of the type</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>nusoap_xmlschema</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_webDescription">
+        <div class="location">at line 5338</div>
+        <code>            public            
+    <strong>webDescription</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>prints html description of services</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_serialize">
+        <div class="location">at line 5472</div>
+        <code>            public            string
+    <strong>serialize</strong>(mixed $debug)</code>
+    </h3>
+    <div class="details">
+        <p>serialize the parsed wsdl</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$debug</td>
+                <td>whether to put debug=1 in endpoint URL</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>serialization of WSDL</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_parametersMatchWrapped">
+        <div class="location">at line 5611</div>
+        <code>            public            boolean
+    <strong>parametersMatchWrapped</strong>(string $type, array $parameters)</code>
+    </h3>
+    <div class="details">
+        <p>determine whether a set of parameters are unwrapped when they are expect to be wrapped, Microsoft-style.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>the type (element name) of the wrapper</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>the parameter values for the SOAP call</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>whether they parameters are unwrapped (and should be wrapped)</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_serializeRPCParameters">
+        <div class="location">at line 5694</div>
+        <code>            public            mixed
+    <strong>serializeRPCParameters</strong>(string $operation, string $direction, mixed $parameters, string $bindingType = &#039;soap&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>serialize PHP values according to a WSDL message definition contrary to the method name, this is not limited to RPC</p>
+        <p>TODO<br />
+ - multi-ref serialization<br />
+ - validate PHP values against type definitions, return errors if invalid</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$operation</td>
+                <td>operation name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$direction</td>
+                <td>(input|output)</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$parameters</td>
+                <td>parameter value(s)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$bindingType</td>
+                <td>(soap|soap12)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>parameters serialized as XML or false on error (e.g. operation not found)</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_serializeParameters">
+        <div class="location">at line 5795</div>
+        <code>            public            mixed
+    <strong>serializeParameters</strong>(string $operation, string $direction, mixed $parameters)</code>
+    </h3>
+    <div class="details">
+        <p>serialize a PHP value according to a WSDL message definition  TODO - multi-ref serialization - validate PHP values against type definitions, return errors if invalid</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$operation</td>
+                <td>operation name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$direction</td>
+                <td>(input|output)</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$parameters</td>
+                <td>parameter value(s)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>parameters serialized as XML or false on error (e.g. operation not found)</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_serializeType">
+        <div class="location">at line 5874</div>
+        <code>            public            string
+    <strong>serializeType</strong>(string $name, string $type, mixed $value, string $use = &#039;encoded&#039;, string $encodingStyle = false, boolean $unqualified = false)</code>
+    </h3>
+    <div class="details">
+        <p>serializes a PHP value according a given type definition</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>name of value (part or element)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>XML schema type of value (type or element)</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>a native PHP value (parameter value)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$use</td>
+                <td>use for part (encoded|literal)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$encodingStyle</td>
+                <td>SOAP encoding style for the value (if different than the enclosing style)</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$unqualified</td>
+                <td>a kludge for what should be XML namespace form handling</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>value serialized as an XML string</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_serializeComplexTypeAttributes">
+        <div class="location">at line 6193</div>
+        <code>            public            string
+    <strong>serializeComplexTypeAttributes</strong>(array $typeDef, mixed $value, string $ns, string $uqType)</code>
+    </h3>
+    <div class="details">
+        <p>serializes the attributes for a complexType</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array</td>
+                <td>$typeDef</td>
+                <td>our internal representation of an XML schema type (or element)</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>a native PHP value (parameter value)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$ns</td>
+                <td>the namespace of the type</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$uqType</td>
+                <td>the local part of the type</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>value serialized as an XML string</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_serializeComplexTypeElements">
+        <div class="location">at line 6256</div>
+        <code>            public            string
+    <strong>serializeComplexTypeElements</strong>(array $typeDef, mixed $value, string $ns, string $uqType, string $use = &#039;encoded&#039;, string $encodingStyle = false)</code>
+    </h3>
+    <div class="details">
+        <p>serializes the elements for a complexType</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array</td>
+                <td>$typeDef</td>
+                <td>our internal representation of an XML schema type (or element)</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>a native PHP value (parameter value)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$ns</td>
+                <td>the namespace of the type</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$uqType</td>
+                <td>the local part of the type</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$use</td>
+                <td>use for part (encoded|literal)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$encodingStyle</td>
+                <td>SOAP encoding style for the value (if different than the enclosing style)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>value serialized as an XML string</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addComplexType">
+        <div class="location">at line 6364</div>
+        <code>            public            
+    <strong>addComplexType</strong>(string $name, string $typeClass = &#039;complexType&#039;, string $phpType = &#039;array&#039;, string $compositor = &#039;&#039;, string $restrictionBase = &#039;&#039;, array $elements = array(), array $attrs = array(), string $arrayType = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>adds an XML Schema complex type to the WSDL types</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$typeClass</td>
+                <td>(complexType|simpleType|attribute)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$phpType</td>
+                <td>currently supported are array and struct (php assoc array)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$compositor</td>
+                <td>(all|sequence|choice)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$restrictionBase</td>
+                <td>namespace:name (http://schemas.xmlsoap.org/soap/encoding/:Array)</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$elements</td>
+                <td>e.g. array ( name =&gt; array(name=&gt;&#039;&#039;,type=&gt;&#039;&#039;) )</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$attrs</td>
+                <td>e.g. array(array(&#039;ref&#039;=&gt;&#039;SOAP-ENC:arrayType&#039;,&#039;wsdl:arrayType&#039;=&gt;&#039;xsd:string[]&#039;))</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$arrayType</td>
+                <td>as namespace:name (xsd:string)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>nusoap_xmlschema</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_addSimpleType">
+        <div class="location">at line 6411</div>
+        <code>            public            
+    <strong>addSimpleType</strong>(string $name, string $restrictionBase = &#039;&#039;, string $typeClass = &#039;simpleType&#039;, string $phpType = &#039;scalar&#039;, array $enumeration = array())</code>
+    </h3>
+    <div class="details">
+        <p>adds an XML Schema simple type to the WSDL types</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$restrictionBase</td>
+                <td>namespace:name (http://schemas.xmlsoap.org/soap/encoding/:Array)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$typeClass</td>
+                <td>(should always be simpleType)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$phpType</td>
+                <td>(should always be scalar)</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$enumeration</td>
+                <td>array of values</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>nusoap_xmlschema</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_addElement">
+        <div class="location">at line 6425</div>
+        <code>            public            
+    <strong>addElement</strong>(array $attrs)</code>
+    </h3>
+    <div class="details">
+        <p>adds an element to the WSDL types</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array</td>
+                <td>$attrs</td>
+                <td>attributes that must include name and type</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>nusoap_xmlschema</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_addOperation">
+        <div class="location">at line 6444</div>
+        <code>            public            
+    <strong>addOperation</strong>(string $name, array $in = false, array $out = false, string $namespace = false, string $soapaction = false, string $style = &#039;rpc&#039;, string $use = &#039;encoded&#039;, string $documentation = &#039;&#039;, string $encodingStyle = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>register an operation with the server</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>operation (method) name</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$in</td>
+                <td>assoc array of input values: key = param name, value = param type</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$out</td>
+                <td>assoc array of output values: key = param name, value = param type</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$namespace</td>
+                <td>optional The namespace for the operation</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$soapaction</td>
+                <td>optional The soapaction for the operation</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$style</td>
+                <td>(rpc|document) optional The style for the operation Note: when &#039;document&#039; is specified, parameter and return wrappers are created for you automatically</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$use</td>
+                <td>(encoded|literal) optional The use for the parameters (cannot mix right now)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$documentation</td>
+                <td>optional The description to include in the WSDL</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$encodingStyle</td>
+                <td>optional (usually &#039;http://schemas.xmlsoap.org/soap/encoding/&#039; for encoded)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

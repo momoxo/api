@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XoopsFormDateTime | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>XoopsFormDateTime</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>XoopsFormDateTime</strong>        extends <a href="XoopsFormElementTray.html"><abbr title="XoopsFormElementTray">XoopsFormElementTray</abbr></a></p>
+
+            <div class="description">
+            <p>Date and time selection field</p>
+            <p></p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property__name">
+                                                            string
+                </td>
+                <td>$_name</td>
+                <td class="last">&quot;name&quot; attribute of the element</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__caption">
+                                                            
+                </td>
+                <td>$_caption</td>
+                <td class="last">caption of the element</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__accesskey">
+                                                            
+                </td>
+                <td>$_accesskey</td>
+                <td class="last">Accesskey for this element</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__class">
+                                                            
+                </td>
+                <td>$_class</td>
+                <td class="last">HTML class for this element</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__hidden">
+                                                            
+                </td>
+                <td>$_hidden</td>
+                <td class="last">hidden?</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__extra">
+                                                            
+                </td>
+                <td>$_extra</td>
+                <td class="last">extra attributes to go in the tag</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__required">
+                                                            array
+                </td>
+                <td>$_required</td>
+                <td class="last">required elements</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__description">
+                                                            
+                </td>
+                <td>$_description</td>
+                <td class="last">description of the field</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__id">
+                                                            string
+                </td>
+                <td>$_id</td>
+                <td class="last">specified id for the form.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__elements">
+                                                            array
+                </td>
+                <td>$_elements</td>
+                <td class="last">array of form element objects</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__delimeter">
+                                                            
+                </td>
+                <td>$_delimeter</td>
+                <td class="last">HTML to seperate the elements</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XoopsFormElementTray">XoopsFormElementTray</a>($caption, $delimeter = &#039;&amp;nbsp;&#039;, $name = &#039;&#039;)
+                    <p>constructor</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElementTray.html#method_XoopsFormElementTray"><abbr title="XoopsFormElementTray">XoopsFormElementTray</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_isContainer">isContainer</a>()
+                    <p>Is this element a container of other elements?</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElementTray.html#method_isContainer"><abbr title="XoopsFormElementTray">XoopsFormElementTray</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addElement">addElement</a>($formElement, $required = false)
+                    <p>Add an element to the group</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElementTray.html#method_addElement"><abbr title="XoopsFormElementTray">XoopsFormElementTray</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getRequired">getRequired</a>()
+                    <p>get an array of &quot;required&quot; form elements</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElementTray.html#method_getRequired"><abbr title="XoopsFormElementTray">XoopsFormElementTray</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getElements">getElements</a>($recurse = false)
+                    <p>Get an array of the elements in this group</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElementTray.html#method_getElements"><abbr title="XoopsFormElementTray">XoopsFormElementTray</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getDelimeter">getDelimeter</a>()
+                    <p>Get the delimiter of this group</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElementTray.html#method_getDelimeter"><abbr title="XoopsFormElementTray">XoopsFormElementTray</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_render">render</a>()
+                    <p>prepare HTML to output this group</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElementTray.html#method_render"><abbr title="XoopsFormElementTray">XoopsFormElementTray</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XoopsFormDateTime">XoopsFormDateTime</a>($caption, $name, $size = 15, $value)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_XoopsFormElementTray">
+        <div class="location">in <a href="XoopsFormElementTray.html#method_XoopsFormElementTray"><abbr title="XoopsFormElementTray">XoopsFormElementTray</abbr></a> at line 81</div>
+        <code>            public            
+    <strong>XoopsFormElementTray</strong>($caption, $delimeter = &#039;&amp;nbsp;&#039;, $name = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>constructor</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$caption</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$delimeter</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isContainer">
+        <div class="location">in <a href="XoopsFormElementTray.html#method_isContainer"><abbr title="XoopsFormElementTray">XoopsFormElementTray</abbr></a> at line 92</div>
+        <code>            public            
+    <strong>isContainer</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Is this element a container of other elements?</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addElement">
+        <div class="location">in <a href="XoopsFormElementTray.html#method_addElement"><abbr title="XoopsFormElementTray">XoopsFormElementTray</abbr></a> at line 102</div>
+        <code>            public            
+    <strong>addElement</strong>($formElement, $required = false)</code>
+    </h3>
+    <div class="details">
+        <p>Add an element to the group</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$formElement</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$required</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getRequired">
+        <div class="location">in <a href="XoopsFormElementTray.html#method_getRequired"><abbr title="XoopsFormElementTray">XoopsFormElementTray</abbr></a> at line 122</div>
+        <code>            public            
+    <strong>getRequired</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get an array of &quot;required&quot; form elements</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getElements">
+        <div class="location">in <a href="XoopsFormElementTray.html#method_getElements"><abbr title="XoopsFormElementTray">XoopsFormElementTray</abbr></a> at line 133</div>
+        <code>            public            array
+    <strong>getElements</strong>($recurse = false)</code>
+    </h3>
+    <div class="details">
+        <p>Get an array of the elements in this group</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$recurse</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>Array of {@link XoopsFormElement} objects.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getDelimeter">
+        <div class="location">in <a href="XoopsFormElementTray.html#method_getDelimeter"><abbr title="XoopsFormElementTray">XoopsFormElementTray</abbr></a> at line 160</div>
+        <code>            public            
+    <strong>getDelimeter</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the delimiter of this group</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_render">
+        <div class="location">in <a href="XoopsFormElementTray.html#method_render"><abbr title="XoopsFormElementTray">XoopsFormElementTray</abbr></a> at line 169</div>
+        <code>            public            
+    <strong>render</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>prepare HTML to output this group</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_XoopsFormDateTime">
+        <div class="location">at line 56</div>
+        <code>            public            
+    <strong>XoopsFormDateTime</strong>($caption, $name, $size = 15, $value)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$caption</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

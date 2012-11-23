@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Pimple | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>Pimple</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>Pimple</strong>        implements
+        <a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a></p>
+
+            <div class="description">
+            <p>Pimple main class.</p>
+            <p></p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>(array $values = array())
+                    <p>Instantiate the container.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_offsetSet">offsetSet</a>(string $id, mixed $value)
+                    <p>Sets a parameter or an object.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_offsetGet">offsetGet</a>(string $id)
+                    <p>Gets a parameter or an object.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    Boolean
+                </td>
+                <td class="last">
+                    <a href="#method_offsetExists">offsetExists</a>(string $id)
+                    <p>Checks if a parameter or an object is set.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_offsetUnset">offsetUnset</a>(string $id)
+                    <p>Unsets a parameter or an object.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_share">share</a>(<a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $callable)
+                    <p>Returns a closure that stores the result of the given closure for uniqueness in the scope of this instance of Pimple.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_protect">protect</a>(<a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $callable)
+                    <p>Protects a callable from being interpreted as a service.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_raw">raw</a>(string $id)
+                    <p>Gets a parameter or the closure defining an object.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_extend">extend</a>(string $id, <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $callable)
+                    <p>Extends an object definition.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_keys">keys</a>()
+                    <p>Returns all defined value names.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">at line 44</div>
+        <code>            public            
+    <strong>__construct</strong>(array $values = array())</code>
+    </h3>
+    <div class="details">
+        <p>Instantiate the container.</p>
+        <p>Objects and parameters can be passed as argument to the constructor.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array</td>
+                <td>$values</td>
+                <td>The parameters or objects.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_offsetSet">
+        <div class="location">at line 61</div>
+        <code>            public            
+    <strong>offsetSet</strong>(string $id, mixed $value)</code>
+    </h3>
+    <div class="details">
+        <p>Sets a parameter or an object.</p>
+        <p>Objects must be defined as Closures.<br />
+<br />
+ Allowing any PHP callable leads to difficult to debug problems<br />
+ as function names (strings) are callable (creating a function with<br />
+ the same a name as an existing parameter would break your container).</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td>The unique identifier for the parameter or object</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value of the parameter or a closure to defined an object</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_offsetGet">
+        <div class="location">at line 75</div>
+        <code>            public            mixed
+    <strong>offsetGet</strong>(string $id)</code>
+    </h3>
+    <div class="details">
+        <p>Gets a parameter or an object.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td>The unique identifier for the parameter or object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>The value of the parameter or an object</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td>if the identifier is not defined</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_offsetExists">
+        <div class="location">at line 93</div>
+        <code>            public            Boolean
+    <strong>offsetExists</strong>(string $id)</code>
+    </h3>
+    <div class="details">
+        <p>Checks if a parameter or an object is set.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td>The unique identifier for the parameter or object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>Boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_offsetUnset">
+        <div class="location">at line 103</div>
+        <code>            public            
+    <strong>offsetUnset</strong>(string $id)</code>
+    </h3>
+    <div class="details">
+        <p>Unsets a parameter or an object.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td>The unique identifier for the parameter or object</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_share">
+        <div class="location">at line 116</div>
+        <code>            public            <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+    <strong>share</strong>(<a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $callable)</code>
+    </h3>
+    <div class="details">
+        <p>Returns a closure that stores the result of the given closure for uniqueness in the scope of this instance of Pimple.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+                <td>$callable</td>
+                <td>A closure to wrap for uniqueness</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+            <td>The wrapped closure</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_protect">
+        <div class="location">at line 138</div>
+        <code>            public            <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+    <strong>protect</strong>(<a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $callable)</code>
+    </h3>
+    <div class="details">
+        <p>Protects a callable from being interpreted as a service.</p>
+        <p>This is useful when you want to store a callable as a parameter.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+                <td>$callable</td>
+                <td>A closure to protect from being evaluated</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+            <td>The protected closure</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_raw">
+        <div class="location">at line 154</div>
+        <code>            public            mixed
+    <strong>raw</strong>(string $id)</code>
+    </h3>
+    <div class="details">
+        <p>Gets a parameter or the closure defining an object.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td>The unique identifier for the parameter or object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>The value of the parameter or the closure defining an object</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td>if the identifier is not defined</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_extend">
+        <div class="location">at line 176</div>
+        <code>            public            <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+    <strong>extend</strong>(string $id, <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $callable)</code>
+    </h3>
+    <div class="details">
+        <p>Extends an object definition.</p>
+        <p>Useful when you want to extend an existing object definition,<br />
+ without necessarily loading that object.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td>The unique identifier for the object</td>
+            </tr>
+                    <tr>
+                <td><a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+                <td>$callable</td>
+                <td>A closure to extend the original</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+            <td>The wrapped closure</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td>if the identifier is not defined</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_keys">
+        <div class="location">at line 198</div>
+        <code>            public            array
+    <strong>keys</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns all defined value names.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>An array of value names</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

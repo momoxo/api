@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Xcore_GenericPrincipal | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>Xcore_GenericPrincipal</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>Xcore_GenericPrincipal</strong>        extends <a href="XCube_Principal.html"><abbr title="XCube_Principal">XCube_Principal</abbr></a></p>
+
+            <div class="description">
+            <p>This principal is free to add roles.</p>
+            <p>And, this is also an interface, because<br />
+ addRole() is used as a common interface in Xcore. Therefore, the dev team<br />
+ may add the interface class to this file.<br />
+ <br />
+ [Role Naming Convention]<br />
+ Module.{dirname}.Visitor is &#039;module_read&#039;.<br />
+ Module.{dirname}.Admin is &#039;module_admin&#039;.</p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_mIdentity">
+                                                            
+                </td>
+                <td>$mIdentity</td>
+                <td class="last">The identity object which is tied to this object.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__mRoles">
+                                                            string[]
+                </td>
+                <td>$_mRoles</td>
+                <td class="last">Roles in this object.</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XCube_Principal">XCube_Principal</a>($identity, $roles = array())
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_Principal.html#method_XCube_Principal"><abbr title="XCube_Principal">XCube_Principal</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="XCube_Identity.html"><abbr title="XCube_Identity">XCube_Identity</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_getIdentity">getIdentity</a>()
+                    <p>Gets a identity object which is tied to this object.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XCube_Principal.html#method_getIdentity"><abbr title="XCube_Principal">XCube_Principal</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_isInRole">isInRole</a>($roleName)
+                    <p>Gets a value that indicates whether this principal has a role specified by $rolename.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addRole">addRole</a>(<abbr title="$roleName">$roleName</abbr> $roleName)
+                    <p>Adds a role to this object.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_XCube_Principal">
+        <div class="location">in <a href="XCube_Principal.html#method_XCube_Principal"><abbr title="XCube_Principal">XCube_Principal</abbr></a> at line 94</div>
+        <code>            public            
+    <strong>XCube_Principal</strong>($identity, $roles = array())</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$identity</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$roles</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getIdentity">
+        <div class="location">in <a href="XCube_Principal.html#method_getIdentity"><abbr title="XCube_Principal">XCube_Principal</abbr></a> at line 104</div>
+        <code>            public            <a href="XCube_Identity.html"><abbr title="XCube_Identity">XCube_Identity</abbr></a>
+    <strong>getIdentity</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets a identity object which is tied to this object.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="XCube_Identity.html"><abbr title="XCube_Identity">XCube_Identity</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isInRole">
+        <div class="location">at line 52</div>
+        <code>            public            bool
+    <strong>isInRole</strong>($roleName)</code>
+    </h3>
+    <div class="details">
+        <p>Gets a value that indicates whether this principal has a role specified by $rolename.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$roleName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addRole">
+        <div class="location">at line 45</div>
+        <code>            public            
+    <strong>addRole</strong>(<abbr title="$roleName">$roleName</abbr> $roleName)</code>
+    </h3>
+    <div class="details">
+        <p>Adds a role to this object.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$roleName">$roleName</abbr></td>
+                <td>$roleName</td>
+                <td>string</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

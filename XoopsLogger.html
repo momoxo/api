@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XoopsLogger | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>XoopsLogger</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>XoopsLogger</strong></p>
+
+            <div class="description">
+            <p>Collects information for a page request</p>
+            <p>&lt;b&gt;Singelton:&lt;/b&gt; There can be only one instance of this class and it must<br />
+ be accessed through the {@link instance()} method!<br />
+<br />
+ records information about database queries, blocks, and execution time<br />
+ and can display it as HTML</p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_queries">
+                                                            
+                </td>
+                <td>$queries</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_blocks">
+                                                            
+                </td>
+                <td>$blocks</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_extra">
+                                                            
+                </td>
+                <td>$extra</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_logstart">
+                                                            
+                </td>
+                <td>$logstart</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_logend">
+                                                            
+                </td>
+                <td>$logend</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XoopsLogger">XoopsLogger</a>()
+                    <p>constructor</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;object
+                </td>
+                <td class="last">
+                    <a href="#method_instance">instance</a>()
+                    <p>get a reference to the only instance of this class</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_startTime">startTime</a>(string $name = &#039;XOOPS&#039;)
+                    <p>start a timer</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_stopTime">stopTime</a>(string $name = &#039;XOOPS&#039;)
+                    <p>stop a timer</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addQuery">addQuery</a>(string $sql, string $error = null, int $errno = null)
+                    <p>log a database query</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addBlock">addBlock</a>(string $name, bool $cached = false, int $cachetime)
+                    <p>log display of a block</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addExtra">addExtra</a>(string $name, int $msg)
+                    <p>log extra information</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_dumpQueries">dumpQueries</a>()
+                    <p>get the logged queries in a HTML table</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_dumpBlocks">dumpBlocks</a>()
+                    <p>get the logged blocks in a HTML table</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="float">float</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_dumpTime">dumpTime</a>(string $name = &#039;XOOPS&#039;)
+                    <p>get the current execution time of a timer</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_dumpExtra">dumpExtra</a>()
+                    <p>get extra information in a HTML table</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_dumpAll">dumpAll</a>()
+                    <p>get all logged information formatted in HTML tables</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_XoopsLogger">
+        <div class="location">at line 63</div>
+        <code>            public            
+    <strong>XoopsLogger</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>constructor</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_instance">
+        <div class="location">at line 73</div>
+        <code>        static    public            object
+    <strong>instance</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get a reference to the only instance of this class</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>object</td>
+            <td>XoopsLogger  reference to the only instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_startTime">
+        <div class="location">at line 88</div>
+        <code>            public            
+    <strong>startTime</strong>(string $name = &#039;XOOPS&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>start a timer</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>name of the timer</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_stopTime">
+        <div class="location">at line 98</div>
+        <code>            public            
+    <strong>stopTime</strong>(string $name = &#039;XOOPS&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>stop a timer</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>name of the timer</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addQuery">
+        <div class="location">at line 110</div>
+        <code>            public            
+    <strong>addQuery</strong>(string $sql, string $error = null, int $errno = null)</code>
+    </h3>
+    <div class="details">
+        <p>log a database query</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>SQL string</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$error</td>
+                <td>error message (if any)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$errno</td>
+                <td>error number (if any)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addBlock">
+        <div class="location">at line 122</div>
+        <code>            public            
+    <strong>addBlock</strong>(string $name, bool $cached = false, int $cachetime)</code>
+    </h3>
+    <div class="details">
+        <p>log display of a block</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>name of the block</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$cached</td>
+                <td>was the block cached?</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$cachetime</td>
+                <td>cachetime of the block</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addExtra">
+        <div class="location">at line 133</div>
+        <code>            public            
+    <strong>addExtra</strong>(string $name, int $msg)</code>
+    </h3>
+    <div class="details">
+        <p>log extra information</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>name for the entry</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$msg</td>
+                <td>text message for the entry</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_dumpQueries">
+        <div class="location">at line 143</div>
+        <code>            public            string
+    <strong>dumpQueries</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get the logged queries in a HTML table</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>HTML table with queries</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_dumpBlocks">
+        <div class="location">at line 164</div>
+        <code>            public            string
+    <strong>dumpBlocks</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get the logged blocks in a HTML table</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>HTML table with blocks</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_dumpTime">
+        <div class="location">at line 186</div>
+        <code>            public            <abbr title="float">float</abbr>
+    <strong>dumpTime</strong>(string $name = &#039;XOOPS&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>get the current execution time of a timer</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>name of the counter</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="float">float</abbr></td>
+            <td>current execution time of the counter</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_dumpExtra">
+        <div class="location">at line 204</div>
+        <code>            public            string
+    <strong>dumpExtra</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get extra information in a HTML table</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>HTML table with extra information</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_dumpAll">
+        <div class="location">at line 221</div>
+        <code>            public            string
+    <strong>dumpAll</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get all logged information formatted in HTML tables</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>HTML output</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

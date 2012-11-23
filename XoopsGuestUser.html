@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XoopsGuestUser | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>XoopsGuestUser</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>XoopsGuestUser</strong>        extends <a href="XoopsUser.html"><abbr title="XoopsUser">XoopsUser</abbr></a></p>
+
+            <div class="description">
+            <p>Class that represents a guest user</p>
+            <p></p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_vars">
+                                                            array
+                </td>
+                <td>$vars</td>
+                <td class="last">holds all variables(properties) of an object</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cleanVars">
+                                                            array
+                </td>
+                <td>$cleanVars</td>
+                <td class="last">variables cleaned for store in DB</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__isNew">
+                                                            bool
+                </td>
+                <td>$_isNew</td>
+                <td class="last">is it a newly created object?</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__isDirty">
+                                                            bool
+                </td>
+                <td>$_isDirty</td>
+                <td class="last">has any of the values been modified?</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__errors">
+                                                            array
+                </td>
+                <td>$_errors</td>
+                <td class="last">errors</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__filters">
+                                                            
+                </td>
+                <td>$_filters</td>
+                <td class="last">additional filters registered dynamically by a child class object</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__groups">
+                                                            array
+                </td>
+                <td>$_groups</td>
+                <td class="last">Array of groups that user belongs to</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__isAdmin">
+                                                            bool
+                </td>
+                <td>$_isAdmin</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__rank">
+                                                            string
+                </td>
+                <td>$_rank</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__isOnline">
+                                                            bool
+                </td>
+                <td>$_isOnline</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XoopsUser">XoopsUser</a>($id = null)
+                    <p>constructor</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_XoopsUser"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_isGuest">isGuest</a>()
+                    <p>check if the user is a guest user</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_incrementPost">incrementPost</a>()
+                    <p>increase the number of posts for the user</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_incrementPost"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setGroups">setGroups</a>(array $groupsArr)
+                    <p>set the groups for the user</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_setGroups"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getGroups">getGroups</a>($dummy = false)
+                    <p>get the groups that the user belongs to</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getNumGroups">getNumGroups</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_getNumGroups"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_groups">groups</a>()
+                    <p>alias for {@link getGroups()}</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_groups"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_isAdmin">isAdmin</a>(int $module_id = null)
+                    <p>Is the user admin ?</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_isAdmin"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_rank">rank</a>()
+                    <p>get the user&#039;s rank</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_rank"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_isActive">isActive</a>()
+                    <p>is the user activated?</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_isActive"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_isOnline">isOnline</a>()
+                    <p>is the user currently logged in?</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_isOnline"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_uid">uid</a>()
+                    <p>get the users UID</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_uid"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_name">name</a>(string $format = &#039;S&#039;)
+                    <p>get the users name</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_name"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_uname">uname</a>(string $format = &#039;S&#039;)
+                    <p>get the user&#039;s uname</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_uname"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_email">email</a>(string $format = &#039;S&#039;)
+                    <p>get the user&#039;s email</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_email"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_url">url</a>($format = &#039;S&#039;)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_url"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_user_avatar">user_avatar</a>($format = &#039;S&#039;)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_user_avatar"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_user_regdate">user_regdate</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_user_regdate"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_user_icq">user_icq</a>($format = &#039;S&#039;)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_user_icq"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_user_from">user_from</a>($format = &#039;S&#039;)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_user_from"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_user_sig">user_sig</a>($format = &#039;S&#039;)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_user_sig"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_user_viewemail">user_viewemail</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_user_viewemail"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_actkey">actkey</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_actkey"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_user_aim">user_aim</a>($format = &#039;S&#039;)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_user_aim"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_user_yim">user_yim</a>($format = &#039;S&#039;)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_user_yim"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_user_msnm">user_msnm</a>($format = &#039;S&#039;)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_user_msnm"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_pass">pass</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_pass"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_posts">posts</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_posts"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_attachsig">attachsig</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_attachsig"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_level">level</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_level"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_theme">theme</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_theme"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_timezone">timezone</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_timezone"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_umode">umode</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_umode"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_uorder">uorder</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_uorder"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_notify_method">notify_method</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_notify_method"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_notify_mode">notify_mode</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_notify_mode"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_user_occ">user_occ</a>($format = &#039;S&#039;)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_user_occ"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_bio">bio</a>($format = &#039;S&#039;)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_bio"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_user_intrest">user_intrest</a>($format = &#039;S&#039;)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_user_intrest"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_last_login">last_login</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_last_login"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_hasAvatar">hasAvatar</a>()
+                    <p>This class has avatar in uploads directory.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_hasAvatar"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getAvatarUrl">getAvatarUrl</a>()
+                    <p>Return Abs URL for displaying avatar.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsUser.html#method_getAvatarUrl"><abbr title="XoopsUser">XoopsUser</abbr></a></small></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_XoopsUser">
+        <div class="location">in <a href="XoopsUser.html#method_XoopsUser"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 39</div>
+        <code>            public            
+    <strong>XoopsUser</strong>($id = null)</code>
+    </h3>
+    <div class="details">
+        <p>constructor</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isGuest">
+        <div class="location">at line 465</div>
+        <code>            public            bool
+    <strong>isGuest</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>check if the user is a guest user</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>returns true</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_incrementPost">
+        <div class="location">in <a href="XoopsUser.html#method_incrementPost"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 136</div>
+        <code>            public            
+    <strong>incrementPost</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>increase the number of posts for the user</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setGroups">
+        <div class="location">in <a href="XoopsUser.html#method_setGroups"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 145</div>
+        <code>            public            
+    <strong>setGroups</strong>(array $groupsArr)</code>
+    </h3>
+    <div class="details">
+        <p>set the groups for the user</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array</td>
+                <td>$groupsArr</td>
+                <td>Array of groups that user belongs to</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getGroups">
+        <div class="location">at line 470</div>
+        <code>            public            array
+    <strong>getGroups</strong>($dummy = false)</code>
+    </h3>
+    <div class="details">
+        <p>get the groups that the user belongs to</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$dummy</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>array of groups</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getNumGroups">
+        <div class="location">in <a href="XoopsUser.html#method_getNumGroups"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 172</div>
+        <code>            public            
+    <strong>getNumGroups</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_groups">
+        <div class="location">in <a href="XoopsUser.html#method_groups"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 187</div>
+        <code>            public            array
+    <strong>groups</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>alias for {@link getGroups()}</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>array of groups</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>getGroups()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_isAdmin">
+        <div class="location">in <a href="XoopsUser.html#method_isAdmin"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 201</div>
+        <code>            public            bool
+    <strong>isAdmin</strong>(int $module_id = null)</code>
+    </h3>
+    <div class="details">
+        <p>Is the user admin ?</p>
+        <p>This method will return true if this user has admin rights for the specified module.&lt;br /&gt;<br />
+ - If you don&#039;t specify any module ID, the current module will be checked.&lt;br /&gt;<br />
+ - If you set the module_id to -1, it will return true if the user has admin rights for at least one module</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>int</td>
+                <td>$module_id</td>
+                <td>check if user is admin of this module</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>is the user admin of that module?</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_rank">
+        <div class="location">in <a href="XoopsUser.html#method_rank"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 216</div>
+        <code>            public            array
+    <strong>rank</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get the user&#039;s rank</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>array of rank ID and title</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isActive">
+        <div class="location">in <a href="XoopsUser.html#method_isActive"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 227</div>
+        <code>            public            bool
+    <strong>isActive</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>is the user activated?</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isOnline">
+        <div class="location">in <a href="XoopsUser.html#method_isOnline"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 238</div>
+        <code>            public            bool
+    <strong>isOnline</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>is the user currently logged in?</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_uid">
+        <div class="location">in <a href="XoopsUser.html#method_uid"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 258</div>
+        <code>            public            int
+    <strong>uid</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get the users UID</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_name">
+        <div class="location">in <a href="XoopsUser.html#method_name"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 268</div>
+        <code>            public            string
+    <strong>name</strong>(string $format = &#039;S&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>get the users name</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td>format for the output, see {@link XoopsObject::getVar()}</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_uname">
+        <div class="location">in <a href="XoopsUser.html#method_uname"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 278</div>
+        <code>            public            string
+    <strong>uname</strong>(string $format = &#039;S&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>get the user&#039;s uname</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td>format for the output, see {@link XoopsObject::getVar()}</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_email">
+        <div class="location">in <a href="XoopsUser.html#method_email"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 289</div>
+        <code>            public            string
+    <strong>email</strong>(string $format = &#039;S&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>get the user&#039;s email</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td>format for the output, see {@link XoopsObject::getVar()}</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_url">
+        <div class="location">in <a href="XoopsUser.html#method_url"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 294</div>
+        <code>            public            
+    <strong>url</strong>($format = &#039;S&#039;)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_user_avatar">
+        <div class="location">in <a href="XoopsUser.html#method_user_avatar"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 299</div>
+        <code>            public            
+    <strong>user_avatar</strong>($format = &#039;S&#039;)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_user_regdate">
+        <div class="location">in <a href="XoopsUser.html#method_user_regdate"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 304</div>
+        <code>            public            
+    <strong>user_regdate</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_user_icq">
+        <div class="location">in <a href="XoopsUser.html#method_user_icq"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 309</div>
+        <code>            public            
+    <strong>user_icq</strong>($format = &#039;S&#039;)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_user_from">
+        <div class="location">in <a href="XoopsUser.html#method_user_from"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 314</div>
+        <code>            public            
+    <strong>user_from</strong>($format = &#039;S&#039;)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_user_sig">
+        <div class="location">in <a href="XoopsUser.html#method_user_sig"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 318</div>
+        <code>            public            
+    <strong>user_sig</strong>($format = &#039;S&#039;)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_user_viewemail">
+        <div class="location">in <a href="XoopsUser.html#method_user_viewemail"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 323</div>
+        <code>            public            
+    <strong>user_viewemail</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_actkey">
+        <div class="location">in <a href="XoopsUser.html#method_actkey"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 328</div>
+        <code>            public            
+    <strong>actkey</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_user_aim">
+        <div class="location">in <a href="XoopsUser.html#method_user_aim"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 333</div>
+        <code>            public            
+    <strong>user_aim</strong>($format = &#039;S&#039;)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_user_yim">
+        <div class="location">in <a href="XoopsUser.html#method_user_yim"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 338</div>
+        <code>            public            
+    <strong>user_yim</strong>($format = &#039;S&#039;)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_user_msnm">
+        <div class="location">in <a href="XoopsUser.html#method_user_msnm"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 343</div>
+        <code>            public            
+    <strong>user_msnm</strong>($format = &#039;S&#039;)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_pass">
+        <div class="location">in <a href="XoopsUser.html#method_pass"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 348</div>
+        <code>            public            
+    <strong>pass</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_posts">
+        <div class="location">in <a href="XoopsUser.html#method_posts"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 353</div>
+        <code>            public            
+    <strong>posts</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_attachsig">
+        <div class="location">in <a href="XoopsUser.html#method_attachsig"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 358</div>
+        <code>            public            
+    <strong>attachsig</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_level">
+        <div class="location">in <a href="XoopsUser.html#method_level"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 363</div>
+        <code>            public            
+    <strong>level</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_theme">
+        <div class="location">in <a href="XoopsUser.html#method_theme"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 368</div>
+        <code>            public            
+    <strong>theme</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_timezone">
+        <div class="location">in <a href="XoopsUser.html#method_timezone"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 373</div>
+        <code>            public            
+    <strong>timezone</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_umode">
+        <div class="location">in <a href="XoopsUser.html#method_umode"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 378</div>
+        <code>            public            
+    <strong>umode</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_uorder">
+        <div class="location">in <a href="XoopsUser.html#method_uorder"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 383</div>
+        <code>            public            
+    <strong>uorder</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_notify_method">
+        <div class="location">in <a href="XoopsUser.html#method_notify_method"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 389</div>
+        <code>            public            
+    <strong>notify_method</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_notify_mode">
+        <div class="location">in <a href="XoopsUser.html#method_notify_mode"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 394</div>
+        <code>            public            
+    <strong>notify_mode</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_user_occ">
+        <div class="location">in <a href="XoopsUser.html#method_user_occ"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 399</div>
+        <code>            public            
+    <strong>user_occ</strong>($format = &#039;S&#039;)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_bio">
+        <div class="location">in <a href="XoopsUser.html#method_bio"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 404</div>
+        <code>            public            
+    <strong>bio</strong>($format = &#039;S&#039;)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_user_intrest">
+        <div class="location">in <a href="XoopsUser.html#method_user_intrest"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 409</div>
+        <code>            public            
+    <strong>user_intrest</strong>($format = &#039;S&#039;)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_last_login">
+        <div class="location">in <a href="XoopsUser.html#method_last_login"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 414</div>
+        <code>            public            
+    <strong>last_login</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_hasAvatar">
+        <div class="location">in <a href="XoopsUser.html#method_hasAvatar"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 423</div>
+        <code>            public            bool
+    <strong>hasAvatar</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>This class has avatar in uploads directory.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getAvatarUrl">
+        <div class="location">in <a href="XoopsUser.html#method_getAvatarUrl"><abbr title="XoopsUser">XoopsUser</abbr></a> at line 439</div>
+        <code>            public            string
+    <strong>getAvatarUrl</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Return Abs URL for displaying avatar.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

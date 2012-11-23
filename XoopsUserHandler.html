@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XoopsUserHandler | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>XoopsUserHandler</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>XoopsUserHandler</strong>        extends <a href="XoopsObjectHandler.html"><abbr title="XoopsObjectHandler">XoopsObjectHandler</abbr></a></p>
+
+            <div class="description">
+            <p>XOOPS user handler class.</p>
+            <p>This class is responsible for providing data access mechanisms to the data source <br />
+ of XOOPS user class objects.</p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_db">
+                                                            object
+                </td>
+                <td>$db</td>
+                <td class="last">holds referenced to {@link XoopsDatabase} class object</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XoopsObjectHandler">XoopsObjectHandler</a>(object $db)
+                    <p>called from child classes only</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsObjectHandler.html#method_XoopsObjectHandler"><abbr title="XoopsObjectHandler">XoopsObjectHandler</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    object
+                </td>
+                <td class="last">
+                    <a href="#method_create">create</a>(bool $isNew = true)
+                    <p>create a new user</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_get">get</a>(int $id)
+                    <p>retrieve a user</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_insert">insert</a>(object $user, bool $force = false)
+                    <p>insert a new user in the database</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_delete">delete</a>(object $user, bool $force = false)
+                    <p>delete a user from the database</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getObjects">getObjects</a>(object $criteria = null, bool $id_as_key = false)
+                    <p>retrieve users from the database</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getObjectsByLevel">getObjectsByLevel</a>($level)
+                    <p>This method is called from pmlite.php.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getCount">getCount</a>(object $criteria = null)
+                    <p>count users matching a condition</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_deleteAll">deleteAll</a>(object $criteria = null)
+                    <p>delete users matching a set of conditions</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_updateAll">updateAll</a>(string $fieldname, string $fieldvalue, object $criteria = null)
+                    <p>Change a value for users with a certain criteria</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_XoopsObjectHandler">
+        <div class="location">in <a href="XoopsObjectHandler.html#method_XoopsObjectHandler"><abbr title="XoopsObjectHandler">XoopsObjectHandler</abbr></a> at line 702</div>
+        <code>            public            
+    <strong>XoopsObjectHandler</strong>(object $db)</code>
+    </h3>
+    <div class="details">
+        <p>called from child classes only</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$db</td>
+                <td>reference to the {@link XoopsDatabase} object</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_create">
+        <div class="location">at line 495</div>
+        <code>            public            object
+    <strong>create</strong>(bool $isNew = true)</code>
+    </h3>
+    <div class="details">
+        <p>create a new user</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>bool</td>
+                <td>$isNew</td>
+                <td>flag the new objects as &quot;new&quot;?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>object</td>
+            <td>XoopsUser</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_get">
+        <div class="location">at line 510</div>
+        <code>            public            mixed
+    <strong>get</strong>(int $id)</code>
+    </h3>
+    <div class="details">
+        <p>retrieve a user</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td>UID of the user</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>reference to the {@link XoopsUser} object, FALSE if failed</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_insert">
+        <div class="location">at line 534</div>
+        <code>            public            bool
+    <strong>insert</strong>(object $user, bool $force = false)</code>
+    </h3>
+    <div class="details">
+        <p>insert a new user in the database</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$user</td>
+                <td>reference to the {@link XoopsUser} object</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$force</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>FALSE if failed, TRUE if already present and unchanged or successful</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_delete">
+        <div class="location">at line 583</div>
+        <code>            public            bool
+    <strong>delete</strong>(object $user, bool $force = false)</code>
+    </h3>
+    <div class="details">
+        <p>delete a user from the database</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$user</td>
+                <td>reference to the user to delete</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$force</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>FALSE if failed.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getObjects">
+        <div class="location">at line 607</div>
+        <code>            public            array
+    <strong>getObjects</strong>(object $criteria = null, bool $id_as_key = false)</code>
+    </h3>
+    <div class="details">
+        <p>retrieve users from the database</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$criteria</td>
+                <td>{@link CriteriaElement} conditions to be met</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$id_as_key</td>
+                <td>use the UID as key for the array?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>array of {@link XoopsUser} objects</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getObjectsByLevel">
+        <div class="location">at line 642</div>
+        <code>            public            
+    <strong>getObjectsByLevel</strong>($level)</code>
+    </h3>
+    <div class="details">
+        <p>This method is called from pmlite.php.</p>
+        <p>Wmm..<br />
+	 Type:expand (no using criteria).</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$level</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getCount">
+        <div class="location">at line 666</div>
+        <code>            public            int
+    <strong>getCount</strong>(object $criteria = null)</code>
+    </h3>
+    <div class="details">
+        <p>count users matching a condition</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$criteria</td>
+                <td>{@link CriteriaElement} to match</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td>count of users</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_deleteAll">
+        <div class="location">at line 686</div>
+        <code>            public            bool
+    <strong>deleteAll</strong>(object $criteria = null)</code>
+    </h3>
+    <div class="details">
+        <p>delete users matching a set of conditions</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$criteria</td>
+                <td>{@link CriteriaElement}</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>FALSE if deletion failed</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_updateAll">
+        <div class="location">at line 707</div>
+        <code>            public            bool
+    <strong>updateAll</strong>(string $fieldname, string $fieldvalue, object $criteria = null)</code>
+    </h3>
+    <div class="details">
+        <p>Change a value for users with a certain criteria</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$fieldname</td>
+                <td>Name of the field</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$fieldvalue</td>
+                <td>Value to write</td>
+            </tr>
+                    <tr>
+                <td>object</td>
+                <td>$criteria</td>
+                <td>{@link CriteriaElement}</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

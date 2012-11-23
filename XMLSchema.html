@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XMLSchema | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>XMLSchema</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>XMLSchema</strong>        extends <a href="nusoap_xmlschema.html"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a></p>
+
+            <div class="description">
+            <p>Backward compatibility</p>
+            <p></p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_title">
+                                                            string
+                </td>
+                <td>$title</td>
+                <td class="last">Identification for HTTP headers.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_version">
+                                                            string
+                </td>
+                <td>$version</td>
+                <td class="last">Version for HTTP headers.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_revision">
+                                                            string
+                </td>
+                <td>$revision</td>
+                <td class="last">CVS revision for HTTP headers.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_error_str">
+                                                            string
+                </td>
+                <td>$error_str</td>
+                <td class="last">Current error string (manipulated by getError/setError)</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_debug_str">
+                                                            string
+                </td>
+                <td>$debug_str</td>
+                <td class="last">Current debug string (manipulated by debug/appendDebug/clearDebug/getDebug/getDebugAsXMLComment)</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_charencoding">
+                                                            boolean
+                </td>
+                <td>$charencoding</td>
+                <td class="last">toggles automatic encoding of special characters as entities (should always be true, I think)</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_debugLevel">
+                                                            
+                </td>
+                <td>$debugLevel</td>
+                <td class="last">the debug level for this instance</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_XMLSchemaVersion">
+                                                            string
+                </td>
+                <td>$XMLSchemaVersion</td>
+                <td class="last">set schema version</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_soap_defencoding">
+                                                            string
+                </td>
+                <td>$soap_defencoding</td>
+                <td class="last">charset encoding for outgoing messages</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_namespaces">
+                                                            array
+                </td>
+                <td>$namespaces</td>
+                <td class="last">namespaces in an array of prefix =&gt; uri</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_usedNamespaces">
+                                                            array
+                </td>
+                <td>$usedNamespaces</td>
+                <td class="last">namespaces used in the current context, e.g.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_typemap">
+                                                            array
+                </td>
+                <td>$typemap</td>
+                <td class="last">XML Schema types in an array of uri =&gt; (array of xml type =&gt; php type) is this Legacy yet? no, this is used by the nusoap_xmlschema class to verify type =&gt; namespace mappings.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_xmlEntities">
+                                                            array
+                </td>
+                <td>$xmlEntities</td>
+                <td class="last">XML entities to convert</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_schema">
+                                                            
+                </td>
+                <td>$schema</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_xml">
+                                                            
+                </td>
+                <td>$xml</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_enclosingNamespaces">
+                                                            
+                </td>
+                <td>$enclosingNamespaces</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_schemaInfo">
+                                                            
+                </td>
+                <td>$schemaInfo</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_schemaTargetNamespace">
+                                                            
+                </td>
+                <td>$schemaTargetNamespace</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_attributes">
+                                                            
+                </td>
+                <td>$attributes</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_complexTypes">
+                                                            
+                </td>
+                <td>$complexTypes</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_complexTypeStack">
+                                                            
+                </td>
+                <td>$complexTypeStack</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_currentComplexType">
+                                                            
+                </td>
+                <td>$currentComplexType</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_elements">
+                                                            
+                </td>
+                <td>$elements</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_elementStack">
+                                                            
+                </td>
+                <td>$elementStack</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_currentElement">
+                                                            
+                </td>
+                <td>$currentElement</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_simpleTypes">
+                                                            
+                </td>
+                <td>$simpleTypes</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_simpleTypeStack">
+                                                            
+                </td>
+                <td>$simpleTypeStack</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_currentSimpleType">
+                                                            
+                </td>
+                <td>$currentSimpleType</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_imports">
+                                                            
+                </td>
+                <td>$imports</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parser">
+                                                            
+                </td>
+                <td>$parser</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_position">
+                                                            
+                </td>
+                <td>$position</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_depth">
+                                                            
+                </td>
+                <td>$depth</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_depth_array">
+                                                            
+                </td>
+                <td>$depth_array</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_message">
+                                                            
+                </td>
+                <td>$message</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_defaultNamespace">
+                                                            
+                </td>
+                <td>$defaultNamespace</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_nusoap_xmlschema">nusoap_xmlschema</a>($schema = &#039;&#039;, $xml = &#039;&#039;, $namespaces = array())
+                    <p>constructor</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_xmlschema.html#method_nusoap_xmlschema"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_parseFile">parseFile</a>(string $xml, string $type)
+                    <p>parse an XML file</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_xmlschema.html#method_parseFile"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_parseString">parseString</a>($xml, $type)
+                    <p>parse an XML string</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_xmlschema.html#method_parseString"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_CreateTypeName">CreateTypeName</a>($ename)
+                    <p>gets a type name for an unnamed type</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_xmlschema.html#method_CreateTypeName"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_schemaStartElement">schemaStartElement</a>(string $parser, string $name, string $attrs)
+                    <p>start-element handler</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_xmlschema.html#method_schemaStartElement"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_schemaEndElement">schemaEndElement</a>(string $parser, string $name)
+                    <p>end-element handler</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_xmlschema.html#method_schemaEndElement"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_schemaCharacterData">schemaCharacterData</a>(string $parser, string $data)
+                    <p>element content handler</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_xmlschema.html#method_schemaCharacterData"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_serializeSchema">serializeSchema</a>()
+                    <p>serialize the schema</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_xmlschema.html#method_serializeSchema"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_xdebug">xdebug</a>(string $string)
+                    <p>adds debug data to the clas level debug string</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_xmlschema.html#method_xdebug"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_getPHPType">getPHPType</a>(string $type, string $ns)
+                    <p>get the PHP type of a user defined type in the schema PHP type is kind of a misnomer since it actually returns &#039;struct&#039; for assoc.</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_xmlschema.html#method_getPHPType"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_getTypeDef">getTypeDef</a>(string $type)
+                    <p>returns an associative array of information about a given type returns false if no type exists by the given name</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_xmlschema.html#method_getTypeDef"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_serializeTypeDef">serializeTypeDef</a>(string $type)
+                    <p>returns a sample serialization of a given type, or false if no type by the given name</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_xmlschema.html#method_serializeTypeDef"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_typeToForm">typeToForm</a>(string $name, string $type)
+                    <p>returns HTML form elements that allow a user to enter values for creating an instance of the given type.</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_xmlschema.html#method_typeToForm"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addComplexType">addComplexType</a>(<abbr title="name">name</abbr> $name, <abbr title="typeClass">typeClass</abbr> $typeClass = &#039;complexType&#039;, <abbr title="phpType:">phpType:</abbr> $phpType = &#039;array&#039;, <abbr title="compositor">compositor</abbr> $compositor = &#039;&#039;, <abbr title="restrictionBase">restrictionBase</abbr> $restrictionBase = &#039;&#039;, <abbr title="elements">elements</abbr> $elements = array(), <abbr title="attrs">attrs</abbr> $attrs = array(), <abbr title="arrayType:">arrayType:</abbr> $arrayType = &#039;&#039;)
+                    <p>adds a complex type to the schema  example: array  addType( 	&#039;ArrayOfstring&#039;, 	&#039;complexType&#039;, 	&#039;array&#039;, 	&#039;&#039;, 	&#039;SOAP-ENC:Array&#039;, 	array(&#039;ref&#039;=&gt;&#039;SOAP-ENC:arrayType&#039;,&#039;wsdl:arrayType&#039;=&gt;&#039;string[]&#039;), 	&#039;xsd:string&#039; );  example: PHP associative array ( SOAP Struct )  addType( 	&#039;SOAPStruct&#039;, 	&#039;complexType&#039;, 	&#039;struct&#039;, 	&#039;all&#039;, 	array(&#039;myVar&#039;=&gt; array(&#039;name&#039;=&gt;&#039;myVar&#039;,&#039;type&#039;=&gt;&#039;string&#039;) );</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_xmlschema.html#method_addComplexType"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addSimpleType">addSimpleType</a>(string $name, string $restrictionBase = &#039;&#039;, string $typeClass = &#039;simpleType&#039;, string $phpType = &#039;scalar&#039;, array $enumeration = array())
+                    <p>adds a simple type to the schema</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_xmlschema.html#method_addSimpleType"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addElement">addElement</a>(array $attrs)
+                    <p>adds an element to the schema</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_xmlschema.html#method_addElement"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a></small></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_nusoap_xmlschema">
+        <div class="location">in <a href="nusoap_xmlschema.html#method_nusoap_xmlschema"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a> at line 1134</div>
+        <code>            public            
+    <strong>nusoap_xmlschema</strong>($schema = &#039;&#039;, $xml = &#039;&#039;, $namespaces = array())</code>
+    </h3>
+    <div class="details">
+        <p>constructor</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$schema</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$xml</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$namespaces</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_parseFile">
+        <div class="location">in <a href="nusoap_xmlschema.html#method_parseFile"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a> at line 1167</div>
+        <code>            public            boolean
+    <strong>parseFile</strong>(string $xml, string $type)</code>
+    </h3>
+    <div class="details">
+        <p>parse an XML file</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$xml</td>
+                <td>path/URL to XML file</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>(schema | xml)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_parseString">
+        <div class="location">in <a href="nusoap_xmlschema.html#method_parseString"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a> at line 1193</div>
+        <code>            public            
+    <strong>parseString</strong>($xml, $type)</code>
+    </h3>
+    <div class="details">
+        <p>parse an XML string</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$xml</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_CreateTypeName">
+        <div class="location">in <a href="nusoap_xmlschema.html#method_CreateTypeName"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a> at line 1240</div>
+        <code>            public            
+    <strong>CreateTypeName</strong>($ename)</code>
+    </h3>
+    <div class="details">
+        <p>gets a type name for an unnamed type</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$ename</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_schemaStartElement">
+        <div class="location">in <a href="nusoap_xmlschema.html#method_schemaStartElement"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a> at line 1256</div>
+        <code>            public            
+    <strong>schemaStartElement</strong>(string $parser, string $name, string $attrs)</code>
+    </h3>
+    <div class="details">
+        <p>start-element handler</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$parser</td>
+                <td>XML parser object</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>element name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$attrs</td>
+                <td>associative array of attributes</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_schemaEndElement">
+        <div class="location">in <a href="nusoap_xmlschema.html#method_schemaEndElement"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a> at line 1583</div>
+        <code>            public            
+    <strong>schemaEndElement</strong>(string $parser, string $name)</code>
+    </h3>
+    <div class="details">
+        <p>end-element handler</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$parser</td>
+                <td>XML parser object</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>element name</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_schemaCharacterData">
+        <div class="location">in <a href="nusoap_xmlschema.html#method_schemaCharacterData"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a> at line 1622</div>
+        <code>            public            
+    <strong>schemaCharacterData</strong>(string $parser, string $data)</code>
+    </h3>
+    <div class="details">
+        <p>element content handler</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$parser</td>
+                <td>XML parser object</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$data</td>
+                <td>element content</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_serializeSchema">
+        <div class="location">in <a href="nusoap_xmlschema.html#method_serializeSchema"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a> at line 1632</div>
+        <code>            public            
+    <strong>serializeSchema</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>serialize the schema</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_xdebug">
+        <div class="location">in <a href="nusoap_xmlschema.html#method_xdebug"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a> at line 1750</div>
+        <code>            public            
+    <strong>xdebug</strong>(string $string)</code>
+    </h3>
+    <div class="details">
+        <p>adds debug data to the clas level debug string</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>debug data</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getPHPType">
+        <div class="location">in <a href="nusoap_xmlschema.html#method_getPHPType"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a> at line 1766</div>
+        <code>            public            mixed
+    <strong>getPHPType</strong>(string $type, string $ns)</code>
+    </h3>
+    <div class="details">
+        <p>get the PHP type of a user defined type in the schema PHP type is kind of a misnomer since it actually returns &#039;struct&#039; for assoc.</p>
+        <p>arrays<br />
+ returns false if no type exists, or not w/ the given namespace<br />
+ else returns a string that is either a native php type, or &#039;struct&#039;</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>name of defined type</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$ns</td>
+                <td>namespace of type</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTypeDef">
+        <div class="location">in <a href="nusoap_xmlschema.html#method_getTypeDef"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a> at line 1799</div>
+        <code>            public            mixed
+    <strong>getTypeDef</strong>(string $type)</code>
+    </h3>
+    <div class="details">
+        <p>returns an associative array of information about a given type returns false if no type exists by the given name</p>
+        <p>For a complexType typeDef = array(<br />
+	&#039;restrictionBase&#039; =&gt; &#039;&#039;,<br />
+	&#039;phpType&#039; =&gt; &#039;&#039;,<br />
+	&#039;compositor&#039; =&gt; &#039;(sequence|all)&#039;,<br />
+	&#039;elements&#039; =&gt; array(), // refs to elements array<br />
+	&#039;attrs&#039; =&gt; array() // refs to attributes array<br />
+	... and so on (see addComplexType)<br />
+	)<br />
+<br />
+   For simpleType or element, the array has different keys.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>addComplexType</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>addSimpleType</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>addElement</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_serializeTypeDef">
+        <div class="location">in <a href="nusoap_xmlschema.html#method_serializeTypeDef"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a> at line 1878</div>
+        <code>            public            mixed
+    <strong>serializeTypeDef</strong>(string $type)</code>
+    </h3>
+    <div class="details">
+        <p>returns a sample serialization of a given type, or false if no type by the given name</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>name of type</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_typeToForm">
+        <div class="location">in <a href="nusoap_xmlschema.html#method_typeToForm"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a> at line 1914</div>
+        <code>            public            string
+    <strong>typeToForm</strong>(string $name, string $type)</code>
+    </h3>
+    <div class="details">
+        <p>returns HTML form elements that allow a user to enter values for creating an instance of the given type.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>name for type instance</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>name of type</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addComplexType">
+        <div class="location">in <a href="nusoap_xmlschema.html#method_addComplexType"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a> at line 1986</div>
+        <code>            public            
+    <strong>addComplexType</strong>(<abbr title="name">name</abbr> $name, <abbr title="typeClass">typeClass</abbr> $typeClass = &#039;complexType&#039;, <abbr title="phpType:">phpType:</abbr> $phpType = &#039;array&#039;, <abbr title="compositor">compositor</abbr> $compositor = &#039;&#039;, <abbr title="restrictionBase">restrictionBase</abbr> $restrictionBase = &#039;&#039;, <abbr title="elements">elements</abbr> $elements = array(), <abbr title="attrs">attrs</abbr> $attrs = array(), <abbr title="arrayType:">arrayType:</abbr> $arrayType = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>adds a complex type to the schema  example: array  addType( 	&#039;ArrayOfstring&#039;, 	&#039;complexType&#039;, 	&#039;array&#039;, 	&#039;&#039;, 	&#039;SOAP-ENC:Array&#039;, 	array(&#039;ref&#039;=&gt;&#039;SOAP-ENC:arrayType&#039;,&#039;wsdl:arrayType&#039;=&gt;&#039;string[]&#039;), 	&#039;xsd:string&#039; );  example: PHP associative array ( SOAP Struct )  addType( 	&#039;SOAPStruct&#039;, 	&#039;complexType&#039;, 	&#039;struct&#039;, 	&#039;all&#039;, 	array(&#039;myVar&#039;=&gt; array(&#039;name&#039;=&gt;&#039;myVar&#039;,&#039;type&#039;=&gt;&#039;string&#039;) );</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="name">name</abbr></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="typeClass">typeClass</abbr></td>
+                <td>$typeClass</td>
+                <td>(complexType|simpleType|attribute)</td>
+            </tr>
+                    <tr>
+                <td><abbr title="phpType:">phpType:</abbr></td>
+                <td>$phpType</td>
+                <td>currently supported are array and struct (php assoc array)</td>
+            </tr>
+                    <tr>
+                <td><abbr title="compositor">compositor</abbr></td>
+                <td>$compositor</td>
+                <td>(all|sequence|choice)</td>
+            </tr>
+                    <tr>
+                <td><abbr title="restrictionBase">restrictionBase</abbr></td>
+                <td>$restrictionBase</td>
+                <td>namespace:name (http://schemas.xmlsoap.org/soap/encoding/:Array)</td>
+            </tr>
+                    <tr>
+                <td><abbr title="elements">elements</abbr></td>
+                <td>$elements</td>
+                <td>= array ( name = array(name=&gt;&#039;&#039;,type=&gt;&#039;&#039;) )</td>
+            </tr>
+                    <tr>
+                <td><abbr title="attrs">attrs</abbr></td>
+                <td>$attrs</td>
+                <td>= array( array( &#039;ref&#039; =&gt; &quot;http://schemas.xmlsoap.org/soap/encoding/:arrayType&quot;, &quot;http://schemas.xmlsoap.org/wsdl/:arrayType&quot; =&gt; &quot;string[]&quot; ) )</td>
+            </tr>
+                    <tr>
+                <td><abbr title="arrayType:">arrayType:</abbr></td>
+                <td>$arrayType</td>
+                <td>namespace:name (http://www.w3.org/2001/XMLSchema:string)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>getTypeDef</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_addSimpleType">
+        <div class="location">in <a href="nusoap_xmlschema.html#method_addSimpleType"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a> at line 2014</div>
+        <code>            public            
+    <strong>addSimpleType</strong>(string $name, string $restrictionBase = &#039;&#039;, string $typeClass = &#039;simpleType&#039;, string $phpType = &#039;scalar&#039;, array $enumeration = array())</code>
+    </h3>
+    <div class="details">
+        <p>adds a simple type to the schema</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$restrictionBase</td>
+                <td>namespace:name (http://schemas.xmlsoap.org/soap/encoding/:Array)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$typeClass</td>
+                <td>(should always be simpleType)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$phpType</td>
+                <td>(should always be scalar)</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$enumeration</td>
+                <td>array of values</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>nusoap_xmlschema</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>getTypeDef</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_addElement">
+        <div class="location">in <a href="nusoap_xmlschema.html#method_addElement"><abbr title="nusoap_xmlschema">nusoap_xmlschema</abbr></a> at line 2034</div>
+        <code>            public            
+    <strong>addElement</strong>(array $attrs)</code>
+    </h3>
+    <div class="details">
+        <p>adds an element to the schema</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array</td>
+                <td>$attrs</td>
+                <td>attributes that must include name and type</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>nusoap_xmlschema</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

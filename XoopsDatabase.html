@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XoopsDatabase | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>XoopsDatabase</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>XoopsDatabase</strong></p>
+
+            <div class="description">
+            <p>Abstract base class for Database access classes</p>
+            <p></p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_prefix">
+                                                            string
+                </td>
+                <td>$prefix</td>
+                <td class="last">Prefix for tables in the database</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_logger">
+                                                            object
+                </td>
+                <td>$logger</td>
+                <td class="last">reference to a {@link XoopsLogger} object</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XoopsDatabase">XoopsDatabase</a>()
+                    <p>constructor  will always fail, because this is an abstract class!</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setLogger">setLogger</a>(<a href="XoopsLogger.html"><abbr title="XoopsLogger">XoopsLogger</abbr></a> $logger)
+                    <p>assign a {@link XoopsLogger} object to the database</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setPrefix">setPrefix</a>(string $value)
+                    <p>set the prefix for tables in the database</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_prefix">prefix</a>(string $tablename = &#039;&#039;)
+                    <p>attach the prefix.&#039;_&#039; to a given tablename  if tablename is empty, only prefix will be returned</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_XoopsDatabase">
+        <div class="location">at line 72</div>
+        <code>            public            
+    <strong>XoopsDatabase</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>constructor  will always fail, because this is an abstract class!</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setLogger">
+        <div class="location">at line 83</div>
+        <code>            public            
+    <strong>setLogger</strong>(<a href="XoopsLogger.html"><abbr title="XoopsLogger">XoopsLogger</abbr></a> $logger)</code>
+    </h3>
+    <div class="details">
+        <p>assign a {@link XoopsLogger} object to the database</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="XoopsLogger.html"><abbr title="XoopsLogger">XoopsLogger</abbr></a></td>
+                <td>$logger</td>
+                <td>reference to a {@link XoopsLogger} object</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>XoopsLogger</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_setPrefix">
+        <div class="location">at line 93</div>
+        <code>            public            
+    <strong>setPrefix</strong>(string $value)</code>
+    </h3>
+    <div class="details">
+        <p>set the prefix for tables in the database</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td>table prefix</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_prefix">
+        <div class="location">at line 106</div>
+        <code>            public            string
+    <strong>prefix</strong>(string $tablename = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>attach the prefix.&#039;_&#039; to a given tablename  if tablename is empty, only prefix will be returned</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$tablename</td>
+                <td>tablename</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>prefixed tablename, just prefix if tablename is empty</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

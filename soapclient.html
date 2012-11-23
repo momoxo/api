@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>soapclient | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>soapclient</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>soapclient</strong>        extends <a href="nusoap_client.html"><abbr title="nusoap_client">nusoap_client</abbr></a></p>
+
+            <div class="description">
+            <p>For backwards compatiblity, define soapclient unless the PHP SOAP extension is loaded.</p>
+            <p></p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_title">
+                                                            string
+                </td>
+                <td>$title</td>
+                <td class="last">Identification for HTTP headers.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_version">
+                                                            string
+                </td>
+                <td>$version</td>
+                <td class="last">Version for HTTP headers.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_revision">
+                                                            string
+                </td>
+                <td>$revision</td>
+                <td class="last">CVS revision for HTTP headers.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_error_str">
+                                                            string
+                </td>
+                <td>$error_str</td>
+                <td class="last">Current error string (manipulated by getError/setError)</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_debug_str">
+                                                            string
+                </td>
+                <td>$debug_str</td>
+                <td class="last">Current debug string (manipulated by debug/appendDebug/clearDebug/getDebug/getDebugAsXMLComment)</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_charencoding">
+                                                            boolean
+                </td>
+                <td>$charencoding</td>
+                <td class="last">toggles automatic encoding of special characters as entities (should always be true, I think)</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_debugLevel">
+                                                            
+                </td>
+                <td>$debugLevel</td>
+                <td class="last">the debug level for this instance</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_XMLSchemaVersion">
+                                                            string
+                </td>
+                <td>$XMLSchemaVersion</td>
+                <td class="last">set schema version</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_soap_defencoding">
+                                                            string
+                </td>
+                <td>$soap_defencoding</td>
+                <td class="last">charset encoding for outgoing messages</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_namespaces">
+                                                            array
+                </td>
+                <td>$namespaces</td>
+                <td class="last">namespaces in an array of prefix =&gt; uri</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_usedNamespaces">
+                                                            array
+                </td>
+                <td>$usedNamespaces</td>
+                <td class="last">namespaces used in the current context, e.g.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_typemap">
+                                                            array
+                </td>
+                <td>$typemap</td>
+                <td class="last">XML Schema types in an array of uri =&gt; (array of xml type =&gt; php type) is this Legacy yet? no, this is used by the nusoap_xmlschema class to verify type =&gt; namespace mappings.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_xmlEntities">
+                                                            array
+                </td>
+                <td>$xmlEntities</td>
+                <td class="last">XML entities to convert</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_username">
+                                                            
+                </td>
+                <td>$username</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_password">
+                                                            
+                </td>
+                <td>$password</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_authtype">
+                                                            
+                </td>
+                <td>$authtype</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_certRequest">
+                                                            
+                </td>
+                <td>$certRequest</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_requestHeaders">
+                                                            
+                </td>
+                <td>$requestHeaders</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_responseHeaders">
+                                                            
+                </td>
+                <td>$responseHeaders</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_responseHeader">
+                                                            
+                </td>
+                <td>$responseHeader</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_document">
+                                                            
+                </td>
+                <td>$document</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_endpoint">
+                                                            
+                </td>
+                <td>$endpoint</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_forceEndpoint">
+                                                            
+                </td>
+                <td>$forceEndpoint</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_proxyhost">
+                                                            
+                </td>
+                <td>$proxyhost</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_proxyport">
+                                                            
+                </td>
+                <td>$proxyport</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_proxyusername">
+                                                            
+                </td>
+                <td>$proxyusername</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_proxypassword">
+                                                            
+                </td>
+                <td>$proxypassword</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_portName">
+                                                            
+                </td>
+                <td>$portName</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_xml_encoding">
+                                                            
+                </td>
+                <td>$xml_encoding</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_http_encoding">
+                                                            
+                </td>
+                <td>$http_encoding</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_timeout">
+                                                            
+                </td>
+                <td>$timeout</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_response_timeout">
+                                                            
+                </td>
+                <td>$response_timeout</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_endpointType">
+                                                            
+                </td>
+                <td>$endpointType</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_persistentConnection">
+                                                            
+                </td>
+                <td>$persistentConnection</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_defaultRpcParams">
+                                                            
+                </td>
+                <td>$defaultRpcParams</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_request">
+                                                            
+                </td>
+                <td>$request</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_response">
+                                                            
+                </td>
+                <td>$response</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_responseData">
+                                                            
+                </td>
+                <td>$responseData</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cookies">
+                                                            
+                </td>
+                <td>$cookies</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_decode_utf8">
+                                                            
+                </td>
+                <td>$decode_utf8</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_operations">
+                                                            
+                </td>
+                <td>$operations</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_curl_options">
+                                                            
+                </td>
+                <td>$curl_options</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bindingType">
+                                                            
+                </td>
+                <td>$bindingType</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_use_curl">
+                                                            
+                </td>
+                <td>$use_curl</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fault">
+                                                            <abbr title="fault">fault</abbr>
+                </td>
+                <td>$fault</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_faultcode">
+                                                            <abbr title="faultcode">faultcode</abbr>
+                </td>
+                <td>$faultcode</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_faultstring">
+                                                            <abbr title="faultstring">faultstring</abbr>
+                </td>
+                <td>$faultstring</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_faultdetail">
+                                                            <abbr title="faultdetail">faultdetail</abbr>
+                </td>
+                <td>$faultdetail</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_nusoap_client">nusoap_client</a>($endpoint, $wsdl = false, $proxyhost = false, $proxyport = false, $proxyusername = false, $proxypassword = false, $timeout, $response_timeout = 30, $portName = &#039;&#039;)
+                    <p>constructor</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_nusoap_client"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_call">call</a>($operation, $params = array(), $namespace = &#039;http://tempuri.org&#039;, $soapAction = &#039;&#039;, $headers = false, $rpcParams = null, $style = &#039;rpc&#039;, $use = &#039;encoded&#039;)
+                    <p>calls method, returns PHP native type</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_call"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_checkWSDL">checkWSDL</a>()
+                    <p>check WSDL passed as an instance or pulled from an endpoint</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_checkWSDL"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_loadWSDL">loadWSDL</a>()
+                    <p>instantiate wsdl object and parse wsdl file</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_loadWSDL"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getOperationData">getOperationData</a>(string $operation)
+                    <p>get available data pertaining to an operation</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_getOperationData"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_send">send</a>($msg, $soapaction = &#039;&#039;, $timeout, $response_timeout = 30)
+                    <p>send the SOAP message</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_send"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_parseResponse">parseResponse</a>($headers, $data)
+                    <p>processes SOAP message returned from server</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_parseResponse"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setCurlOption">setCurlOption</a>($option, $value)
+                    <p>sets user-specified cURL options</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_setCurlOption"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setEndpoint">setEndpoint</a>($endpoint)
+                    <p>sets the SOAP endpoint, which can override WSDL</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_setEndpoint"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setHeaders">setHeaders</a>($headers)
+                    <p>set the SOAP headers</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_setHeaders"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getHeaders">getHeaders</a>()
+                    <p>get the SOAP response headers (namespace resolution incomplete)</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_getHeaders"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getHeader">getHeader</a>()
+                    <p>get the SOAP response Header (parsed)</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_getHeader"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setHTTPProxy">setHTTPProxy</a>($proxyhost, $proxyport, $proxyusername = &#039;&#039;, $proxypassword = &#039;&#039;)
+                    <p>set proxy info here</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_setHTTPProxy"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setCredentials">setCredentials</a>($username, $password, $authtype = &#039;basic&#039;, $certRequest = array())
+                    <p>if authenticating, set user credentials here</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_setCredentials"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setHTTPEncoding">setHTTPEncoding</a>(string $enc = &#039;gzip, deflate&#039;)
+                    <p>use HTTP encoding</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_setHTTPEncoding"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setUseCURL">setUseCURL</a>($use)
+                    <p>Set whether to try to use cURL connections if possible</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_setUseCURL"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_useHTTPPersistentConnection">useHTTPPersistentConnection</a>()
+                    <p>use HTTP persistent connections if possible</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_useHTTPPersistentConnection"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_getDefaultRpcParams">getDefaultRpcParams</a>()
+                    <p>gets the default RPC parameter setting.</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_getDefaultRpcParams"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setDefaultRpcParams">setDefaultRpcParams</a>(boolean $rpcParams)
+                    <p>sets the default RPC parameter setting.</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_setDefaultRpcParams"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    object
+                </td>
+                <td class="last">
+                    <a href="#method_getProxy">getProxy</a>()
+                    <p>dynamically creates an instance of a proxy class, allowing user to directly call methods from wsdl</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_getProxy"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method__getProxyClassCode">_getProxyClassCode</a>($r)
+                    <p>dynamically creates proxy class code</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method__getProxyClassCode"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getProxyClassCode">getProxyClassCode</a>()
+                    <p>dynamically creates proxy class code</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_getProxyClassCode"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getHTTPBody">getHTTPBody</a>(string $soapmsg)
+                    <p>gets the HTTP body for the current request.</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_getHTTPBody"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getHTTPContentType">getHTTPContentType</a>()
+                    <p>gets the HTTP content type for the current request.</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_getHTTPContentType"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getHTTPContentTypeCharset">getHTTPContentTypeCharset</a>()
+                    <p>gets the HTTP content type charset for the current request.</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_getHTTPContentTypeCharset"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_decodeUTF8">decodeUTF8</a>($bool)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_decodeUTF8"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setCookie">setCookie</a>($name, $value)
+                    <p>adds a new Cookie into $this-&gt;cookies array</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_setCookie"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getCookies">getCookies</a>()
+                    <p>gets all Cookies</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_getCookies"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_checkCookies">checkCookies</a>()
+                    <p>checks all Cookies and delete those which are expired</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_checkCookies"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_UpdateCookies">UpdateCookies</a>($cookies)
+                    <p>updates the current cookies with a new set</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_client.html#method_UpdateCookies"><abbr title="nusoap_client">nusoap_client</abbr></a></small></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_nusoap_client">
+        <div class="location">in <a href="nusoap_client.html#method_nusoap_client"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7255</div>
+        <code>            public            
+    <strong>nusoap_client</strong>($endpoint, $wsdl = false, $proxyhost = false, $proxyport = false, $proxyusername = false, $proxypassword = false, $timeout, $response_timeout = 30, $portName = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>constructor</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$endpoint</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$wsdl</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$proxyhost</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$proxyport</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$proxyusername</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$proxypassword</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$timeout</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$response_timeout</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$portName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_call">
+        <div class="location">in <a href="nusoap_client.html#method_call"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7314</div>
+        <code>            public            
+    <strong>call</strong>($operation, $params = array(), $namespace = &#039;http://tempuri.org&#039;, $soapAction = &#039;&#039;, $headers = false, $rpcParams = null, $style = &#039;rpc&#039;, $use = &#039;encoded&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>calls method, returns PHP native type</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$operation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$namespace</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$soapAction</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$rpcParams</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$style</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$use</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_checkWSDL">
+        <div class="location">in <a href="nusoap_client.html#method_checkWSDL"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7496</div>
+        <code>            public            
+    <strong>checkWSDL</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>check WSDL passed as an instance or pulled from an endpoint</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_loadWSDL">
+        <div class="location">in <a href="nusoap_client.html#method_loadWSDL"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7530</div>
+        <code>            public            
+    <strong>loadWSDL</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>instantiate wsdl object and parse wsdl file</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getOperationData">
+        <div class="location">in <a href="nusoap_client.html#method_getOperationData"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7545</div>
+        <code>            public            
+    <strong>getOperationData</strong>(string $operation)</code>
+    </h3>
+    <div class="details">
+        <p>get available data pertaining to an operation</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$operation</td>
+                <td>operation name</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_send">
+        <div class="location">in <a href="nusoap_client.html#method_send"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7571</div>
+        <code>            public            
+    <strong>send</strong>($msg, $soapaction = &#039;&#039;, $timeout, $response_timeout = 30)</code>
+    </h3>
+    <div class="details">
+        <p>send the SOAP message</p>
+        <p>Note: if the operation has multiple return values<br />
+ the return value of this method will be an array<br />
+ of those values.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$msg</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$soapaction</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$timeout</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$response_timeout</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_parseResponse">
+        <div class="location">in <a href="nusoap_client.html#method_parseResponse"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7650</div>
+        <code>            public            
+    <strong>parseResponse</strong>($headers, $data)</code>
+    </h3>
+    <div class="details">
+        <p>processes SOAP message returned from server</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setCurlOption">
+        <div class="location">in <a href="nusoap_client.html#method_setCurlOption"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7706</div>
+        <code>            public            
+    <strong>setCurlOption</strong>($option, $value)</code>
+    </h3>
+    <div class="details">
+        <p>sets user-specified cURL options</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setEndpoint">
+        <div class="location">in <a href="nusoap_client.html#method_setEndpoint"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7718</div>
+        <code>            public            
+    <strong>setEndpoint</strong>($endpoint)</code>
+    </h3>
+    <div class="details">
+        <p>sets the SOAP endpoint, which can override WSDL</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$endpoint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setHeaders">
+        <div class="location">in <a href="nusoap_client.html#method_setHeaders"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7729</div>
+        <code>            public            
+    <strong>setHeaders</strong>($headers)</code>
+    </h3>
+    <div class="details">
+        <p>set the SOAP headers</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getHeaders">
+        <div class="location">in <a href="nusoap_client.html#method_getHeaders"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7741</div>
+        <code>            public            
+    <strong>getHeaders</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get the SOAP response headers (namespace resolution incomplete)</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getHeader">
+        <div class="location">in <a href="nusoap_client.html#method_getHeader"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7751</div>
+        <code>            public            
+    <strong>getHeader</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get the SOAP response Header (parsed)</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setHTTPProxy">
+        <div class="location">in <a href="nusoap_client.html#method_setHTTPProxy"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7764</div>
+        <code>            public            
+    <strong>setHTTPProxy</strong>($proxyhost, $proxyport, $proxyusername = &#039;&#039;, $proxypassword = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>set proxy info here</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$proxyhost</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$proxyport</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$proxyusername</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$proxypassword</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setCredentials">
+        <div class="location">in <a href="nusoap_client.html#method_setCredentials"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7780</div>
+        <code>            public            
+    <strong>setCredentials</strong>($username, $password, $authtype = &#039;basic&#039;, $certRequest = array())</code>
+    </h3>
+    <div class="details">
+        <p>if authenticating, set user credentials here</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$password</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$authtype</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$certRequest</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setHTTPEncoding">
+        <div class="location">in <a href="nusoap_client.html#method_setHTTPEncoding"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7795</div>
+        <code>            public            
+    <strong>setHTTPEncoding</strong>(string $enc = &#039;gzip, deflate&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>use HTTP encoding</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$enc</td>
+                <td>HTTP encoding</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setUseCURL">
+        <div class="location">in <a href="nusoap_client.html#method_setUseCURL"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7806</div>
+        <code>            public            
+    <strong>setUseCURL</strong>($use)</code>
+    </h3>
+    <div class="details">
+        <p>Set whether to try to use cURL connections if possible</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$use</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_useHTTPPersistentConnection">
+        <div class="location">in <a href="nusoap_client.html#method_useHTTPPersistentConnection"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7816</div>
+        <code>            public            
+    <strong>useHTTPPersistentConnection</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>use HTTP persistent connections if possible</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getDefaultRpcParams">
+        <div class="location">in <a href="nusoap_client.html#method_getDefaultRpcParams"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7832</div>
+        <code>            public            boolean
+    <strong>getDefaultRpcParams</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>gets the default RPC parameter setting.</p>
+        <p>If true, default is that call params are like RPC even for document style.<br />
+ Each call() can override this value.<br />
+<br />
+ This is no longer used.</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setDefaultRpcParams">
+        <div class="location">in <a href="nusoap_client.html#method_setDefaultRpcParams"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7847</div>
+        <code>            public            
+    <strong>setDefaultRpcParams</strong>(boolean $rpcParams)</code>
+    </h3>
+    <div class="details">
+        <p>sets the default RPC parameter setting.</p>
+        <p>If true, default is that call params are like RPC even for document style<br />
+ Each call() can override this value.<br />
+<br />
+ This is no longer used.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>boolean</td>
+                <td>$rpcParams</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getProxy">
+        <div class="location">in <a href="nusoap_client.html#method_getProxy"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7858</div>
+        <code>            public            object
+    <strong>getProxy</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>dynamically creates an instance of a proxy class, allowing user to directly call methods from wsdl</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>object</td>
+            <td>soap_proxy object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__getProxyClassCode">
+        <div class="location">in <a href="nusoap_client.html#method__getProxyClassCode"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7906</div>
+        <code>            public            string
+    <strong>_getProxyClassCode</strong>($r)</code>
+    </h3>
+    <div class="details">
+        <p>dynamically creates proxy class code</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$r</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>PHP/NuSOAP code for the proxy class</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getProxyClassCode">
+        <div class="location">in <a href="nusoap_client.html#method_getProxyClassCode"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7965</div>
+        <code>            public            string
+    <strong>getProxyClassCode</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>dynamically creates proxy class code</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>PHP/NuSOAP code for the proxy class</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getHTTPBody">
+        <div class="location">in <a href="nusoap_client.html#method_getHTTPBody"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7977</div>
+        <code>            public            string
+    <strong>getHTTPBody</strong>(string $soapmsg)</code>
+    </h3>
+    <div class="details">
+        <p>gets the HTTP body for the current request.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$soapmsg</td>
+                <td>The SOAP payload</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The HTTP body, which includes the SOAP payload</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getHTTPContentType">
+        <div class="location">in <a href="nusoap_client.html#method_getHTTPContentType"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 7989</div>
+        <code>            public            string
+    <strong>getHTTPContentType</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>gets the HTTP content type for the current request.</p>
+        <p>Note: getHTTPBody must be called before this.</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>the HTTP content type for the current request.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getHTTPContentTypeCharset">
+        <div class="location">in <a href="nusoap_client.html#method_getHTTPContentTypeCharset"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 8002</div>
+        <code>            public            string
+    <strong>getHTTPContentTypeCharset</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>gets the HTTP content type charset for the current request.</p>
+        <p>returns false for non-text content types.<br />
+<br />
+ Note: getHTTPBody must be called before this.</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>the HTTP content type charset for the current request.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_decodeUTF8">
+        <div class="location">in <a href="nusoap_client.html#method_decodeUTF8"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 8012</div>
+        <code>            public            
+    <strong>decodeUTF8</strong>($bool)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$bool</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setCookie">
+        <div class="location">in <a href="nusoap_client.html#method_setCookie"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 8025</div>
+        <code>            public            
+    <strong>setCookie</strong>($name, $value)</code>
+    </h3>
+    <div class="details">
+        <p>adds a new Cookie into $this-&gt;cookies array</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getCookies">
+        <div class="location">in <a href="nusoap_client.html#method_getCookies"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 8039</div>
+        <code>            public            array
+    <strong>getCookies</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>gets all Cookies</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>with all internal cookies</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_checkCookies">
+        <div class="location">in <a href="nusoap_client.html#method_checkCookies"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 8049</div>
+        <code>            public            boolean
+    <strong>checkCookies</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>checks all Cookies and delete those which are expired</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>always return true</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_UpdateCookies">
+        <div class="location">in <a href="nusoap_client.html#method_UpdateCookies"><abbr title="nusoap_client">nusoap_client</abbr></a> at line 8082</div>
+        <code>            public            
+    <strong>UpdateCookies</strong>($cookies)</code>
+    </h3>
+    <div class="details">
+        <p>updates the current cookies with a new set</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$cookies</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

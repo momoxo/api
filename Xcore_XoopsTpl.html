@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Xcore_XoopsTpl | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>Xcore_XoopsTpl</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>Xcore_XoopsTpl</strong>        extends <a href="XoopsTpl.html"><abbr title="XoopsTpl">XoopsTpl</abbr></a></p>
+
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property__canUpdateFromFile">
+                                                            
+                </td>
+                <td>$_canUpdateFromFile</td>
+                <td class="last">Allow update of template files from the themes/ directory? This should be set to false on an active site to increase performance</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__mContextReserve">
+                                                            
+                </td>
+                <td>$_mContextReserve</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XoopsTpl">XoopsTpl</a>()
+                    <p>Constructor</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsTpl.html#method_XoopsTpl"><abbr title="XoopsTpl">XoopsTpl</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_xoops_setTemplateDir">xoops_setTemplateDir</a>(string $dirname)
+                    <p>Set the directory for templates</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsTpl.html#method_xoops_setTemplateDir"><abbr title="XoopsTpl">XoopsTpl</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_xoops_getTemplateDir">xoops_getTemplateDir</a>()
+                    <p>Get the active template directory</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsTpl.html#method_xoops_getTemplateDir"><abbr title="XoopsTpl">XoopsTpl</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_xoops_setDebugging">xoops_setDebugging</a>(boolean $flag = false)
+                    <p>Set debugging mode</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsTpl.html#method_xoops_setDebugging"><abbr title="XoopsTpl">XoopsTpl</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_xoops_setCaching">xoops_setCaching</a>(integer $num)
+                    <p>Set caching</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsTpl.html#method_xoops_setCaching"><abbr title="XoopsTpl">XoopsTpl</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_xoops_setCacheTime">xoops_setCacheTime</a>(integer $num)
+                    <p>Set cache lifetime</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsTpl.html#method_xoops_setCacheTime"><abbr title="XoopsTpl">XoopsTpl</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_xoops_setCompileDir">xoops_setCompileDir</a>(string $dirname)
+                    <p>Set directory for compiled template files</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsTpl.html#method_xoops_setCompileDir"><abbr title="XoopsTpl">XoopsTpl</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_xoops_setCacheDir">xoops_setCacheDir</a>(string $dirname)
+                    <p>Set the directory for cached template files</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsTpl.html#method_xoops_setCacheDir"><abbr title="XoopsTpl">XoopsTpl</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_xoops_fetchFromData">xoops_fetchFromData</a>($data)
+                    <p>Render output from template data</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsTpl.html#method_xoops_fetchFromData"><abbr title="XoopsTpl">XoopsTpl</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_xoops_canUpdateFromFile">xoops_canUpdateFromFile</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsTpl.html#method_xoops_canUpdateFromFile"><abbr title="XoopsTpl">XoopsTpl</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_fetchBlock">fetchBlock</a>($template, $bid)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsTpl.html#method_fetchBlock"><abbr title="XoopsTpl">XoopsTpl</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_isBlockCached">isBlockCached</a>($template, $bid)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsTpl.html#method_isBlockCached"><abbr title="XoopsTpl">XoopsTpl</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_isModuleCached">isModuleCached</a>($templateName, $dirname)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsTpl.html#method_isModuleCached"><abbr title="XoopsTpl">XoopsTpl</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_fetchModule">fetchModule</a>($templateName, $dirname)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsTpl.html#method_fetchModule"><abbr title="XoopsTpl">XoopsTpl</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getModuleCachedTemplateId">getModuleCachedTemplateId</a>($dirname)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsTpl.html#method_getModuleCachedTemplateId"><abbr title="XoopsTpl">XoopsTpl</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_fetchDebugConsole">fetchDebugConsole</a>()
+                    <p>Return smarty&#039;s debug console if debug mode is active.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsTpl.html#method_fetchDebugConsole"><abbr title="XoopsTpl">XoopsTpl</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_Xcore_XoopsTpl">Xcore_XoopsTpl</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_assign">assign</a>($tpl_var, $value = null)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_assign_by_ref">assign_by_ref</a>($tpl_var, $value)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_get_template_vars">get_template_vars</a>($name = null)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_XoopsTpl">
+        <div class="location">in <a href="XoopsTpl.html#method_XoopsTpl"><abbr title="XoopsTpl">XoopsTpl</abbr></a> at line 61</div>
+        <code>            public            
+    <strong>XoopsTpl</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Constructor</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_xoops_setTemplateDir">
+        <div class="location">in <a href="XoopsTpl.html#method_xoops_setTemplateDir"><abbr title="XoopsTpl">XoopsTpl</abbr></a> at line 113</div>
+        <code>            public            
+    <strong>xoops_setTemplateDir</strong>(string $dirname)</code>
+    </h3>
+    <div class="details">
+        <p>Set the directory for templates</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$dirname</td>
+                <td>Directory path without a trailing slash</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_xoops_getTemplateDir">
+        <div class="location">in <a href="XoopsTpl.html#method_xoops_getTemplateDir"><abbr title="XoopsTpl">XoopsTpl</abbr></a> at line 123</div>
+        <code>            public            string
+    <strong>xoops_getTemplateDir</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the active template directory</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_xoops_setDebugging">
+        <div class="location">in <a href="XoopsTpl.html#method_xoops_setDebugging"><abbr title="XoopsTpl">XoopsTpl</abbr></a> at line 133</div>
+        <code>            public            
+    <strong>xoops_setDebugging</strong>(boolean $flag = false)</code>
+    </h3>
+    <div class="details">
+        <p>Set debugging mode</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>boolean</td>
+                <td>$flag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_xoops_setCaching">
+        <div class="location">in <a href="XoopsTpl.html#method_xoops_setCaching"><abbr title="XoopsTpl">XoopsTpl</abbr></a> at line 143</div>
+        <code>            public            
+    <strong>xoops_setCaching</strong>(integer $num)</code>
+    </h3>
+    <div class="details">
+        <p>Set caching</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$num</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_xoops_setCacheTime">
+        <div class="location">in <a href="XoopsTpl.html#method_xoops_setCacheTime"><abbr title="XoopsTpl">XoopsTpl</abbr></a> at line 153</div>
+        <code>            public            
+    <strong>xoops_setCacheTime</strong>(integer $num)</code>
+    </h3>
+    <div class="details">
+        <p>Set cache lifetime</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$num</td>
+                <td>Cache lifetime</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_xoops_setCompileDir">
+        <div class="location">in <a href="XoopsTpl.html#method_xoops_setCompileDir"><abbr title="XoopsTpl">XoopsTpl</abbr></a> at line 168</div>
+        <code>            public            
+    <strong>xoops_setCompileDir</strong>(string $dirname)</code>
+    </h3>
+    <div class="details">
+        <p>Set directory for compiled template files</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$dirname</td>
+                <td>Full directory path without a trailing slash</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_xoops_setCacheDir">
+        <div class="location">in <a href="XoopsTpl.html#method_xoops_setCacheDir"><abbr title="XoopsTpl">XoopsTpl</abbr></a> at line 178</div>
+        <code>            public            
+    <strong>xoops_setCacheDir</strong>(string $dirname)</code>
+    </h3>
+    <div class="details">
+        <p>Set the directory for cached template files</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$dirname</td>
+                <td>Full directory path without a trailing slash</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_xoops_fetchFromData">
+        <div class="location">in <a href="XoopsTpl.html#method_xoops_fetchFromData"><abbr title="XoopsTpl">XoopsTpl</abbr></a> at line 191</div>
+        <code>            public            string
+    <strong>xoops_fetchFromData</strong>($data)</code>
+    </h3>
+    <div class="details">
+        <p>Render output from template data</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>Rendered output</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_xoops_canUpdateFromFile">
+        <div class="location">in <a href="XoopsTpl.html#method_xoops_canUpdateFromFile"><abbr title="XoopsTpl">XoopsTpl</abbr></a> at line 206</div>
+        <code>            public            
+    <strong>xoops_canUpdateFromFile</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_fetchBlock">
+        <div class="location">in <a href="XoopsTpl.html#method_fetchBlock"><abbr title="XoopsTpl">XoopsTpl</abbr></a> at line 211</div>
+        <code>            public            
+    <strong>fetchBlock</strong>($template, $bid)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$template</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$bid</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isBlockCached">
+        <div class="location">in <a href="XoopsTpl.html#method_isBlockCached"><abbr title="XoopsTpl">XoopsTpl</abbr></a> at line 217</div>
+        <code>            public            
+    <strong>isBlockCached</strong>($template, $bid)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$template</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$bid</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isModuleCached">
+        <div class="location">in <a href="XoopsTpl.html#method_isModuleCached"><abbr title="XoopsTpl">XoopsTpl</abbr></a> at line 222</div>
+        <code>            public            
+    <strong>isModuleCached</strong>($templateName, $dirname)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$templateName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$dirname</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_fetchModule">
+        <div class="location">in <a href="XoopsTpl.html#method_fetchModule"><abbr title="XoopsTpl">XoopsTpl</abbr></a> at line 230</div>
+        <code>            public            
+    <strong>fetchModule</strong>($templateName, $dirname)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$templateName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$dirname</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getModuleCachedTemplateId">
+        <div class="location">in <a href="XoopsTpl.html#method_getModuleCachedTemplateId"><abbr title="XoopsTpl">XoopsTpl</abbr></a> at line 238</div>
+        <code>            public            
+    <strong>getModuleCachedTemplateId</strong>($dirname)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$dirname</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_fetchDebugConsole">
+        <div class="location">in <a href="XoopsTpl.html#method_fetchDebugConsole"><abbr title="XoopsTpl">XoopsTpl</abbr></a> at line 248</div>
+        <code>            public            string
+    <strong>fetchDebugConsole</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Return smarty&#039;s debug console if debug mode is active.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_Xcore_XoopsTpl">
+        <div class="location">at line 23</div>
+        <code>            public            
+    <strong>Xcore_XoopsTpl</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_assign">
+        <div class="location">at line 29</div>
+        <code>            public            
+    <strong>assign</strong>($tpl_var, $value = null)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$tpl_var</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_assign_by_ref">
+        <div class="location">at line 55</div>
+        <code>            public            
+    <strong>assign_by_ref</strong>($tpl_var, $value)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$tpl_var</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_get_template_vars">
+        <div class="location">at line 66</div>
+        <code>            public            
+    <strong>get_template_vars</strong>($name = null)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

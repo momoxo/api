@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XoopsConfigHandler | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>XoopsConfigHandler</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>XoopsConfigHandler</strong></p>
+
+            <div class="description">
+            <p>XOOPS configuration handling class.</p>
+            <p>This class acts as an interface for handling general configurations of XOOPS<br />
+ and its modules.</p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property__cHandler">
+                                                            object
+                </td>
+                <td>$_cHandler</td>
+                <td class="last">holds reference to config item handler(DAO) class</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__oHandler">
+                                                            
+                </td>
+                <td>$_oHandler</td>
+                <td class="last">holds reference to config option handler(DAO) class</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__cachedConfigs">
+                                                            array
+                </td>
+                <td>$_cachedConfigs</td>
+                <td class="last">holds an array of cached references to config value arrays,  indexed on module id and category id</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XoopsConfigHandler">XoopsConfigHandler</a>($db)
+                    <p>Constructor</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_createConfig">createConfig</a>()
+                    <p>Create a config</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getConfig">getConfig</a>($id, $withoptions = false)
+                    <p>Get a config</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_insertConfig">insertConfig</a>($config)
+                    <p>insert a new config in the database</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_deleteConfig">deleteConfig</a>($config)
+                    <p>Delete a config from the database</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getConfigs">getConfigs</a>($criteria = null, $id_as_key = false, $with_options = false)
+                    <p>get one or more Configs</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getConfigCount">getConfigCount</a>($criteria = null)
+                    <p>Count some configs</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getConfigsByCat">getConfigsByCat</a>($category, $module)
+                    <p>Get configs from a certain category</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getConfigsByDirname">getConfigsByDirname</a>(string $dirname, int $category)
+                    <p>Get configs by dirname.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_createConfigOption">createConfigOption</a>()
+                    <p>Make a new {@link XoopsConfigOption}</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getConfigOption">getConfigOption</a>($id)
+                    <p>Get a {@link XoopsConfigOption}</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getConfigOptions">getConfigOptions</a>($criteria = null, $id_as_key = false)
+                    <p>Get one or more {@link XoopsConfigOption}s</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getConfigOptionsCount">getConfigOptionsCount</a>($criteria = null)
+                    <p>Count some {@link XoopsConfigOption}s</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getConfigList">getConfigList</a>($conf_modid, $conf_catid)
+                    <p>Get a list of configs</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_XoopsConfigHandler">
+        <div class="location">at line 48</div>
+        <code>            public            
+    <strong>XoopsConfigHandler</strong>($db)</code>
+    </h3>
+    <div class="details">
+        <p>Constructor</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$db</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_createConfig">
+        <div class="location">at line 60</div>
+        <code>            public            
+    <strong>createConfig</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Create a config</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>XoopsConfigItem</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_getConfig">
+        <div class="location">at line 73</div>
+        <code>            public            
+    <strong>getConfig</strong>($id, $withoptions = false)</code>
+    </h3>
+    <div class="details">
+        <p>Get a config</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$withoptions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_insertConfig">
+        <div class="location">at line 87</div>
+        <code>            public            
+    <strong>insertConfig</strong>($config)</code>
+    </h3>
+    <div class="details">
+        <p>insert a new config in the database</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_deleteConfig">
+        <div class="location">at line 112</div>
+        <code>            public            
+    <strong>deleteConfig</strong>($config)</code>
+    </h3>
+    <div class="details">
+        <p>Delete a config from the database</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getConfigs">
+        <div class="location">at line 143</div>
+        <code>            public            
+    <strong>getConfigs</strong>($criteria = null, $id_as_key = false, $with_options = false)</code>
+    </h3>
+    <div class="details">
+        <p>get one or more Configs</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$criteria</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$id_as_key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$with_options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getConfigCount">
+        <div class="location">at line 154</div>
+        <code>            public            
+    <strong>getConfigCount</strong>($criteria = null)</code>
+    </h3>
+    <div class="details">
+        <p>Count some configs</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$criteria</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getConfigsByCat">
+        <div class="location">at line 168</div>
+        <code>            public            
+    <strong>getConfigsByCat</strong>($category, $module)</code>
+    </h3>
+    <div class="details">
+        <p>Get configs from a certain category</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$category</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$module</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getConfigsByDirname">
+        <div class="location">at line 200</div>
+        <code>            public            
+    <strong>getConfigsByDirname</strong>(string $dirname, int $category)</code>
+    </h3>
+    <div class="details">
+        <p>Get configs by dirname.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$dirname</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$category</td>
+                <td>ID of a category. (Reserved)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_createConfigOption">
+        <div class="location">at line 219</div>
+        <code>            public            
+    <strong>createConfigOption</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Make a new {@link XoopsConfigOption}</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getConfigOption">
+        <div class="location">at line 231</div>
+        <code>            public            
+    <strong>getConfigOption</strong>($id)</code>
+    </h3>
+    <div class="details">
+        <p>Get a {@link XoopsConfigOption}</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getConfigOptions">
+        <div class="location">at line 245</div>
+        <code>            public            
+    <strong>getConfigOptions</strong>($criteria = null, $id_as_key = false)</code>
+    </h3>
+    <div class="details">
+        <p>Get one or more {@link XoopsConfigOption}s</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$criteria</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$id_as_key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getConfigOptionsCount">
+        <div class="location">at line 258</div>
+        <code>            public            
+    <strong>getConfigOptionsCount</strong>($criteria = null)</code>
+    </h3>
+    <div class="details">
+        <p>Count some {@link XoopsConfigOption}s</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$criteria</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getConfigList">
+        <div class="location">at line 271</div>
+        <code>            public            
+    <strong>getConfigList</strong>($conf_modid, $conf_catid)</code>
+    </h3>
+    <div class="details">
+        <p>Get a list of configs</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$conf_modid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$conf_catid</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

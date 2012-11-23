@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>AltsysLangMgr_LanguageManager | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>AltsysLangMgr_LanguageManager</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>AltsysLangMgr_LanguageManager</strong>        extends <a href="Xcore_LanguageManager.html"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a></p>
+
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_mLanguageName">
+                                                            string
+                </td>
+                <td>$mLanguageName</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mLocaleName">
+                                                            string
+                </td>
+                <td>$mLocaleName</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_langman">
+                                                            
+                </td>
+                <td>$langman</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_theme_lang_checked">
+                                                            
+                </td>
+                <td>$theme_lang_checked</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_prepare">prepare</a>()
+                    <p>Normally, this member function is called soon, after constructor.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__setupDatabase">_setupDatabase</a>()
+                    <p>Load the additional file to control DB.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_LanguageManager.html#method__setupDatabase"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__setupMbstring">_setupMbstring</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_LanguageManager.html#method__setupMbstring"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_loadGlobalMessageCatalog">loadGlobalMessageCatalog</a>()
+                    <p>Load the global message catalog which is defined in the base module.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_loadPageTypeMessageCatalog">loadPageTypeMessageCatalog</a>(string $type)
+                    <p>Load the special message catalog which is defined has been the XOOPS2 generation.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_loadModuleMessageCatalog">loadModuleMessageCatalog</a>(<abbr title="$dirname">$dirname</abbr> $moduleName)
+                    <p>Load the message catalog of the specified module.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_LanguageManager.html#method_loadModuleMessageCatalog"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_loadModuleAdminMessageCatalog">loadModuleAdminMessageCatalog</a>(<abbr title="$dirname">$dirname</abbr> $dirname)
+                    <p>Load the message catalog of the specified module for admin.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_LanguageManager.html#method_loadModuleAdminMessageCatalog"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_loadBlockMessageCatalog">loadBlockMessageCatalog</a>(<abbr title="$dirname">$dirname</abbr> $dirname)
+                    <p>Load the message catalog of the specified module for block.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_LanguageManager.html#method_loadBlockMessageCatalog"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_loadModinfoMessageCatalog">loadModinfoMessageCatalog</a>(<abbr title="$dirname">$dirname</abbr> $dirname)
+                    <p>Load the message catalog of the specified module for modinfo.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_LanguageManager.html#method_loadModinfoMessageCatalog"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__loadLanguage">_loadLanguage</a>(<abbr title="$dirname">$dirname</abbr> $dirname, <abbr title="$fileBodyName">$fileBodyName</abbr> $fileBodyName)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__loadFile">_loadFile</a>(<abbr title="$filename">$filename</abbr> $filename, <abbr title="$dirname">$dirname</abbr> $mydirname = null)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_LanguageManager.html#method__loadFile"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_existFile">existFile</a>(string $section, string $filename)
+                    <p>check the exstence of the specified file in the specified section.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_LanguageManager.html#method_existFile"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getFilepath">getFilepath</a>(string $section, string $filename)
+                    <p>Return the file path by the specified section and the specified file.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_LanguageManager.html#method_getFilepath"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_loadTextFile">loadTextFile</a>(string $section, string $filename)
+                    <p>Get file contents and return it.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_LanguageManager.html#method_loadTextFile"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getFallbackLanguage">getFallbackLanguage</a>()
+                    <p>Return default language name.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_LanguageManager.html#method_getFallbackLanguage"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_encodeUTF8">encodeUTF8</a>($text)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_LanguageManager.html#method_encodeUTF8"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_decodeUTF8">decodeUTF8</a>($text)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_LanguageManager.html#method_decodeUTF8"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a></small></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_prepare">
+        <div class="location">at line 35</div>
+        <code>            public            
+    <strong>prepare</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Normally, this member function is called soon, after constructor.</p>
+        <p>To follow the base, initialize.</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__setupDatabase">
+        <div class="location">in <a href="Xcore_LanguageManager.html#method__setupDatabase"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a> at line 18</div>
+        <code>            public            
+    <strong>_setupDatabase</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Load the additional file to control DB.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__setupMbstring">
+        <div class="location">in <a href="Xcore_LanguageManager.html#method__setupMbstring"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a> at line 26</div>
+        <code>            public            
+    <strong>_setupMbstring</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_loadGlobalMessageCatalog">
+        <div class="location">at line 82</div>
+        <code>            public            
+    <strong>loadGlobalMessageCatalog</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Load the global message catalog which is defined in the base module.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_loadPageTypeMessageCatalog">
+        <div class="location">at line 67</div>
+        <code>            public            
+    <strong>loadPageTypeMessageCatalog</strong>(string $type)</code>
+    </h3>
+    <div class="details">
+        <p>Load the special message catalog which is defined has been the XOOPS2 generation.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_loadModuleMessageCatalog">
+        <div class="location">in <a href="Xcore_LanguageManager.html#method_loadModuleMessageCatalog"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a> at line 96</div>
+        <code>            public            
+    <strong>loadModuleMessageCatalog</strong>(<abbr title="$dirname">$dirname</abbr> $moduleName)</code>
+    </h3>
+    <div class="details">
+        <p>Load the message catalog of the specified module.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$dirname">$dirname</abbr></td>
+                <td>$moduleName</td>
+                <td>A dirname of module.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_loadModuleAdminMessageCatalog">
+        <div class="location">in <a href="Xcore_LanguageManager.html#method_loadModuleAdminMessageCatalog"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a> at line 107</div>
+        <code>            public            
+    <strong>loadModuleAdminMessageCatalog</strong>(<abbr title="$dirname">$dirname</abbr> $dirname)</code>
+    </h3>
+    <div class="details">
+        <p>Load the message catalog of the specified module for admin.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$dirname">$dirname</abbr></td>
+                <td>$dirname</td>
+                <td>A dirname of module.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_loadBlockMessageCatalog">
+        <div class="location">in <a href="Xcore_LanguageManager.html#method_loadBlockMessageCatalog"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a> at line 118</div>
+        <code>            public            
+    <strong>loadBlockMessageCatalog</strong>(<abbr title="$dirname">$dirname</abbr> $dirname)</code>
+    </h3>
+    <div class="details">
+        <p>Load the message catalog of the specified module for block.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$dirname">$dirname</abbr></td>
+                <td>$dirname</td>
+                <td>A dirname of module.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_loadModinfoMessageCatalog">
+        <div class="location">in <a href="Xcore_LanguageManager.html#method_loadModinfoMessageCatalog"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a> at line 129</div>
+        <code>            public            
+    <strong>loadModinfoMessageCatalog</strong>(<abbr title="$dirname">$dirname</abbr> $dirname)</code>
+    </h3>
+    <div class="details">
+        <p>Load the message catalog of the specified module for modinfo.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$dirname">$dirname</abbr></td>
+                <td>$dirname</td>
+                <td>A dirname of module.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__loadLanguage">
+        <div class="location">at line 46</div>
+        <code>            public            
+    <strong>_loadLanguage</strong>(<abbr title="$dirname">$dirname</abbr> $dirname, <abbr title="$fileBodyName">$fileBodyName</abbr> $fileBodyName)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$dirname">$dirname</abbr></td>
+                <td>$dirname</td>
+                <td>module directory name</td>
+            </tr>
+                    <tr>
+                <td><abbr title="$fileBodyName">$fileBodyName</abbr></td>
+                <td>$fileBodyName</td>
+                <td>language file body name</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__loadFile">
+        <div class="location">in <a href="Xcore_LanguageManager.html#method__loadFile"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a> at line 167</div>
+        <code>            public            
+    <strong>_loadFile</strong>(<abbr title="$filename">$filename</abbr> $filename, <abbr title="$dirname">$dirname</abbr> $mydirname = null)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$filename">$filename</abbr></td>
+                <td>$filename</td>
+                <td>A filename.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="$dirname">$dirname</abbr></td>
+                <td>$mydirname</td>
+                <td>A dirname of module. (for D3 module)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_existFile">
+        <div class="location">in <a href="Xcore_LanguageManager.html#method_existFile"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a> at line 185</div>
+        <code>            public            bool
+    <strong>existFile</strong>(string $section, string $filename)</code>
+    </h3>
+    <div class="details">
+        <p>check the exstence of the specified file in the specified section.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td>A name of section.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$filename</td>
+                <td>A name of file</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getFilepath">
+        <div class="location">in <a href="Xcore_LanguageManager.html#method_getFilepath"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a> at line 198</div>
+        <code>            public            string
+    <strong>getFilepath</strong>(string $section, string $filename)</code>
+    </h3>
+    <div class="details">
+        <p>Return the file path by the specified section and the specified file.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td>A name of section.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$filename</td>
+                <td>A name of file</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_loadTextFile">
+        <div class="location">in <a href="Xcore_LanguageManager.html#method_loadTextFile"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a> at line 218</div>
+        <code>            public            string
+    <strong>loadTextFile</strong>(string $section, string $filename)</code>
+    </h3>
+    <div class="details">
+        <p>Get file contents and return it.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td>A name of section.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$filename</td>
+                <td>A name of file</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getFallbackLanguage">
+        <div class="location">in <a href="Xcore_LanguageManager.html#method_getFallbackLanguage"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a> at line 224</div>
+        <code>            public            string
+    <strong>getFallbackLanguage</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Return default language name.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_encodeUTF8">
+        <div class="location">in <a href="Xcore_LanguageManager.html#method_encodeUTF8"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a> at line 229</div>
+        <code>            public            
+    <strong>encodeUTF8</strong>($text)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_decodeUTF8">
+        <div class="location">in <a href="Xcore_LanguageManager.html#method_decodeUTF8"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a> at line 240</div>
+        <code>            public            
+    <strong>decodeUTF8</strong>($text)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>BloggerApi | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>BloggerApi</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>BloggerApi</strong>        extends <a href="XoopsXmlRpcApi.html"><abbr title="XoopsXmlRpcApi">XoopsXmlRpcApi</abbr></a></p>
+
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_params">
+                                                            
+                </td>
+                <td>$params</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_response">
+                                                            
+                </td>
+                <td>$response</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_module">
+                                                            
+                </td>
+                <td>$module</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_xoopsTagMap">
+                                                            
+                </td>
+                <td>$xoopsTagMap</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_user">
+                                                            
+                </td>
+                <td>$user</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_isadmin">
+                                                            
+                </td>
+                <td>$isadmin</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XoopsXmlRpcApi">XoopsXmlRpcApi</a>($params, $response, $module)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsXmlRpcApi.html#method_XoopsXmlRpcApi"><abbr title="XoopsXmlRpcApi">XoopsXmlRpcApi</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__setUser">_setUser</a>($user, $isadmin = false)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsXmlRpcApi.html#method__setUser"><abbr title="XoopsXmlRpcApi">XoopsXmlRpcApi</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__checkUser">_checkUser</a>($username, $password)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsXmlRpcApi.html#method__checkUser"><abbr title="XoopsXmlRpcApi">XoopsXmlRpcApi</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__checkAdmin">_checkAdmin</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsXmlRpcApi.html#method__checkAdmin"><abbr title="XoopsXmlRpcApi">XoopsXmlRpcApi</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__getPostFields">_getPostFields</a>($post_id = null, $blog_id = null)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsXmlRpcApi.html#method__getPostFields"><abbr title="XoopsXmlRpcApi">XoopsXmlRpcApi</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__setXoopsTagMap">_setXoopsTagMap</a>($xoopstag, $blogtag)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsXmlRpcApi.html#method__setXoopsTagMap"><abbr title="XoopsXmlRpcApi">XoopsXmlRpcApi</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__getXoopsTagMap">_getXoopsTagMap</a>($xoopstag)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsXmlRpcApi.html#method__getXoopsTagMap"><abbr title="XoopsXmlRpcApi">XoopsXmlRpcApi</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__getTagCdata">_getTagCdata</a>($text, $tag, $remove = true)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsXmlRpcApi.html#method__getTagCdata"><abbr title="XoopsXmlRpcApi">XoopsXmlRpcApi</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__getXoopsApi">_getXoopsApi</a>($params)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsXmlRpcApi.html#method__getXoopsApi"><abbr title="XoopsXmlRpcApi">XoopsXmlRpcApi</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_BloggerApi">BloggerApi</a>($params, $response, $module)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_newPost">newPost</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_editPost">editPost</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_deletePost">deletePost</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getPost">getPost</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getRecentPosts">getRecentPosts</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getUsersBlogs">getUsersBlogs</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getUserInfo">getUserInfo</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getTemplate">getTemplate</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setTemplate">setTemplate</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_XoopsXmlRpcApi">
+        <div class="location">in <a href="XoopsXmlRpcApi.html#method_XoopsXmlRpcApi"><abbr title="XoopsXmlRpcApi">XoopsXmlRpcApi</abbr></a> at line 55</div>
+        <code>            public            
+    <strong>XoopsXmlRpcApi</strong>($params, $response, $module)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$response</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$module</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__setUser">
+        <div class="location">in <a href="XoopsXmlRpcApi.html#method__setUser"><abbr title="XoopsXmlRpcApi">XoopsXmlRpcApi</abbr></a> at line 62</div>
+        <code>            public            
+    <strong>_setUser</strong>($user, $isadmin = false)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$isadmin</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__checkUser">
+        <div class="location">in <a href="XoopsXmlRpcApi.html#method__checkUser"><abbr title="XoopsXmlRpcApi">XoopsXmlRpcApi</abbr></a> at line 70</div>
+        <code>            public            
+    <strong>_checkUser</strong>($username, $password)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$password</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__checkAdmin">
+        <div class="location">in <a href="XoopsXmlRpcApi.html#method__checkAdmin"><abbr title="XoopsXmlRpcApi">XoopsXmlRpcApi</abbr></a> at line 89</div>
+        <code>            public            
+    <strong>_checkAdmin</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__getPostFields">
+        <div class="location">in <a href="XoopsXmlRpcApi.html#method__getPostFields"><abbr title="XoopsXmlRpcApi">XoopsXmlRpcApi</abbr></a> at line 104</div>
+        <code>            public            
+    <strong>_getPostFields</strong>($post_id = null, $blog_id = null)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$blog_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__setXoopsTagMap">
+        <div class="location">in <a href="XoopsXmlRpcApi.html#method__setXoopsTagMap"><abbr title="XoopsXmlRpcApi">XoopsXmlRpcApi</abbr></a> at line 127</div>
+        <code>            public            
+    <strong>_setXoopsTagMap</strong>($xoopstag, $blogtag)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$xoopstag</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$blogtag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__getXoopsTagMap">
+        <div class="location">in <a href="XoopsXmlRpcApi.html#method__getXoopsTagMap"><abbr title="XoopsXmlRpcApi">XoopsXmlRpcApi</abbr></a> at line 134</div>
+        <code>            public            
+    <strong>_getXoopsTagMap</strong>($xoopstag)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$xoopstag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__getTagCdata">
+        <div class="location">in <a href="XoopsXmlRpcApi.html#method__getTagCdata"><abbr title="XoopsXmlRpcApi">XoopsXmlRpcApi</abbr></a> at line 142</div>
+        <code>            public            
+    <strong>_getTagCdata</strong>($text, $tag, $remove = true)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$tag</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$remove</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__getXoopsApi">
+        <div class="location">in <a href="XoopsXmlRpcApi.html#method__getXoopsApi"><abbr title="XoopsXmlRpcApi">XoopsXmlRpcApi</abbr></a> at line 157</div>
+        <code>            public            
+    <strong>_getXoopsApi</strong>($params)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_BloggerApi">
+        <div class="location">at line 39</div>
+        <code>            public            
+    <strong>BloggerApi</strong>($params, $response, $module)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$response</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$module</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_newPost">
+        <div class="location">at line 47</div>
+        <code>            public            
+    <strong>newPost</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_editPost">
+        <div class="location">at line 94</div>
+        <code>            public            
+    <strong>editPost</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_deletePost">
+        <div class="location">at line 139</div>
+        <code>            public            
+    <strong>deletePost</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getPost">
+        <div class="location">at line 152</div>
+        <code>            public            
+    <strong>getPost</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getRecentPosts">
+        <div class="location">at line 190</div>
+        <code>            public            
+    <strong>getRecentPosts</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getUsersBlogs">
+        <div class="location">at line 238</div>
+        <code>            public            
+    <strong>getUsersBlogs</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getUserInfo">
+        <div class="location">at line 253</div>
+        <code>            public            
+    <strong>getUserInfo</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTemplate">
+        <div class="location">at line 269</div>
+        <code>            public            
+    <strong>getTemplate</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setTemplate">
+        <div class="location">at line 288</div>
+        <code>            public            
+    <strong>setTemplate</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

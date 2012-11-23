@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XoopsTplfileHandler | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>XoopsTplfileHandler</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>XoopsTplfileHandler</strong>        extends <a href="XoopsObjectHandler.html"><abbr title="XoopsObjectHandler">XoopsObjectHandler</abbr></a></p>
+
+            <div class="description">
+            <p>XOOPS template file handler class.</p>
+            <p>This class is responsible for providing data access mechanisms to the data source <br />
+ of XOOPS template file class objects.</p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_db">
+                                                            object
+                </td>
+                <td>$db</td>
+                <td class="last">holds referenced to {@link XoopsDatabase} class object</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XoopsObjectHandler">XoopsObjectHandler</a>(object $db)
+                    <p>called from child classes only</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsObjectHandler.html#method_XoopsObjectHandler"><abbr title="XoopsObjectHandler">XoopsObjectHandler</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_create">create</a>($isNew = true)
+                    <p>creates a new object</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_get">get</a>($id, $getsource = false)
+                    <p>gets a value object</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_insert">insert</a>($tplfile)
+                    <p>insert/update object</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_delete">delete</a>($tplfile)
+                    <p>delete obejct from database</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_loadSource">loadSource</a>($tplfile)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_forceUpdate">forceUpdate</a>($tplfile)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_deleteAll">deleteAll</a>($criteria = null)
+                    <p>Delete the plural of record by a cetain criteria.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getObjects">getObjects</a>($criteria = null, $getsource = false, $id_as_key = false)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getCount">getCount</a>($criteria = null)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getModuleTplCount">getModuleTplCount</a>($tplset)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_find">find</a>($tplset = null, $type = null, $refid = null, $module = null, $file = null, $getsource = false)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_templateExists">templateExists</a>($tplname, $tplset_name)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_XoopsObjectHandler">
+        <div class="location">in <a href="XoopsObjectHandler.html#method_XoopsObjectHandler"><abbr title="XoopsObjectHandler">XoopsObjectHandler</abbr></a> at line 702</div>
+        <code>            public            
+    <strong>XoopsObjectHandler</strong>(object $db)</code>
+    </h3>
+    <div class="details">
+        <p>called from child classes only</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$db</td>
+                <td>reference to the {@link XoopsDatabase} object</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_create">
+        <div class="location">at line 51</div>
+        <code>            public            
+    <strong>create</strong>($isNew = true)</code>
+    </h3>
+    <div class="details">
+        <p>creates a new object</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$isNew</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_get">
+        <div class="location">at line 60</div>
+        <code>            public            
+    <strong>get</strong>($id, $getsource = false)</code>
+    </h3>
+    <div class="details">
+        <p>gets a value object</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$getsource</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_insert">
+        <div class="location">at line 97</div>
+        <code>            public            
+    <strong>insert</strong>($tplfile)</code>
+    </h3>
+    <div class="details">
+        <p>insert/update object</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$tplfile</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_delete">
+        <div class="location">at line 174</div>
+        <code>            public            
+    <strong>delete</strong>($tplfile)</code>
+    </h3>
+    <div class="details">
+        <p>delete obejct from database</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$tplfile</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_loadSource">
+        <div class="location">at line 81</div>
+        <code>            public            
+    <strong>loadSource</strong>($tplfile)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$tplfile</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_forceUpdate">
+        <div class="location">at line 143</div>
+        <code>            public            
+    <strong>forceUpdate</strong>($tplfile)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$tplfile</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_deleteAll">
+        <div class="location">at line 194</div>
+        <code>            public            bool
+    <strong>deleteAll</strong>($criteria = null)</code>
+    </h3>
+    <div class="details">
+        <p>Delete the plural of record by a cetain criteria.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$criteria</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getObjects">
+        <div class="location">at line 211</div>
+        <code>            public            
+    <strong>getObjects</strong>($criteria = null, $getsource = false, $id_as_key = false)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$criteria</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$getsource</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$id_as_key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getCount">
+        <div class="location">at line 242</div>
+        <code>            public            
+    <strong>getCount</strong>($criteria = null)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$criteria</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getModuleTplCount">
+        <div class="location">at line 255</div>
+        <code>            public            
+    <strong>getModuleTplCount</strong>($tplset)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$tplset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_find">
+        <div class="location">at line 271</div>
+        <code>            public            
+    <strong>find</strong>($tplset = null, $type = null, $refid = null, $module = null, $file = null, $getsource = false)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$tplset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$refid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$module</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$getsource</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_templateExists">
+        <div class="location">at line 301</div>
+        <code>            public            
+    <strong>templateExists</strong>($tplname, $tplset_name)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$tplname</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$tplset_name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

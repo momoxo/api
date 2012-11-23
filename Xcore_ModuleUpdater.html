@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Xcore_ModuleUpdater | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>Xcore_ModuleUpdater</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>Xcore_ModuleUpdater</strong>        extends <a href="Xcore_ModulePhasedUpgrader.html"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a></p>
+
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property__mMilestone">
+                                                            
+                </td>
+                <td>$_mMilestone</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mLog">
+                                                            
+                </td>
+                <td>$mLog</td>
+                <td class="last">This instance is prepared automatically in the constructor.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__mCurrentXoopsModule">
+                                                            <a href="XoopsModule.html"><abbr title="XoopsModule">XoopsModule</abbr></a>
+                </td>
+                <td>$_mCurrentXoopsModule</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__mCurrentVersion">
+                                                            int
+                </td>
+                <td>$_mCurrentVersion</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__mTargetXoopsModule">
+                                                            <a href="XoopsModule.html"><abbr title="XoopsModule">XoopsModule</abbr></a>
+                </td>
+                <td>$_mTargetXoopsModule</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__mTargetVersion">
+                                                            int
+                </td>
+                <td>$_mTargetVersion</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__mForceMode">
+                                                            bool
+                </td>
+                <td>$_mForceMode</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModulePhasedUpgrader.html#method_Xcore_ModulePhasedUpgrader"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setForceMode">setForceMode</a>(bool $isForceMode)
+                    <p>Sets a value indicating whether the force mode is on.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModulePhasedUpgrader.html#method_setForceMode"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setCurrentXoopsModule">setCurrentXoopsModule</a>($xoopsModule)
+                    <p>Sets the current XoopsModule.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModulePhasedUpgrader.html#method_setCurrentXoopsModule"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setTargetXoopsModule">setTargetXoopsModule</a>(<a href="XoopsModule.html"><abbr title="XoopsModule">XoopsModule</abbr></a> $xoopsModule)
+                    <p>Sets the target XoopsModule.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModulePhasedUpgrader.html#method_setTargetXoopsModule"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_executeUpgrade">executeUpgrade</a>()
+                    <p>Execute upgrade.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModulePhasedUpgrader.html#method_executeUpgrade"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getCurrentVersion">getCurrentVersion</a>()
+                    <p>Gets the current version.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModulePhasedUpgrader.html#method_getCurrentVersion"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getTargetPhase">getTargetPhase</a>()
+                    <p>Gets the target varsion number at this time.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModulePhasedUpgrader.html#method_getTargetPhase"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_hasUpgradeMethod">hasUpgradeMethod</a>()
+                    <p>Gets the valude indicating whether this class</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModulePhasedUpgrader.html#method_hasUpgradeMethod"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method__callUpgradeMethod">_callUpgradeMethod</a>()
+                    <p>Dispatches the callback upgrade program.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModulePhasedUpgrader.html#method__callUpgradeMethod"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_isLatestUpgrade">isLatestUpgrade</a>()
+                    <p>Gets a valude indicating whether this process is upgrade for the latest version.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModulePhasedUpgrader.html#method_isLatestUpgrade"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_saveXoopsModule">saveXoopsModule</a>($module)
+                    <p>Saves XoopsModule object to DB.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModulePhasedUpgrader.html#method_saveXoopsModule"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__processScript">_processScript</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModulePhasedUpgrader.html#method__processScript"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__processReport">_processReport</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModulePhasedUpgrader.html#method__processReport"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__updateModuleTemplates">_updateModuleTemplates</a>()
+                    <p>Updates all of module templates.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModulePhasedUpgrader.html#method__updateModuleTemplates"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__updateBlocks">_updateBlocks</a>()
+                    <p>Updates all of blocks.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModulePhasedUpgrader.html#method__updateBlocks"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__updatePreferences">_updatePreferences</a>()
+                    <p>Updates all of preferences &amp; notifications.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModulePhasedUpgrader.html#method__updatePreferences"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_executeAutomaticUpgrade">executeAutomaticUpgrade</a>()
+                    <p>This method executes upgrading automatically by the diff of xoops_version.</p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ModulePhasedUpgrader.html#method_executeAutomaticUpgrade"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_update200">update200</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_update106">update106</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__extendConfigTitleSize">_extendConfigTitleSize</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__setUniqueToGroupUserLink">_setUniqueToGroupUserLink</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__recoverXoopsGroupPermission">_recoverXoopsGroupPermission</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_Xcore_ModulePhasedUpgrader">
+        <div class="location">in <a href="Xcore_ModulePhasedUpgrader.html#method_Xcore_ModulePhasedUpgrader"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a> at line 85</div>
+        <code>            public            
+    <strong>Xcore_ModulePhasedUpgrader</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setForceMode">
+        <div class="location">in <a href="Xcore_ModulePhasedUpgrader.html#method_setForceMode"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a> at line 94</div>
+        <code>            public            
+    <strong>setForceMode</strong>(bool $isForceMode)</code>
+    </h3>
+    <div class="details">
+        <p>Sets a value indicating whether the force mode is on.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>bool</td>
+                <td>$isForceMode</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setCurrentXoopsModule">
+        <div class="location">in <a href="Xcore_ModulePhasedUpgrader.html#method_setCurrentXoopsModule"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a> at line 109</div>
+        <code>            public            
+    <strong>setCurrentXoopsModule</strong>($xoopsModule)</code>
+    </h3>
+    <div class="details">
+        <p>Sets the current XoopsModule.</p>
+        <p>This method creates the clone of this<br />
+ object to prevent cache of the module handler, and then keep it to the<br />
+ property. Plus, this method copies the version value of this object to<br />
+ the _mCurrentVersion as backup for the case where the value of this<br />
+ object is changed for updating.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$xoopsModule</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setTargetXoopsModule">
+        <div class="location">in <a href="Xcore_ModulePhasedUpgrader.html#method_setTargetXoopsModule"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a> at line 139</div>
+        <code>            public            
+    <strong>setTargetXoopsModule</strong>(<a href="XoopsModule.html"><abbr title="XoopsModule">XoopsModule</abbr></a> $xoopsModule)</code>
+    </h3>
+    <div class="details">
+        <p>Sets the target XoopsModule.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="XoopsModule.html"><abbr title="XoopsModule">XoopsModule</abbr></a></td>
+                <td>$xoopsModule</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_executeUpgrade">
+        <div class="location">in <a href="Xcore_ModulePhasedUpgrader.html#method_executeUpgrade"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a> at line 152</div>
+        <code>            public            
+    <strong>executeUpgrade</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Execute upgrade.</p>
+        <p>If the specific method for the milestone, this method<br />
+ calls the method. If such milestone doesn&#039;t exist, call the automatic<br />
+ upgrade method.</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getCurrentVersion">
+        <div class="location">in <a href="Xcore_ModulePhasedUpgrader.html#method_getCurrentVersion"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a> at line 167</div>
+        <code>            public            int
+    <strong>getCurrentVersion</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the current version.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTargetPhase">
+        <div class="location">in <a href="Xcore_ModulePhasedUpgrader.html#method_getTargetPhase"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a> at line 178</div>
+        <code>            public            
+    <strong>getTargetPhase</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the target varsion number at this time.</p>
+        <p>In the case where there are<br />
+ milestones, gets the nearest value from the current version.<br />
+ <br />
+ Of course, this class is good to override by the sub-class.</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_hasUpgradeMethod">
+        <div class="location">in <a href="Xcore_ModulePhasedUpgrader.html#method_hasUpgradeMethod"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a> at line 194</div>
+        <code>            public            
+    <strong>hasUpgradeMethod</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the valude indicating whether this class</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__callUpgradeMethod">
+        <div class="location">in <a href="Xcore_ModulePhasedUpgrader.html#method__callUpgradeMethod"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a> at line 216</div>
+        <code>            public            bool
+    <strong>_callUpgradeMethod</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Dispatches the callback upgrade program.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>The value indicating whether this method can call the upgrade-method.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isLatestUpgrade">
+        <div class="location">in <a href="Xcore_ModulePhasedUpgrader.html#method_isLatestUpgrade"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a> at line 237</div>
+        <code>            public            bool
+    <strong>isLatestUpgrade</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets a valude indicating whether this process is upgrade for the latest version.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_saveXoopsModule">
+        <div class="location">in <a href="Xcore_ModulePhasedUpgrader.html#method_saveXoopsModule"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a> at line 247</div>
+        <code>            public            
+    <strong>saveXoopsModule</strong>($module)</code>
+    </h3>
+    <div class="details">
+        <p>Saves XoopsModule object to DB.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$module</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__processScript">
+        <div class="location">in <a href="Xcore_ModulePhasedUpgrader.html#method__processScript"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a> at line 258</div>
+        <code>            public            
+    <strong>_processScript</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__processReport">
+        <div class="location">in <a href="Xcore_ModulePhasedUpgrader.html#method__processReport"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a> at line 272</div>
+        <code>            public            
+    <strong>_processReport</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__updateModuleTemplates">
+        <div class="location">in <a href="Xcore_ModulePhasedUpgrader.html#method__updateModuleTemplates"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a> at line 288</div>
+        <code>            public            
+    <strong>_updateModuleTemplates</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Updates all of module templates.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__updateBlocks">
+        <div class="location">in <a href="Xcore_ModulePhasedUpgrader.html#method__updateBlocks"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a> at line 300</div>
+        <code>            public            
+    <strong>_updateBlocks</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Updates all of blocks.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__updatePreferences">
+        <div class="location">in <a href="Xcore_ModulePhasedUpgrader.html#method__updatePreferences"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a> at line 311</div>
+        <code>            public            
+    <strong>_updatePreferences</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Updates all of preferences &amp; notifications.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_executeAutomaticUpgrade">
+        <div class="location">in <a href="Xcore_ModulePhasedUpgrader.html#method_executeAutomaticUpgrade"><abbr title="Xcore_ModulePhasedUpgrader">Xcore_ModulePhasedUpgrader</abbr></a> at line 325</div>
+        <code>            public            bool
+    <strong>executeAutomaticUpgrade</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>This method executes upgrading automatically by the diff of xoops_version.</p>
+        <p>1) Uninstall all of module templates<br />
+ 2) Install all of module templates</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_update200">
+        <div class="location">at line 10</div>
+        <code>            public            
+    <strong>update200</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_update106">
+        <div class="location">at line 63</div>
+        <code>            public            
+    <strong>update106</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__extendConfigTitleSize">
+        <div class="location">at line 121</div>
+        <code>            public            
+    <strong>_extendConfigTitleSize</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__setUniqueToGroupUserLink">
+        <div class="location">at line 139</div>
+        <code>            public            
+    <strong>_setUniqueToGroupUserLink</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__recoverXoopsGroupPermission">
+        <div class="location">at line 178</div>
+        <code>            public            
+    <strong>_recoverXoopsGroupPermission</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

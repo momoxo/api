@@ -1,0 +1,1912 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XoopsXmlRpcParser | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>XoopsXmlRpcParser</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>XoopsXmlRpcParser</strong>        extends <a href="SaxParser.html"><abbr title="SaxParser">SaxParser</abbr></a></p>
+
+            <div class="description">
+            <p>Class RSS Parser</p>
+            <p>This class offers methods to parse RSS Files</p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_level">
+                                                            
+                </td>
+                <td>$level</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parser">
+                                                            
+                </td>
+                <td>$parser</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_isCaseFolding">
+                                                            
+                </td>
+                <td>$isCaseFolding</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_targetEncoding">
+                                                            
+                </td>
+                <td>$targetEncoding</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_tagHandlers">
+                                                            
+                </td>
+                <td>$tagHandlers</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_tags">
+                                                            
+                </td>
+                <td>$tags</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_xmlInput">
+                                                            
+                </td>
+                <td>$xmlInput</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_errors">
+                                                            
+                </td>
+                <td>$errors</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__param">
+                                                            array
+                </td>
+                <td>$_param</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__methodName">
+                                                            string
+                </td>
+                <td>$_methodName</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__tempName">
+                                                            array
+                </td>
+                <td>$_tempName</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__tempValue">
+                                                            array
+                </td>
+                <td>$_tempValue</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__tempMember">
+                                                            array
+                </td>
+                <td>$_tempMember</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__tempStruct">
+                                                            array
+                </td>
+                <td>$_tempStruct</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__tempArray">
+                                                            array
+                </td>
+                <td>$_tempArray</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__workingLevel">
+                                                            array
+                </td>
+                <td>$_workingLevel</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_SaxParser">SaxParser</a>($input)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_SaxParser"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getCurrentLevel">getCurrentLevel</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_getCurrentLevel"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setCaseFolding">setCaseFolding</a>($isCaseFolding)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_setCaseFolding"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_useIsoEncoding">useIsoEncoding</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_useIsoEncoding"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_useAsciiEncoding">useAsciiEncoding</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_useAsciiEncoding"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_useUtfEncoding">useUtfEncoding</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_useUtfEncoding"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getCurrentTag">getCurrentTag</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_getCurrentTag"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getParentTag">getParentTag</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_getParentTag"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_parse">parse</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_parse"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_free">free</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_free"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getXmlError">getXmlError</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_getXmlError"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addTagHandler">addTagHandler</a>($tagHandler)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_addTagHandler"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_handleBeginElement">handleBeginElement</a>($parser, $tagName, $attributesArray)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_handleBeginElement"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_handleEndElement">handleEndElement</a>($parser, $tagName)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_handleEndElement"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_handleCharacterData">handleCharacterData</a>($parser, $data)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_handleCharacterData"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_handleProcessingInstruction">handleProcessingInstruction</a>($parser, $target, $data)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_handleProcessingInstruction"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_handleDefault">handleDefault</a>($parser, $data)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_handleDefault"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_handleUnparsedEntityDecl">handleUnparsedEntityDecl</a>($parser, $entityName, $base, $systemId, $publicId, $notationName)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_handleUnparsedEntityDecl"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_handleNotationDecl">handleNotationDecl</a>($parser, $notationName, $base, $systemId, $publicId)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_handleNotationDecl"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_handleExternalEntityRef">handleExternalEntityRef</a>($parser, $openEntityNames, $base, $systemId, $publicId)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_handleExternalEntityRef"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_handleBeginElementDefault">handleBeginElementDefault</a>($parser, $tagName, $attributesArray)
+                    <p>The default tag handler method for a tag with no handler</p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_handleBeginElementDefault"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_handleEndElementDefault">handleEndElementDefault</a>($parser, $tagName)
+                    <p>The default tag handler method for a tag with no handler</p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_handleEndElementDefault"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_handleCharacterDataDefault">handleCharacterDataDefault</a>($parser, $data)
+                    <p>The default tag handler method for a tag with no handler</p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_handleCharacterDataDefault"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setErrors">setErrors</a>(<abbr title="$error">$error</abbr> $error)
+                    <p>Sets error messages</p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_setErrors"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_getErrors">getErrors</a>(<abbr title="$ashtml">$ashtml</abbr> $ashtml = true)
+                    <p>Gets all the error messages</p>
+                </td>
+                <td><small>from&nbsp;<a href="SaxParser.html#method_getErrors"><abbr title="SaxParser">SaxParser</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XoopsXmlRpcParser">XoopsXmlRpcParser</a>($input)
+                    <p>Constructor of the class</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setTempName">setTempName</a>($name)
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getTempName">getTempName</a>()
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setTempValue">setTempValue</a>($value)
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getTempValue">getTempValue</a>()
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_resetTempValue">resetTempValue</a>()
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setTempMember">setTempMember</a>($name, $value)
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getTempMember">getTempMember</a>()
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_resetTempMember">resetTempMember</a>()
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setWorkingLevel">setWorkingLevel</a>()
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getWorkingLevel">getWorkingLevel</a>()
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_releaseWorkingLevel">releaseWorkingLevel</a>()
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setTempStruct">setTempStruct</a>($member)
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getTempStruct">getTempStruct</a>()
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_resetTempStruct">resetTempStruct</a>()
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setTempArray">setTempArray</a>($value)
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getTempArray">getTempArray</a>()
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_resetTempArray">resetTempArray</a>()
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setMethodName">setMethodName</a>($methodName)
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getMethodName">getMethodName</a>()
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setParam">setParam</a>($value)
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getParam">getParam</a>()
+                    <p>This Method starts the parsing of the specified RDF File.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_SaxParser">
+        <div class="location">in <a href="SaxParser.html#method_SaxParser"><abbr title="SaxParser">SaxParser</abbr></a> at line 41</div>
+        <code>            public            
+    <strong>SaxParser</strong>($input)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getCurrentLevel">
+        <div class="location">in <a href="SaxParser.html#method_getCurrentLevel"><abbr title="SaxParser">SaxParser</abbr></a> at line 62</div>
+        <code>            public            
+    <strong>getCurrentLevel</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setCaseFolding">
+        <div class="location">in <a href="SaxParser.html#method_setCaseFolding"><abbr title="SaxParser">SaxParser</abbr></a> at line 71</div>
+        <code>            public            
+    <strong>setCaseFolding</strong>($isCaseFolding)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$isCaseFolding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_useIsoEncoding">
+        <div class="location">in <a href="SaxParser.html#method_useIsoEncoding"><abbr title="SaxParser">SaxParser</abbr></a> at line 82</div>
+        <code>            public            
+    <strong>useIsoEncoding</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_useAsciiEncoding">
+        <div class="location">in <a href="SaxParser.html#method_useAsciiEncoding"><abbr title="SaxParser">SaxParser</abbr></a> at line 91</div>
+        <code>            public            
+    <strong>useAsciiEncoding</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_useUtfEncoding">
+        <div class="location">in <a href="SaxParser.html#method_useUtfEncoding"><abbr title="SaxParser">SaxParser</abbr></a> at line 100</div>
+        <code>            public            
+    <strong>useUtfEncoding</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getCurrentTag">
+        <div class="location">in <a href="SaxParser.html#method_getCurrentTag"><abbr title="SaxParser">SaxParser</abbr></a> at line 110</div>
+        <code>            public            
+    <strong>getCurrentTag</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getParentTag">
+        <div class="location">in <a href="SaxParser.html#method_getParentTag"><abbr title="SaxParser">SaxParser</abbr></a> at line 115</div>
+        <code>            public            
+    <strong>getParentTag</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_parse">
+        <div class="location">in <a href="SaxParser.html#method_parse"><abbr title="SaxParser">SaxParser</abbr></a> at line 132</div>
+        <code>            public            
+    <strong>parse</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_free">
+        <div class="location">in <a href="SaxParser.html#method_free"><abbr title="SaxParser">SaxParser</abbr></a> at line 159</div>
+        <code>            public            
+    <strong>free</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getXmlError">
+        <div class="location">in <a href="SaxParser.html#method_getXmlError"><abbr title="SaxParser">SaxParser</abbr></a> at line 174</div>
+        <code>            public            
+    <strong>getXmlError</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addTagHandler">
+        <div class="location">in <a href="SaxParser.html#method_addTagHandler"><abbr title="SaxParser">SaxParser</abbr></a> at line 192</div>
+        <code>            public            
+    <strong>addTagHandler</strong>($tagHandler)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$tagHandler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_handleBeginElement">
+        <div class="location">in <a href="SaxParser.html#method_handleBeginElement"><abbr title="SaxParser">SaxParser</abbr></a> at line 219</div>
+        <code>            public            
+    <strong>handleBeginElement</strong>($parser, $tagName, $attributesArray)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$parser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$tagName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$attributesArray</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_handleEndElement">
+        <div class="location">in <a href="SaxParser.html#method_handleEndElement"><abbr title="SaxParser">SaxParser</abbr></a> at line 238</div>
+        <code>            public            
+    <strong>handleEndElement</strong>($parser, $tagName)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$parser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$tagName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_handleCharacterData">
+        <div class="location">in <a href="SaxParser.html#method_handleCharacterData"><abbr title="SaxParser">SaxParser</abbr></a> at line 256</div>
+        <code>            public            
+    <strong>handleCharacterData</strong>($parser, $data)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$parser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_handleProcessingInstruction">
+        <div class="location">in <a href="SaxParser.html#method_handleProcessingInstruction"><abbr title="SaxParser">SaxParser</abbr></a> at line 270</div>
+        <code>            public            
+    <strong>handleProcessingInstruction</strong>($parser, $target, $data)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$parser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$target</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_handleDefault">
+        <div class="location">in <a href="SaxParser.html#method_handleDefault"><abbr title="SaxParser">SaxParser</abbr></a> at line 281</div>
+        <code>            public            
+    <strong>handleDefault</strong>($parser, $data)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$parser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_handleUnparsedEntityDecl">
+        <div class="location">in <a href="SaxParser.html#method_handleUnparsedEntityDecl"><abbr title="SaxParser">SaxParser</abbr></a> at line 290</div>
+        <code>            public            
+    <strong>handleUnparsedEntityDecl</strong>($parser, $entityName, $base, $systemId, $publicId, $notationName)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$parser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$entityName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$base</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$systemId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$publicId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$notationName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_handleNotationDecl">
+        <div class="location">in <a href="SaxParser.html#method_handleNotationDecl"><abbr title="SaxParser">SaxParser</abbr></a> at line 299</div>
+        <code>            public            
+    <strong>handleNotationDecl</strong>($parser, $notationName, $base, $systemId, $publicId)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$parser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$notationName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$base</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$systemId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$publicId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_handleExternalEntityRef">
+        <div class="location">in <a href="SaxParser.html#method_handleExternalEntityRef"><abbr title="SaxParser">SaxParser</abbr></a> at line 308</div>
+        <code>            public            
+    <strong>handleExternalEntityRef</strong>($parser, $openEntityNames, $base, $systemId, $publicId)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$parser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$openEntityNames</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$base</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$systemId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$publicId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_handleBeginElementDefault">
+        <div class="location">in <a href="SaxParser.html#method_handleBeginElementDefault"><abbr title="SaxParser">SaxParser</abbr></a> at line 318</div>
+        <code>            public            
+    <strong>handleBeginElementDefault</strong>($parser, $tagName, $attributesArray)</code>
+    </h3>
+    <div class="details">
+        <p>The default tag handler method for a tag with no handler</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$parser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$tagName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$attributesArray</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_handleEndElementDefault">
+        <div class="location">in <a href="SaxParser.html#method_handleEndElementDefault"><abbr title="SaxParser">SaxParser</abbr></a> at line 327</div>
+        <code>            public            
+    <strong>handleEndElementDefault</strong>($parser, $tagName)</code>
+    </h3>
+    <div class="details">
+        <p>The default tag handler method for a tag with no handler</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$parser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$tagName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_handleCharacterDataDefault">
+        <div class="location">in <a href="SaxParser.html#method_handleCharacterDataDefault"><abbr title="SaxParser">SaxParser</abbr></a> at line 336</div>
+        <code>            public            
+    <strong>handleCharacterDataDefault</strong>($parser, $data)</code>
+    </h3>
+    <div class="details">
+        <p>The default tag handler method for a tag with no handler</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$parser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setErrors">
+        <div class="location">in <a href="SaxParser.html#method_setErrors"><abbr title="SaxParser">SaxParser</abbr></a> at line 345</div>
+        <code>            public            
+    <strong>setErrors</strong>(<abbr title="$error">$error</abbr> $error)</code>
+    </h3>
+    <div class="details">
+        <p>Sets error messages</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$error">$error</abbr></td>
+                <td>$error</td>
+                <td>string  an error message</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getErrors">
+        <div class="location">in <a href="SaxParser.html#method_getErrors"><abbr title="SaxParser">SaxParser</abbr></a> at line 356</div>
+        <code>            public            mixed
+    <strong>getErrors</strong>(<abbr title="$ashtml">$ashtml</abbr> $ashtml = true)</code>
+    </h3>
+    <div class="details">
+        <p>Gets all the error messages</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$ashtml">$ashtml</abbr></td>
+                <td>$ashtml</td>
+                <td>bool    return as html?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_XoopsXmlRpcParser">
+        <div class="location">at line 144</div>
+        <code>            public            
+    <strong>XoopsXmlRpcParser</strong>($input)</code>
+    </h3>
+    <div class="details">
+        <p>Constructor of the class</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_setTempName">
+        <div class="location">at line 170</div>
+        <code>            public            
+    <strong>setTempName</strong>($name)</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_getTempName">
+        <div class="location">at line 184</div>
+        <code>            public            
+    <strong>getTempName</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_setTempValue">
+        <div class="location">at line 198</div>
+        <code>            public            
+    <strong>setTempValue</strong>($value)</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_getTempValue">
+        <div class="location">at line 227</div>
+        <code>            public            
+    <strong>getTempValue</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_resetTempValue">
+        <div class="location">at line 241</div>
+        <code>            public            
+    <strong>resetTempValue</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_setTempMember">
+        <div class="location">at line 255</div>
+        <code>            public            
+    <strong>setTempMember</strong>($name, $value)</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_getTempMember">
+        <div class="location">at line 269</div>
+        <code>            public            
+    <strong>getTempMember</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_resetTempMember">
+        <div class="location">at line 283</div>
+        <code>            public            
+    <strong>resetTempMember</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_setWorkingLevel">
+        <div class="location">at line 297</div>
+        <code>            public            
+    <strong>setWorkingLevel</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_getWorkingLevel">
+        <div class="location">at line 311</div>
+        <code>            public            
+    <strong>getWorkingLevel</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_releaseWorkingLevel">
+        <div class="location">at line 325</div>
+        <code>            public            
+    <strong>releaseWorkingLevel</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_setTempStruct">
+        <div class="location">at line 339</div>
+        <code>            public            
+    <strong>setTempStruct</strong>($member)</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$member</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_getTempStruct">
+        <div class="location">at line 354</div>
+        <code>            public            
+    <strong>getTempStruct</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_resetTempStruct">
+        <div class="location">at line 368</div>
+        <code>            public            
+    <strong>resetTempStruct</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_setTempArray">
+        <div class="location">at line 382</div>
+        <code>            public            
+    <strong>setTempArray</strong>($value)</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_getTempArray">
+        <div class="location">at line 396</div>
+        <code>            public            
+    <strong>getTempArray</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_resetTempArray">
+        <div class="location">at line 410</div>
+        <code>            public            
+    <strong>resetTempArray</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_setMethodName">
+        <div class="location">at line 424</div>
+        <code>            public            
+    <strong>setMethodName</strong>($methodName)</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$methodName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_getMethodName">
+        <div class="location">at line 438</div>
+        <code>            public            
+    <strong>getMethodName</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_setParam">
+        <div class="location">at line 452</div>
+        <code>            public            
+    <strong>setParam</strong>($value)</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_getParam">
+        <div class="location">at line 466</div>
+        <code>            public            
+    <strong>getParam</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>This Method starts the parsing of the specified RDF File.</p>
+        <p>The File can be a local or a remote File.</p>
+        <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Xcore_SQLScanner | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>Xcore_SQLScanner</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>Xcore_SQLScanner</strong>        extends <a href="EasyLex_SQLScanner.html"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a></p>
+
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_mTokens">
+                                                            
+                </td>
+                <td>$mTokens</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mStatus">
+                                                            
+                </td>
+                <td>$mStatus</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mBuffer">
+                                                            Array
+                </td>
+                <td>$mBuffer</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mIndex">
+                                                            
+                </td>
+                <td>$mIndex</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mActiveToken">
+                                                            
+                </td>
+                <td>$mActiveToken</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mActiveQuoteMark">
+                                                            
+                </td>
+                <td>$mActiveQuoteMark</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mDB_PREFIX">
+                                                            
+                </td>
+                <td>$mDB_PREFIX</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mDirname">
+                                                            
+                </td>
+                <td>$mDirname</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setBuffer">setBuffer</a>($buffer)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="EasyLex_SQLScanner.html#method_setBuffer"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_parse">parse</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="EasyLex_SQLScanner.html#method_parse"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_loadFile">loadFile</a>(string $path, bool $preprocess = true)
+                    <p>Load file and set buffer.</p>
+                </td>
+                <td><small>from&nbsp;<a href="EasyLex_SQLScanner.html#method_loadFile"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__getChrType">_getChrType</a>($ch)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="EasyLex_SQLScanner.html#method__getChrType"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__parseUnknown">_parseUnknown</a>($ch, $type)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="EasyLex_SQLScanner.html#method__parseUnknown"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__parseDigit">_parseDigit</a>($ch, $type)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="EasyLex_SQLScanner.html#method__parseDigit"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__parseLetter">_parseLetter</a>($ch, $type)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="EasyLex_SQLScanner.html#method__parseLetter"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__parseStringLiteral">_parseStringLiteral</a>($ch, $type)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="EasyLex_SQLScanner.html#method__parseStringLiteral"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__parseStringLiteralEscape">_parseStringLiteralEscape</a>($ch, $type)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="EasyLex_SQLScanner.html#method__parseStringLiteralEscape"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__parseOpenParenthesis">_parseOpenParenthesis</a>($ch, $type)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="EasyLex_SQLScanner.html#method__parseOpenParenthesis"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__parseCloseParenthesis">_parseCloseParenthesis</a>($ch, $type)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="EasyLex_SQLScanner.html#method__parseCloseParenthesis"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__parseSeparater">_parseSeparater</a>($ch, $type)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="EasyLex_SQLScanner.html#method__parseSeparater"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__parseSemicolon">_parseSemicolon</a>($ch, $type)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="EasyLex_SQLScanner.html#method__parseSemicolon"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__parseMark">_parseMark</a>($ch, $type)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="EasyLex_SQLScanner.html#method__parseMark"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__parseComma">_parseComma</a>($ch, $type)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="EasyLex_SQLScanner.html#method__parseComma"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method__createToken">_createToken</a>($type = null, $value = null)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="EasyLex_SQLScanner.html#method__createToken"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    Array
+                </td>
+                <td class="last">
+                    <a href="#method_getOperations">getOperations</a>()
+                    <p>Return Array of operations.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getSQL">getSQL</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="EasyLex_SQLScanner.html#method_getSQL"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setDB_PREFIX">setDB_PREFIX</a>($prefix)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setDirname">setDirname</a>($dirname)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_setBuffer">
+        <div class="location">in <a href="EasyLex_SQLScanner.html#method_setBuffer"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a> at line 78</div>
+        <code>            public            
+    <strong>setBuffer</strong>($buffer)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$buffer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_parse">
+        <div class="location">in <a href="EasyLex_SQLScanner.html#method_parse"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a> at line 88</div>
+        <code>            public            
+    <strong>parse</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_loadFile">
+        <div class="location">in <a href="EasyLex_SQLScanner.html#method_loadFile"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a> at line 156</div>
+        <code>            public            bool
+    <strong>loadFile</strong>(string $path, bool $preprocess = true)</code>
+    </h3>
+    <div class="details">
+        <p>Load file and set buffer.</p>
+        <p>If $preprocess is true, scan commetns and<br />
+ remove these.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>file path</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$preprocess</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__getChrType">
+        <div class="location">in <a href="EasyLex_SQLScanner.html#method__getChrType"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a> at line 181</div>
+        <code>            public            
+    <strong>_getChrType</strong>($ch)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$ch</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__parseUnknown">
+        <div class="location">in <a href="EasyLex_SQLScanner.html#method__parseUnknown"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a> at line 214</div>
+        <code>            public            
+    <strong>_parseUnknown</strong>($ch, $type)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$ch</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__parseDigit">
+        <div class="location">in <a href="EasyLex_SQLScanner.html#method__parseDigit"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a> at line 227</div>
+        <code>            public            
+    <strong>_parseDigit</strong>($ch, $type)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$ch</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__parseLetter">
+        <div class="location">in <a href="EasyLex_SQLScanner.html#method__parseLetter"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a> at line 243</div>
+        <code>            public            
+    <strong>_parseLetter</strong>($ch, $type)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$ch</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__parseStringLiteral">
+        <div class="location">in <a href="EasyLex_SQLScanner.html#method__parseStringLiteral"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a> at line 254</div>
+        <code>            public            
+    <strong>_parseStringLiteral</strong>($ch, $type)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$ch</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__parseStringLiteralEscape">
+        <div class="location">in <a href="EasyLex_SQLScanner.html#method__parseStringLiteralEscape"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a> at line 267</div>
+        <code>            public            
+    <strong>_parseStringLiteralEscape</strong>($ch, $type)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$ch</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__parseOpenParenthesis">
+        <div class="location">in <a href="EasyLex_SQLScanner.html#method__parseOpenParenthesis"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a> at line 272</div>
+        <code>            public            
+    <strong>_parseOpenParenthesis</strong>($ch, $type)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$ch</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__parseCloseParenthesis">
+        <div class="location">in <a href="EasyLex_SQLScanner.html#method__parseCloseParenthesis"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a> at line 277</div>
+        <code>            public            
+    <strong>_parseCloseParenthesis</strong>($ch, $type)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$ch</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__parseSeparater">
+        <div class="location">in <a href="EasyLex_SQLScanner.html#method__parseSeparater"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a> at line 282</div>
+        <code>            public            
+    <strong>_parseSeparater</strong>($ch, $type)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$ch</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__parseSemicolon">
+        <div class="location">in <a href="EasyLex_SQLScanner.html#method__parseSemicolon"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a> at line 295</div>
+        <code>            public            
+    <strong>_parseSemicolon</strong>($ch, $type)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$ch</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__parseMark">
+        <div class="location">in <a href="EasyLex_SQLScanner.html#method__parseMark"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a> at line 300</div>
+        <code>            public            
+    <strong>_parseMark</strong>($ch, $type)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$ch</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__parseComma">
+        <div class="location">in <a href="EasyLex_SQLScanner.html#method__parseComma"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a> at line 311</div>
+        <code>            public            
+    <strong>_parseComma</strong>($ch, $type)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$ch</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__createToken">
+        <div class="location">in <a href="EasyLex_SQLScanner.html#method__createToken"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a> at line 316</div>
+        <code>            public            
+    <strong>_createToken</strong>($type = null, $value = null)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getOperations">
+        <div class="location">at line 18</div>
+        <code>            public            Array
+    <strong>getOperations</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Return Array of operations.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>Array</td>
+            <td>$ret[Index] = Array of tokens.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getSQL">
+        <div class="location">in <a href="EasyLex_SQLScanner.html#method_getSQL"><abbr title="EasyLex_SQLScanner">EasyLex_SQLScanner</abbr></a> at line 371</div>
+        <code>            public            
+    <strong>getSQL</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setDB_PREFIX">
+        <div class="location">at line 8</div>
+        <code>            public            
+    <strong>setDB_PREFIX</strong>($prefix)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$prefix</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setDirname">
+        <div class="location">at line 13</div>
+        <code>            public            
+    <strong>setDirname</strong>($dirname)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$dirname</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

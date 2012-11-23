@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>UserinfoAction | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>UserinfoAction</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>UserinfoAction</strong>        extends <a href="User_UserInfoAction.html"><abbr title="User_UserInfoAction">User_UserInfoAction</abbr></a></p>
+
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_mObject">
+                                                            
+                </td>
+                <td>$mObject</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mRankObject">
+                                                            
+                </td>
+                <td>$mRankObject</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mSearchResults">
+                                                            
+                </td>
+                <td>$mSearchResults</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mSelfDelete">
+                                                            
+                </td>
+                <td>$mSelfDelete</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mPmliteURL">
+                                                            
+                </td>
+                <td>$mPmliteURL</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_prepare">prepare</a>($controller, $xoopsUser, $moduleConfig)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="User_UserInfoAction.html#method_prepare"><abbr title="User_UserInfoAction">User_UserInfoAction</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_isSecure">isSecure</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="User_UserInfoAction.html#method_isSecure"><abbr title="User_UserInfoAction">User_UserInfoAction</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getDefaultView">getDefaultView</a>($controller, $xoopsUser)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="User_UserInfoAction.html#method_getDefaultView"><abbr title="User_UserInfoAction">User_UserInfoAction</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_executeViewSuccess">executeViewSuccess</a>($controller, $xoopsUser, $render)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="User_UserInfoAction.html#method_executeViewSuccess"><abbr title="User_UserInfoAction">User_UserInfoAction</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_executeViewError">executeViewError</a>($controller, $xoopsUser, $render)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="User_UserInfoAction.html#method_executeViewError"><abbr title="User_UserInfoAction">User_UserInfoAction</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>($controller)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getUrl">getUrl</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_geterrMsg">geterrMsg</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getisError">getisError</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_execute">execute</a>($controller = null, $xoopsUser = null)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_executeView">executeView</a>($render)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_prepare">
+        <div class="location">in <a href="User_UserInfoAction.html#method_prepare"><abbr title="User_UserInfoAction">User_UserInfoAction</abbr></a> at line 45</div>
+        <code>            public            
+    <strong>prepare</strong>($controller, $xoopsUser, $moduleConfig)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$controller</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$xoopsUser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$moduleConfig</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isSecure">
+        <div class="location">in <a href="User_UserInfoAction.html#method_isSecure"><abbr title="User_UserInfoAction">User_UserInfoAction</abbr></a> at line 50</div>
+        <code>            public            
+    <strong>isSecure</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getDefaultView">
+        <div class="location">in <a href="User_UserInfoAction.html#method_getDefaultView"><abbr title="User_UserInfoAction">User_UserInfoAction</abbr></a> at line 55</div>
+        <code>            public            
+    <strong>getDefaultView</strong>($controller, $xoopsUser)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$controller</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$xoopsUser</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_executeViewSuccess">
+        <div class="location">in <a href="User_UserInfoAction.html#method_executeViewSuccess"><abbr title="User_UserInfoAction">User_UserInfoAction</abbr></a> at line 117</div>
+        <code>            public            
+    <strong>executeViewSuccess</strong>($controller, $xoopsUser, $render)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$controller</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$xoopsUser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$render</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_executeViewError">
+        <div class="location">in <a href="User_UserInfoAction.html#method_executeViewError"><abbr title="User_UserInfoAction">User_UserInfoAction</abbr></a> at line 149</div>
+        <code>            public            
+    <strong>executeViewError</strong>($controller, $xoopsUser, $render)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$controller</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$xoopsUser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$render</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method___construct">
+        <div class="location">at line 13</div>
+        <code>            public            
+    <strong>__construct</strong>($controller)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$controller</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getUrl">
+        <div class="location">at line 24</div>
+        <code>            public            
+    <strong>getUrl</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_geterrMsg">
+        <div class="location">at line 35</div>
+        <code>            public            
+    <strong>geterrMsg</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getisError">
+        <div class="location">at line 40</div>
+        <code>            public            
+    <strong>getisError</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_execute">
+        <div class="location">at line 45</div>
+        <code>            public            
+    <strong>execute</strong>($controller = null, $xoopsUser = null)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$controller</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$xoopsUser</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_executeView">
+        <div class="location">at line 57</div>
+        <code>            public            
+    <strong>executeView</strong>($render)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$render</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

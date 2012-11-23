@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>soap_fault | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>soap_fault</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>soap_fault</strong>        extends <a href="nusoap_fault.html"><abbr title="nusoap_fault">nusoap_fault</abbr></a></p>
+
+            <div class="description">
+            <p>Backward compatibility</p>
+            <p></p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_title">
+                                                            string
+                </td>
+                <td>$title</td>
+                <td class="last">Identification for HTTP headers.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_version">
+                                                            string
+                </td>
+                <td>$version</td>
+                <td class="last">Version for HTTP headers.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_revision">
+                                                            string
+                </td>
+                <td>$revision</td>
+                <td class="last">CVS revision for HTTP headers.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_error_str">
+                                                            string
+                </td>
+                <td>$error_str</td>
+                <td class="last">Current error string (manipulated by getError/setError)</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_debug_str">
+                                                            string
+                </td>
+                <td>$debug_str</td>
+                <td class="last">Current debug string (manipulated by debug/appendDebug/clearDebug/getDebug/getDebugAsXMLComment)</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_charencoding">
+                                                            boolean
+                </td>
+                <td>$charencoding</td>
+                <td class="last">toggles automatic encoding of special characters as entities (should always be true, I think)</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_debugLevel">
+                                                            
+                </td>
+                <td>$debugLevel</td>
+                <td class="last">the debug level for this instance</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_XMLSchemaVersion">
+                                                            string
+                </td>
+                <td>$XMLSchemaVersion</td>
+                <td class="last">set schema version</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_soap_defencoding">
+                                                            string
+                </td>
+                <td>$soap_defencoding</td>
+                <td class="last">charset encoding for outgoing messages</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_namespaces">
+                                                            array
+                </td>
+                <td>$namespaces</td>
+                <td class="last">namespaces in an array of prefix =&gt; uri</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_usedNamespaces">
+                                                            array
+                </td>
+                <td>$usedNamespaces</td>
+                <td class="last">namespaces used in the current context, e.g.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_typemap">
+                                                            array
+                </td>
+                <td>$typemap</td>
+                <td class="last">XML Schema types in an array of uri =&gt; (array of xml type =&gt; php type) is this Legacy yet? no, this is used by the nusoap_xmlschema class to verify type =&gt; namespace mappings.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_xmlEntities">
+                                                            array
+                </td>
+                <td>$xmlEntities</td>
+                <td class="last">XML entities to convert</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_faultcode">
+                                                            string
+                </td>
+                <td>$faultcode</td>
+                <td class="last">The fault code (client|server)</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_faultactor">
+                                                            string
+                </td>
+                <td>$faultactor</td>
+                <td class="last">The fault actor</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_faultstring">
+                                                            string
+                </td>
+                <td>$faultstring</td>
+                <td class="last">The fault string, a description of the fault</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_faultdetail">
+                                                            mixed
+                </td>
+                <td>$faultdetail</td>
+                <td class="last">The fault detail, typically a string or array of string</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_nusoap_fault">nusoap_fault</a>(string $faultcode, string $faultactor = &#039;&#039;, string $faultstring = &#039;&#039;, mixed $faultdetail = &#039;&#039;)
+                    <p>constructor</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_fault.html#method_nusoap_fault"><abbr title="nusoap_fault">nusoap_fault</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_serialize">serialize</a>()
+                    <p>serialize a fault</p>
+                </td>
+                <td><small>from&nbsp;<a href="nusoap_fault.html#method_serialize"><abbr title="nusoap_fault">nusoap_fault</abbr></a></small></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_nusoap_fault">
+        <div class="location">in <a href="nusoap_fault.html#method_nusoap_fault"><abbr title="nusoap_fault">nusoap_fault</abbr></a> at line 1041</div>
+        <code>            public            
+    <strong>nusoap_fault</strong>(string $faultcode, string $faultactor = &#039;&#039;, string $faultstring = &#039;&#039;, mixed $faultdetail = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>constructor</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$faultcode</td>
+                <td>(SOAP-ENV:Client | SOAP-ENV:Server)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$faultactor</td>
+                <td>only used when msg routed between multiple actors</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$faultstring</td>
+                <td>human readable error message</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$faultdetail</td>
+                <td>detail, typically a string or array of string</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_serialize">
+        <div class="location">in <a href="nusoap_fault.html#method_serialize"><abbr title="nusoap_fault">nusoap_fault</abbr></a> at line 1055</div>
+        <code>            public            
+    <strong>serialize</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>serialize a fault</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

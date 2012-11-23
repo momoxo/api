@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XoopsFormElementTray | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>XoopsFormElementTray</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>XoopsFormElementTray</strong>        extends <a href="XoopsFormElement.html"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></p>
+
+            <div class="description">
+            <p>A group of form elements</p>
+            <p></p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property__name">
+                                                            string
+                </td>
+                <td>$_name</td>
+                <td class="last">&quot;name&quot; attribute of the element</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__caption">
+                                                            
+                </td>
+                <td>$_caption</td>
+                <td class="last">caption of the element</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__accesskey">
+                                                            
+                </td>
+                <td>$_accesskey</td>
+                <td class="last">Accesskey for this element</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__class">
+                                                            
+                </td>
+                <td>$_class</td>
+                <td class="last">HTML class for this element</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__hidden">
+                                                            
+                </td>
+                <td>$_hidden</td>
+                <td class="last">hidden?</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__extra">
+                                                            
+                </td>
+                <td>$_extra</td>
+                <td class="last">extra attributes to go in the tag</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__required">
+                                                            array
+                </td>
+                <td>$_required</td>
+                <td class="last">required elements</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__description">
+                                                            
+                </td>
+                <td>$_description</td>
+                <td class="last">description of the field</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__id">
+                                                            string
+                </td>
+                <td>$_id</td>
+                <td class="last">specified id for the form.</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__elements">
+                                                            array
+                </td>
+                <td>$_elements</td>
+                <td class="last">array of form element objects</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__delimeter">
+                                                            
+                </td>
+                <td>$_delimeter</td>
+                <td class="last">HTML to seperate the elements</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XoopsFormElement">XoopsFormElement</a>()
+                    <p>constructor</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElement.html#method_XoopsFormElement"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_isContainer">isContainer</a>()
+                    <p>Is this element a container of other elements?</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setName">setName</a>($name)
+                    <p>set the &quot;name&quot; attribute for the element</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElement.html#method_setName"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getName">getName</a>($encode = true)
+                    <p>get the &quot;name&quot; attribute for the element</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElement.html#method_getName"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setId">setId</a>(string $id)
+                    <p>Set $id to member property.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElement.html#method_setId"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getId">getId</a>()
+                    <p>get the &quot;id&quot; attribute for the element.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElement.html#method_getId"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setAccessKey">setAccessKey</a>($key)
+                    <p>set the &quot;accesskey&quot; attribute for the element</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElement.html#method_setAccessKey"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getAccessKey">getAccessKey</a>()
+                    <p>get the &quot;accesskey&quot; attribute for the element</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElement.html#method_getAccessKey"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getAccessString">getAccessString</a>($str)
+                    <p>If the accesskey is found in the specified string, underlines it</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElement.html#method_getAccessString"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setClass">setClass</a>($class)
+                    <p>set the &quot;class&quot; attribute for the element</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElement.html#method_setClass"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getClass">getClass</a>()
+                    <p>get the &quot;class&quot; attribute for the element</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElement.html#method_getClass"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setCaption">setCaption</a>($caption)
+                    <p>set the caption for the element</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElement.html#method_setCaption"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getCaption">getCaption</a>()
+                    <p>get the caption for the element</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElement.html#method_getCaption"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setDescription">setDescription</a>($description)
+                    <p>set the element&#039;s description</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElement.html#method_setDescription"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getDescription">getDescription</a>()
+                    <p>get the element&#039;s description</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElement.html#method_getDescription"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setHidden">setHidden</a>()
+                    <p>flag the element as &quot;hidden&quot;</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElement.html#method_setHidden"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_isHidden">isHidden</a>()
+                    <p>Find out if an element is &quot;hidden&quot;.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElement.html#method_isHidden"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_isBreak">isBreak</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElement.html#method_isBreak"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setExtra">setExtra</a>($extra, $replace = false)
+                    <p>Add extra attributes to the element.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElement.html#method_setExtra"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getExtra">getExtra</a>()
+                    <p>Get the extra attributes for the element</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElement.html#method_getExtra"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_render">render</a>()
+                    <p>prepare HTML to output this group</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getMessageForJS">getMessageForJS</a>()
+                    <p>Gets a message for javascript in the specific member function of XoopsForm class.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsFormElement.html#method_getMessageForJS"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XoopsFormElementTray">XoopsFormElementTray</a>($caption, $delimeter = &#039;&amp;nbsp;&#039;, $name = &#039;&#039;)
+                    <p>constructor</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addElement">addElement</a>($formElement, $required = false)
+                    <p>Add an element to the group</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getRequired">getRequired</a>()
+                    <p>get an array of &quot;required&quot; form elements</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getElements">getElements</a>($recurse = false)
+                    <p>Get an array of the elements in this group</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getDelimeter">getDelimeter</a>()
+                    <p>Get the delimiter of this group</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_XoopsFormElement">
+        <div class="location">in <a href="XoopsFormElement.html#method_XoopsFormElement"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a> at line 116</div>
+        <code>            public            
+    <strong>XoopsFormElement</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>constructor</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isContainer">
+        <div class="location">at line 92</div>
+        <code>            public            
+    <strong>isContainer</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Is this element a container of other elements?</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setName">
+        <div class="location">in <a href="XoopsFormElement.html#method_setName"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a> at line 135</div>
+        <code>            public            
+    <strong>setName</strong>($name)</code>
+    </h3>
+    <div class="details">
+        <p>set the &quot;name&quot; attribute for the element</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getName">
+        <div class="location">in <a href="XoopsFormElement.html#method_getName"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a> at line 145</div>
+        <code>            public            
+    <strong>getName</strong>($encode = true)</code>
+    </h3>
+    <div class="details">
+        <p>get the &quot;name&quot; attribute for the element</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$encode</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setId">
+        <div class="location">in <a href="XoopsFormElement.html#method_setId"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a> at line 156</div>
+        <code>            public            
+    <strong>setId</strong>(string $id)</code>
+    </h3>
+    <div class="details">
+        <p>Set $id to member property.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getId">
+        <div class="location">in <a href="XoopsFormElement.html#method_getId"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a> at line 163</div>
+        <code>            public            
+    <strong>getId</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get the &quot;id&quot; attribute for the element.</p>
+        <p>If ID is empty, return getName().</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setAccessKey">
+        <div class="location">in <a href="XoopsFormElement.html#method_setAccessKey"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a> at line 172</div>
+        <code>            public            
+    <strong>setAccessKey</strong>($key)</code>
+    </h3>
+    <div class="details">
+        <p>set the &quot;accesskey&quot; attribute for the element</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getAccessKey">
+        <div class="location">in <a href="XoopsFormElement.html#method_getAccessKey"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a> at line 180</div>
+        <code>            public            string
+    <strong>getAccessKey</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get the &quot;accesskey&quot; attribute for the element</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>&quot;accesskey&quot; attribute value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getAccessString">
+        <div class="location">in <a href="XoopsFormElement.html#method_getAccessString"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a> at line 189</div>
+        <code>            public            string
+    <strong>getAccessString</strong>($str)</code>
+    </h3>
+    <div class="details">
+        <p>If the accesskey is found in the specified string, underlines it</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$str</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>Enhanced string with the 1st occurence of accesskey underlined</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setClass">
+        <div class="location">in <a href="XoopsFormElement.html#method_setClass"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a> at line 202</div>
+        <code>            public            
+    <strong>setClass</strong>($class)</code>
+    </h3>
+    <div class="details">
+        <p>set the &quot;class&quot; attribute for the element</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getClass">
+        <div class="location">in <a href="XoopsFormElement.html#method_getClass"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a> at line 215</div>
+        <code>            public            string
+    <strong>getClass</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get the &quot;class&quot; attribute for the element</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>&quot;class&quot; attribute value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setCaption">
+        <div class="location">in <a href="XoopsFormElement.html#method_setCaption"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a> at line 224</div>
+        <code>            public            
+    <strong>setCaption</strong>($caption)</code>
+    </h3>
+    <div class="details">
+        <p>set the caption for the element</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$caption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getCaption">
+        <div class="location">in <a href="XoopsFormElement.html#method_getCaption"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a> at line 233</div>
+        <code>            public            
+    <strong>getCaption</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get the caption for the element</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setDescription">
+        <div class="location">in <a href="XoopsFormElement.html#method_setDescription"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a> at line 242</div>
+        <code>            public            
+    <strong>setDescription</strong>($description)</code>
+    </h3>
+    <div class="details">
+        <p>set the element&#039;s description</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$description</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getDescription">
+        <div class="location">in <a href="XoopsFormElement.html#method_getDescription"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a> at line 251</div>
+        <code>            public            
+    <strong>getDescription</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get the element&#039;s description</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setHidden">
+        <div class="location">in <a href="XoopsFormElement.html#method_setHidden"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a> at line 259</div>
+        <code>            public            
+    <strong>setHidden</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>flag the element as &quot;hidden&quot;</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isHidden">
+        <div class="location">in <a href="XoopsFormElement.html#method_isHidden"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a> at line 268</div>
+        <code>            public            
+    <strong>isHidden</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Find out if an element is &quot;hidden&quot;.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isBreak">
+        <div class="location">in <a href="XoopsFormElement.html#method_isBreak"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a> at line 272</div>
+        <code>            public            
+    <strong>isBreak</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setExtra">
+        <div class="location">in <a href="XoopsFormElement.html#method_setExtra"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a> at line 286</div>
+        <code>            public            
+    <strong>setExtra</strong>($extra, $replace = false)</code>
+    </h3>
+    <div class="details">
+        <p>Add extra attributes to the element.</p>
+        <p>This string will be inserted verbatim and unvalidated in the<br />
+ element&#039;s tag. Know what you are doing!</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$extra</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$replace</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getExtra">
+        <div class="location">in <a href="XoopsFormElement.html#method_getExtra"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a> at line 300</div>
+        <code>            public            
+    <strong>getExtra</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the extra attributes for the element</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_render">
+        <div class="location">at line 169</div>
+        <code>            public            
+    <strong>render</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>prepare HTML to output this group</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getMessageForJS">
+        <div class="location">in <a href="XoopsFormElement.html#method_getMessageForJS"><abbr title="XoopsFormElement">XoopsFormElement</abbr></a> at line 318</div>
+        <code>            public            
+    <strong>getMessageForJS</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets a message for javascript in the specific member function of XoopsForm class.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_XoopsFormElementTray">
+        <div class="location">at line 81</div>
+        <code>            public            
+    <strong>XoopsFormElementTray</strong>($caption, $delimeter = &#039;&amp;nbsp;&#039;, $name = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>constructor</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$caption</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$delimeter</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addElement">
+        <div class="location">at line 102</div>
+        <code>            public            
+    <strong>addElement</strong>($formElement, $required = false)</code>
+    </h3>
+    <div class="details">
+        <p>Add an element to the group</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$formElement</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$required</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getRequired">
+        <div class="location">at line 122</div>
+        <code>            public            
+    <strong>getRequired</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>get an array of &quot;required&quot; form elements</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getElements">
+        <div class="location">at line 133</div>
+        <code>            public            array
+    <strong>getElements</strong>($recurse = false)</code>
+    </h3>
+    <div class="details">
+        <p>Get an array of the elements in this group</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$recurse</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>Array of {@link XoopsFormElement} objects.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getDelimeter">
+        <div class="location">at line 160</div>
+        <code>            public            
+    <strong>getDelimeter</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the delimiter of this group</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

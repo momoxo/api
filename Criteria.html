@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Criteria | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>Criteria</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>Criteria</strong>        extends <a href="CriteriaElement.html"><abbr title="CriteriaElement">CriteriaElement</abbr></a></p>
+
+            <div class="description">
+            <p>A single criteria</p>
+            <p></p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_order">
+                                                            string
+                </td>
+                <td>$order</td>
+                <td class="last">Sort order</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sort">
+                                                            string
+                </td>
+                <td>$sort</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_limit">
+                                                            int
+                </td>
+                <td>$limit</td>
+                <td class="last">Number of records to retrieve</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_start">
+                                                            int
+                </td>
+                <td>$start</td>
+                <td class="last">Offset of first record</td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_groupby">
+                                                            string
+                </td>
+                <td>$groupby</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_prefix">
+                                                            string
+                </td>
+                <td>$prefix</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_function">
+                                                            
+                </td>
+                <td>$function</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_column">
+                                                            
+                </td>
+                <td>$column</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_operator">
+                                                            
+                </td>
+                <td>$operator</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_value">
+                                                            
+                </td>
+                <td>$value</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dtype">
+                                                            
+                </td>
+                <td>$dtype</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_CriteriaElement">CriteriaElement</a>()
+                    <p>Constructor</p>
+                </td>
+                <td><small>from&nbsp;<a href="CriteriaElement.html#method_CriteriaElement"><abbr title="CriteriaElement">CriteriaElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_render">render</a>()
+                    <p>Make a sql condition string</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_hasChildElements">hasChildElements</a>()
+                    <p>Return true if this object has child elements.</p>
+                </td>
+                <td><small>from&nbsp;<a href="CriteriaElement.html#method_hasChildElements"><abbr title="CriteriaElement">CriteriaElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getCountChildElements">getCountChildElements</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="CriteriaElement.html#method_getCountChildElements"><abbr title="CriteriaElement">CriteriaElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getChildElement">getChildElement</a>($idx)
+                    <p>Return child element.</p>
+                </td>
+                <td><small>from&nbsp;<a href="CriteriaElement.html#method_getChildElement"><abbr title="CriteriaElement">CriteriaElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getCondition">getCondition</a>($idx)
+                    <p>Return condition string.</p>
+                </td>
+                <td><small>from&nbsp;<a href="CriteriaElement.html#method_getCondition"><abbr title="CriteriaElement">CriteriaElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getName">getName</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getValue">getValue</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getOperator">getOperator</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setSort">setSort</a>(string $sort, string $order = null)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="CriteriaElement.html#method_setSort"><abbr title="CriteriaElement">CriteriaElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addSort">addSort</a>($sort, $order = &#039;ASC&#039;)
+                    <p>Add sort and order condition to this object.</p>
+                </td>
+                <td><small>from&nbsp;<a href="CriteriaElement.html#method_addSort"><abbr title="CriteriaElement">CriteriaElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getSort">getSort</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="CriteriaElement.html#method_getSort"><abbr title="CriteriaElement">CriteriaElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="hashmap">hashmap</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_getSorts">getSorts</a>()
+                    <p>Return sort and order condition as hashmap array.</p>
+                </td>
+                <td><small>from&nbsp;<a href="CriteriaElement.html#method_getSorts"><abbr title="CriteriaElement">CriteriaElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setOrder">setOrder</a>(string $order)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="CriteriaElement.html#method_setOrder"><abbr title="CriteriaElement">CriteriaElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getOrder">getOrder</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="CriteriaElement.html#method_getOrder"><abbr title="CriteriaElement">CriteriaElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setLimit">setLimit</a>(int $limit)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="CriteriaElement.html#method_setLimit"><abbr title="CriteriaElement">CriteriaElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getLimit">getLimit</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="CriteriaElement.html#method_getLimit"><abbr title="CriteriaElement">CriteriaElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setStart">setStart</a>(int $start)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="CriteriaElement.html#method_setStart"><abbr title="CriteriaElement">CriteriaElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getStart">getStart</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="CriteriaElement.html#method_getStart"><abbr title="CriteriaElement">CriteriaElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setGroupby">setGroupby</a>(string $group)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="CriteriaElement.html#method_setGroupby"><abbr title="CriteriaElement">CriteriaElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getGroupby">getGroupby</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="CriteriaElement.html#method_getGroupby"><abbr title="CriteriaElement">CriteriaElement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_Criteria">Criteria</a>($column, $value = &#039;&#039;, $operator = &#039;=&#039;, $prefix = &#039;&#039;, $function = &#039;&#039;)
+                    <p>Constructor</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_renderLdap">renderLdap</a>()
+                    <p>Generate an LDAP filter from criteria</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_renderWhere">renderWhere</a>()
+                    <p>Make a SQL &quot;WHERE&quot; clause</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_CriteriaElement">
+        <div class="location">in <a href="CriteriaElement.html#method_CriteriaElement"><abbr title="CriteriaElement">CriteriaElement</abbr></a> at line 99</div>
+        <code>            public            
+    <strong>CriteriaElement</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Constructor</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_render">
+        <div class="location">at line 514</div>
+        <code>            public            string
+    <strong>render</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Make a sql condition string</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_hasChildElements">
+        <div class="location">in <a href="CriteriaElement.html#method_hasChildElements"><abbr title="CriteriaElement">CriteriaElement</abbr></a> at line 116</div>
+        <code>            public            
+    <strong>hasChildElements</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Return true if this object has child elements.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getCountChildElements">
+        <div class="location">in <a href="CriteriaElement.html#method_getCountChildElements"><abbr title="CriteriaElement">CriteriaElement</abbr></a> at line 121</div>
+        <code>            public            
+    <strong>getCountChildElements</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getChildElement">
+        <div class="location">in <a href="CriteriaElement.html#method_getChildElement"><abbr title="CriteriaElement">CriteriaElement</abbr></a> at line 129</div>
+        <code>            public            
+    <strong>getChildElement</strong>($idx)</code>
+    </h3>
+    <div class="details">
+        <p>Return child element.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$idx</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getCondition">
+        <div class="location">in <a href="CriteriaElement.html#method_getCondition"><abbr title="CriteriaElement">CriteriaElement</abbr></a> at line 137</div>
+        <code>            public            
+    <strong>getCondition</strong>($idx)</code>
+    </h3>
+    <div class="details">
+        <p>Return condition string.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$idx</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getName">
+        <div class="location">at line 493</div>
+        <code>            public            
+    <strong>getName</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getValue">
+        <div class="location">at line 498</div>
+        <code>            public            
+    <strong>getValue</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getOperator">
+        <div class="location">at line 503</div>
+        <code>            public            
+    <strong>getOperator</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setSort">
+        <div class="location">in <a href="CriteriaElement.html#method_setSort"><abbr title="CriteriaElement">CriteriaElement</abbr></a> at line 164</div>
+        <code>            public            
+    <strong>setSort</strong>(string $sort, string $order = null)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$sort</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$order</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addSort">
+        <div class="location">in <a href="CriteriaElement.html#method_addSort"><abbr title="CriteriaElement">CriteriaElement</abbr></a> at line 185</div>
+        <code>            public            
+    <strong>addSort</strong>($sort, $order = &#039;ASC&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>Add sort and order condition to this object.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$sort</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$order</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getSort">
+        <div class="location">in <a href="CriteriaElement.html#method_getSort"><abbr title="CriteriaElement">CriteriaElement</abbr></a> at line 199</div>
+        <code>            public            string
+    <strong>getSort</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getSorts">
+        <div class="location">in <a href="CriteriaElement.html#method_getSorts"><abbr title="CriteriaElement">CriteriaElement</abbr></a> at line 214</div>
+        <code>            public            <abbr title="hashmap">hashmap</abbr>
+    <strong>getSorts</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Return sort and order condition as hashmap array.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="hashmap">hashmap</abbr></td>
+            <td>&#039;sort&#039; ... sort string/key&#039;order&#039; order string.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setOrder">
+        <div class="location">in <a href="CriteriaElement.html#method_setOrder"><abbr title="CriteriaElement">CriteriaElement</abbr></a> at line 236</div>
+        <code>            public            
+    <strong>setOrder</strong>(string $order)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$order</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getOrder">
+        <div class="location">in <a href="CriteriaElement.html#method_getOrder"><abbr title="CriteriaElement">CriteriaElement</abbr></a> at line 249</div>
+        <code>            public            string
+    <strong>getOrder</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setLimit">
+        <div class="location">in <a href="CriteriaElement.html#method_setLimit"><abbr title="CriteriaElement">CriteriaElement</abbr></a> at line 262</div>
+        <code>            public            
+    <strong>setLimit</strong>(int $limit)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>int</td>
+                <td>$limit</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getLimit">
+        <div class="location">in <a href="CriteriaElement.html#method_getLimit"><abbr title="CriteriaElement">CriteriaElement</abbr></a> at line 270</div>
+        <code>            public            int
+    <strong>getLimit</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setStart">
+        <div class="location">in <a href="CriteriaElement.html#method_setStart"><abbr title="CriteriaElement">CriteriaElement</abbr></a> at line 278</div>
+        <code>            public            
+    <strong>setStart</strong>(int $start)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>int</td>
+                <td>$start</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getStart">
+        <div class="location">in <a href="CriteriaElement.html#method_getStart"><abbr title="CriteriaElement">CriteriaElement</abbr></a> at line 286</div>
+        <code>            public            int
+    <strong>getStart</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setGroupby">
+        <div class="location">in <a href="CriteriaElement.html#method_setGroupby"><abbr title="CriteriaElement">CriteriaElement</abbr></a> at line 295</div>
+        <code>            public            
+    <strong>setGroupby</strong>(string $group)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getGroupby">
+        <div class="location">in <a href="CriteriaElement.html#method_getGroupby"><abbr title="CriteriaElement">CriteriaElement</abbr></a> at line 303</div>
+        <code>            public            string
+    <strong>getGroupby</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_Criteria">
+        <div class="location">at line 473</div>
+        <code>            public            
+    <strong>Criteria</strong>($column, $value = &#039;&#039;, $operator = &#039;=&#039;, $prefix = &#039;&#039;, $function = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>Constructor</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$column</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$operator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$prefix</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$function</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_renderLdap">
+        <div class="location">at line 543</div>
+        <code>            public            string
+    <strong>renderLdap</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Generate an LDAP filter from criteria</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_renderWhere">
+        <div class="location">at line 554</div>
+        <code>            public            string
+    <strong>renderWhere</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Make a SQL &quot;WHERE&quot; clause</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

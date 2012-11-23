@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XoopsBlockHandler | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>XoopsBlockHandler</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>XoopsBlockHandler</strong>        extends <a href="XoopsObjectHandler.html"><abbr title="XoopsObjectHandler">XoopsObjectHandler</abbr></a></p>
+
+            <div class="description">
+            <p>XOOPS block handler class.</p>
+            <p>(Singelton)<br />
+<br />
+ This class is responsible for providing data access mechanisms to the data source<br />
+ of XOOPS block class objects.</p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_db">
+                                                            object
+                </td>
+                <td>$db</td>
+                <td class="last">holds referenced to {@link XoopsDatabase} class object</td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_XoopsObjectHandler">XoopsObjectHandler</a>(object $db)
+                    <p>called from child classes only</p>
+                </td>
+                <td><small>from&nbsp;<a href="XoopsObjectHandler.html#method_XoopsObjectHandler"><abbr title="XoopsObjectHandler">XoopsObjectHandler</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    object
+                </td>
+                <td class="last">
+                    <a href="#method_create">create</a>(bool $isNew = true)
+                    <p>create a new block</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    object
+                </td>
+                <td class="last">
+                    <a href="#method_get">get</a>(int $id)
+                    <p>retrieve a specific {@link XoopsBlock}</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_insert">insert</a>(object $block, <abbr title="$autolink">$autolink</abbr> $autolink = false)
+                    <p>write a new block into the database</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_delete">delete</a>(object $block)
+                    <p>delete a block from the database</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    object
+                </td>
+                <td class="last">
+                    <a href="#method_createByInfo">createByInfo</a>(<abbr title="$info">$info</abbr> $info)
+                    <p>Create a new block by array that is defined in xoops_version.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getObjects">getObjects</a>(object $criteria = null, bool $id_as_key = false)
+                    <p>retrieve array of {@link XoopsBlock}s meeting certain conditions</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getObjectsDirectly">getObjectsDirectly</a>($criteria = null)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getList">getList</a>(string $criteria = null)
+                    <p>get a list of blocks matchich certain conditions</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getAllBlocksByGroup">getAllBlocksByGroup</a>($groupid, $asobject = true, $side = null, $visible = null, $orderby = &#039;b.weight,b.bid&#039;, $isactive = 1)
+                    <p>get all the blocks that match the supplied parameters</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getAllBlocks">getAllBlocks</a>($rettype = &#039;object&#039;, $side = null, $visible = null, $orderby = &#039;side,weight,bid&#039;, $isactive = 1)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getByModule">getByModule</a>($moduleid, $asobject = true)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getAllByGroupModule">getAllByGroupModule</a>($groupid, $module_id, $toponlyblock = false, $visible = null, $orderby = &#039;b.weight,b.bid&#039;, $isactive = 1)
+                    <p>Gets block objects by groups &amp; modules.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getBlocks">getBlocks</a>($groupid, $mid = false, $blockFlag = SHOW_BLOCK_ALL, $orderby = &#039;b.weight,b.bid&#039;)
+                    <p>Return block instance array by $groupid, $mid and $blockFlag.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getNonGroupedBlocks">getNonGroupedBlocks</a>($module_id, $toponlyblock = false, $visible = null, $orderby = &#039;b.weight,b.bid&#039;, $isactive = 1)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_countSimilarBlocks">countSimilarBlocks</a>($moduleId, $funcNum, $showFunc = null)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_syncIsActive">syncIsActive</a>($moduleId, $isActive, $force = false)
+                    <p>Changes &#039;isactive&#039; value of the module specified by $moduleId.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_XoopsObjectHandler">
+        <div class="location">in <a href="XoopsObjectHandler.html#method_XoopsObjectHandler"><abbr title="XoopsObjectHandler">XoopsObjectHandler</abbr></a> at line 702</div>
+        <code>            public            
+    <strong>XoopsObjectHandler</strong>(object $db)</code>
+    </h3>
+    <div class="details">
+        <p>called from child classes only</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$db</td>
+                <td>reference to the {@link XoopsDatabase} object</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_create">
+        <div class="location">at line 325</div>
+        <code>            public            object
+    <strong>create</strong>(bool $isNew = true)</code>
+    </h3>
+    <div class="details">
+        <p>create a new block</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>bool</td>
+                <td>$isNew</td>
+                <td>is the new block new??</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>object</td>
+            <td>XoopsBlock reference to the new block</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>XoopsBlock</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_get">
+        <div class="location">at line 370</div>
+        <code>            public            object
+    <strong>get</strong>(int $id)</code>
+    </h3>
+    <div class="details">
+        <p>retrieve a specific {@link XoopsBlock}</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td>bid of the block to retrieve</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>object</td>
+            <td>XoopsBlock reference to the block</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>XoopsBlock</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_insert">
+        <div class="location">at line 399</div>
+        <code>            public            bool
+    <strong>insert</strong>(object $block, <abbr title="$autolink">$autolink</abbr> $autolink = false)</code>
+    </h3>
+    <div class="details">
+        <p>write a new block into the database</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$block</td>
+                <td>XoopsBlock $block reference to the block to insert</td>
+            </tr>
+                    <tr>
+                <td><abbr title="$autolink">$autolink</abbr></td>
+                <td>$autolink</td>
+                <td>temp</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>TRUE if succesful</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_delete">
+        <div class="location">at line 449</div>
+        <code>            public            bool
+    <strong>delete</strong>(object $block)</code>
+    </h3>
+    <div class="details">
+        <p>delete a block from the database</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$block</td>
+                <td>XoopsBlock $block reference to the block to delete</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>TRUE if succesful</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_createByInfo">
+        <div class="location">at line 342</div>
+        <code>            public            object
+    <strong>createByInfo</strong>(<abbr title="$info">$info</abbr> $info)</code>
+    </h3>
+    <div class="details">
+        <p>Create a new block by array that is defined in xoops_version.</p>
+        <p>You must <br />
+ be careful that the value that it is returned doesn&#039;t have $mid, $func_num<br />
+ and $dirname.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="$info">$info</abbr></td>
+                <td>$info</td>
+                <td>array</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>object</td>
+            <td>XoopsBlock</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getObjects">
+        <div class="location">at line 471</div>
+        <code>            public            array
+    <strong>getObjects</strong>(object $criteria = null, bool $id_as_key = false)</code>
+    </h3>
+    <div class="details">
+        <p>retrieve array of {@link XoopsBlock}s meeting certain conditions</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>object</td>
+                <td>$criteria</td>
+                <td>{@link CriteriaElement} with conditions for the blocks</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$id_as_key</td>
+                <td>should the blocks&#039; bid be the key for the returned array?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>{@link XoopsBlock}s matching the conditions</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getObjectsDirectly">
+        <div class="location">at line 498</div>
+        <code>            public            
+    <strong>getObjectsDirectly</strong>($criteria = null)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$criteria</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getList">
+        <div class="location">at line 532</div>
+        <code>            public            array
+    <strong>getList</strong>(string $criteria = null)</code>
+    </h3>
+    <div class="details">
+        <p>get a list of blocks matchich certain conditions</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$criteria</td>
+                <td>conditions to match</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>array of blocks matching the conditions</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getAllBlocksByGroup">
+        <div class="location">at line 557</div>
+        <code>            public            
+    <strong>getAllBlocksByGroup</strong>($groupid, $asobject = true, $side = null, $visible = null, $orderby = &#039;b.weight,b.bid&#039;, $isactive = 1)</code>
+    </h3>
+    <div class="details">
+        <p>get all the blocks that match the supplied parameters</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$groupid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$asobject</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$side</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$visible</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$orderby</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$isactive</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getAllBlocks">
+        <div class="location">at line 611</div>
+        <code>            public            
+    <strong>getAllBlocks</strong>($rettype = &#039;object&#039;, $side = null, $visible = null, $orderby = &#039;side,weight,bid&#039;, $isactive = 1)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$rettype</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$side</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$visible</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$orderby</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$isactive</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getByModule">
+        <div class="location">at line 665</div>
+        <code>            public            
+    <strong>getByModule</strong>($moduleid, $asobject = true)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$moduleid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$asobject</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getAllByGroupModule">
+        <div class="location">at line 691</div>
+        <code>            public            
+    <strong>getAllByGroupModule</strong>($groupid, $module_id, $toponlyblock = false, $visible = null, $orderby = &#039;b.weight,b.bid&#039;, $isactive = 1)</code>
+    </h3>
+    <div class="details">
+        <p>Gets block objects by groups &amp; modules.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$groupid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$module_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$toponlyblock</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$visible</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$orderby</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$isactive</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getBlocks">
+        <div class="location">at line 746</div>
+        <code>            public            
+    <strong>getBlocks</strong>($groupid, $mid = false, $blockFlag = SHOW_BLOCK_ALL, $orderby = &#039;b.weight,b.bid&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>Return block instance array by $groupid, $mid and $blockFlag.</p>
+        <p>This function is new function of Cube and used from controller.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$groupid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$mid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$blockFlag</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$orderby</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getNonGroupedBlocks">
+        <div class="location">at line 814</div>
+        <code>            public            
+    <strong>getNonGroupedBlocks</strong>($module_id, $toponlyblock = false, $visible = null, $orderby = &#039;b.weight,b.bid&#039;, $isactive = 1)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$module_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$toponlyblock</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$visible</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$orderby</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$isactive</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_countSimilarBlocks">
+        <div class="location">at line 862</div>
+        <code>            public            
+    <strong>countSimilarBlocks</strong>($moduleId, $funcNum, $showFunc = null)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$moduleId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$funcNum</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$showFunc</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_syncIsActive">
+        <div class="location">at line 888</div>
+        <code>            public            
+    <strong>syncIsActive</strong>($moduleId, $isActive, $force = false)</code>
+    </h3>
+    <div class="details">
+        <p>Changes &#039;isactive&#039; value of the module specified by $moduleId.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$moduleId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$isActive</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$force</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

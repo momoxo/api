@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Xcore_TplfileViewAction | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="namespaces.html">Namespaces</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href=".html"></a>Xcore_TplfileViewAction</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>Xcore_TplfileViewAction</strong>        extends <a href="Xcore_Action.html"><abbr title="Xcore_Action">Xcore_Action</abbr></a></p>
+
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property__mAdminFlag">
+                                                            
+                </td>
+                <td>$_mAdminFlag</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mObject">
+                                                            
+                </td>
+                <td>$mObject</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_Xcore_Action">Xcore_Action</a>($adminFlag = false)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_Action.html#method_Xcore_Action"><abbr title="Xcore_Action">Xcore_Action</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_hasPermission">hasPermission</a>($controller, $xoopsUser)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_Action.html#method_hasPermission"><abbr title="Xcore_Action">Xcore_Action</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_prepare">prepare</a>($controller, $xoopsUser)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_Action.html#method_prepare"><abbr title="Xcore_Action">Xcore_Action</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getDefaultView">getDefaultView</a>($controller, $xoopsUser)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_execute">execute</a>($controller, $xoopsUser)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_Action.html#method_execute"><abbr title="Xcore_Action">Xcore_Action</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_executeViewSuccess">executeViewSuccess</a>($controller, $xoopsUser, $render)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_executeViewError">executeViewError</a>($controller, $xoopsUser, $render)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_executeViewIndex">executeViewIndex</a>($controller, $xoopsUser, $render)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_Action.html#method_executeViewIndex"><abbr title="Xcore_Action">Xcore_Action</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_executeViewInput">executeViewInput</a>($controller, $xoopsUser, $render)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_Action.html#method_executeViewInput"><abbr title="Xcore_Action">Xcore_Action</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_executeViewPreview">executeViewPreview</a>($controller, $xoopsUser, $render)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_Action.html#method_executeViewPreview"><abbr title="Xcore_Action">Xcore_Action</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_executeViewCancel">executeViewCancel</a>($controller, $xoopsUser, $render)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_Action.html#method_executeViewCancel"><abbr title="Xcore_Action">Xcore_Action</abbr></a></small></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_Xcore_Action">
+        <div class="location">in <a href="Xcore_Action.html#method_Xcore_Action"><abbr title="Xcore_Action">Xcore_Action</abbr></a> at line 184</div>
+        <code>            public            
+    <strong>Xcore_Action</strong>($adminFlag = false)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$adminFlag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_hasPermission">
+        <div class="location">in <a href="Xcore_Action.html#method_hasPermission"><abbr title="Xcore_Action">Xcore_Action</abbr></a> at line 189</div>
+        <code>            public            
+    <strong>hasPermission</strong>($controller, $xoopsUser)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$controller</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$xoopsUser</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_prepare">
+        <div class="location">in <a href="Xcore_Action.html#method_prepare"><abbr title="Xcore_Action">Xcore_Action</abbr></a> at line 202</div>
+        <code>            public            
+    <strong>prepare</strong>($controller, $xoopsUser)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$controller</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$xoopsUser</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getDefaultView">
+        <div class="location">at line 7</div>
+        <code>            public            
+    <strong>getDefaultView</strong>($controller, $xoopsUser)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$controller</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$xoopsUser</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_execute">
+        <div class="location">in <a href="Xcore_Action.html#method_execute"><abbr title="Xcore_Action">Xcore_Action</abbr></a> at line 211</div>
+        <code>            public            
+    <strong>execute</strong>($controller, $xoopsUser)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$controller</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$xoopsUser</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_executeViewSuccess">
+        <div class="location">at line 21</div>
+        <code>            public            
+    <strong>executeViewSuccess</strong>($controller, $xoopsUser, $render)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$controller</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$xoopsUser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$render</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_executeViewError">
+        <div class="location">at line 29</div>
+        <code>            public            
+    <strong>executeViewError</strong>($controller, $xoopsUser, $render)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$controller</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$xoopsUser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$render</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_executeViewIndex">
+        <div class="location">in <a href="Xcore_Action.html#method_executeViewIndex"><abbr title="Xcore_Action">Xcore_Action</abbr></a> at line 224</div>
+        <code>            public            
+    <strong>executeViewIndex</strong>($controller, $xoopsUser, $render)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$controller</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$xoopsUser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$render</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_executeViewInput">
+        <div class="location">in <a href="Xcore_Action.html#method_executeViewInput"><abbr title="Xcore_Action">Xcore_Action</abbr></a> at line 228</div>
+        <code>            public            
+    <strong>executeViewInput</strong>($controller, $xoopsUser, $render)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$controller</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$xoopsUser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$render</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_executeViewPreview">
+        <div class="location">in <a href="Xcore_Action.html#method_executeViewPreview"><abbr title="Xcore_Action">Xcore_Action</abbr></a> at line 232</div>
+        <code>            public            
+    <strong>executeViewPreview</strong>($controller, $xoopsUser, $render)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$controller</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$xoopsUser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$render</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_executeViewCancel">
+        <div class="location">in <a href="Xcore_Action.html#method_executeViewCancel"><abbr title="Xcore_Action">Xcore_Action</abbr></a> at line 236</div>
+        <code>            public            
+    <strong>executeViewCancel</strong>($controller, $xoopsUser, $render)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$controller</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$xoopsUser</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$render</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>
