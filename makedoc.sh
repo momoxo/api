@@ -11,7 +11,7 @@ if [ -z "$(ls $WORKING_DIR/_momoxo/)" ]; then
 fi
 
 if [ ! -d $WORKING_DIR/_deploy ]; then
-  git clone -b gh-pages git://github.com/momoxo/api _deploy
+  git clone -b gh-pages git@github.com:momoxo/api _deploy
 fi
 
 php composer.phar self-update
