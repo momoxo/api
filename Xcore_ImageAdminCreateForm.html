@@ -100,13 +100,6 @@
                 <td class="last"></td>
             </tr>
                     <tr>
-                <td class="type" id="property__allowExtensions">
-                                                            
-                </td>
-                <td>$_allowExtensions</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
                 <td class="type" id="property__mImgcatId">
                                                             
                 </td>
@@ -145,7 +138,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_validateImgcat_id">validateImgcat_id</a>()
-                    <p></p>
+                    <p>Check the permission of uploading.</p>
                 </td>
                 <td><small>from&nbsp;<a href="Xcore_ImageUploadForm.html#method_validateImgcat_id"><abbr title="Xcore_ImageUploadForm">Xcore_ImageUploadForm</abbr></a></small></td>
             </tr>
@@ -154,27 +147,37 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_validateUpload">validateUpload</a>()
+                    <a href="#method_validateImage_name">validateImage_name</a>()
                     <p></p>
                 </td>
-                <td><small>from&nbsp;<a href="Xcore_ImageUploadForm.html#method_validateUpload"><abbr title="Xcore_ImageUploadForm">Xcore_ImageUploadForm</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="Xcore_ImageUploadForm.html#method_validateImage_name"><abbr title="Xcore_ImageUploadForm">Xcore_ImageUploadForm</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
-                    
+                    void
                 </td>
                 <td class="last">
-                    <a href="#method_load">load</a>($obj)
+                    <a href="#method_validate">validate</a>()
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="Xcore_ImageUploadForm.html#method_validate"><abbr title="Xcore_ImageUploadForm">Xcore_ImageUploadForm</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_load">load</a>(<abbr title="$obj">$obj</abbr> $obj)
                     <p></p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    
+                    void
                 </td>
                 <td class="last">
-                    <a href="#method_update">update</a>($obj)
+                    <a href="#method_update">update</a>(<abbr title="$obj">$obj</abbr> $obj)
                     <p></p>
                 </td>
                 <td></td>
@@ -224,9 +227,24 @@
     </div>
 
                 <h3 id="method_validateImgcat_id">
-        <div class="location">in <a href="Xcore_ImageUploadForm.html#method_validateImgcat_id"><abbr title="Xcore_ImageUploadForm">Xcore_ImageUploadForm</abbr></a> at line 35</div>
+        <div class="location">in <a href="Xcore_ImageUploadForm.html#method_validateImgcat_id"><abbr title="Xcore_ImageUploadForm">Xcore_ImageUploadForm</abbr></a> at line 54</div>
         <code>            public            
     <strong>validateImgcat_id</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Check the permission of uploading.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_validateImage_name">
+        <div class="location">in <a href="Xcore_ImageUploadForm.html#method_validateImage_name"><abbr title="Xcore_ImageUploadForm">Xcore_ImageUploadForm</abbr></a> at line 77</div>
+        <code>            public            
+    <strong>validateImage_name</strong>()</code>
     </h3>
     <div class="details">
         <p></p>
@@ -238,16 +256,25 @@
                     </div>
     </div>
 
-                <h3 id="method_validateUpload">
-        <div class="location">in <a href="Xcore_ImageUploadForm.html#method_validateUpload"><abbr title="Xcore_ImageUploadForm">Xcore_ImageUploadForm</abbr></a> at line 62</div>
-        <code>            public            
-    <strong>validateUpload</strong>()</code>
+                <h3 id="method_validate">
+        <div class="location">in <a href="Xcore_ImageUploadForm.html#method_validate"><abbr title="Xcore_ImageUploadForm">Xcore_ImageUploadForm</abbr></a> at line 86</div>
+        <code>            public            void
+    <strong>validate</strong>()</code>
     </h3>
     <div class="details">
         <p></p>
         <p></p>
         <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>Execute validation, so if a input value is wrong, error messages are added to error message buffer. The procedure of validation is the following: \li 1. If this object have token name, validate one time tokens. \li 2. Call the validation member function of all field properties. \li 3. Call the member function that is defined in the sub-class. For a basis, validations are done by functions of each field properties. But, the sub-class can define own validation logic. Define member functions whose name is &quot;validate&quot; + &quot;form name&quot;. For example, to validate &quot;message&quot; define &quot;validateMessage()&quot; function.</td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -255,8 +282,8 @@
 
                 <h3 id="method_load">
         <div class="location">at line 35</div>
-        <code>            public            
-    <strong>load</strong>($obj)</code>
+        <code>            public            void
+    <strong>load</strong>(<abbr title="$obj">$obj</abbr> $obj)</code>
     </h3>
     <div class="details">
         <p></p>
@@ -266,13 +293,22 @@
 
                     <table>
                     <tr>
-                <td></td>
+                <td><abbr title="$obj">$obj</abbr></td>
                 <td>$obj</td>
-                <td></td>
+                <td>mixed</td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>Set initial values to this action form from a object. This member function mediates between the logic and the validation. For example, developers can use this method to load values from XoopsSimpleObject. This member function is abstract. But, the sub-class of this class doesn&#039;t have to implement this.</td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -280,8 +316,8 @@
 
                 <h3 id="method_update">
         <div class="location">at line 45</div>
-        <code>            public            
-    <strong>update</strong>($obj)</code>
+        <code>            public            void
+    <strong>update</strong>(<abbr title="$obj">$obj</abbr> $obj)</code>
     </h3>
     <div class="details">
         <p></p>
@@ -291,13 +327,22 @@
 
                     <table>
                     <tr>
-                <td></td>
+                <td><abbr title="$obj">$obj</abbr></td>
                 <td>$obj</td>
-                <td></td>
+                <td>mixed</td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>Set input values to a object from this action form. This member function mediates between the logic and the result of validations. For example, developers can use this method to set values to XoopsSimpleObject. This member function is abstract. But, the sub-class of this class doesn&#039;t have to implement this.</td>
+        </tr>
+    </table>
+
             
             
                     </div>
