@@ -4,7 +4,7 @@ set -eux
 
 ## MEMO
 # git submodule update --init
-# hub clone -p -b gh-pages momonga-project/api _deploy
+# hub clone -p -b gh-pages momoxo/api _deploy
 ##
 
 WORKING_DIR=${0%/*}
@@ -18,7 +18,7 @@ else
   php composer.phar update
 fi
 
-pushd $WORKING_DIR/_momonga
+pushd $WORKING_DIR/_momoxo
   git pull --rebase origin master
 popd
 

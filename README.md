@@ -1,11 +1,11 @@
-# Momonga API
+# Momoxo API
 
 ## How to deploy
 
 git clone from GitHub.
 
 ```
-hub clone momonga-project/api
+hub clone momoxo-project/api
 ```
 
 Update doccumentation and deploy.
@@ -13,7 +13,7 @@ Update doccumentation and deploy.
 ```
 cd api
 git submodule update --init
-hub clone -p -b gh-pages momonga-project/api _deploy
+hub clone -p -b gh-pages momoxo-project/api _deploy
 ./makedoc.sh
 ```
 

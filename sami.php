@@ -8,11 +8,11 @@ $iterator = Finder::create()
 	->name("*.php")
 	->exclude("Resources")
 	->exclude("Tests")
-	->in(__DIR__ . "/_momonga/html")
+	->in(__DIR__ . "/_momoxo/html")
 ;
 
 return new Sami($iterator, array(
-	"title"                => "Momonga API",
+	"title"                => "Momoxo API",
 	"build_dir"            => __DIR__ . "/tmp",
 	"cache_dir"            => __DIR__ . "/cache",
 	"default_opened_level" => 2,
