@@ -2,7 +2,7 @@
 
 set -eux
 
-WORKING_DIR=${0%/*}
+WORKING_DIR=$(cd $(dirname $0); pwd)
 
 cd $WORKING_DIR
 
