@@ -29,6 +29,7 @@ popd
 
 pushd $WORKING_DIR/_deploy
   rm -rf $WORKING_DIR/_deploy/*
+  echo 'api.momoxo.org' > $WORKING_DIR/_deploy/CNAME
   cp -a $WORKING_DIR/tmp/* $WORKING_DIR/_deploy
   git add .
   git add -u
