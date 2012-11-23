@@ -2,14 +2,17 @@
 
 set -eux
 
-## MEMO
-# git submodule update --init
-# hub clone -p -b gh-pages momoxo/api _deploy
-##
-
 WORKING_DIR=${0%/*}
 
 cd $WORKING_DIR
+
+if [ -z "$(ls $WORKING_DIR/_momoxo/)" ]; then
+  git submodule update --init
+fi
+
+if [ ! -d $WORKING_DIR/_deploy ]; then
+  git clone -b gh-pages git://github.com/momoxo/api _deploy
+fi
 
 php composer.phar self-update
 if [ ! -d $WORKING_DIR/vendor ]; then
