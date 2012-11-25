@@ -24,6 +24,29 @@
         <div class="content">
                 <p>class    <strong>XoopsMediaUploader</strong></p>
 
+            <div class="description">
+            <p>Upload Media files</p>
+            <p>Example of usage:<br />
+ &lt;code&gt;<br />
+ include_once &#039;uploader.php&#039;;<br />
+ $allowed_mimetypes = array(&#039;image/gif&#039;, &#039;image/jpeg&#039;, &#039;image/pjpeg&#039;, &#039;image/x-png&#039;);<br />
+ $maxfilesize = 50000;<br />
+ $maxfilewidth = 120;<br />
+ $maxfileheight = 120;<br />
+ $uploader = new XoopsMediaUploader(&#039;/home/xoops/uploads&#039;, $allowed_mimetypes, $maxfilesize, $maxfilewidth, $maxfileheight);<br />
+ if ($uploader-&gt;fetchMedia($_POST[&#039;uploade_file_name&#039;])) {<br />
+   if (!$uploader-&gt;upload()) {<br />
+      echo $uploader-&gt;getErrors();<br />
+   } else {<br />
+      echo &#039;&lt;h4&gt;File uploaded successfully!&lt;/h4&gt;&#039;<br />
+      echo &#039;Saved as: &#039; . $uploader-&gt;getSavedFileName() . &#039;&lt;br /&gt;&#039;;<br />
+      echo &#039;Full path: &#039; . $uploader-&gt;getSavedDestination();<br />
+   }<br />
+ } else {<br />
+   echo $uploader-&gt;getErrors();<br />
+ }<br />
+ &lt;/code&gt;</p>
+        </div>
     
     
             <h2>Properties</h2>
@@ -401,7 +424,7 @@
         <h2>Details</h2>
 
                         <h3 id="method_XoopsMediaUploader">
-        <div class="location">at line 105</div>
+        <div class="location">at line 70</div>
         <code>            public            
     <strong>XoopsMediaUploader</strong>($uploadDir, $allowedMimeTypes, $maxFileSize, $maxWidth = null, $maxHeight = null)</code>
     </h3>
@@ -446,7 +469,7 @@
     </div>
 
                 <h3 id="method_setAllowedExtensions">
-        <div class="location">at line 131</div>
+        <div class="location">at line 96</div>
         <code>            public            
     <strong>setAllowedExtensions</strong>($extensions)</code>
     </h3>
@@ -471,7 +494,7 @@
     </div>
 
                 <h3 id="method_setStrictCheckExtensions">
-        <div class="location">at line 136</div>
+        <div class="location">at line 101</div>
         <code>            public            
     <strong>setStrictCheckExtensions</strong>($extensions)</code>
     </h3>
@@ -496,7 +519,7 @@
     </div>
 
                 <h3 id="method_fetchMedia">
-        <div class="location">at line 148</div>
+        <div class="location">at line 113</div>
         <code>            public            bool
     <strong>fetchMedia</strong>(string $media_name, int $index = null)</code>
     </h3>
@@ -535,7 +558,7 @@
     </div>
 
                 <h3 id="method_setTargetFileName">
-        <div class="location">at line 208</div>
+        <div class="location">at line 173</div>
         <code>            public            
     <strong>setTargetFileName</strong>(string $value)</code>
     </h3>
@@ -560,7 +583,7 @@
     </div>
 
                 <h3 id="method_setPrefix">
-        <div class="location">at line 217</div>
+        <div class="location">at line 182</div>
         <code>            public            
     <strong>setPrefix</strong>(string $value)</code>
     </h3>
@@ -585,7 +608,7 @@
     </div>
 
                 <h3 id="method_getMediaName">
-        <div class="location">at line 226</div>
+        <div class="location">at line 191</div>
         <code>            public            string
     <strong>getMediaName</strong>()</code>
     </h3>
@@ -609,7 +632,7 @@
     </div>
 
                 <h3 id="method_getMediaType">
-        <div class="location">at line 236</div>
+        <div class="location">at line 201</div>
         <code>            public            string
     <strong>getMediaType</strong>()</code>
     </h3>
@@ -633,7 +656,7 @@
     </div>
 
                 <h3 id="method_getMediaSize">
-        <div class="location">at line 246</div>
+        <div class="location">at line 211</div>
         <code>            public            int
     <strong>getMediaSize</strong>()</code>
     </h3>
@@ -657,7 +680,7 @@
     </div>
 
                 <h3 id="method_getMediaTmpName">
-        <div class="location">at line 256</div>
+        <div class="location">at line 221</div>
         <code>            public            string
     <strong>getMediaTmpName</strong>()</code>
     </h3>
@@ -681,7 +704,7 @@
     </div>
 
                 <h3 id="method_getSavedFileName">
-        <div class="location">at line 266</div>
+        <div class="location">at line 231</div>
         <code>            public            string
     <strong>getSavedFileName</strong>()</code>
     </h3>
@@ -705,7 +728,7 @@
     </div>
 
                 <h3 id="method_getSavedDestination">
-        <div class="location">at line 275</div>
+        <div class="location">at line 240</div>
         <code>            public            string
     <strong>getSavedDestination</strong>()</code>
     </h3>
@@ -729,7 +752,7 @@
     </div>
 
                 <h3 id="method_upload">
-        <div class="location">at line 284</div>
+        <div class="location">at line 249</div>
         <code>            public            bool
     <strong>upload</strong>($chmod = 420)</code>
     </h3>
@@ -763,7 +786,7 @@
     </div>
 
                 <h3 id="method__copyFile">
-        <div class="location">at line 323</div>
+        <div class="location">at line 288</div>
         <code>            public            bool
     <strong>_copyFile</strong>($chmod)</code>
     </h3>
@@ -797,7 +820,7 @@
     </div>
 
                 <h3 id="method_checkMaxFileSize">
-        <div class="location">at line 345</div>
+        <div class="location">at line 310</div>
         <code>            public            bool
     <strong>checkMaxFileSize</strong>()</code>
     </h3>
@@ -821,7 +844,7 @@
     </div>
 
                 <h3 id="method_checkMaxWidth">
-        <div class="location">at line 358</div>
+        <div class="location">at line 323</div>
         <code>            public            bool
     <strong>checkMaxWidth</strong>()</code>
     </h3>
@@ -845,7 +868,7 @@
     </div>
 
                 <h3 id="method_checkMaxHeight">
-        <div class="location">at line 378</div>
+        <div class="location">at line 343</div>
         <code>            public            bool
     <strong>checkMaxHeight</strong>()</code>
     </h3>
@@ -869,7 +892,7 @@
     </div>
 
                 <h3 id="method_checkMimeType">
-        <div class="location">at line 398</div>
+        <div class="location">at line 363</div>
         <code>            public            bool
     <strong>checkMimeType</strong>()</code>
     </h3>
@@ -893,7 +916,7 @@
     </div>
 
                 <h3 id="method__checkStrict">
-        <div class="location">at line 434</div>
+        <div class="location">at line 399</div>
         <code>            public            
     <strong>_checkStrict</strong>()</code>
     </h3>
@@ -908,7 +931,7 @@
     </div>
 
                 <h3 id="method_checkExpectedMimeType">
-        <div class="location">at line 449</div>
+        <div class="location">at line 414</div>
         <code>            public            bool
     <strong>checkExpectedMimeType</strong>()</code>
     </h3>
@@ -932,7 +955,7 @@
     </div>
 
                 <h3 id="method_setErrors">
-        <div class="location">at line 463</div>
+        <div class="location">at line 428</div>
         <code>            public            
     <strong>setErrors</strong>(string $error)</code>
     </h3>
@@ -957,7 +980,7 @@
     </div>
 
                 <h3 id="method_getErrors">
-        <div class="location">at line 475</div>
+        <div class="location">at line 440</div>
         <code>            public            array|string
     <strong>getErrors</strong>(bool $ashtml = true)</code>
     </h3>
