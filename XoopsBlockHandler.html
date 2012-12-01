@@ -24,13 +24,6 @@
         <div class="content">
                 <p>class    <strong>XoopsBlockHandler</strong>        extends <a href="XoopsObjectHandler.html"><abbr title="XoopsObjectHandler">XoopsObjectHandler</abbr></a></p>
 
-            <div class="description">
-            <p>XOOPS block handler class.</p>
-            <p>(Singelton)<br />
-<br />
- This class is responsible for providing data access mechanisms to the data source<br />
- of XOOPS block class objects.</p>
-        </div>
     
     
             <h2>Properties</h2>
@@ -250,7 +243,7 @@
     </div>
 
                 <h3 id="method_create">
-        <div class="location">at line 24</div>
+        <div class="location">at line 26</div>
         <code>            public            object
     <strong>create</strong>(bool $isNew = true)</code>
     </h3>
@@ -293,7 +286,7 @@
     </div>
 
                 <h3 id="method_get">
-        <div class="location">at line 69</div>
+        <div class="location">at line 71</div>
         <code>            public            object
     <strong>get</strong>(int $id)</code>
     </h3>
@@ -336,7 +329,7 @@
     </div>
 
                 <h3 id="method_insert">
-        <div class="location">at line 98</div>
+        <div class="location">at line 100</div>
         <code>            public            bool
     <strong>insert</strong>(object $block, <abbr title="$autolink">$autolink</abbr> $autolink = false)</code>
     </h3>
@@ -375,7 +368,7 @@
     </div>
 
                 <h3 id="method_delete">
-        <div class="location">at line 148</div>
+        <div class="location">at line 150</div>
         <code>            public            bool
     <strong>delete</strong>(object $block)</code>
     </h3>
@@ -409,7 +402,7 @@
     </div>
 
                 <h3 id="method_createByInfo">
-        <div class="location">at line 41</div>
+        <div class="location">at line 43</div>
         <code>            public            object
     <strong>createByInfo</strong>(<abbr title="$info">$info</abbr> $info)</code>
     </h3>
@@ -445,7 +438,7 @@
     </div>
 
                 <h3 id="method_getObjects">
-        <div class="location">at line 170</div>
+        <div class="location">at line 172</div>
         <code>            public            array
     <strong>getObjects</strong>(object $criteria = null, bool $id_as_key = false)</code>
     </h3>
@@ -484,7 +477,7 @@
     </div>
 
                 <h3 id="method_getObjectsDirectly">
-        <div class="location">at line 197</div>
+        <div class="location">at line 199</div>
         <code>            public            
     <strong>getObjectsDirectly</strong>($criteria = null)</code>
     </h3>
@@ -509,7 +502,7 @@
     </div>
 
                 <h3 id="method_getList">
-        <div class="location">at line 231</div>
+        <div class="location">at line 233</div>
         <code>            public            array
     <strong>getList</strong>(string $criteria = null)</code>
     </h3>
@@ -543,7 +536,7 @@
     </div>
 
                 <h3 id="method_getAllBlocksByGroup">
-        <div class="location">at line 256</div>
+        <div class="location">at line 258</div>
         <code>            public            
     <strong>getAllBlocksByGroup</strong>($groupid, $asobject = true, $side = null, $visible = null, $orderby = &#039;b.weight,b.bid&#039;, $isactive = 1)</code>
     </h3>
@@ -593,7 +586,7 @@
     </div>
 
                 <h3 id="method_getAllBlocks">
-        <div class="location">at line 310</div>
+        <div class="location">at line 312</div>
         <code>            public            
     <strong>getAllBlocks</strong>($rettype = &#039;object&#039;, $side = null, $visible = null, $orderby = &#039;side,weight,bid&#039;, $isactive = 1)</code>
     </h3>
@@ -638,7 +631,7 @@
     </div>
 
                 <h3 id="method_getByModule">
-        <div class="location">at line 364</div>
+        <div class="location">at line 366</div>
         <code>            public            
     <strong>getByModule</strong>($moduleid, $asobject = true)</code>
     </h3>
@@ -668,7 +661,7 @@
     </div>
 
                 <h3 id="method_getAllByGroupModule">
-        <div class="location">at line 390</div>
+        <div class="location">at line 392</div>
         <code>            public            
     <strong>getAllByGroupModule</strong>($groupid, $module_id, $toponlyblock = false, $visible = null, $orderby = &#039;b.weight,b.bid&#039;, $isactive = 1)</code>
     </h3>
@@ -718,7 +711,7 @@
     </div>
 
                 <h3 id="method_getBlocks">
-        <div class="location">at line 445</div>
+        <div class="location">at line 447</div>
         <code>            public            
     <strong>getBlocks</strong>($groupid, $mid = false, $blockFlag = SHOW_BLOCK_ALL, $orderby = &#039;b.weight,b.bid&#039;)</code>
     </h3>
@@ -758,7 +751,7 @@
     </div>
 
                 <h3 id="method_getNonGroupedBlocks">
-        <div class="location">at line 513</div>
+        <div class="location">at line 515</div>
         <code>            public            
     <strong>getNonGroupedBlocks</strong>($module_id, $toponlyblock = false, $visible = null, $orderby = &#039;b.weight,b.bid&#039;, $isactive = 1)</code>
     </h3>
@@ -803,7 +796,7 @@
     </div>
 
                 <h3 id="method_countSimilarBlocks">
-        <div class="location">at line 561</div>
+        <div class="location">at line 563</div>
         <code>            public            
     <strong>countSimilarBlocks</strong>($moduleId, $funcNum, $showFunc = null)</code>
     </h3>
@@ -838,7 +831,7 @@
     </div>
 
                 <h3 id="method_syncIsActive">
-        <div class="location">at line 587</div>
+        <div class="location">at line 589</div>
         <code>            public            
     <strong>syncIsActive</strong>($moduleId, $isActive, $force = false)</code>
     </h3>

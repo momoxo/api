@@ -24,17 +24,6 @@
         <div class="content">
                 <p>class    <strong>Xcore_Controller</strong>        extends <a href="XCube_Controller.html"><abbr title="XCube_Controller">XCube_Controller</abbr></a></p>
 
-            <div class="description">
-            <p>This class is a virtual controller that has the compatibility with XOOPS 2.0.x.</p>
-            <p>[NOTICE]<br />
- XOOPS 2.0.x can switch to public mode and control panel mode. This controller<br />
- emulates its process with using STATE. But, we may lose flexible setup by this<br />
- implement. Now, we are investigating the influence.<br />
-<br />
- [TODO]<br />
- XCube_Controller keeps a process that set up instances of some Legacy classes,<br />
- yet. We should move its process to this controller.</p>
-        </div>
     
     
             <h2>Properties</h2>
@@ -42,7 +31,7 @@
             <table>
                     <tr>
                 <td class="type" id="property_mRoot">
-                                                            <a href="XCube_Root.html"><abbr title="XCube_Root">XCube_Root</abbr></a>
+                                                            <abbr title="XCore\Kernel\Root">Root</abbr>
                 </td>
                 <td>$mRoot</td>
                 <td class="last">The reference for the root object.</td>
@@ -222,7 +211,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_prepare">prepare</a>(<a href="XCube_Root.html"><abbr title="XCube_Root">XCube_Root</abbr></a> $root)
+                    <a href="#method_prepare">prepare</a>(<abbr title="XCore\Kernel\Root">Root</abbr> $root)
                     <p>This member function is overridden.</p>
                 </td>
                 <td></td>
@@ -783,7 +772,7 @@
         <h2>Details</h2>
 
                         <h3 id="method_XCube_Controller">
-        <div class="location">in <a href="XCube_Controller.html#method_XCube_Controller"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 105</div>
+        <div class="location">in <a href="XCube_Controller.html#method_XCube_Controller"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 107</div>
         <code>            public            
     <strong>XCube_Controller</strong>()</code>
     </h3>
@@ -798,9 +787,9 @@
     </div>
 
                 <h3 id="method_prepare">
-        <div class="location">at line 110</div>
+        <div class="location">at line 112</div>
         <code>            public            
-    <strong>prepare</strong>(<a href="XCube_Root.html"><abbr title="XCube_Root">XCube_Root</abbr></a> $root)</code>
+    <strong>prepare</strong>(<abbr title="XCore\Kernel\Root">Root</abbr> $root)</code>
     </h3>
     <div class="details">
         <p>This member function is overridden.</p>
@@ -811,7 +800,7 @@
 
                     <table>
                     <tr>
-                <td><a href="XCube_Root.html"><abbr title="XCube_Root">XCube_Root</abbr></a></td>
+                <td><abbr title="XCore\Kernel\Root">Root</abbr></td>
                 <td>$root</td>
                 <td></td>
             </tr>
@@ -824,7 +813,7 @@
     </div>
 
                 <h3 id="method_executeCommon">
-        <div class="location">at line 141</div>
+        <div class="location">at line 143</div>
         <code>            public            
     <strong>executeCommon</strong>()</code>
     </h3>
@@ -839,7 +828,7 @@
     </div>
 
                 <h3 id="method_executeHeader">
-        <div class="location">at line 762</div>
+        <div class="location">at line 764</div>
         <code>            public            
     <strong>executeHeader</strong>()</code>
     </h3>
@@ -857,7 +846,7 @@
     </div>
 
                 <h3 id="method_execute">
-        <div class="location">in <a href="XCube_Controller.html#method_execute"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 185</div>
+        <div class="location">in <a href="XCube_Controller.html#method_execute"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 187</div>
         <code>            public            
     <strong>execute</strong>()</code>
     </h3>
@@ -872,7 +861,7 @@
     </div>
 
                 <h3 id="method_executeView">
-        <div class="location">at line 818</div>
+        <div class="location">at line 820</div>
         <code>            public            
     <strong>executeView</strong>()</code>
     </h3>
@@ -887,7 +876,7 @@
     </div>
 
                 <h3 id="method_executeForward">
-        <div class="location">in <a href="XCube_Controller.html#method_executeForward"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 206</div>
+        <div class="location">in <a href="XCube_Controller.html#method_executeForward"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 208</div>
         <code>            public            
     <strong>executeForward</strong>(string $url, int $time, string $message = null)</code>
     </h3>
@@ -922,7 +911,7 @@
     </div>
 
                 <h3 id="method_executeRedirect">
-        <div class="location">at line 1107</div>
+        <div class="location">at line 1109</div>
         <code>            public            
     <strong>executeRedirect</strong>(string $url, int $time = 1, string $message = null, bool $addRedirect = true)</code>
     </h3>
@@ -965,7 +954,7 @@
     </div>
 
                 <h3 id="method_addActionFilter">
-        <div class="location">in <a href="XCube_Controller.html#method_addActionFilter"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 229</div>
+        <div class="location">in <a href="XCube_Controller.html#method_addActionFilter"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 231</div>
         <code>            public            
     <strong>addActionFilter</strong>(<abbr title="$filter">$filter</abbr> $filter)</code>
     </h3>
@@ -990,7 +979,7 @@
     </div>
 
                 <h3 id="method__setupFilterChain">
-        <div class="location">at line 304</div>
+        <div class="location">at line 306</div>
         <code>            public            
     <strong>_setupFilterChain</strong>()</code>
     </h3>
@@ -1014,7 +1003,7 @@
     </div>
 
                 <h3 id="method__setupEnvironment">
-        <div class="location">at line 278</div>
+        <div class="location">at line 280</div>
         <code>            public            
     <strong>_setupEnvironment</strong>()</code>
     </h3>
@@ -1030,7 +1019,7 @@
     </div>
 
                 <h3 id="method__setupDB">
-        <div class="location">at line 547</div>
+        <div class="location">at line 549</div>
         <code>            public            
     <strong>_setupDB</strong>()</code>
     </h3>
@@ -1045,7 +1034,7 @@
     </div>
 
                 <h3 id="method_getDB">
-        <div class="location">in <a href="XCube_Controller.html#method_getDB"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 264</div>
+        <div class="location">in <a href="XCube_Controller.html#method_getDB"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 266</div>
         <code>            public            
     <strong>getDB</strong>()</code>
     </h3>
@@ -1060,7 +1049,7 @@
     </div>
 
                 <h3 id="method__setupLanguage">
-        <div class="location">at line 576</div>
+        <div class="location">at line 578</div>
         <code>            public            
     <strong>_setupLanguage</strong>()</code>
     </h3>
@@ -1077,7 +1066,7 @@
     </div>
 
                 <h3 id="method__setupTextFilter">
-        <div class="location">in <a href="XCube_Controller.html#method__setupTextFilter"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 287</div>
+        <div class="location">in <a href="XCube_Controller.html#method__setupTextFilter"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 289</div>
         <code>            public            
     <strong>_setupTextFilter</strong>()</code>
     </h3>
@@ -1092,7 +1081,7 @@
     </div>
 
                 <h3 id="method__setupConfig">
-        <div class="location">at line 658</div>
+        <div class="location">at line 660</div>
         <code>            public            
     <strong>_setupConfig</strong>()</code>
     </h3>
@@ -1108,7 +1097,7 @@
     </div>
 
                 <h3 id="method__setupSession">
-        <div class="location">at line 745</div>
+        <div class="location">at line 747</div>
         <code>            public            void
     <strong>_setupSession</strong>()</code>
     </h3>
@@ -1133,7 +1122,7 @@
     </div>
 
                 <h3 id="method__setupUser">
-        <div class="location">at line 524</div>
+        <div class="location">at line 526</div>
         <code>            public            
     <strong>_setupUser</strong>()</code>
     </h3>
@@ -1149,7 +1138,7 @@
     </div>
 
                 <h3 id="method__processFilter">
-        <div class="location">in <a href="XCube_Controller.html#method__processFilter"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 330</div>
+        <div class="location">in <a href="XCube_Controller.html#method__processFilter"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 332</div>
         <code>            public            
     <strong>_processFilter</strong>()</code>
     </h3>
@@ -1164,7 +1153,7 @@
     </div>
 
                 <h3 id="method__setupBlock">
-        <div class="location">at line 309</div>
+        <div class="location">at line 311</div>
         <code>            public            
     <strong>_setupBlock</strong>()</code>
     </h3>
@@ -1179,7 +1168,7 @@
     </div>
 
                 <h3 id="method__processBlock">
-        <div class="location">at line 325</div>
+        <div class="location">at line 327</div>
         <code>            public            
     <strong>_processBlock</strong>()</code>
     </h3>
@@ -1200,7 +1189,7 @@
     </div>
 
                 <h3 id="method__processPreBlockFilter">
-        <div class="location">at line 705</div>
+        <div class="location">at line 707</div>
         <code>            public            
     <strong>_processPreBlockFilter</strong>()</code>
     </h3>
@@ -1215,7 +1204,7 @@
     </div>
 
                 <h3 id="method__processPostFilter">
-        <div class="location">in <a href="XCube_Controller.html#method__processPostFilter"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 382</div>
+        <div class="location">in <a href="XCube_Controller.html#method__processPostFilter"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 384</div>
         <code>            public            
     <strong>_processPostFilter</strong>()</code>
     </h3>
@@ -1230,7 +1219,7 @@
     </div>
 
                 <h3 id="method__processPreload">
-        <div class="location">in <a href="XCube_Controller.html#method__processPreload"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 397</div>
+        <div class="location">in <a href="XCube_Controller.html#method__processPreload"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 399</div>
         <code>            public            
     <strong>_processPreload</strong>(<abbr title="$path">$path</abbr> $path)</code>
     </h3>
@@ -1257,7 +1246,7 @@
     </div>
 
                 <h3 id="method__createDelegateManager">
-        <div class="location">at line 908</div>
+        <div class="location">at line 910</div>
         <code>            public            <a href="XCube_DelegateManager.html"><abbr title="XCube_DelegateManager">XCube_DelegateManager</abbr></a>
     <strong>_createDelegateManager</strong>()</code>
     </h3>
@@ -1281,7 +1270,7 @@
     </div>
 
                 <h3 id="method__createServiceManager">
-        <div class="location">at line 923</div>
+        <div class="location">at line 925</div>
         <code>            public            <a href="XCube_ServiceManager.html"><abbr title="XCube_ServiceManager">XCube_ServiceManager</abbr></a>
     <strong>_createServiceManager</strong>()</code>
     </h3>
@@ -1305,7 +1294,7 @@
     </div>
 
                 <h3 id="method__createPermissionManager">
-        <div class="location">in <a href="XCube_Controller.html#method__createPermissionManager"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 442</div>
+        <div class="location">in <a href="XCube_Controller.html#method__createPermissionManager"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 444</div>
         <code>            public            <abbr title="XCube_PermissionManager">XCube_PermissionManager</abbr>
     <strong>_createPermissionManager</strong>()</code>
     </h3>
@@ -1329,7 +1318,7 @@
     </div>
 
                 <h3 id="method__createRoleManager">
-        <div class="location">in <a href="XCube_Controller.html#method__createRoleManager"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 459</div>
+        <div class="location">in <a href="XCube_Controller.html#method__createRoleManager"><abbr title="XCube_Controller">XCube_Controller</abbr></a> at line 461</div>
         <code>            public            <a href="XCube_RoleManager.html"><abbr title="XCube_RoleManager">XCube_RoleManager</abbr></a>
     <strong>_createRoleManager</strong>()</code>
     </h3>
@@ -1353,7 +1342,7 @@
     </div>
 
                 <h3 id="method__createContext">
-        <div class="location">at line 1259</div>
+        <div class="location">at line 1261</div>
         <code>            public            <a href="XCube_HttpContext.html"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a>
     <strong>_createContext</strong>()</code>
     </h3>
@@ -1377,7 +1366,7 @@
     </div>
 
                 <h3 id="method_Xcore_Controller">
-        <div class="location">at line 75</div>
+        <div class="location">at line 77</div>
         <code>            public            
     <strong>Xcore_Controller</strong>()</code>
     </h3>
@@ -1392,7 +1381,7 @@
     </div>
 
                 <h3 id="method_executeCommonSubset">
-        <div class="location">at line 204</div>
+        <div class="location">at line 206</div>
         <code>            public            
     <strong>executeCommonSubset</strong>(bool $connectdb = true)</code>
     </h3>
@@ -1417,7 +1406,7 @@
     </div>
 
                 <h3 id="method__setupLogger">
-        <div class="location">at line 213</div>
+        <div class="location">at line 215</div>
         <code>            public            
     <strong>_setupLogger</strong>()</code>
     </h3>
@@ -1432,7 +1421,7 @@
     </div>
 
                 <h3 id="method_getLogger">
-        <div class="location">at line 221</div>
+        <div class="location">at line 223</div>
         <code>            public            
     <strong>getLogger</strong>()</code>
     </h3>
@@ -1447,7 +1436,7 @@
     </div>
 
                 <h3 id="method__getLocalTimezone">
-        <div class="location">at line 226</div>
+        <div class="location">at line 228</div>
         <code>            public            
     <strong>_getLocalTimezone</strong>()</code>
     </h3>
@@ -1462,7 +1451,7 @@
     </div>
 
                 <h3 id="method__parseUrl">
-        <div class="location">at line 405</div>
+        <div class="location">at line 407</div>
         <code>            public            
     <strong>_parseUrl</strong>()</code>
     </h3>
@@ -1477,7 +1466,7 @@
     </div>
 
                 <h3 id="method_setupModuleContext">
-        <div class="location">at line 425</div>
+        <div class="location">at line 427</div>
         <code>            public            
     <strong>setupModuleContext</strong>($dirname = null)</code>
     </h3>
@@ -1502,7 +1491,7 @@
     </div>
 
                 <h3 id="method__processModule">
-        <div class="location">at line 458</div>
+        <div class="location">at line 460</div>
         <code>            public            
     <strong>_processModule</strong>()</code>
     </h3>
@@ -1517,7 +1506,7 @@
     </div>
 
                 <h3 id="method__processHostAbstractLayer">
-        <div class="location">at line 489</div>
+        <div class="location">at line 491</div>
         <code>            public            
     <strong>_processHostAbstractLayer</strong>()</code>
     </h3>
@@ -1532,7 +1521,7 @@
     </div>
 
                 <h3 id="method__setupErrorHandler">
-        <div class="location">at line 539</div>
+        <div class="location">at line 541</div>
         <code>            public            
     <strong>_setupErrorHandler</strong>()</code>
     </h3>
@@ -1547,7 +1536,7 @@
     </div>
 
                 <h3 id="method__createLanguageManager">
-        <div class="location">at line 621</div>
+        <div class="location">at line 623</div>
         <code>            public            <a href="Xcore_LanguageManager.html"><abbr title="Xcore_LanguageManager">Xcore_LanguageManager</abbr></a>
     <strong>_createLanguageManager</strong>(string $language)</code>
     </h3>
@@ -1591,7 +1580,7 @@
     </div>
 
                 <h3 id="method__setupScript">
-        <div class="location">at line 680</div>
+        <div class="location">at line 682</div>
         <code>            public            
     <strong>_setupScript</strong>()</code>
     </h3>
@@ -1606,7 +1595,7 @@
     </div>
 
                 <h3 id="method__setupDebugger">
-        <div class="location">at line 690</div>
+        <div class="location">at line 692</div>
         <code>            public            void
     <strong>_setupDebugger</strong>()</code>
     </h3>
@@ -1630,7 +1619,7 @@
     </div>
 
                 <h3 id="method__processModulePreload">
-        <div class="location">at line 711</div>
+        <div class="location">at line 713</div>
         <code>            public            
     <strong>_processModulePreload</strong>($dirname)</code>
     </h3>
@@ -1655,7 +1644,7 @@
     </div>
 
                 <h3 id="method__executeViewTheme">
-        <div class="location">at line 863</div>
+        <div class="location">at line 865</div>
         <code>            public            
     <strong>_executeViewTheme</strong>($resultRenderTarget)</code>
     </h3>
@@ -1680,7 +1669,7 @@
     </div>
 
                 <h3 id="method_checkLogin">
-        <div class="location">at line 941</div>
+        <div class="location">at line 943</div>
         <code>            public            
     <strong>checkLogin</strong>()</code>
     </h3>
@@ -1695,7 +1684,7 @@
     </div>
 
                 <h3 id="method_logout">
-        <div class="location">at line 1005</div>
+        <div class="location">at line 1007</div>
         <code>            public            
     <strong>logout</strong>()</code>
     </h3>
@@ -1710,7 +1699,7 @@
     </div>
 
                 <h3 id="method_switchStateCompulsory">
-        <div class="location">at line 1032</div>
+        <div class="location">at line 1034</div>
         <code>            public            
     <strong>switchStateCompulsory</strong>($strategy)</code>
     </h3>
@@ -1735,7 +1724,7 @@
     </div>
 
                 <h3 id="method_setStrategy">
-        <div class="location">at line 1045</div>
+        <div class="location">at line 1047</div>
         <code>            public            
     <strong>setStrategy</strong>(<a href="Xcore_AbstractControllerStrategy.html"><abbr title="Xcore_AbstractControllerStrategy">Xcore_AbstractControllerStrategy</abbr></a> $strategy)</code>
     </h3>
@@ -1761,7 +1750,7 @@
     </div>
 
                 <h3 id="method_setDialogMode">
-        <div class="location">at line 1065</div>
+        <div class="location">at line 1067</div>
         <code>            public            
     <strong>setDialogMode</strong>(<abbr title="$flag">$flag</abbr> $flag)</code>
     </h3>
@@ -1787,7 +1776,7 @@
     </div>
 
                 <h3 id="method_getDialogMode">
-        <div class="location">at line 1074</div>
+        <div class="location">at line 1076</div>
         <code>            public            bool
     <strong>getDialogMode</strong>()</code>
     </h3>
@@ -1811,7 +1800,7 @@
     </div>
 
                 <h3 id="method_getVirtualCurrentModule">
-        <div class="location">at line 1086</div>
+        <div class="location">at line 1088</div>
         <code>            public            <a href="XoopsModule.html"><abbr title="XoopsModule">XoopsModule</abbr></a>
     <strong>getVirtualCurrentModule</strong>()</code>
     </h3>
@@ -1837,7 +1826,7 @@
     </div>
 
                 <h3 id="method_isEnableCacheFeature">
-        <div class="location">at line 1202</div>
+        <div class="location">at line 1204</div>
         <code>            public            bool
     <strong>isEnableCacheFeature</strong>()</code>
     </h3>
@@ -1861,7 +1850,7 @@
     </div>
 
                 <h3 id="method_existActiveCacheFile">
-        <div class="location">at line 1215</div>
+        <div class="location">at line 1217</div>
         <code>            public            bool
     <strong>existActiveCacheFile</strong>(string $filepath, int $cachetime)</code>
     </h3>
@@ -1901,7 +1890,7 @@
     </div>
 
                 <h3 id="method_cacheRenderTarget">
-        <div class="location">at line 1234</div>
+        <div class="location">at line 1236</div>
         <code>            public            bool
     <strong>cacheRenderTarget</strong>($filepath, $renderTarget)</code>
     </h3>
@@ -1940,7 +1929,7 @@
     </div>
 
                 <h3 id="method_loadCache">
-        <div class="location">at line 1250</div>
+        <div class="location">at line 1252</div>
         <code>            public            string
     <strong>loadCache</strong>($filepath)</code>
     </h3>
@@ -1974,7 +1963,7 @@
     </div>
 
                 <h3 id="method_getPreferenceEditUrl">
-        <div class="location">at line 1274</div>
+        <div class="location">at line 1276</div>
         <code>            public            string
     <strong>getPreferenceEditUrl</strong>($module)</code>
     </h3>
@@ -2008,7 +1997,7 @@
     </div>
 
                 <h3 id="method_getHelpViewUrl">
-        <div class="location">at line 1289</div>
+        <div class="location">at line 1291</div>
         <code>            public            string
     <strong>getHelpViewUrl</strong>($module)</code>
     </h3>

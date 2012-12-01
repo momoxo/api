@@ -24,10 +24,6 @@
         <div class="content">
                 <p>class    <strong>XoopsBlock</strong>        extends <a href="XoopsObject.html"><abbr title="XoopsObject">XoopsObject</abbr></a></p>
 
-            <div class="description">
-            <p>A block</p>
-            <p></p>
-        </div>
     
     
             <h2>Properties</h2>
@@ -164,7 +160,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_initVar">initVar</a>($key, $data_type, $value = null, $required = false, $maxlength = null, $options = &#039;&#039;)
-                    <p>initialize variables for the object</p>
+                    <p></p>
                 </td>
                 <td><small>from&nbsp;<a href="XoopsObject.html#method_initVar"><abbr title="XoopsObject">XoopsObject</abbr></a></small></td>
             </tr>
@@ -184,7 +180,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_assignVars">assignVars</a>($var_arr)
-                    <p>assign values to multiple variables in a batch</p>
+                    <p>You should use this method to initilize object&#039;s properties.</p>
                 </td>
                 <td><small>from&nbsp;<a href="XoopsObject.html#method_assignVars"><abbr title="XoopsObject">XoopsObject</abbr></a></small></td>
             </tr>
@@ -254,7 +250,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_set">set</a>(string $key, mixed $value)
-                    <p>Sets $value to $key property.</p>
+                    <p>You should use this method to change object&#039;s properties.</p>
                 </td>
                 <td><small>from&nbsp;<a href="XoopsObject.html#method_set"><abbr title="XoopsObject">XoopsObject</abbr></a></small></td>
             </tr>
@@ -653,7 +649,7 @@
     <strong>initVar</strong>($key, $data_type, $value = null, $required = false, $maxlength = null, $options = &#039;&#039;)</code>
     </h3>
     <div class="details">
-        <p>initialize variables for the object</p>
+        <p></p>
         <p></p>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -733,8 +729,8 @@
     <strong>assignVars</strong>($var_arr)</code>
     </h3>
     <div class="details">
-        <p>assign values to multiple variables in a batch</p>
-        <p></p>
+        <p>You should use this method to initilize object&#039;s properties.</p>
+        <p>This method may not trigger setDirty().</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
@@ -948,9 +944,8 @@
     <strong>set</strong>(string $key, mixed $value)</code>
     </h3>
     <div class="details">
-        <p>Sets $value to $key property.</p>
-        <p>This method calls setVar(), but make<br />
- not_gpc true for the compatibility with XoopsSimpleObject.</p>
+        <p>You should use this method to change object&#039;s properties.</p>
+        <p>This method may trigger setDirty().</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1103,7 +1098,7 @@
     </div>
 
                 <h3 id="method_xoopsClone">
-        <div class="location">in <a href="XoopsObject.html#method_xoopsClone"><abbr title="XoopsObject">XoopsObject</abbr></a> at line 509</div>
+        <div class="location">in <a href="XoopsObject.html#method_xoopsClone"><abbr title="XoopsObject">XoopsObject</abbr></a> at line 506</div>
         <code>            public            object
     <strong>xoopsClone</strong>()</code>
     </h3>
@@ -1127,7 +1122,7 @@
     </div>
 
                 <h3 id="method_setErrors">
-        <div class="location">in <a href="XoopsObject.html#method_setErrors"><abbr title="XoopsObject">XoopsObject</abbr></a> at line 527</div>
+        <div class="location">in <a href="XoopsObject.html#method_setErrors"><abbr title="XoopsObject">XoopsObject</abbr></a> at line 524</div>
         <code>            public            
     <strong>setErrors</strong>($err_str)</code>
     </h3>
@@ -1152,7 +1147,7 @@
     </div>
 
                 <h3 id="method_getErrors">
-        <div class="location">in <a href="XoopsObject.html#method_getErrors"><abbr title="XoopsObject">XoopsObject</abbr></a> at line 538</div>
+        <div class="location">in <a href="XoopsObject.html#method_getErrors"><abbr title="XoopsObject">XoopsObject</abbr></a> at line 535</div>
         <code>            public            array
     <strong>getErrors</strong>()</code>
     </h3>
@@ -1176,7 +1171,7 @@
     </div>
 
                 <h3 id="method_getHtmlErrors">
-        <div class="location">in <a href="XoopsObject.html#method_getHtmlErrors"><abbr title="XoopsObject">XoopsObject</abbr></a> at line 549</div>
+        <div class="location">in <a href="XoopsObject.html#method_getHtmlErrors"><abbr title="XoopsObject">XoopsObject</abbr></a> at line 546</div>
         <code>            public            string
     <strong>getHtmlErrors</strong>()</code>
     </h3>
@@ -1200,7 +1195,7 @@
     </div>
 
                 <h3 id="method_XoopsBlock">
-        <div class="location">at line 20</div>
+        <div class="location">at line 22</div>
         <code>            public            
     <strong>XoopsBlock</strong>(mixed $id = null)</code>
     </h3>
@@ -1225,7 +1220,7 @@
     </div>
 
                 <h3 id="method_getContent">
-        <div class="location">at line 86</div>
+        <div class="location">at line 88</div>
         <code>            public            string
     <strong>getContent</strong>(string $format = &#039;S&#039;, string $c_type = &#039;T&#039;)</code>
     </h3>
@@ -1266,7 +1261,7 @@
     </div>
 
                 <h3 id="method_buildBlock">
-        <div class="location">at line 125</div>
+        <div class="location">at line 127</div>
         <code>            public            
     <strong>buildBlock</strong>()</code>
     </h3>
@@ -1281,7 +1276,7 @@
     </div>
 
                 <h3 id="method_buildContent">
-        <div class="location">at line 162</div>
+        <div class="location">at line 164</div>
         <code>            public            
     <strong>buildContent</strong>($position, $content = &#039;&#039;, $contentdb = &#039;&#039;)</code>
     </h3>
@@ -1316,7 +1311,7 @@
     </div>
 
                 <h3 id="method_buildTitle">
-        <div class="location">at line 172</div>
+        <div class="location">at line 174</div>
         <code>            public            
     <strong>buildTitle</strong>($originaltitle, $newtitle = &#039;&#039;)</code>
     </h3>
@@ -1346,7 +1341,7 @@
     </div>
 
                 <h3 id="method_isCustom">
-        <div class="location">at line 182</div>
+        <div class="location">at line 184</div>
         <code>            public            
     <strong>isCustom</strong>()</code>
     </h3>
@@ -1361,7 +1356,7 @@
     </div>
 
                 <h3 id="method_getOptions">
-        <div class="location">at line 195</div>
+        <div class="location">at line 197</div>
         <code>            public            string
     <strong>getOptions</strong>()</code>
     </h3>
@@ -1385,7 +1380,7 @@
     </div>
 
                 <h3 id="method_load">
-        <div class="location">at line 224</div>
+        <div class="location">at line 226</div>
         <code>            public            
     <strong>load</strong>($id)</code>
     </h3>
@@ -1410,7 +1405,7 @@
     </div>
 
                 <h3 id="method_store">
-        <div class="location">at line 234</div>
+        <div class="location">at line 236</div>
         <code>            public            
     <strong>store</strong>()</code>
     </h3>
@@ -1425,7 +1420,7 @@
     </div>
 
                 <h3 id="method_delete">
-        <div class="location">at line 245</div>
+        <div class="location">at line 247</div>
         <code>            public            
     <strong>delete</strong>()</code>
     </h3>
@@ -1440,7 +1435,7 @@
     </div>
 
                 <h3 id="method_getAllBlocksByGroup">
-        <div class="location">at line 250</div>
+        <div class="location">at line 252</div>
         <code>            public            
     <strong>getAllBlocksByGroup</strong>($groupid, $asobject = true, $side = null, $visible = null, $orderby = &#039;b.weight,b.bid&#039;, $isactive = 1)</code>
     </h3>
@@ -1490,7 +1485,7 @@
     </div>
 
                 <h3 id="method_getAllBlocks">
-        <div class="location">at line 256</div>
+        <div class="location">at line 258</div>
         <code>            public            
     <strong>getAllBlocks</strong>($rettype = &#039;object&#039;, $side = null, $visible = null, $orderby = &#039;side,weight,bid&#039;, $isactive = 1)</code>
     </h3>
@@ -1535,7 +1530,7 @@
     </div>
 
                 <h3 id="method_getByModule">
-        <div class="location">at line 262</div>
+        <div class="location">at line 264</div>
         <code>            public            
     <strong>getByModule</strong>($moduleid, $asobject = true)</code>
     </h3>
@@ -1565,7 +1560,7 @@
     </div>
 
                 <h3 id="method_getAllByGroupModule">
-        <div class="location">at line 268</div>
+        <div class="location">at line 270</div>
         <code>            public            
     <strong>getAllByGroupModule</strong>($groupid, $module_id, $toponlyblock = false, $visible = null, $orderby = &#039;b.weight,b.bid&#039;, $isactive = 1)</code>
     </h3>
@@ -1615,7 +1610,7 @@
     </div>
 
                 <h3 id="method_getBlocks">
-        <div class="location">at line 274</div>
+        <div class="location">at line 276</div>
         <code>            public            
     <strong>getBlocks</strong>($groupid, $mid = false, $blockFlag = SHOW_BLOCK_ALL, $orderby = &#039;b.weight,b.bid&#039;)</code>
     </h3>
@@ -1655,7 +1650,7 @@
     </div>
 
                 <h3 id="method_getNonGroupedBlocks">
-        <div class="location">at line 280</div>
+        <div class="location">at line 282</div>
         <code>            public            
     <strong>getNonGroupedBlocks</strong>($module_id, $toponlyblock = false, $visible = null, $orderby = &#039;b.weight,b.bid&#039;, $isactive = 1)</code>
     </h3>
@@ -1700,7 +1695,7 @@
     </div>
 
                 <h3 id="method_countSimilarBlocks">
-        <div class="location">at line 286</div>
+        <div class="location">at line 288</div>
         <code>            public            
     <strong>countSimilarBlocks</strong>($moduleId, $funcNum, $showFunc = null)</code>
     </h3>

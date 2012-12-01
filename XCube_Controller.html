@@ -24,25 +24,6 @@
         <div class="content">
                 <p>class    <strong>XCube_Controller</strong></p>
 
-            <div class="description">
-            <p>Virtual or Actual front controller class.</p>
-            <p>This is an abstract class. And, a sub-class of this class has many<br />
- impositions which sets up root object finally and implements many actual<br />
- logic.<br />
-<br />
- executeXXXXX() functions are a public member function called by an accessed<br />
- file. These member functions call other protected member functions.<br />
-<br />
- _setupXXXXX() functions are a protected member function overridden by a<br />
- sub-class controller. Most of these functions are empty. A sub-class<br />
- controller overrides them to set up a controller object and others.<br />
-<br />
- _createXXXXX() functions are a protected member function overridden by a<br />
- sub-class controller. These member functions are called in prepare() to set<br />
- up the root object. And, they have been exported from prepare() for a<br />
- sub-class controller to override easily. Most of sub-class controllers<br />
- doesn&#039;t need to override them, because typical code is there.</p>
-        </div>
     
     
             <h2>Properties</h2>
@@ -50,7 +31,7 @@
             <table>
                     <tr>
                 <td class="type" id="property_mRoot">
-                                                            <a href="XCube_Root.html"><abbr title="XCube_Root">XCube_Root</abbr></a>
+                                                            <abbr title="XCore\Kernel\Root">Root</abbr>
                 </td>
                 <td>$mRoot</td>
                 <td class="last">The reference for the root object.</td>
@@ -139,7 +120,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_prepare">prepare</a>(<a href="XCube_Root.html"><abbr title="XCube_Root">XCube_Root</abbr></a> $root)
+                    <a href="#method_prepare">prepare</a>(<abbr title="XCore\Kernel\Root">Root</abbr> $root)
                     <p>This member function is overridden.</p>
                 </td>
                 <td></td>
@@ -420,7 +401,7 @@
         <h2>Details</h2>
 
                         <h3 id="method_XCube_Controller">
-        <div class="location">at line 105</div>
+        <div class="location">at line 107</div>
         <code>            public            
     <strong>XCube_Controller</strong>()</code>
     </h3>
@@ -435,9 +416,9 @@
     </div>
 
                 <h3 id="method_prepare">
-        <div class="location">at line 123</div>
+        <div class="location">at line 125</div>
         <code>            public            
-    <strong>prepare</strong>(<a href="XCube_Root.html"><abbr title="XCube_Root">XCube_Root</abbr></a> $root)</code>
+    <strong>prepare</strong>(<abbr title="XCore\Kernel\Root">Root</abbr> $root)</code>
     </h3>
     <div class="details">
         <p>This member function is overridden.</p>
@@ -448,7 +429,7 @@
 
                     <table>
                     <tr>
-                <td><a href="XCube_Root.html"><abbr title="XCube_Root">XCube_Root</abbr></a></td>
+                <td><abbr title="XCore\Kernel\Root">Root</abbr></td>
                 <td>$root</td>
                 <td></td>
             </tr>
@@ -461,7 +442,7 @@
     </div>
 
                 <h3 id="method_executeCommon">
-        <div class="location">at line 140</div>
+        <div class="location">at line 142</div>
         <code>            public            
     <strong>executeCommon</strong>()</code>
     </h3>
@@ -476,7 +457,7 @@
     </div>
 
                 <h3 id="method_executeHeader">
-        <div class="location">at line 174</div>
+        <div class="location">at line 176</div>
         <code>            public            
     <strong>executeHeader</strong>()</code>
     </h3>
@@ -494,7 +475,7 @@
     </div>
 
                 <h3 id="method_execute">
-        <div class="location">at line 185</div>
+        <div class="location">at line 187</div>
         <code>            public            
     <strong>execute</strong>()</code>
     </h3>
@@ -509,7 +490,7 @@
     </div>
 
                 <h3 id="method_executeView">
-        <div class="location">at line 195</div>
+        <div class="location">at line 197</div>
         <code>            public            
     <strong>executeView</strong>()</code>
     </h3>
@@ -524,7 +505,7 @@
     </div>
 
                 <h3 id="method_executeForward">
-        <div class="location">at line 206</div>
+        <div class="location">at line 208</div>
         <code>            public            
     <strong>executeForward</strong>(string $url, int $time, string $message = null)</code>
     </h3>
@@ -559,7 +540,7 @@
     </div>
 
                 <h3 id="method_executeRedirect">
-        <div class="location">at line 220</div>
+        <div class="location">at line 222</div>
         <code>            public            
     <strong>executeRedirect</strong>(string $url, int $time = 1, string $message = null)</code>
     </h3>
@@ -594,7 +575,7 @@
     </div>
 
                 <h3 id="method_addActionFilter">
-        <div class="location">at line 229</div>
+        <div class="location">at line 231</div>
         <code>            public            
     <strong>addActionFilter</strong>(<abbr title="$filter">$filter</abbr> $filter)</code>
     </h3>
@@ -619,7 +600,7 @@
     </div>
 
                 <h3 id="method__setupFilterChain">
-        <div class="location">at line 238</div>
+        <div class="location">at line 240</div>
         <code>            public            
     <strong>_setupFilterChain</strong>()</code>
     </h3>
@@ -634,7 +615,7 @@
     </div>
 
                 <h3 id="method__setupEnvironment">
-        <div class="location">at line 246</div>
+        <div class="location">at line 248</div>
         <code>            public            
     <strong>_setupEnvironment</strong>()</code>
     </h3>
@@ -650,7 +631,7 @@
     </div>
 
                 <h3 id="method__setupDB">
-        <div class="location">at line 255</div>
+        <div class="location">at line 257</div>
         <code>            public            
     <strong>_setupDB</strong>()</code>
     </h3>
@@ -665,7 +646,7 @@
     </div>
 
                 <h3 id="method_getDB">
-        <div class="location">at line 264</div>
+        <div class="location">at line 266</div>
         <code>            public            
     <strong>getDB</strong>()</code>
     </h3>
@@ -680,7 +661,7 @@
     </div>
 
                 <h3 id="method__setupLanguage">
-        <div class="location">at line 275</div>
+        <div class="location">at line 277</div>
         <code>            public            
     <strong>_setupLanguage</strong>()</code>
     </h3>
@@ -695,7 +676,7 @@
     </div>
 
                 <h3 id="method__setupTextFilter">
-        <div class="location">at line 287</div>
+        <div class="location">at line 289</div>
         <code>            public            
     <strong>_setupTextFilter</strong>()</code>
     </h3>
@@ -710,7 +691,7 @@
     </div>
 
                 <h3 id="method__setupConfig">
-        <div class="location">at line 299</div>
+        <div class="location">at line 301</div>
         <code>            public            
     <strong>_setupConfig</strong>()</code>
     </h3>
@@ -726,7 +707,7 @@
     </div>
 
                 <h3 id="method__setupSession">
-        <div class="location">at line 310</div>
+        <div class="location">at line 312</div>
         <code>            public            void
     <strong>_setupSession</strong>()</code>
     </h3>
@@ -751,7 +732,7 @@
     </div>
 
                 <h3 id="method__setupUser">
-        <div class="location">at line 319</div>
+        <div class="location">at line 321</div>
         <code>            public            
     <strong>_setupUser</strong>()</code>
     </h3>
@@ -767,7 +748,7 @@
     </div>
 
                 <h3 id="method__processFilter">
-        <div class="location">at line 330</div>
+        <div class="location">at line 332</div>
         <code>            public            
     <strong>_processFilter</strong>()</code>
     </h3>
@@ -782,7 +763,7 @@
     </div>
 
                 <h3 id="method__setupBlock">
-        <div class="location">at line 340</div>
+        <div class="location">at line 342</div>
         <code>            public            
     <strong>_setupBlock</strong>()</code>
     </h3>
@@ -797,7 +778,7 @@
     </div>
 
                 <h3 id="method__processBlock">
-        <div class="location">at line 347</div>
+        <div class="location">at line 349</div>
         <code>            public            
     <strong>_processBlock</strong>()</code>
     </h3>
@@ -812,7 +793,7 @@
     </div>
 
                 <h3 id="method__processPreBlockFilter">
-        <div class="location">at line 369</div>
+        <div class="location">at line 371</div>
         <code>            public            
     <strong>_processPreBlockFilter</strong>()</code>
     </h3>
@@ -827,7 +808,7 @@
     </div>
 
                 <h3 id="method__processPostFilter">
-        <div class="location">at line 382</div>
+        <div class="location">at line 384</div>
         <code>            public            
     <strong>_processPostFilter</strong>()</code>
     </h3>
@@ -842,7 +823,7 @@
     </div>
 
                 <h3 id="method__processPreload">
-        <div class="location">at line 397</div>
+        <div class="location">at line 399</div>
         <code>            public            
     <strong>_processPreload</strong>(<abbr title="$path">$path</abbr> $path)</code>
     </h3>
@@ -869,7 +850,7 @@
     </div>
 
                 <h3 id="method__createDelegateManager">
-        <div class="location">at line 420</div>
+        <div class="location">at line 422</div>
         <code>            public            <a href="XCube_DelegateManager.html"><abbr title="XCube_DelegateManager">XCube_DelegateManager</abbr></a>
     <strong>_createDelegateManager</strong>()</code>
     </h3>
@@ -893,7 +874,7 @@
     </div>
 
                 <h3 id="method__createServiceManager">
-        <div class="location">at line 431</div>
+        <div class="location">at line 433</div>
         <code>            public            <a href="XCube_ServiceManager.html"><abbr title="XCube_ServiceManager">XCube_ServiceManager</abbr></a>
     <strong>_createServiceManager</strong>()</code>
     </h3>
@@ -917,7 +898,7 @@
     </div>
 
                 <h3 id="method__createPermissionManager">
-        <div class="location">at line 442</div>
+        <div class="location">at line 444</div>
         <code>            public            <abbr title="XCube_PermissionManager">XCube_PermissionManager</abbr>
     <strong>_createPermissionManager</strong>()</code>
     </h3>
@@ -941,7 +922,7 @@
     </div>
 
                 <h3 id="method__createRoleManager">
-        <div class="location">at line 459</div>
+        <div class="location">at line 461</div>
         <code>            public            <a href="XCube_RoleManager.html"><abbr title="XCube_RoleManager">XCube_RoleManager</abbr></a>
     <strong>_createRoleManager</strong>()</code>
     </h3>
@@ -965,7 +946,7 @@
     </div>
 
                 <h3 id="method__createContext">
-        <div class="location">at line 476</div>
+        <div class="location">at line 478</div>
         <code>            public            <a href="XCube_HttpContext.html"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a>
     <strong>_createContext</strong>()</code>
     </h3>
