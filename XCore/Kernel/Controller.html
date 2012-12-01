@@ -57,24 +57,10 @@
             </tr>
                     <tr>
                 <td class="type" id="property__mBlockChain">
-                                                            Array
+                                                            object[]
                 </td>
                 <td>$_mBlockChain</td>
                 <td class="last">Array of a procedure class object.</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property__mFilterChain">
-                                                            
-                </td>
-                <td>$_mFilterChain</td>
-                <td class="last">Vector Array of XCube_ActionFilter class object.</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property__mLoadedFilterNames">
-                                                            
-                </td>
-                <td>$_mLoadedFilterNames</td>
-                <td class="last">This is Map-Array to keep names of action filter classes which are applied as filters.</td>
             </tr>
                     <tr>
                 <td class="type" id="property_mDB">
@@ -209,44 +195,14 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_addActionFilter">addActionFilter</a>(<abbr title="XCore\Kernel\$filter">$filter</abbr> $filter)
+                    <a href="#method_addActionFilter">addActionFilter</a>(<a href="../../XCube_ActionFilter.html"><abbr title="XCube_ActionFilter">XCube_ActionFilter</abbr></a> $filter)
                     <p>Adds the ActionFilter instance.</p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method__setupFilterChain">_setupFilterChain</a>()
-                    <p>Create filter chain.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method__setupEnvironment">_setupEnvironment</a>()
-                    <p>This member function is overridden.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method__setupDB">_setupDB</a>()
-                    <p>Creates the instance of DataBase class, and sets it to member property.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
+                    object
                 </td>
                 <td class="last">
                     <a href="#method_getDB">getDB</a>()
@@ -259,158 +215,8 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method__setupLanguage">_setupLanguage</a>()
-                    <p>Creates the instance of Language Manager class, and sets it to member property.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method__setupTextFilter">_setupTextFilter</a>()
-                    <p>Creates the instance of Text Filter class, and sets it to member property.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method__setupConfig">_setupConfig</a>()
-                    <p>This member function is overridden.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    void
-                </td>
-                <td class="last">
-                    <a href="#method__setupSession">_setupSession</a>()
-                    <p>This member function is overridden.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method__setupUser">_setupUser</a>()
-                    <p>Sets up a principal object to the root object.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method__processFilter">_processFilter</a>()
-                    <p>Calls the preFilter() member function of action filters which have been loaded to the list of the controller.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method__setupBlock">_setupBlock</a>()
-                    <p>FIXME.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method__processBlock">_processBlock</a>()
-                    <p>FIXME.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method__processPreBlockFilter">_processPreBlockFilter</a>()
-                    <p>Calls the preBlockFilter() member function of action filters which have been loaded to the list of the controller.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method__processPostFilter">_processPostFilter</a>()
-                    <p>Calls the postFilter() member function of action filters which have been loaded to the list of the controller.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method__processPreload">_processPreload</a>(<abbr title="XCore\Kernel\$path">$path</abbr> $path)
+                    <a href="#method__processPreload">_processPreload</a>($path)
                     <p>This is utility member function for the sub-class controller.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <a href="../../XCore/Kernel/DelegateManager.html"><abbr title="XCore\Kernel\DelegateManager">DelegateManager</abbr></a>
-                </td>
-                <td class="last">
-                    <a href="#method__createDelegateManager">_createDelegateManager</a>()
-                    <p>Creates an instance of the delegate manager and returns it.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <a href="../../XCube_ServiceManager.html"><abbr title="XCube_ServiceManager">XCube_ServiceManager</abbr></a>
-                </td>
-                <td class="last">
-                    <a href="#method__createServiceManager">_createServiceManager</a>()
-                    <p>Creates an instance of the service manager and returns it.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <a href="../../XCube_AbstractPermissionProvider.html"><abbr title="XCube_AbstractPermissionProvider">XCube_AbstractPermissionProvider</abbr></a>
-                </td>
-                <td class="last">
-                    <a href="#method__createPermissionManager">_createPermissionManager</a>()
-                    <p>Creates an instance of the permission manager and returns it.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <a href="../../XCube_RoleManager.html"><abbr title="XCube_RoleManager">XCube_RoleManager</abbr></a>
-                </td>
-                <td class="last">
-                    <a href="#method__createRoleManager">_createRoleManager</a>()
-                    <p>Creates an instance of the role manager and returns it.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <a href="../../XCube_HttpContext.html"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a>
-                </td>
-                <td class="last">
-                    <a href="#method__createContext">_createContext</a>()
-                    <p>Creates the context object to initial the root object, and returns it.</p>
                 </td>
                 <td></td>
             </tr>
@@ -420,7 +226,7 @@
         <h2>Details</h2>
 
                         <h3 id="method___construct">
-        <div class="location">at line 117</div>
+        <div class="location">at line 103</div>
         <code>            public            
     <strong>__construct</strong>()</code>
     </h3>
@@ -435,7 +241,7 @@
     </div>
 
                 <h3 id="method_prepare">
-        <div class="location">at line 135</div>
+        <div class="location">at line 120</div>
         <code>            public            
     <strong>prepare</strong>(<a href="../../XCore/Kernel/Root.html"><abbr title="XCore\Kernel\Root">Root</abbr></a> $root)</code>
     </h3>
@@ -461,7 +267,7 @@
     </div>
 
                 <h3 id="method_executeCommon">
-        <div class="location">at line 152</div>
+        <div class="location">at line 135</div>
         <code>            public            
     <strong>executeCommon</strong>()</code>
     </h3>
@@ -476,7 +282,7 @@
     </div>
 
                 <h3 id="method_executeHeader">
-        <div class="location">at line 186</div>
+        <div class="location">at line 169</div>
         <code>            public            
     <strong>executeHeader</strong>()</code>
     </h3>
@@ -494,7 +300,7 @@
     </div>
 
                 <h3 id="method_execute">
-        <div class="location">at line 197</div>
+        <div class="location">at line 178</div>
         <code>            public            
     <strong>execute</strong>()</code>
     </h3>
@@ -509,7 +315,7 @@
     </div>
 
                 <h3 id="method_executeView">
-        <div class="location">at line 207</div>
+        <div class="location">at line 186</div>
         <code>            public            
     <strong>executeView</strong>()</code>
     </h3>
@@ -524,7 +330,7 @@
     </div>
 
                 <h3 id="method_executeForward">
-        <div class="location">at line 218</div>
+        <div class="location">at line 197</div>
         <code>            public            
     <strong>executeForward</strong>(string $url, int $time, string $message = null)</code>
     </h3>
@@ -559,7 +365,7 @@
     </div>
 
                 <h3 id="method_executeRedirect">
-        <div class="location">at line 232</div>
+        <div class="location">at line 211</div>
         <code>            public            
     <strong>executeRedirect</strong>(string $url, int $time = 1, string $message = null)</code>
     </h3>
@@ -594,9 +400,9 @@
     </div>
 
                 <h3 id="method_addActionFilter">
-        <div class="location">at line 241</div>
+        <div class="location">at line 220</div>
         <code>            public            
-    <strong>addActionFilter</strong>(<abbr title="XCore\Kernel\$filter">$filter</abbr> $filter)</code>
+    <strong>addActionFilter</strong>(<a href="../../XCube_ActionFilter.html"><abbr title="XCube_ActionFilter">XCube_ActionFilter</abbr></a> $filter)</code>
     </h3>
     <div class="details">
         <p>Adds the ActionFilter instance.</p>
@@ -606,9 +412,9 @@
 
                     <table>
                     <tr>
-                <td><abbr title="XCore\Kernel\$filter">$filter</abbr></td>
+                <td><a href="../../XCube_ActionFilter.html"><abbr title="XCube_ActionFilter">XCube_ActionFilter</abbr></a></td>
                 <td>$filter</td>
-                <td>XCube_ActionFilter</td>
+                <td></td>
             </tr>
             </table>
 
@@ -618,55 +424,9 @@
                     </div>
     </div>
 
-                <h3 id="method__setupFilterChain">
-        <div class="location">at line 250</div>
-        <code>            public            
-    <strong>_setupFilterChain</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Create filter chain.</p>
-        <p></p>
-        <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method__setupEnvironment">
-        <div class="location">at line 258</div>
-        <code>            public            
-    <strong>_setupEnvironment</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>This member function is overridden.</p>
-        <p>Sets up the controller and the<br />
- environment.</p>
-        <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method__setupDB">
-        <div class="location">at line 267</div>
-        <code>            public            
-    <strong>_setupDB</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Creates the instance of DataBase class, and sets it to member property.</p>
-        <p></p>
-        <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
                 <h3 id="method_getDB">
-        <div class="location">at line 276</div>
-        <code>            public            
+        <div class="location">at line 252</div>
+        <code>            public            object
     <strong>getDB</strong>()</code>
     </h3>
     <div class="details">
@@ -674,73 +434,11 @@
         <p></p>
         <div class="tags">
             
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method__setupLanguage">
-        <div class="location">at line 287</div>
-        <code>            public            
-    <strong>_setupLanguage</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Creates the instance of Language Manager class, and sets it to member property.</p>
-        <p></p>
-        <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method__setupTextFilter">
-        <div class="location">at line 299</div>
-        <code>            public            
-    <strong>_setupTextFilter</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Creates the instance of Text Filter class, and sets it to member property.</p>
-        <p></p>
-        <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method__setupConfig">
-        <div class="location">at line 312</div>
-        <code>            public            
-    <strong>_setupConfig</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>This member function is overridden.</p>
-        <p>Loads site configuration informations,<br />
- and sets them to the member property.</p>
-        <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method__setupSession">
-        <div class="location">at line 323</div>
-        <code>            public            void
-    <strong>_setupSession</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>This member function is overridden.</p>
-        <p>Sets up handler for session, then<br />
- starts session.</p>
-        <div class="tags">
-            
                             <h4>Return Value</h4>
 
                     <table>
         <tr>
-            <td>void</td>
+            <td>object</td>
             <td></td>
         </tr>
     </table>
@@ -750,101 +448,10 @@
                     </div>
     </div>
 
-                <h3 id="method__setupUser">
-        <div class="location">at line 332</div>
-        <code>            public            
-    <strong>_setupUser</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Sets up a principal object to the root object.</p>
-        <p>In other words, restores<br />
- the principal object from session or other.</p>
-        <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method__processFilter">
-        <div class="location">at line 343</div>
-        <code>            public            
-    <strong>_processFilter</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Calls the preFilter() member function of action filters which have been loaded to the list of the controller.</p>
-        <p></p>
-        <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method__setupBlock">
-        <div class="location">at line 353</div>
-        <code>            public            
-    <strong>_setupBlock</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>FIXME.</p>
-        <p></p>
-        <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method__processBlock">
-        <div class="location">at line 360</div>
-        <code>            public            
-    <strong>_processBlock</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>FIXME.</p>
-        <p></p>
-        <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method__processPreBlockFilter">
-        <div class="location">at line 382</div>
-        <code>            public            
-    <strong>_processPreBlockFilter</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Calls the preBlockFilter() member function of action filters which have been loaded to the list of the controller.</p>
-        <p></p>
-        <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method__processPostFilter">
-        <div class="location">at line 395</div>
-        <code>            public            
-    <strong>_processPostFilter</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Calls the postFilter() member function of action filters which have been loaded to the list of the controller.</p>
-        <p></p>
-        <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
                 <h3 id="method__processPreload">
-        <div class="location">at line 410</div>
+        <div class="location">at line 374</div>
         <code>            public            
-    <strong>_processPreload</strong>(<abbr title="XCore\Kernel\$path">$path</abbr> $path)</code>
+    <strong>_processPreload</strong>($path)</code>
     </h3>
     <div class="details">
         <p>This is utility member function for the sub-class controller.</p>
@@ -856,133 +463,13 @@
 
                     <table>
                     <tr>
-                <td><abbr title="XCore\Kernel\$path">$path</abbr></td>
+                <td></td>
                 <td>$path</td>
-                <td>string Absolute path.</td>
+                <td></td>
             </tr>
             </table>
 
             
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method__createDelegateManager">
-        <div class="location">at line 433</div>
-        <code>            public            <a href="../../XCore/Kernel/DelegateManager.html"><abbr title="XCore\Kernel\DelegateManager">DelegateManager</abbr></a>
-    <strong>_createDelegateManager</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Creates an instance of the delegate manager and returns it.</p>
-        <p></p>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td><a href="../../XCore/Kernel/DelegateManager.html"><abbr title="XCore\Kernel\DelegateManager">DelegateManager</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method__createServiceManager">
-        <div class="location">at line 444</div>
-        <code>            public            <a href="../../XCube_ServiceManager.html"><abbr title="XCube_ServiceManager">XCube_ServiceManager</abbr></a>
-    <strong>_createServiceManager</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Creates an instance of the service manager and returns it.</p>
-        <p></p>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td><a href="../../XCube_ServiceManager.html"><abbr title="XCube_ServiceManager">XCube_ServiceManager</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method__createPermissionManager">
-        <div class="location">at line 455</div>
-        <code>            public            <a href="../../XCube_AbstractPermissionProvider.html"><abbr title="XCube_AbstractPermissionProvider">XCube_AbstractPermissionProvider</abbr></a>
-    <strong>_createPermissionManager</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Creates an instance of the permission manager and returns it.</p>
-        <p></p>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td><a href="../../XCube_AbstractPermissionProvider.html"><abbr title="XCube_AbstractPermissionProvider">XCube_AbstractPermissionProvider</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method__createRoleManager">
-        <div class="location">at line 472</div>
-        <code>            public            <a href="../../XCube_RoleManager.html"><abbr title="XCube_RoleManager">XCube_RoleManager</abbr></a>
-    <strong>_createRoleManager</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Creates an instance of the role manager and returns it.</p>
-        <p></p>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td><a href="../../XCube_RoleManager.html"><abbr title="XCube_RoleManager">XCube_RoleManager</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method__createContext">
-        <div class="location">at line 489</div>
-        <code>            public            <a href="../../XCube_HttpContext.html"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a>
-    <strong>_createContext</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Creates the context object to initial the root object, and returns it.</p>
-        <p></p>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td><a href="../../XCube_HttpContext.html"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
                     </div>
