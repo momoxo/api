@@ -809,5 +809,9 @@ var tree = [["[Global Namespace]",,"",
                 [        ]],["Site","Momoxo\/Installer\/ValueObject\/Site.html","",
                 [        ]]        ]],["InstallerConfig","Momoxo\/Installer\/InstallerConfig.html","",
                 [        ]],["TrustPathFinder","Momoxo\/Installer\/TrustPathFinder.html","",
+                [        ]]        ]]        ]],["XCore",,"",
+                [["Kernel","XCore\/Kernel.html","",
+                [["Controller","XCore\/Kernel\/Controller.html","",
+                [        ]],["Root","XCore\/Kernel\/Root.html","",
                 [        ]]        ]]        ]]        ]
 

@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XCore\Kernel\Root | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../XCore/Kernel.html">XCore\Kernel</a>\Root</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>Root</strong></p>
+
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_mController">
+                                                            
+                </td>
+                <td>$mController</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mLanguageManager">
+                                                            
+                </td>
+                <td>$mLanguageManager</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mDelegateManager">
+                                                            
+                </td>
+                <td>$mDelegateManager</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mServiceManager">
+                                                            
+                </td>
+                <td>$mServiceManager</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__mRenderSystems">
+                                                            
+                </td>
+                <td>$_mRenderSystems</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mSiteConfig">
+                                                            
+                </td>
+                <td>$mSiteConfig</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mPermissionManager">
+                                                            <a href="../../XCube_AbstractPermissionProvider.html"><abbr title="XCube_AbstractPermissionProvider">XCube_AbstractPermissionProvider</abbr></a>
+                </td>
+                <td>$mPermissionManager</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mRoleManager">
+                                                            
+                </td>
+                <td>$mRoleManager</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mCacheSystem">
+                                                            
+                </td>
+                <td>$mCacheSystem</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mTextFilter">
+                                                            
+                </td>
+                <td>$mTextFilter</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mContext">
+                                                            <a href="../../XCube_HttpContext.html"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a>
+                </td>
+                <td>$mContext</td>
+                <td class="last"></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mSession">
+                                                            
+                </td>
+                <td>$mSession</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_loadSiteConfig">loadSiteConfig</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_setSiteConfig">setSiteConfig</a>(<abbr title="XCore\Kernel\$config">$config</abbr> $config)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_overrideSiteConfig">overrideSiteConfig</a>(array $config)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_getSiteConfig">getSiteConfig</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_setupController">setupController</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../XCore/Kernel/Controller.html"><abbr title="XCore\Kernel\Controller">Controller</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_getController">getController</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_setLanguageManager">setLanguageManager</a>(<abbr title="XCore\Kernel\$languageManager">$languageManager</abbr> $languageManager)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../XCube_LanguageManager.html"><abbr title="XCube_LanguageManager">XCube_LanguageManager</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_getLanguageManager">getLanguageManager</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_setDelegateManager">setDelegateManager</a>(<abbr title="XCore\Kernel\$delegateManager">$delegateManager</abbr> $delegateManager)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../XCube_DelegateManager.html"><abbr title="XCube_DelegateManager">XCube_DelegateManager</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_getDelegateManager">getDelegateManager</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_setServiceManager">setServiceManager</a>(<abbr title="XCore\Kernel\$serviceManager">$serviceManager</abbr> $serviceManager)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../XCube_ServiceManager.html"><abbr title="XCube_ServiceManager">XCube_ServiceManager</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_getServiceManager">getServiceManager</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../XCube_RenderSystem.html"><abbr title="XCube_RenderSystem">XCube_RenderSystem</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_getRenderSystem">getRenderSystem</a>(<abbr title="XCore\Kernel\$name">$name</abbr> $name)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setPermissionManager">setPermissionManager</a>($manager)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getPermissionManager">getPermissionManager</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_setTextFilter">setTextFilter</a>(<a href="../../XCube_TextFilter.html"><abbr title="XCube_TextFilter">XCube_TextFilter</abbr></a> $textFilter)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../XCube_TextFilter.html"><abbr title="XCube_TextFilter">XCube_TextFilter</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_getTextFilter">getTextFilter</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_setRoleManager">setRoleManager</a>(<abbr title="XCore\Kernel\$manager">$manager</abbr> $manager)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_setContext">setContext</a>(<abbr title="XCore\Kernel\$context">$context</abbr> $context)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../XCube_HttpContext.html"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_getContext">getContext</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_setSession">setSession</a>(<abbr title="XCore\Kernel\$session">$session</abbr> $session)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../XCube_Session.html"><abbr title="XCube_Session">XCube_Session</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_getSession">getSession</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    Object
+                </td>
+                <td class="last">
+                    <a href="#method__createInstance">_createInstance</a>(<abbr title="XCore\Kernel\$className">$className</abbr> $className, <abbr title="XCore\Kernel\$classPath">$classPath</abbr> $classPath = null, <abbr title="XCore\Kernel\$root">$root</abbr> $root = null)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">at line 112</div>
+        <code>            public            
+    <strong>__construct</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_loadSiteConfig">
+        <div class="location">at line 145</div>
+        <code>            public            void
+    <strong>loadSiteConfig</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>\par $root-&gt;loadSiteConfig(string $file1); Loads the site settings from file1. \par $root-&gt;loadSiteConfig(string $file1, string $file2); Loads the site setting from file1. After that, override file1&#039;s setting with file2&#039;s setting.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setSiteConfig">
+        <div class="location">at line 180</div>
+        <code>            public            void
+    <strong>setSiteConfig</strong>(<abbr title="XCore\Kernel\$config">$config</abbr> $config)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="XCore\Kernel\$config">$config</abbr></td>
+                <td>$config</td>
+                <td>Array</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_overrideSiteConfig">
+        <div class="location">at line 197</div>
+        <code>            public            
+    <strong>overrideSiteConfig</strong>(array $config)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array</td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getSiteConfig">
+        <div class="location">at line 226</div>
+        <code>            public            mixed
+    <strong>getSiteConfig</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>- If the value specified by parameters is no, return null. \par $root-&gt;getSiteConfig(); Gets array. \par $root-&gt;getSiteConfig(string $groupName); Gets array of the group specified by $groupName. \par $root-&gt;getSiteConfig(string $groupName, string $itemName); Gets a config value specified by $groupName &amp; $itemName. \par $root-&gt;getSiteConfig(string $groupName, string $itemName, string $default); If the config value is NOT defined specified by $groupName &amp; $itemName, gets $default.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setupController">
+        <div class="location">at line 263</div>
+        <code>            public            void
+    <strong>setupController</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getController">
+        <div class="location">at line 283</div>
+        <code>            public            <a href="../../XCore/Kernel/Controller.html"><abbr title="XCore\Kernel\Controller">Controller</abbr></a>
+    <strong>getController</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../XCore/Kernel/Controller.html"><abbr title="XCore\Kernel\Controller">Controller</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setLanguageManager">
+        <div class="location">at line 294</div>
+        <code>            public            void
+    <strong>setLanguageManager</strong>(<abbr title="XCore\Kernel\$languageManager">$languageManager</abbr> $languageManager)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="XCore\Kernel\$languageManager">$languageManager</abbr></td>
+                <td>$languageManager</td>
+                <td>XCube_LanguageManager</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getLanguageManager">
+        <div class="location">at line 304</div>
+        <code>            public            <a href="../../XCube_LanguageManager.html"><abbr title="XCube_LanguageManager">XCube_LanguageManager</abbr></a>
+    <strong>getLanguageManager</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../XCube_LanguageManager.html"><abbr title="XCube_LanguageManager">XCube_LanguageManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setDelegateManager">
+        <div class="location">at line 315</div>
+        <code>            public            void
+    <strong>setDelegateManager</strong>(<abbr title="XCore\Kernel\$delegateManager">$delegateManager</abbr> $delegateManager)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="XCore\Kernel\$delegateManager">$delegateManager</abbr></td>
+                <td>$delegateManager</td>
+                <td>XCube_DelegateManager</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getDelegateManager">
+        <div class="location">at line 325</div>
+        <code>            public            <a href="../../XCube_DelegateManager.html"><abbr title="XCube_DelegateManager">XCube_DelegateManager</abbr></a>
+    <strong>getDelegateManager</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../XCube_DelegateManager.html"><abbr title="XCube_DelegateManager">XCube_DelegateManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setServiceManager">
+        <div class="location">at line 336</div>
+        <code>            public            void
+    <strong>setServiceManager</strong>(<abbr title="XCore\Kernel\$serviceManager">$serviceManager</abbr> $serviceManager)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="XCore\Kernel\$serviceManager">$serviceManager</abbr></td>
+                <td>$serviceManager</td>
+                <td>XCube_ServiceManager</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getServiceManager">
+        <div class="location">at line 346</div>
+        <code>            public            <a href="../../XCube_ServiceManager.html"><abbr title="XCube_ServiceManager">XCube_ServiceManager</abbr></a>
+    <strong>getServiceManager</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../XCube_ServiceManager.html"><abbr title="XCube_ServiceManager">XCube_ServiceManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getRenderSystem">
+        <div class="location">at line 362</div>
+        <code>            public            <a href="../../XCube_RenderSystem.html"><abbr title="XCube_RenderSystem">XCube_RenderSystem</abbr></a>
+    <strong>getRenderSystem</strong>(<abbr title="XCore\Kernel\$name">$name</abbr> $name)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="XCore\Kernel\$name">$name</abbr></td>
+                <td>$name</td>
+                <td>string - the registed name of the render system.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../XCube_RenderSystem.html"><abbr title="XCube_RenderSystem">XCube_RenderSystem</abbr></a></td>
+            <td>Return the instance of the render system by the name. If the render system specified by $name doesn&#039;t exist, raise fatal error. This member function does creating the instance and calling prepare().</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/RuntimeException"><abbr title="RuntimeException">RuntimeException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setPermissionManager">
+        <div class="location">at line 396</div>
+        <code>            public            
+    <strong>setPermissionManager</strong>($manager)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$manager</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getPermissionManager">
+        <div class="location">at line 404</div>
+        <code>            public            
+    <strong>getPermissionManager</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setTextFilter">
+        <div class="location">at line 415</div>
+        <code>            public            void
+    <strong>setTextFilter</strong>(<a href="../../XCube_TextFilter.html"><abbr title="XCube_TextFilter">XCube_TextFilter</abbr></a> $textFilter)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../XCube_TextFilter.html"><abbr title="XCube_TextFilter">XCube_TextFilter</abbr></a></td>
+                <td>$textFilter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTextFilter">
+        <div class="location">at line 429</div>
+        <code>            public            <a href="../../XCube_TextFilter.html"><abbr title="XCube_TextFilter">XCube_TextFilter</abbr></a>
+    <strong>getTextFilter</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../XCube_TextFilter.html"><abbr title="XCube_TextFilter">XCube_TextFilter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setRoleManager">
+        <div class="location">at line 448</div>
+        <code>            public            void
+    <strong>setRoleManager</strong>(<abbr title="XCore\Kernel\$manager">$manager</abbr> $manager)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="XCore\Kernel\$manager">$manager</abbr></td>
+                <td>$manager</td>
+                <td>XCube_RoleManager</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setContext">
+        <div class="location">at line 459</div>
+        <code>            public            void
+    <strong>setContext</strong>(<abbr title="XCore\Kernel\$context">$context</abbr> $context)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="XCore\Kernel\$context">$context</abbr></td>
+                <td>$context</td>
+                <td>XCube_HttpContext</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getContext">
+        <div class="location">at line 469</div>
+        <code>            public            <a href="../../XCube_HttpContext.html"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a>
+    <strong>getContext</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../XCube_HttpContext.html"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setSession">
+        <div class="location">at line 480</div>
+        <code>            public            void
+    <strong>setSession</strong>(<abbr title="XCore\Kernel\$session">$session</abbr> $session)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="XCore\Kernel\$session">$session</abbr></td>
+                <td>$session</td>
+                <td>XCube_Session</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getSession">
+        <div class="location">at line 490</div>
+        <code>            public            <a href="../../XCube_Session.html"><abbr title="XCube_Session">XCube_Session</abbr></a>
+    <strong>getSession</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../XCube_Session.html"><abbr title="XCube_Session">XCube_Session</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__createInstance">
+        <div class="location">at line 512</div>
+        <code>            public            Object
+    <strong>_createInstance</strong>(<abbr title="XCore\Kernel\$className">$className</abbr> $className, <abbr title="XCore\Kernel\$classPath">$classPath</abbr> $classPath = null, <abbr title="XCore\Kernel\$root">$root</abbr> $root = null)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="XCore\Kernel\$className">$className</abbr></td>
+                <td>$className</td>
+                <td>string - the name of class.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="XCore\Kernel\$classPath">$classPath</abbr></td>
+                <td>$classPath</td>
+                <td>string - the path that $className is defined in.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="XCore\Kernel\$root">$root</abbr></td>
+                <td>$root</td>
+                <td>string - the root path instead of Cube.Root.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>Object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>
