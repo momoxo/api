@@ -24,34 +24,17 @@
         <div class="content">
                 <p>class    <strong>DelegateManager</strong></p>
 
+            <div class="description">
+            <p>Manages for delegates.</p>
+            <p>This is the agent of un-registered delegate objects. Usually, connected<br />
+ functions can&#039;t be added to un-registered delegates. When destination<br />
+ delegates are un-registered yet, this manager is keeping those functions<br />
+ and parameters until the destination delegate will be registered.<br />
+<br />
+ In other words, this class realizes lazy delegate registering.</p>
+        </div>
     
     
-            <h2>Properties</h2>
-
-            <table>
-                    <tr>
-                <td class="type" id="property__mCallbacks">
-                                                            
-                </td>
-                <td>$_mCallbacks</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property__mCallbackParameters">
-                                                            
-                </td>
-                <td>$_mCallbackParameters</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property__mDelegates">
-                                                            
-                </td>
-                <td>$_mDelegates</td>
-                <td class="last"></td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
@@ -62,7 +45,7 @@
                 </td>
                 <td class="last">
                     <a href="#method___construct">__construct</a>()
-                    <p></p>
+                    <p>Constructor.</p>
                 </td>
                 <td></td>
             </tr>
@@ -71,8 +54,8 @@
                     bool
                 </td>
                 <td class="last">
-                    <a href="#method_register">register</a>(<abbr title="XCore\Kernel\$name">$name</abbr> $name, <abbr title="XCore\Kernel\$delegate">$delegate</abbr> $delegate)
-                    <p></p>
+                    <a href="#method_register">register</a>(string $name, <a href="../../XCube_Delegate.html"><abbr title="XCube_Delegate">XCube_Delegate</abbr></a> $delegate)
+                    <p>Adds $delegate as Delegate to the list of this manager.</p>
                 </td>
                 <td></td>
             </tr>
@@ -81,8 +64,8 @@
                     void
                 </td>
                 <td class="last">
-                    <a href="#method_add">add</a>(<abbr title="XCore\Kernel\$name">$name</abbr> $name, <abbr title="XCore\Kernel\$callback">$callback</abbr> $callback, null $param3 = null, null $param4 = null)
-                    <p></p>
+                    <a href="#method_add">add</a>(string $name, <abbr title="XCore\Kernel\$callback">$callback</abbr> $callback, null $param3 = null, null $param4 = null)
+                    <p>Connects functions to the delegate that have the specified name.</p>
                 </td>
                 <td></td>
             </tr>
@@ -91,8 +74,8 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_delete">delete</a>($name, $delcallback)
-                    <p></p>
+                    <a href="#method_delete">delete</a>(string $name, <abbr title="XCore\Kernel\$delcallback*">$delcallback*</abbr> $delcallback)
+                    <p>Disconnects a function from the delegate that have the specified name.</p>
                 </td>
                 <td></td>
             </tr>
@@ -101,8 +84,8 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_reset">reset</a>(<abbr title="XCore\Kernel\$name">$name</abbr> $name)
-                    <p></p>
+                    <a href="#method_reset">reset</a>(string $name)
+                    <p>Resets all functions off the delegate that have the specified name.</p>
                 </td>
                 <td></td>
             </tr>
@@ -112,13 +95,13 @@
                 </td>
                 <td class="last">
                     <a href="#method_isEmpty">isEmpty</a>(string $name)
-                    <p></p>
+                    <p>Gets a value indicating whether the specified delegate has callback functions.</p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    
+                    array
                 </td>
                 <td class="last">
                     <a href="#method_getDelegates">getDelegates</a>()
@@ -132,12 +115,12 @@
         <h2>Details</h2>
 
                         <h3 id="method___construct">
-        <div class="location">at line 43</div>
+        <div class="location">at line 40</div>
         <code>            public            
     <strong>__construct</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Constructor.</p>
         <p></p>
         <div class="tags">
             
@@ -147,26 +130,30 @@
     </div>
 
                 <h3 id="method_register">
-        <div class="location">at line 60</div>
+        <div class="location">at line 57</div>
         <code>            public            bool
-    <strong>register</strong>(<abbr title="XCore\Kernel\$name">$name</abbr> $name, <abbr title="XCore\Kernel\$delegate">$delegate</abbr> $delegate)</code>
+    <strong>register</strong>(string $name, <a href="../../XCube_Delegate.html"><abbr title="XCube_Delegate">XCube_Delegate</abbr></a> $delegate)</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Adds $delegate as Delegate to the list of this manager.</p>
+        <p>If some functions that want to connect to $delegate, have been entrusted yet,<br />
+ this object calls add() of $delegate with their parameters.<br />
+<br />
+ Usually this member function isn&#039;t used as Cube&#039;s API by developers. In many<br />
+ cases, XCube_Delegate::register() calls this.</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td><abbr title="XCore\Kernel\$name">$name</abbr></td>
+                <td>string</td>
                 <td>$name</td>
-                <td>string - Registration name.</td>
+                <td>Registration name.</td>
             </tr>
                     <tr>
-                <td><abbr title="XCore\Kernel\$delegate">$delegate</abbr></td>
+                <td><a href="../../XCube_Delegate.html"><abbr title="XCube_Delegate">XCube_Delegate</abbr></a></td>
                 <td>$delegate</td>
-                <td>XCube_Delegate - Delegate object which will be registered.</td>
+                <td>Delegate object which will be registered.</td>
             </tr>
             </table>
 
@@ -176,7 +163,7 @@
                     <table>
         <tr>
             <td>bool</td>
-            <td>If some functions that want to connect to $delegate, have been entrusted yet, this object calls add() of $delegate with their parameters. Usually this member function isn&#039;t used as Cube&#039;s API by developers. In many cases, XCube_Delegate::register() calls this.</td>
+            <td></td>
         </tr>
     </table>
 
@@ -186,21 +173,24 @@
     </div>
 
                 <h3 id="method_add">
-        <div class="location">at line 97</div>
+        <div class="location">at line 93</div>
         <code>            public            void
-    <strong>add</strong>(<abbr title="XCore\Kernel\$name">$name</abbr> $name, <abbr title="XCore\Kernel\$callback">$callback</abbr> $callback, null $param3 = null, null $param4 = null)</code>
+    <strong>add</strong>(string $name, <abbr title="XCore\Kernel\$callback">$callback</abbr> $callback, null $param3 = null, null $param4 = null)</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Connects functions to the delegate that have the specified name.</p>
+        <p>If there aren&#039;t any delegates that have the specified name, this manager<br />
+ entrust parameters to member properties. Then, when the delegate that<br />
+ have the specified name will be registered, this manager will set these<br />
+ parameters to the delegate.</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td><abbr title="XCore\Kernel\$name">$name</abbr></td>
+                <td>string</td>
                 <td>$name</td>
-                <td>string - Registration name.</td>
+                <td>Registration name.</td>
             </tr>
                     <tr>
                 <td><abbr title="XCore\Kernel\$callback">$callback</abbr></td>
@@ -225,7 +215,7 @@
                     <table>
         <tr>
             <td>void</td>
-            <td>If there aren&#039;t any delegates that have the specified name, this manager entrust parameters to member properties. Then, when the delegate that have the specified name will be registered, this manager will set these parameters to the delegate.</td>
+            <td></td>
         </tr>
     </table>
 
@@ -244,24 +234,24 @@
     </div>
 
                 <h3 id="method_delete">
-        <div class="location">at line 115</div>
+        <div class="location">at line 111</div>
         <code>            public            
-    <strong>delete</strong>($name, $delcallback)</code>
+    <strong>delete</strong>(string $name, <abbr title="XCore\Kernel\$delcallback*">$delcallback*</abbr> $delcallback)</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Disconnects a function from the delegate that have the specified name.</p>
         <p></p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>Registration name</td>
             </tr>
                     <tr>
-                <td></td>
+                <td><abbr title="XCore\Kernel\$delcallback*">$delcallback*</abbr></td>
                 <td>$delcallback</td>
                 <td></td>
             </tr>
@@ -283,21 +273,21 @@
     </div>
 
                 <h3 id="method_reset">
-        <div class="location">at line 140</div>
+        <div class="location">at line 134</div>
         <code>            public            
-    <strong>reset</strong>(<abbr title="XCore\Kernel\$name">$name</abbr> $name)</code>
+    <strong>reset</strong>(string $name)</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Resets all functions off the delegate that have the specified name.</p>
         <p></p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td><abbr title="XCore\Kernel\$name">$name</abbr></td>
+                <td>string</td>
                 <td>$name</td>
-                <td>string - Registration name which will be resetted.</td>
+                <td>Registration name which will be reset.</td>
             </tr>
             </table>
 
@@ -317,12 +307,12 @@
     </div>
 
                 <h3 id="method_isEmpty">
-        <div class="location">at line 159</div>
+        <div class="location">at line 152</div>
         <code>            public            bool
     <strong>isEmpty</strong>(string $name)</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Gets a value indicating whether the specified delegate has callback functions.</p>
         <p></p>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -331,7 +321,7 @@
                     <tr>
                 <td>string</td>
                 <td>$name</td>
-                <td>string - Registration name.</td>
+                <td>Registration name.</td>
             </tr>
             </table>
 
@@ -351,8 +341,8 @@
     </div>
 
                 <h3 id="method_getDelegates">
-        <div class="location">at line 172</div>
-        <code>            public            
+        <div class="location">at line 164</div>
+        <code>            public            array
     <strong>getDelegates</strong>()</code>
     </h3>
     <div class="details">
@@ -360,6 +350,15 @@
         <p></p>
         <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
