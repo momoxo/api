@@ -9,6 +9,7 @@ $iterator = Finder::create()
 	->exclude("Resources")
 	->exclude("Tests")
 	->in(__DIR__ . "/_momoxo/html")
+	->in(__DIR__ . "/_momoxo/xoops_trust_path/modules/XCore")
 ;
 
 return new Sami($iterator, array(
