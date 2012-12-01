@@ -6,7 +6,7 @@ WORKING_DIR=$(cd $(dirname $0); pwd)
 
 cd $WORKING_DIR
 
-git pull --rebase
+git pull
 
 if [ -z "$(ls $WORKING_DIR/_momoxo/)" ]; then
   git submodule update --init
