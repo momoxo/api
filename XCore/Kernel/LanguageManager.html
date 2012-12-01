@@ -3,27 +3,44 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow, all" />
-        <title>Xcore_LanguageManager | Momoxo API</title>
-                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <title>XCore\Kernel\LanguageManager | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
                             </head>
         <body id="class">
             <div class="header">
         <ul>
-            <li><a href="classes.html">Classes</a></li>
-                            <li><a href="namespaces.html">Namespaces</a></li>
-                        <li><a href="interfaces.html">Interfaces</a></li>
-            <li><a href="doc-index.html">Index</a></li>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
             
         </ul>
 
         <div id="title">Momoxo API</div>
 
             <div class="type">Class</div>
-    <h1><a href=".html"></a>Xcore_LanguageManager</h1>
+    <h1><a href="../../XCore/Kernel.html">XCore\Kernel</a>\LanguageManager</h1>
     </div>
         <div class="content">
-                <p>class    <strong>Xcore_LanguageManager</strong>        extends <a href="XCore/Kernel/LanguageManager.html"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a></p>
+                <p>class    <strong>LanguageManager</strong></p>
 
+            <div class="description">
+            <p>This class manages resources of each languages.</p>
+            <p>By requests of other<br />
+ components, this class loads files, or checks the existence of the specified<br />
+ resource, or composes filepath to access real files. And, it manages some<br />
+ locale informations.<br />
+<br />
+ Rules about language are different at each bases. So it&#039;s important that a<br />
+ base defines the sub class of this class if it can&#039;t use this class directly.<br />
+<br />
+ And, XCube or bases have to make each languages possible to have its sub<br />
+ class. By that, languages become able to implement their logic to solve<br />
+ problems.<br />
+<br />
+ This class calls sub directories of each languages &#039;section&#039;. &#039;section&#039; is<br />
+ used to load image files and etc.</p>
+        </div>
     
     
             <h2>Properties</h2>
@@ -57,7 +74,7 @@
                     <a href="#method_LanguageManager">LanguageManager</a>()
                     <p></p>
                 </td>
-                <td><small>from&nbsp;<a href="XCore/Kernel/LanguageManager.html#method_LanguageManager"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -77,7 +94,7 @@
                     <a href="#method_setLocale">setLocale</a>($locale)
                     <p>Set locale name.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCore/Kernel/LanguageManager.html#method_setLocale"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -87,7 +104,7 @@
                     <a href="#method_getLocale">getLocale</a>()
                     <p>Get locale name.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCore/Kernel/LanguageManager.html#method_getLocale"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -97,7 +114,7 @@
                     <a href="#method_setLanguage">setLanguage</a>(string $language)
                     <p>Set language name.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCore/Kernel/LanguageManager.html#method_setLanguage"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -107,7 +124,7 @@
                     <a href="#method_getLanguage">getLanguage</a>()
                     <p>Get language name.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCore/Kernel/LanguageManager.html#method_getLanguage"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -124,8 +141,8 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_loadModuleMessageCatalog">loadModuleMessageCatalog</a>(<abbr title="$dirname">$dirname</abbr> $moduleName)
-                    <p>Load the message catalog of the specified module.</p>
+                    <a href="#method_loadModuleMessageCatalog">loadModuleMessageCatalog</a>(string $moduleName)
+                    <p>Load the module message catalog which is defined in the specified module.</p>
                 </td>
                 <td></td>
             </tr>
@@ -137,7 +154,7 @@
                     <a href="#method_loadThemeMessageCatalog">loadThemeMessageCatalog</a>(string $themeName)
                     <p>Load the theme message catalog which is defined in the specified module.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCore/Kernel/LanguageManager.html#method_loadThemeMessageCatalog"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -177,7 +194,7 @@
                     <a href="#method_translate">translate</a>(string $word)
                     <p>Return translated message.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCore/Kernel/LanguageManager.html#method_translate"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -197,14 +214,14 @@
                     <a href="#method_getFallbackLocale">getFallbackLocale</a>()
                     <p>Return default locale name.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCore/Kernel/LanguageManager.html#method_getFallbackLocale"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type">
                     
                 </td>
                 <td class="last">
-                    <a href="#method_encodeUTF8">encodeUTF8</a>($text)
+                    <a href="#method_encodeUTF8">encodeUTF8</a>($str)
                     <p></p>
                 </td>
                 <td></td>
@@ -214,87 +231,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_decodeUTF8">decodeUTF8</a>($text)
-                    <p></p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method__setupDatabase">_setupDatabase</a>()
-                    <p>Load the additional file to control DB.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method__setupMbstring">_setupMbstring</a>()
-                    <p></p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method_loadPageTypeMessageCatalog">loadPageTypeMessageCatalog</a>(string $type)
-                    <p>Load the special message catalog which is defined has been the XOOPS2 generation.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method_loadModuleAdminMessageCatalog">loadModuleAdminMessageCatalog</a>(<abbr title="$dirname">$dirname</abbr> $dirname)
-                    <p>Load the message catalog of the specified module for admin.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method_loadBlockMessageCatalog">loadBlockMessageCatalog</a>(<abbr title="$dirname">$dirname</abbr> $dirname)
-                    <p>Load the message catalog of the specified module for block.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method_loadModinfoMessageCatalog">loadModinfoMessageCatalog</a>(<abbr title="$dirname">$dirname</abbr> $dirname)
-                    <p>Load the message catalog of the specified module for modinfo.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method__loadLanguage">_loadLanguage</a>(<abbr title="$dirname">$dirname</abbr> $dirname, <abbr title="$fileBodyName">$fileBodyName</abbr> $fileBodyName)
-                    <p></p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method__loadFile">_loadFile</a>(<abbr title="$filename">$filename</abbr> $filename, <abbr title="$dirname">$dirname</abbr> $mydirname = null)
+                    <a href="#method_decodeUTF8">decodeUTF8</a>($str)
                     <p></p>
                 </td>
                 <td></td>
@@ -305,7 +242,7 @@
         <h2>Details</h2>
 
                         <h3 id="method_LanguageManager">
-        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method_LanguageManager"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 35</div>
+        <div class="location">at line 35</div>
         <code>            public            
     <strong>LanguageManager</strong>()</code>
     </h3>
@@ -320,7 +257,7 @@
     </div>
 
                 <h3 id="method_prepare">
-        <div class="location">at line 7</div>
+        <div class="location">at line 45</div>
         <code>            public            
     <strong>prepare</strong>()</code>
     </h3>
@@ -335,7 +272,7 @@
     </div>
 
                 <h3 id="method_setLocale">
-        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method_setLocale"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 54</div>
+        <div class="location">at line 54</div>
         <code>            public            
     <strong>setLocale</strong>($locale)</code>
     </h3>
@@ -360,7 +297,7 @@
     </div>
 
                 <h3 id="method_getLocale">
-        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method_getLocale"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 64</div>
+        <div class="location">at line 64</div>
         <code>            public            string
     <strong>getLocale</strong>()</code>
     </h3>
@@ -384,7 +321,7 @@
     </div>
 
                 <h3 id="method_setLanguage">
-        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method_setLanguage"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 74</div>
+        <div class="location">at line 74</div>
         <code>            public            
     <strong>setLanguage</strong>(string $language)</code>
     </h3>
@@ -409,7 +346,7 @@
     </div>
 
                 <h3 id="method_getLanguage">
-        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method_getLanguage"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 84</div>
+        <div class="location">at line 84</div>
         <code>            public            string
     <strong>getLanguage</strong>()</code>
     </h3>
@@ -433,7 +370,7 @@
     </div>
 
                 <h3 id="method_loadGlobalMessageCatalog">
-        <div class="location">at line 58</div>
+        <div class="location">at line 92</div>
         <code>            public            
     <strong>loadGlobalMessageCatalog</strong>()</code>
     </h3>
@@ -448,21 +385,21 @@
     </div>
 
                 <h3 id="method_loadModuleMessageCatalog">
-        <div class="location">at line 98</div>
+        <div class="location">at line 102</div>
         <code>            public            
-    <strong>loadModuleMessageCatalog</strong>(<abbr title="$dirname">$dirname</abbr> $moduleName)</code>
+    <strong>loadModuleMessageCatalog</strong>(string $moduleName)</code>
     </h3>
     <div class="details">
-        <p>Load the message catalog of the specified module.</p>
+        <p>Load the module message catalog which is defined in the specified module.</p>
         <p></p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td><abbr title="$dirname">$dirname</abbr></td>
+                <td>string</td>
                 <td>$moduleName</td>
-                <td>A dirname of module.</td>
+                <td>A name of module.</td>
             </tr>
             </table>
 
@@ -473,7 +410,7 @@
     </div>
 
                 <h3 id="method_loadThemeMessageCatalog">
-        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method_loadThemeMessageCatalog"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 111</div>
+        <div class="location">at line 111</div>
         <code>            public            
     <strong>loadThemeMessageCatalog</strong>(string $themeName)</code>
     </h3>
@@ -498,7 +435,7 @@
     </div>
 
                 <h3 id="method_existFile">
-        <div class="location">at line 187</div>
+        <div class="location">at line 123</div>
         <code>            public            bool
     <strong>existFile</strong>(string $section, string $filename)</code>
     </h3>
@@ -537,7 +474,7 @@
     </div>
 
                 <h3 id="method_getFilepath">
-        <div class="location">at line 200</div>
+        <div class="location">at line 135</div>
         <code>            public            string
     <strong>getFilepath</strong>(string $section, string $filename)</code>
     </h3>
@@ -576,7 +513,7 @@
     </div>
 
                 <h3 id="method_loadTextFile">
-        <div class="location">at line 220</div>
+        <div class="location">at line 147</div>
         <code>            public            string
     <strong>loadTextFile</strong>(string $section, string $filename)</code>
     </h3>
@@ -615,7 +552,7 @@
     </div>
 
                 <h3 id="method_translate">
-        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method_translate"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 159</div>
+        <div class="location">at line 159</div>
         <code>            public            string
     <strong>translate</strong>(string $word)</code>
     </h3>
@@ -649,7 +586,7 @@
     </div>
 
                 <h3 id="method_getFallbackLanguage">
-        <div class="location">at line 226</div>
+        <div class="location">at line 170</div>
         <code>            public            string
     <strong>getFallbackLanguage</strong>()</code>
     </h3>
@@ -673,7 +610,7 @@
     </div>
 
                 <h3 id="method_getFallbackLocale">
-        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method_getFallbackLocale"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 181</div>
+        <div class="location">at line 181</div>
         <code>            public            string
     <strong>getFallbackLocale</strong>()</code>
     </h3>
@@ -697,9 +634,9 @@
     </div>
 
                 <h3 id="method_encodeUTF8">
-        <div class="location">at line 231</div>
+        <div class="location">at line 186</div>
         <code>            public            
-    <strong>encodeUTF8</strong>($text)</code>
+    <strong>encodeUTF8</strong>($str)</code>
     </h3>
     <div class="details">
         <p></p>
@@ -710,7 +647,7 @@
                     <table>
                     <tr>
                 <td></td>
-                <td>$text</td>
+                <td>$str</td>
                 <td></td>
             </tr>
             </table>
@@ -722,9 +659,9 @@
     </div>
 
                 <h3 id="method_decodeUTF8">
-        <div class="location">at line 242</div>
+        <div class="location">at line 191</div>
         <code>            public            
-    <strong>decodeUTF8</strong>($text)</code>
+    <strong>decodeUTF8</strong>($str)</code>
     </h3>
     <div class="details">
         <p></p>
@@ -735,198 +672,8 @@
                     <table>
                     <tr>
                 <td></td>
-                <td>$text</td>
+                <td>$str</td>
                 <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method__setupDatabase">
-        <div class="location">at line 20</div>
-        <code>            public            
-    <strong>_setupDatabase</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Load the additional file to control DB.</p>
-        <p></p>
-        <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method__setupMbstring">
-        <div class="location">at line 28</div>
-        <code>            public            
-    <strong>_setupMbstring</strong>()</code>
-    </h3>
-    <div class="details">
-        <p></p>
-        <p></p>
-        <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_loadPageTypeMessageCatalog">
-        <div class="location">at line 83</div>
-        <code>            public            
-    <strong>loadPageTypeMessageCatalog</strong>(string $type)</code>
-    </h3>
-    <div class="details">
-        <p>Load the special message catalog which is defined has been the XOOPS2 generation.</p>
-        <p></p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td>string</td>
-                <td>$type</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_loadModuleAdminMessageCatalog">
-        <div class="location">at line 109</div>
-        <code>            public            
-    <strong>loadModuleAdminMessageCatalog</strong>(<abbr title="$dirname">$dirname</abbr> $dirname)</code>
-    </h3>
-    <div class="details">
-        <p>Load the message catalog of the specified module for admin.</p>
-        <p></p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td><abbr title="$dirname">$dirname</abbr></td>
-                <td>$dirname</td>
-                <td>A dirname of module.</td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_loadBlockMessageCatalog">
-        <div class="location">at line 120</div>
-        <code>            public            
-    <strong>loadBlockMessageCatalog</strong>(<abbr title="$dirname">$dirname</abbr> $dirname)</code>
-    </h3>
-    <div class="details">
-        <p>Load the message catalog of the specified module for block.</p>
-        <p></p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td><abbr title="$dirname">$dirname</abbr></td>
-                <td>$dirname</td>
-                <td>A dirname of module.</td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_loadModinfoMessageCatalog">
-        <div class="location">at line 131</div>
-        <code>            public            
-    <strong>loadModinfoMessageCatalog</strong>(<abbr title="$dirname">$dirname</abbr> $dirname)</code>
-    </h3>
-    <div class="details">
-        <p>Load the message catalog of the specified module for modinfo.</p>
-        <p></p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td><abbr title="$dirname">$dirname</abbr></td>
-                <td>$dirname</td>
-                <td>A dirname of module.</td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method__loadLanguage">
-        <div class="location">at line 141</div>
-        <code>            public            
-    <strong>_loadLanguage</strong>(<abbr title="$dirname">$dirname</abbr> $dirname, <abbr title="$fileBodyName">$fileBodyName</abbr> $fileBodyName)</code>
-    </h3>
-    <div class="details">
-        <p></p>
-        <p></p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td><abbr title="$dirname">$dirname</abbr></td>
-                <td>$dirname</td>
-                <td>module directory name</td>
-            </tr>
-                    <tr>
-                <td><abbr title="$fileBodyName">$fileBodyName</abbr></td>
-                <td>$fileBodyName</td>
-                <td>language file body name</td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method__loadFile">
-        <div class="location">at line 169</div>
-        <code>            public            
-    <strong>_loadFile</strong>(<abbr title="$filename">$filename</abbr> $filename, <abbr title="$dirname">$dirname</abbr> $mydirname = null)</code>
-    </h3>
-    <div class="details">
-        <p></p>
-        <p></p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td><abbr title="$filename">$filename</abbr></td>
-                <td>$filename</td>
-                <td>A filename.</td>
-            </tr>
-                    <tr>
-                <td><abbr title="$dirname">$dirname</abbr></td>
-                <td>$mydirname</td>
-                <td>A dirname of module. (for D3 module)</td>
             </tr>
             </table>
 
