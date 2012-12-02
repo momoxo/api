@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XCore\Kernel\Delegate | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../XCore/Kernel.html">XCore\Kernel</a>\Delegate</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>Delegate</strong></p>
+
+            <div class="description">
+            <p>Used for the simple mechanism for common delegation in XCore.</p>
+            <p>A delegate can have $callback as connected function, $filepath for lazy<br />
+ loading and $priority as order indicated.<br />
+<br />
+ Priority<br />
+<br />
+ Default of this parameter is XCUBE_DELEGATE_PRIORITY_NORMAL. Usually, this<br />
+ parameter isn&#039;t specified. Plus, the magic number should be used to specify<br />
+ priority. Use XCUBE_DELEGATE_PRIORITY_FIRST or XCUBE_DELEGATE_PRIORITY_FINAL<br />
+ with Addition and Subtraction. (e.x. XCUBE_DELEGATE_PRIORITY_NORMAL - 1 )<br />
+<br />
+ This is the candidate as new delegate style, which has foolish name to escape<br />
+ conflict with old Delegate. After replacing, we&#039;ll change all.</p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>()
+                    <p>Constructor.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_register">register</a>(string $delegateName)
+                    <p>Registers this object to delegate manager of root.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_add">add</a>(<abbr title="XCore\Kernel\callable">callable</abbr> $callback, null $param2 = null, null $param3 = null)
+                    <p>Connects functions to this object as callback functions</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_delete">delete</a>(<abbr title="XCore\Kernel\$delcallback">$delcallback</abbr> $delcallback)
+                    <p>Disconnects a function from this object.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_reset">reset</a>()
+                    <p>Resets all delegate functions from this object.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_call">call</a>()
+                    <p>Calls connected functions of this object.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_isEmpty">isEmpty</a>()
+                    <p>Gets a value indicating whether this object has callback functions.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getID">getID</a>()
+                    <p>Gets the unique ID of this object.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">at line 75</div>
+        <code>            public            
+    <strong>__construct</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Constructor.</p>
+        <p>The parameter of the constructor is a variable argument style to specify<br />
+ the signature of this delegate. If the argument is empty, signature checking<br />
+ doesn&#039;t work. Empty arguments are good to use in many cases. But, that&#039;s<br />
+ important to accent a delegate for making rightly connected functions.<br />
+<br />
+ ```<br />
+ $delegate = new Delegate(&quot;string&quot;, &quot;string&quot;);<br />
+ ```</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_register">
+        <div class="location">at line 110</div>
+        <code>            public            bool
+    <strong>register</strong>(string $delegateName)</code>
+    </h3>
+    <div class="details">
+        <p>Registers this object to delegate manager of root.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$delegateName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_add">
+        <div class="location">at line 143</div>
+        <code>            public            void
+    <strong>add</strong>(<abbr title="XCore\Kernel\callable">callable</abbr> $callback, null $param2 = null, null $param3 = null)</code>
+    </h3>
+    <div class="details">
+        <p>Connects functions to this object as callback functions</p>
+        <p>This method is virtual overload by signatures.<br />
+<br />
+ ```<br />
+ add(callback $callback, int priority = XCUBE_DELEGATE_PRIORITY_NORMAL);<br />
+ add(callback $callback, string filepath = null);<br />
+ add(callback $callback, int priority =... , string filepath=...);<br />
+ ```</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="XCore\Kernel\callable">callable</abbr></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null</td>
+                <td>$param2</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null</td>
+                <td>$param3</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_delete">
+        <div class="location">at line 170</div>
+        <code>            public            void
+    <strong>delete</strong>(<abbr title="XCore\Kernel\$delcallback">$delcallback</abbr> $delcallback)</code>
+    </h3>
+    <div class="details">
+        <p>Disconnects a function from this object.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="XCore\Kernel\$delcallback">$delcallback</abbr></td>
+                <td>$delcallback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_reset">
+        <div class="location">at line 192</div>
+        <code>            public            void
+    <strong>reset</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Resets all delegate functions from this object.</p>
+        <p>This is the special method, so XCore doesn&#039;t recommend using this.</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_call">
+        <div class="location">at line 201</div>
+        <code>            public            
+    <strong>call</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Calls connected functions of this object.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isEmpty">
+        <div class="location">at line 260</div>
+        <code>            public            bool
+    <strong>isEmpty</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets a value indicating whether this object has callback functions.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getID">
+        <div class="location">at line 273</div>
+        <code>            public            
+    <strong>getID</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the unique ID of this object.</p>
+        <p>This is the special method, so XCore doesn&#039;t recommend using this.</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

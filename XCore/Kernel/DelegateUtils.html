@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XCore\Kernel\DelegateUtils | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../XCore/Kernel.html">XCore\Kernel</a>\DelegateUtils</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>DelegateUtils</strong></p>
+
+            <div class="description">
+            <p>Utility class which collects utility functions for delegates.</p>
+            <p>```<br />
+ DelegateUtils::call(&quot;Delegate Name&quot;[, fuction args...]);<br />
+ DelegateUtils::raiseEvent(&quot;Event Name&quot;[, fuction params...]);<br />
+ $string = DelegateUtils::applyStringFilter(&quot;Filter Name&quot;, $string, [, option params...]);<br />
+ ```</p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method_call">call</a>()
+                    <p>Utility method for calling event-delegates.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;
+                </td>
+                <td class="last">
+                    <a href="#method_raiseEvent">raiseEvent</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;string
+                </td>
+                <td class="last">
+                    <a href="#method_applyStringFilter">applyStringFilter</a>()
+                    <p>Calls a delegate string filter function.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;bool
+                </td>
+                <td class="last">
+                    <a href="#method__compareCallback">_compareCallback</a>($callback1, $callback2)
+                    <p>Comparing two callback (PHP4 cannot compare Object exactly)</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_call">
+        <div class="location">at line 79</div>
+        <code>        static    public            bool
+    <strong>call</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Utility method for calling event-delegates.</p>
+        <p>This method is a shortcut for calling delegates without actual delegate objects.<br />
+ If there is not the delegate specified by the 1st parameter, the delegate will<br />
+ be made right now. Therefore, this method is helpful for events.<br />
+<br />
+ ```<br />
+ DelegateManager::call(&quot;Module.A.Exception.Null&quot;);<br />
+ ```<br />
+<br />
+ The above code equals the following code:<br />
+<br />
+ ```<br />
+ {<br />
+     $local =new Delegate();<br />
+     $local-&gt;register(&quot;Module.A.Exception.Null&quot;);<br />
+     $local-&gt;call();<br />
+ }<br />
+ ```<br />
+<br />
+ Only event-owners should use this method. Outside program never calls other&#039;s<br />
+ events. This is a kind of Delegate rules. There is the following code;<br />
+<br />
+ ```<br />
+ ClassA::check()<br />
+ {<br />
+     if ($this-&gt;mThing == null) {<br />
+         DelegateManager::call(&quot;Module.A.Exception.Null&quot;);<br />
+     }<br />
+ }<br />
+ ```<br />
+<br />
+ In this case, other class never calls the event.<br />
+<br />
+ ```<br />
+ //<br />
+ // NEVER writes the following code;<br />
+ //<br />
+ $obj = new ClassA();<br />
+ if ($obj-&gt;mThing == null) {<br />
+      DelegateManager::raiseEvent(&quot;Module.A.Exception.Null&quot;);<br />
+ }<br />
+ ```<br />
+<br />
+ Other classes may call only ClassA::check();</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_raiseEvent">
+        <div class="location">at line 111</div>
+        <code>        static    public            
+    <strong>raiseEvent</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_applyStringFilter">
+        <div class="location">at line 132</div>
+        <code>        static    public            string
+    <strong>applyStringFilter</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Calls a delegate string filter function.</p>
+        <p>This method is multi-parameters.<br />
+<br />
+ This is a special shortcut for processing string filter.</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method__compareCallback">
+        <div class="location">at line 160</div>
+        <code>        static    public            bool
+    <strong>_compareCallback</strong>($callback1, $callback2)</code>
+    </h3>
+    <div class="details">
+        <p>Comparing two callback (PHP4 cannot compare Object exactly)</p>
+        <p>Only Delegate, DelegateManager and sub-classes of them should use this method.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$callback1</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$callback2</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

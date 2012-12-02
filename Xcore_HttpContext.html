@@ -22,7 +22,7 @@
     <h1><a href=".html"></a>Xcore_HttpContext</h1>
     </div>
         <div class="content">
-                <p>class    <strong>Xcore_HttpContext</strong>        extends <a href="XCube_HttpContext.html"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a></p>
+                <p>class    <strong>Xcore_HttpContext</strong>        extends <a href="XCore/Kernel/HttpContext.html"><abbr title="XCore\Kernel\HttpContext">HttpContext</abbr></a></p>
 
     
     
@@ -31,21 +31,21 @@
             <table>
                     <tr>
                 <td class="type" id="property_mAttributes">
-                                                            Array
+                                                            array
                 </td>
                 <td>$mAttributes</td>
-                <td class="last">Hashmap that can be used to organize and share data.</td>
+                <td class="last">Hash map that can be used to organize and share data.</td>
             </tr>
                     <tr>
                 <td class="type" id="property_mRequest">
-                                                            
+                                                            <a href="XCore/Kernel/AbstractRequest.html"><abbr title="XCore\Kernel\AbstractRequest">AbstractRequest</abbr></a>
                 </td>
                 <td>$mRequest</td>
                 <td class="last">The object which enables to read the request values.</td>
             </tr>
                     <tr>
                 <td class="type" id="property_mUser">
-                                                            <a href="XCube_Principal.html"><abbr title="XCube_Principal">XCube_Principal</abbr></a>
+                                                            <a href="XCore/Kernel/Principal.html"><abbr title="XCore\Kernel\Principal">Principal</abbr></a>
                 </td>
                 <td>$mUser</td>
                 <td class="last"></td>
@@ -56,13 +56,6 @@
                 </td>
                 <td>$mType</td>
                 <td class="last">String which expresses the type of the current request.</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_mThemeName">
-                                                            
-                </td>
-                <td>$mThemeName</td>
-                <td class="last">The theme is one in one time of request.</td>
             </tr>
                     <tr>
                 <td class="type" id="property_mXoopsUser">
@@ -118,29 +111,29 @@
                 </td>
                 <td class="last">
                     <a href="#method___construct">__construct</a>()
-                    <p></p>
+                    <p>Return new HttpContext instance</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_HttpContext.html#method___construct"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Kernel/HttpContext.html#method___construct"><abbr title="XCore\Kernel\HttpContext">HttpContext</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
-                    
+                    void
                 </td>
                 <td class="last">
                     <a href="#method_setAttribute">setAttribute</a>(string $key, mixed $value)
                     <p>Sets $value with $key to attributes.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_HttpContext.html#method_setAttribute"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Kernel/HttpContext.html#method_setAttribute"><abbr title="XCore\Kernel\HttpContext">HttpContext</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
-                    mixed
+                    bool
                 </td>
                 <td class="last">
                     <a href="#method_hasAttribute">hasAttribute</a>(string $key)
                     <p>Gets a value indicating whether the value specified by $key exists.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_HttpContext.html#method_hasAttribute"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Kernel/HttpContext.html#method_hasAttribute"><abbr title="XCore\Kernel\HttpContext">HttpContext</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -150,47 +143,47 @@
                     <a href="#method_getAttribute">getAttribute</a>(string $key)
                     <p>Gets a value of attributes with $key.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_HttpContext.html#method_getAttribute"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Kernel/HttpContext.html#method_getAttribute"><abbr title="XCore\Kernel\HttpContext">HttpContext</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
-                    
+                    void
                 </td>
                 <td class="last">
-                    <a href="#method_setRequest">setRequest</a>(<a href="XCube_AbstractRequest.html"><abbr title="XCube_AbstractRequest">XCube_AbstractRequest</abbr></a> $request)
-                    <p>Sets the object which has a interface of XCube_AbstractRequest.</p>
+                    <a href="#method_setRequest">setRequest</a>(<a href="XCore/Kernel/AbstractRequest.html"><abbr title="XCore\Kernel\AbstractRequest">AbstractRequest</abbr></a> $request)
+                    <p>Sets the object which has a interface of AbstractRequest.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_HttpContext.html#method_setRequest"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Kernel/HttpContext.html#method_setRequest"><abbr title="XCore\Kernel\HttpContext">HttpContext</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
-                    <a href="XCube_AbstractRequest.html"><abbr title="XCube_AbstractRequest">XCube_AbstractRequest</abbr></a>
+                    <a href="XCore/Kernel/AbstractRequest.html"><abbr title="XCore\Kernel\AbstractRequest">AbstractRequest</abbr></a>
                 </td>
                 <td class="last">
                     <a href="#method_getRequest">getRequest</a>()
-                    <p>Gets the object which has a interface of XCube_AbstractRequest.</p>
+                    <p>Gets the object which has a interface of AbstractRequest.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_HttpContext.html#method_getRequest"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Kernel/HttpContext.html#method_getRequest"><abbr title="XCore\Kernel\HttpContext">HttpContext</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
-                    
+                    void
                 </td>
                 <td class="last">
-                    <a href="#method_setUser">setUser</a>(<abbr title="XCube_AbstractPrincipal">XCube_AbstractPrincipal</abbr> $principal)
-                    <p>Sets the object which has a interface of XCube_Principal.</p>
+                    <a href="#method_setUser">setUser</a>(<a href="XCore/Kernel/Principal.html"><abbr title="XCore\Kernel\Principal">Principal</abbr></a> $principal)
+                    <p>Sets the object which has a interface of Principal.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_HttpContext.html#method_setUser"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Kernel/HttpContext.html#method_setUser"><abbr title="XCore\Kernel\HttpContext">HttpContext</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
-                    <abbr title="XCube_AbstractPrincipal">XCube_AbstractPrincipal</abbr>
+                    <a href="XCore/Kernel/Principal.html"><abbr title="XCore\Kernel\Principal">Principal</abbr></a>
                 </td>
                 <td class="last">
                     <a href="#method_getUser">getUser</a>()
-                    <p>Gets the object which has a interface of XCube_Principal.</p>
+                    <p>Gets the object which has a interface of Principal.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_HttpContext.html#method_getUser"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Kernel/HttpContext.html#method_getUser"><abbr title="XCore\Kernel\HttpContext">HttpContext</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -210,7 +203,7 @@
                     <a href="#method_getThemeName">getThemeName</a>()
                     <p>Return the theme name.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_HttpContext.html#method_getThemeName"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Kernel/HttpContext.html#method_getThemeName"><abbr title="XCore\Kernel\HttpContext">HttpContext</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -228,12 +221,12 @@
         <h2>Details</h2>
 
                         <h3 id="method___construct">
-        <div class="location">in <a href="XCube_HttpContext.html#method___construct"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a> at line 44</div>
+        <div class="location">in <a href="XCore/Kernel/HttpContext.html#method___construct"><abbr title="XCore\Kernel\HttpContext">HttpContext</abbr></a> at line 52</div>
         <code>            public            
     <strong>__construct</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Return new HttpContext instance</p>
         <p></p>
         <div class="tags">
             
@@ -243,8 +236,8 @@
     </div>
 
                 <h3 id="method_setAttribute">
-        <div class="location">in <a href="XCube_HttpContext.html#method_setAttribute"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a> at line 56</div>
-        <code>            public            
+        <div class="location">in <a href="XCore/Kernel/HttpContext.html#method_setAttribute"><abbr title="XCore\Kernel\HttpContext">HttpContext</abbr></a> at line 64</div>
+        <code>            public            void
     <strong>setAttribute</strong>(string $key, mixed $value)</code>
     </h3>
     <div class="details">
@@ -269,14 +262,23 @@
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
     </div>
 
                 <h3 id="method_hasAttribute">
-        <div class="location">in <a href="XCube_HttpContext.html#method_hasAttribute"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a> at line 67</div>
-        <code>            public            mixed
+        <div class="location">in <a href="XCore/Kernel/HttpContext.html#method_hasAttribute"><abbr title="XCore\Kernel\HttpContext">HttpContext</abbr></a> at line 74</div>
+        <code>            public            bool
     <strong>hasAttribute</strong>(string $key)</code>
     </h3>
     <div class="details">
@@ -298,7 +300,7 @@
 
                     <table>
         <tr>
-            <td>mixed</td>
+            <td>bool</td>
             <td></td>
         </tr>
     </table>
@@ -309,7 +311,7 @@
     </div>
 
                 <h3 id="method_getAttribute">
-        <div class="location">in <a href="XCube_HttpContext.html#method_getAttribute"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a> at line 79</div>
+        <div class="location">in <a href="XCore/Kernel/HttpContext.html#method_getAttribute"><abbr title="XCore\Kernel\HttpContext">HttpContext</abbr></a> at line 85</div>
         <code>            public            mixed
     <strong>getAttribute</strong>(string $key)</code>
     </h3>
@@ -344,37 +346,46 @@
     </div>
 
                 <h3 id="method_setRequest">
-        <div class="location">in <a href="XCube_HttpContext.html#method_setRequest"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a> at line 89</div>
-        <code>            public            
-    <strong>setRequest</strong>(<a href="XCube_AbstractRequest.html"><abbr title="XCube_AbstractRequest">XCube_AbstractRequest</abbr></a> $request)</code>
+        <div class="location">in <a href="XCore/Kernel/HttpContext.html#method_setRequest"><abbr title="XCore\Kernel\HttpContext">HttpContext</abbr></a> at line 95</div>
+        <code>            public            void
+    <strong>setRequest</strong>(<a href="XCore/Kernel/AbstractRequest.html"><abbr title="XCore\Kernel\AbstractRequest">AbstractRequest</abbr></a> $request)</code>
     </h3>
     <div class="details">
-        <p>Sets the object which has a interface of XCube_AbstractRequest.</p>
+        <p>Sets the object which has a interface of AbstractRequest.</p>
         <p></p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td><a href="XCube_AbstractRequest.html"><abbr title="XCube_AbstractRequest">XCube_AbstractRequest</abbr></a></td>
+                <td><a href="XCore/Kernel/AbstractRequest.html"><abbr title="XCore\Kernel\AbstractRequest">AbstractRequest</abbr></a></td>
                 <td>$request</td>
                 <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
     </div>
 
                 <h3 id="method_getRequest">
-        <div class="location">in <a href="XCube_HttpContext.html#method_getRequest"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a> at line 99</div>
-        <code>            public            <a href="XCube_AbstractRequest.html"><abbr title="XCube_AbstractRequest">XCube_AbstractRequest</abbr></a>
+        <div class="location">in <a href="XCore/Kernel/HttpContext.html#method_getRequest"><abbr title="XCore\Kernel\HttpContext">HttpContext</abbr></a> at line 104</div>
+        <code>            public            <a href="XCore/Kernel/AbstractRequest.html"><abbr title="XCore\Kernel\AbstractRequest">AbstractRequest</abbr></a>
     <strong>getRequest</strong>()</code>
     </h3>
     <div class="details">
-        <p>Gets the object which has a interface of XCube_AbstractRequest.</p>
+        <p>Gets the object which has a interface of AbstractRequest.</p>
         <p></p>
         <div class="tags">
             
@@ -382,7 +393,7 @@
 
                     <table>
         <tr>
-            <td><a href="XCube_AbstractRequest.html"><abbr title="XCube_AbstractRequest">XCube_AbstractRequest</abbr></a></td>
+            <td><a href="XCore/Kernel/AbstractRequest.html"><abbr title="XCore\Kernel\AbstractRequest">AbstractRequest</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -393,37 +404,46 @@
     </div>
 
                 <h3 id="method_setUser">
-        <div class="location">in <a href="XCube_HttpContext.html#method_setUser"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a> at line 109</div>
-        <code>            public            
-    <strong>setUser</strong>(<abbr title="XCube_AbstractPrincipal">XCube_AbstractPrincipal</abbr> $principal)</code>
+        <div class="location">in <a href="XCore/Kernel/HttpContext.html#method_setUser"><abbr title="XCore\Kernel\HttpContext">HttpContext</abbr></a> at line 114</div>
+        <code>            public            void
+    <strong>setUser</strong>(<a href="XCore/Kernel/Principal.html"><abbr title="XCore\Kernel\Principal">Principal</abbr></a> $principal)</code>
     </h3>
     <div class="details">
-        <p>Sets the object which has a interface of XCube_Principal.</p>
+        <p>Sets the object which has a interface of Principal.</p>
         <p></p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td><abbr title="XCube_AbstractPrincipal">XCube_AbstractPrincipal</abbr></td>
+                <td><a href="XCore/Kernel/Principal.html"><abbr title="XCore\Kernel\Principal">Principal</abbr></a></td>
                 <td>$principal</td>
                 <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
     </div>
 
                 <h3 id="method_getUser">
-        <div class="location">in <a href="XCube_HttpContext.html#method_getUser"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a> at line 119</div>
-        <code>            public            <abbr title="XCube_AbstractPrincipal">XCube_AbstractPrincipal</abbr>
+        <div class="location">in <a href="XCore/Kernel/HttpContext.html#method_getUser"><abbr title="XCore\Kernel\HttpContext">HttpContext</abbr></a> at line 123</div>
+        <code>            public            <a href="XCore/Kernel/Principal.html"><abbr title="XCore\Kernel\Principal">Principal</abbr></a>
     <strong>getUser</strong>()</code>
     </h3>
     <div class="details">
-        <p>Gets the object which has a interface of XCube_Principal.</p>
+        <p>Gets the object which has a interface of Principal.</p>
         <p></p>
         <div class="tags">
             
@@ -431,7 +451,7 @@
 
                     <table>
         <tr>
-            <td><abbr title="XCube_AbstractPrincipal">XCube_AbstractPrincipal</abbr></td>
+            <td><a href="XCore/Kernel/Principal.html"><abbr title="XCore\Kernel\Principal">Principal</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -442,7 +462,7 @@
     </div>
 
                 <h3 id="method_setThemeName">
-        <div class="location">at line 88</div>
+        <div class="location">at line 89</div>
         <code>            public            void
     <strong>setThemeName</strong>(<abbr title="$name">$name</abbr> $name)</code>
     </h3>
@@ -476,7 +496,7 @@
     </div>
 
                 <h3 id="method_getThemeName">
-        <div class="location">in <a href="XCube_HttpContext.html#method_getThemeName"><abbr title="XCube_HttpContext">XCube_HttpContext</abbr></a> at line 141</div>
+        <div class="location">in <a href="XCore/Kernel/HttpContext.html#method_getThemeName"><abbr title="XCore\Kernel\HttpContext">HttpContext</abbr></a> at line 143</div>
         <code>            public            string
     <strong>getThemeName</strong>()</code>
     </h3>
@@ -500,7 +520,7 @@
     </div>
 
                 <h3 id="method_getXoopsConfig">
-        <div class="location">at line 70</div>
+        <div class="location">at line 71</div>
         <code>            public            mixed
     <strong>getXoopsConfig</strong>(<abbr title="$id">$id</abbr> $id = null)</code>
     </h3>

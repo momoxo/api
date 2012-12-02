@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XCore\Kernel\ActionFilter | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../XCore/Kernel.html">XCore\Kernel</a>\ActionFilter</h1>
+    </div>
+        <div class="content">
+                <p>abstract class    <strong>ActionFilter</strong></p>
+
+            <div class="description">
+            <p>Used for initialization, post-processing and others by the controller.</p>
+            <p>This class is chained and called by the initialization procedure of the<br />
+ controller class. Developers or users can use the subclass of this class for<br />
+ dynamic customizing.<br />
+<br />
+ Users usually don&#039;t need to add on filters because each controllers should<br />
+ have initialization code enough. This class is used to the case of special<br />
+ customizing by modules and users.<br />
+<br />
+ Each controllers should not use this class to their initialization procedure.<br />
+<br />
+ Two member functions are called by the controller at the special timing.<br />
+ These timing is different in each controllers.<br />
+<br />
+ This class is an abstract class.</p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>(<a href="../../XCore/Kernel/Controller.html"><abbr title="XCore\Kernel\Controller">Controller</abbr></a> $controller)
+                    <p>Constructor.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_preFilter">preFilter</a>()
+                    <p>Executes the logic, when the controller executes preFilter().</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_preBlockFilter">preBlockFilter</a>()
+                    <p>Executes the logic, when the controller executes preBlockFilter().</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_postFilter">postFilter</a>()
+                    <p>Executes the logic, when the controller executes postFilter().</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">at line 44</div>
+        <code>            public            
+    <strong>__construct</strong>(<a href="../../XCore/Kernel/Controller.html"><abbr title="XCore\Kernel\Controller">Controller</abbr></a> $controller)</code>
+    </h3>
+    <div class="details">
+        <p>Constructor.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../XCore/Kernel/Controller.html"><abbr title="XCore\Kernel\Controller">Controller</abbr></a></td>
+                <td>$controller</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_preFilter">
+        <div class="location">at line 56</div>
+        <code>            public            
+    <strong>preFilter</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Executes the logic, when the controller executes preFilter().</p>
+        <p>This method is called earliest in the controller&#039;s initialization process, so<br />
+ some of filters may not be called if these filters are registered later.</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_preBlockFilter">
+        <div class="location">at line 66</div>
+        <code>            public            
+    <strong>preBlockFilter</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Executes the logic, when the controller executes preBlockFilter().</p>
+        <p>Each controller has different timing when it calls preBlockFilter().</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_postFilter">
+        <div class="location">at line 76</div>
+        <code>            public            
+    <strong>postFilter</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Executes the logic, when the controller executes postFilter().</p>
+        <p>Each controller has different timing when it calls postFilter().</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

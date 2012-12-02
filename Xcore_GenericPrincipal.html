@@ -22,18 +22,8 @@
     <h1><a href=".html"></a>Xcore_GenericPrincipal</h1>
     </div>
         <div class="content">
-                <p>class    <strong>Xcore_GenericPrincipal</strong>        extends <a href="XCube_Principal.html"><abbr title="XCube_Principal">XCube_Principal</abbr></a></p>
+                <p>class    <strong>Xcore_GenericPrincipal</strong>        extends <a href="XCore/Kernel/Principal.html"><abbr title="XCore\Kernel\Principal">Principal</abbr></a></p>
 
-            <div class="description">
-            <p>This principal is free to add roles.</p>
-            <p>And, this is also an interface, because<br />
- addRole() is used as a common interface in Xcore. Therefore, the dev team<br />
- may add the interface class to this file.<br />
- <br />
- [Role Naming Convention]<br />
- Module.{dirname}.Visitor is &#039;module_read&#039;.<br />
- Module.{dirname}.Admin is &#039;module_admin&#039;.</p>
-        </div>
     
     
             <h2>Properties</h2>
@@ -41,17 +31,10 @@
             <table>
                     <tr>
                 <td class="type" id="property_mIdentity">
-                                                            
+                                                            <a href="XCore/Kernel/Identity.html"><abbr title="XCore\Kernel\Identity">Identity</abbr></a>
                 </td>
                 <td>$mIdentity</td>
                 <td class="last">The identity object which is tied to this object.</td>
-            </tr>
-                    <tr>
-                <td class="type" id="property__mRoles">
-                                                            string[]
-                </td>
-                <td>$_mRoles</td>
-                <td class="last">Roles in this object.</td>
             </tr>
             </table>
 
@@ -64,20 +47,20 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method___construct">__construct</a>($identity, $roles = array())
+                    <a href="#method___construct">__construct</a>(<a href="XCore/Kernel/Identity.html"><abbr title="XCore\Kernel\Identity">Identity</abbr></a> $identity, array $roles = array())
                     <p></p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_Principal.html#method___construct"><abbr title="XCube_Principal">XCube_Principal</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Kernel/Principal.html#method___construct"><abbr title="XCore\Kernel\Principal">Principal</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
-                    <a href="XCube_Identity.html"><abbr title="XCube_Identity">XCube_Identity</abbr></a>
+                    <a href="XCore/Kernel/Identity.html"><abbr title="XCore\Kernel\Identity">Identity</abbr></a>
                 </td>
                 <td class="last">
                     <a href="#method_getIdentity">getIdentity</a>()
                     <p>Gets a identity object which is tied to this object.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_Principal.html#method_getIdentity"><abbr title="XCube_Principal">XCube_Principal</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Kernel/Principal.html#method_getIdentity"><abbr title="XCore\Kernel\Principal">Principal</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -105,9 +88,9 @@
         <h2>Details</h2>
 
                         <h3 id="method___construct">
-        <div class="location">in <a href="XCube_Principal.html#method___construct"><abbr title="XCube_Principal">XCube_Principal</abbr></a> at line 19</div>
+        <div class="location">in <a href="XCore/Kernel/Principal.html#method___construct"><abbr title="XCore\Kernel\Principal">Principal</abbr></a> at line 28</div>
         <code>            public            
-    <strong>__construct</strong>($identity, $roles = array())</code>
+    <strong>__construct</strong>(<a href="XCore/Kernel/Identity.html"><abbr title="XCore\Kernel\Identity">Identity</abbr></a> $identity, array $roles = array())</code>
     </h3>
     <div class="details">
         <p></p>
@@ -117,12 +100,12 @@
 
                     <table>
                     <tr>
-                <td></td>
+                <td><a href="XCore/Kernel/Identity.html"><abbr title="XCore\Kernel\Identity">Identity</abbr></a></td>
                 <td>$identity</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>array</td>
                 <td>$roles</td>
                 <td></td>
             </tr>
@@ -135,8 +118,8 @@
     </div>
 
                 <h3 id="method_getIdentity">
-        <div class="location">in <a href="XCube_Principal.html#method_getIdentity"><abbr title="XCube_Principal">XCube_Principal</abbr></a> at line 29</div>
-        <code>            public            <a href="XCube_Identity.html"><abbr title="XCube_Identity">XCube_Identity</abbr></a>
+        <div class="location">in <a href="XCore/Kernel/Principal.html#method_getIdentity"><abbr title="XCore\Kernel\Principal">Principal</abbr></a> at line 38</div>
+        <code>            public            <a href="XCore/Kernel/Identity.html"><abbr title="XCore\Kernel\Identity">Identity</abbr></a>
     <strong>getIdentity</strong>()</code>
     </h3>
     <div class="details">
@@ -148,7 +131,7 @@
 
                     <table>
         <tr>
-            <td><a href="XCube_Identity.html"><abbr title="XCube_Identity">XCube_Identity</abbr></a></td>
+            <td><a href="XCore/Kernel/Identity.html"><abbr title="XCore\Kernel\Identity">Identity</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -159,7 +142,7 @@
     </div>
 
                 <h3 id="method_isInRole">
-        <div class="location">at line 25</div>
+        <div class="location">at line 27</div>
         <code>            public            bool
     <strong>isInRole</strong>($roleName)</code>
     </h3>
@@ -193,7 +176,7 @@
     </div>
 
                 <h3 id="method_addRole">
-        <div class="location">at line 18</div>
+        <div class="location">at line 20</div>
         <code>            public            
     <strong>addRole</strong>(<abbr title="$roleName">$roleName</abbr> $roleName)</code>
     </h3>
