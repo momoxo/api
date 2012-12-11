@@ -24,7 +24,7 @@ php composer.phar self-update
 if [ ! -d $WORKING_DIR/vendor ]; then
   php composer.phar install
 else
-  php composer.phar update
+  test $RANDOM -lt 8192 && php composer.phar update
 fi
 
 pushd $WORKING_DIR/_momoxo
