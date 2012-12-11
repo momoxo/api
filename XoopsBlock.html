@@ -160,7 +160,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_initVar">initVar</a>($key, $data_type, $value = null, $required = false, $maxlength = null, $options = &#039;&#039;)
-                    <p>initialize variables for the object</p>
+                    <p></p>
                 </td>
                 <td><small>from&nbsp;<a href="XoopsObject.html#method_initVar"><abbr title="XoopsObject">XoopsObject</abbr></a></small></td>
             </tr>
@@ -180,7 +180,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_assignVars">assignVars</a>($var_arr)
-                    <p>assign values to multiple variables in a batch</p>
+                    <p>You should use this method to initilize object&#039;s properties.</p>
                 </td>
                 <td><small>from&nbsp;<a href="XoopsObject.html#method_assignVars"><abbr title="XoopsObject">XoopsObject</abbr></a></small></td>
             </tr>
@@ -250,7 +250,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_set">set</a>(string $key, mixed $value)
-                    <p>Sets $value to $key property.</p>
+                    <p>You should use this method to change object&#039;s properties.</p>
                 </td>
                 <td><small>from&nbsp;<a href="XoopsObject.html#method_set"><abbr title="XoopsObject">XoopsObject</abbr></a></small></td>
             </tr>
@@ -649,7 +649,7 @@
     <strong>initVar</strong>($key, $data_type, $value = null, $required = false, $maxlength = null, $options = &#039;&#039;)</code>
     </h3>
     <div class="details">
-        <p>initialize variables for the object</p>
+        <p></p>
         <p></p>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -729,8 +729,8 @@
     <strong>assignVars</strong>($var_arr)</code>
     </h3>
     <div class="details">
-        <p>assign values to multiple variables in a batch</p>
-        <p></p>
+        <p>You should use this method to initilize object&#039;s properties.</p>
+        <p>This method may not trigger setDirty().</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
@@ -944,9 +944,8 @@
     <strong>set</strong>(string $key, mixed $value)</code>
     </h3>
     <div class="details">
-        <p>Sets $value to $key property.</p>
-        <p>This method calls setVar(), but make<br />
- not_gpc true for the compatibility with XoopsSimpleObject.</p>
+        <p>You should use this method to change object&#039;s properties.</p>
+        <p>This method may trigger setDirty().</p>
         <div class="tags">
                             <h4>Parameters</h4>
 

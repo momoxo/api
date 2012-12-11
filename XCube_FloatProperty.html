@@ -22,29 +22,10 @@
     <h1><a href=".html"></a>XCube_FloatProperty</h1>
     </div>
         <div class="content">
-                <p>class    <strong>XCube_FloatProperty</strong>        extends <a href="XCube_AbstractProperty.html"><abbr title="XCube_AbstractProperty">XCube_AbstractProperty</abbr></a></p>
+                <p>class    <strong>XCube_FloatProperty</strong>        extends <a href="XCore/Property/AbstractProperty.html"><abbr title="XCore\Property\AbstractProperty">AbstractProperty</abbr></a></p>
 
     
     
-            <h2>Properties</h2>
-
-            <table>
-                    <tr>
-                <td class="type" id="property_mName">
-                                                            
-                </td>
-                <td>$mName</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_mValue">
-                                                            
-                </td>
-                <td>$mValue</td>
-                <td class="last"></td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
@@ -54,18 +35,18 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method___construct">__construct</a>(<abbr title="$name">$name</abbr> $name)
-                    <p></p>
+                    <a href="#method___construct">__construct</a>(string $name)
+                    <p>Constructor.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_AbstractProperty.html#method___construct"><abbr title="XCube_AbstractProperty">XCube_AbstractProperty</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Property/AbstractProperty.html#method___construct"><abbr title="XCore\Property\AbstractProperty">AbstractProperty</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
                     
                 </td>
                 <td class="last">
-                    <a href="#method_set">set</a>(<abbr title="$value">$value</abbr> $value)
-                    <p></p>
+                    <a href="#method_set">set</a>(mixed $value)
+                    <p>Sets $value as raw value to this property.</p>
                 </td>
                 <td></td>
             </tr>
@@ -74,10 +55,10 @@
                     mixed
                 </td>
                 <td class="last">
-                    <a href="#method_get">get</a>($index = null)
-                    <p></p>
+                    <a href="#method_get">get</a>(string|int $index = null)
+                    <p>Gets the value of this property.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_AbstractProperty.html#method_get"><abbr title="XCube_AbstractProperty">XCube_AbstractProperty</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Property/AbstractProperty.html#method_get"><abbr title="XCore\Property\AbstractProperty">AbstractProperty</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -85,9 +66,9 @@
                 </td>
                 <td class="last">
                     <a href="#method_isArray">isArray</a>()
-                    <p></p>
+                    <p>Gets a value indicating whether this object expresses Array.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_AbstractProperty.html#method_isArray"><abbr title="XCube_AbstractProperty">XCube_AbstractProperty</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Property/AbstractProperty.html#method_isArray"><abbr title="XCore\Property\AbstractProperty">AbstractProperty</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -95,9 +76,9 @@
                 </td>
                 <td class="last">
                     <a href="#method_isNull">isNull</a>()
-                    <p></p>
+                    <p>Gets a value indicating whether this object is null.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_AbstractProperty.html#method_isNull"><abbr title="XCube_AbstractProperty">XCube_AbstractProperty</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Property/AbstractProperty.html#method_isNull"><abbr title="XCore\Property\AbstractProperty">AbstractProperty</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -105,9 +86,9 @@
                 </td>
                 <td class="last">
                     <a href="#method_toNumber">toNumber</a>()
-                    <p></p>
+                    <p>Gets a value as integer.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_AbstractProperty.html#method_toNumber"><abbr title="XCube_AbstractProperty">XCube_AbstractProperty</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Property/AbstractProperty.html#method_toNumber"><abbr title="XCore\Property\AbstractProperty">AbstractProperty</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -115,9 +96,9 @@
                 </td>
                 <td class="last">
                     <a href="#method_toString">toString</a>()
-                    <p></p>
+                    <p>Gets a value as string.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_AbstractProperty.html#method_toString"><abbr title="XCube_AbstractProperty">XCube_AbstractProperty</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Property/AbstractProperty.html#method_toString"><abbr title="XCore\Property\AbstractProperty">AbstractProperty</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -125,9 +106,9 @@
                 </td>
                 <td class="last">
                     <a href="#method_toHTML">toHTML</a>()
-                    <p></p>
+                    <p>Gets a value as encoded HTML code.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_AbstractProperty.html#method_toHTML"><abbr title="XCube_AbstractProperty">XCube_AbstractProperty</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Property/AbstractProperty.html#method_toHTML"><abbr title="XCore\Property\AbstractProperty">AbstractProperty</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -135,9 +116,9 @@
                 </td>
                 <td class="last">
                     <a href="#method_hasFetchControl">hasFetchControl</a>()
-                    <p></p>
+                    <p>Gets a value indicating whether this object has a fetch control.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_AbstractProperty.html#method_hasFetchControl"><abbr title="XCube_AbstractProperty">XCube_AbstractProperty</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Property/AbstractProperty.html#method_hasFetchControl"><abbr title="XCore\Property\AbstractProperty">AbstractProperty</abbr></a></small></td>
             </tr>
             </table>
 
@@ -145,21 +126,21 @@
         <h2>Details</h2>
 
                         <h3 id="method___construct">
-        <div class="location">in <a href="XCube_AbstractProperty.html#method___construct"><abbr title="XCube_AbstractProperty">XCube_AbstractProperty</abbr></a> at line 26</div>
+        <div class="location">in <a href="XCore/Property/AbstractProperty.html#method___construct"><abbr title="XCore\Property\AbstractProperty">AbstractProperty</abbr></a> at line 26</div>
         <code>            public            
-    <strong>__construct</strong>(<abbr title="$name">$name</abbr> $name)</code>
+    <strong>__construct</strong>(string $name)</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Constructor.</p>
         <p></p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td><abbr title="$name">$name</abbr></td>
+                <td>string</td>
                 <td>$name</td>
-                <td>string - A name of this property.</td>
+                <td>A name of this property.</td>
             </tr>
             </table>
 
@@ -170,19 +151,19 @@
     </div>
 
                 <h3 id="method_set">
-        <div class="location">at line 9</div>
+        <div class="location">at line 11</div>
         <code>            public            
-    <strong>set</strong>(<abbr title="$value">$value</abbr> $value)</code>
+    <strong>set</strong>(mixed $value)</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Sets $value as raw value to this property.</p>
+        <p>And the value is casted by the property&#039;s type&#039;.</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td><abbr title="$value">$value</abbr></td>
+                <td>mixed</td>
                 <td>$value</td>
                 <td>mixed</td>
             </tr>
@@ -195,19 +176,19 @@
     </div>
 
                 <h3 id="method_get">
-        <div class="location">in <a href="XCube_AbstractProperty.html#method_get"><abbr title="XCube_AbstractProperty">XCube_AbstractProperty</abbr></a> at line 47</div>
+        <div class="location">in <a href="XCore/Property/AbstractProperty.html#method_get"><abbr title="XCore\Property\AbstractProperty">AbstractProperty</abbr></a> at line 46</div>
         <code>            public            mixed
-    <strong>get</strong>($index = null)</code>
+    <strong>get</strong>(string|int $index = null)</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Gets the value of this property.</p>
         <p></p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td></td>
+                <td>string|int</td>
                 <td>$index</td>
                 <td></td>
             </tr>
@@ -229,13 +210,15 @@
     </div>
 
                 <h3 id="method_isArray">
-        <div class="location">in <a href="XCube_AbstractProperty.html#method_isArray"><abbr title="XCube_AbstractProperty">XCube_AbstractProperty</abbr></a> at line 61</div>
+        <div class="location">in <a href="XCore/Property/AbstractProperty.html#method_isArray"><abbr title="XCore\Property\AbstractProperty">AbstractProperty</abbr></a> at line 60</div>
         <code>            public            bool
     <strong>isArray</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Gets a value indicating whether this object expresses Array.</p>
+        <p>Remarks:<br />
+ This class is a base class for none-array properties, so a sub-class of this<br />
+ does not override this method.</p>
         <div class="tags">
             
                             <h4>Return Value</h4>
@@ -253,12 +236,12 @@
     </div>
 
                 <h3 id="method_isNull">
-        <div class="location">in <a href="XCube_AbstractProperty.html#method_isNull"><abbr title="XCube_AbstractProperty">XCube_AbstractProperty</abbr></a> at line 71</div>
+        <div class="location">in <a href="XCore/Property/AbstractProperty.html#method_isNull"><abbr title="XCore\Property\AbstractProperty">AbstractProperty</abbr></a> at line 69</div>
         <code>            public            bool
     <strong>isNull</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Gets a value indicating whether this object is null.</p>
         <p></p>
         <div class="tags">
             
@@ -277,12 +260,12 @@
     </div>
 
                 <h3 id="method_toNumber">
-        <div class="location">in <a href="XCube_AbstractProperty.html#method_toNumber"><abbr title="XCube_AbstractProperty">XCube_AbstractProperty</abbr></a> at line 81</div>
+        <div class="location">in <a href="XCore/Property/AbstractProperty.html#method_toNumber"><abbr title="XCore\Property\AbstractProperty">AbstractProperty</abbr></a> at line 78</div>
         <code>            public            int
     <strong>toNumber</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Gets a value as integer.</p>
         <p></p>
         <div class="tags">
             
@@ -301,12 +284,12 @@
     </div>
 
                 <h3 id="method_toString">
-        <div class="location">in <a href="XCube_AbstractProperty.html#method_toString"><abbr title="XCube_AbstractProperty">XCube_AbstractProperty</abbr></a> at line 91</div>
+        <div class="location">in <a href="XCore/Property/AbstractProperty.html#method_toString"><abbr title="XCore\Property\AbstractProperty">AbstractProperty</abbr></a> at line 87</div>
         <code>            public            string
     <strong>toString</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Gets a value as string.</p>
         <p></p>
         <div class="tags">
             
@@ -325,12 +308,12 @@
     </div>
 
                 <h3 id="method_toHTML">
-        <div class="location">in <a href="XCube_AbstractProperty.html#method_toHTML"><abbr title="XCube_AbstractProperty">XCube_AbstractProperty</abbr></a> at line 102</div>
+        <div class="location">in <a href="XCore/Property/AbstractProperty.html#method_toHTML"><abbr title="XCore\Property\AbstractProperty">AbstractProperty</abbr></a> at line 97</div>
         <code>            public            string
     <strong>toHTML</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Gets a value as encoded HTML code.</p>
         <p></p>
         <div class="tags">
             
@@ -339,7 +322,7 @@
                     <table>
         <tr>
             <td>string</td>
-            <td>- HTML</td>
+            <td>HTML</td>
         </tr>
     </table>
 
@@ -349,12 +332,12 @@
     </div>
 
                 <h3 id="method_hasFetchControl">
-        <div class="location">in <a href="XCube_AbstractProperty.html#method_hasFetchControl"><abbr title="XCube_AbstractProperty">XCube_AbstractProperty</abbr></a> at line 112</div>
+        <div class="location">in <a href="XCore/Property/AbstractProperty.html#method_hasFetchControl"><abbr title="XCore\Property\AbstractProperty">AbstractProperty</abbr></a> at line 106</div>
         <code>            public            bool
     <strong>hasFetchControl</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Gets a value indicating whether this object has a fetch control.</p>
         <p></p>
         <div class="tags">
             

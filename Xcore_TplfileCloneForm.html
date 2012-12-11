@@ -30,53 +30,11 @@
 
             <table>
                     <tr>
-                <td class="type" id="property_mContext">
-                                                            
-                </td>
-                <td>$mContext</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_mUser">
-                                                            
-                </td>
-                <td>$mUser</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_mFormProperties">
-                                                            
-                </td>
-                <td>$mFormProperties</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_mFieldProperties">
-                                                            
-                </td>
-                <td>$mFieldProperties</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
                 <td class="type" id="property_mErrorFlag">
-                                                            
+                                                            bool
                 </td>
                 <td>$mErrorFlag</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_mErrorMessages">
-                                                            
-                </td>
-                <td>$mErrorMessages</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property__mToken">
-                                                            
-                </td>
-                <td>$_mToken</td>
-                <td class="last"></td>
+                <td class="last">Attention: This is temporary until we will decide the method of managing error.</td>
             </tr>
             </table>
 
@@ -90,7 +48,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_getTokenName">getTokenName</a>()
-                    <p></p>
+                    <p>Gets the token name of this actionform&#039;s token.</p>
                 </td>
                 <td></td>
             </tr>
@@ -100,7 +58,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_prepare">prepare</a>()
-                    <p></p>
+                    <p>Set up form properties and field properties.</p>
                 </td>
                 <td></td>
             </tr>
@@ -109,8 +67,8 @@
                     void
                 </td>
                 <td class="last">
-                    <a href="#method_load">load</a>(<abbr title="$obj">$obj</abbr> $obj)
-                    <p></p>
+                    <a href="#method_load">load</a>(<abbr title="XCore\Form\$obj">$obj</abbr> $obj)
+                    <p>Initializes properties&#039; values from an object.</p>
                 </td>
                 <td></td>
             </tr>
@@ -119,8 +77,8 @@
                     void
                 </td>
                 <td class="last">
-                    <a href="#method_update">update</a>(<abbr title="$obj">$obj</abbr> $obj)
-                    <p></p>
+                    <a href="#method_update">update</a>(<abbr title="XCore\Form\$obj">$obj</abbr> $obj)
+                    <p>Updates an object with properties&#039; values.</p>
                 </td>
                 <td></td>
             </tr>
@@ -140,13 +98,14 @@
         <h2>Details</h2>
 
                         <h3 id="method_getTokenName">
-        <div class="location">at line 5</div>
+        <div class="location">at line 8</div>
         <code>            public            string
     <strong>getTokenName</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Gets the token name of this actionform&#039;s token.</p>
+        <p>Return token name. If the sub-class doesn&#039;t override this member<br />
+ function, features about one time tokens aren&#039;t used.</p>
         <div class="tags">
             
                             <h4>Return Value</h4>
@@ -154,7 +113,7 @@
                     <table>
         <tr>
             <td>string</td>
-            <td>Return token name. If the sub-class doesn&#039;t override this member function, features about one time tokens aren&#039;t used.</td>
+            <td></td>
         </tr>
     </table>
 
@@ -164,12 +123,12 @@
     </div>
 
                 <h3 id="method_prepare">
-        <div class="location">at line 10</div>
+        <div class="location">at line 13</div>
         <code>            public            
     <strong>prepare</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Set up form properties and field properties.</p>
         <p></p>
         <div class="tags">
             
@@ -179,19 +138,24 @@
     </div>
 
                 <h3 id="method_load">
-        <div class="location">at line 40</div>
+        <div class="location">at line 43</div>
         <code>            public            void
-    <strong>load</strong>(<abbr title="$obj">$obj</abbr> $obj)</code>
+    <strong>load</strong>(<abbr title="XCore\Form\$obj">$obj</abbr> $obj)</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Initializes properties&#039; values from an object.</p>
+        <p>Set initial values to this action form from a object. This member<br />
+ function mediates between the logic and the validation. For example,<br />
+ developers can use this method to load values from XoopsSimpleObject.<br />
+<br />
+ This member function is abstract. But, the sub-class of this class<br />
+ doesn&#039;t have to implement this.</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td><abbr title="$obj">$obj</abbr></td>
+                <td><abbr title="XCore\Form\$obj">$obj</abbr></td>
                 <td>$obj</td>
                 <td>mixed</td>
             </tr>
@@ -203,7 +167,7 @@
                     <table>
         <tr>
             <td>void</td>
-            <td>Set initial values to this action form from a object. This member function mediates between the logic and the validation. For example, developers can use this method to load values from XoopsSimpleObject. This member function is abstract. But, the sub-class of this class doesn&#039;t have to implement this.</td>
+            <td></td>
         </tr>
     </table>
 
@@ -213,19 +177,24 @@
     </div>
 
                 <h3 id="method_update">
-        <div class="location">at line 46</div>
+        <div class="location">at line 49</div>
         <code>            public            void
-    <strong>update</strong>(<abbr title="$obj">$obj</abbr> $obj)</code>
+    <strong>update</strong>(<abbr title="XCore\Form\$obj">$obj</abbr> $obj)</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Updates an object with properties&#039; values.</p>
+        <p>Set input values to a object from this action form. This member function<br />
+ mediates between the logic and the result of validations. For example,<br />
+ developers can use this method to set values to XoopsSimpleObject.<br />
+<br />
+ This member function is abstract. But, the sub-class of this class<br />
+ doesn&#039;t have to implement this.</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td><abbr title="$obj">$obj</abbr></td>
+                <td><abbr title="XCore\Form\$obj">$obj</abbr></td>
                 <td>$obj</td>
                 <td>mixed</td>
             </tr>
@@ -237,7 +206,7 @@
                     <table>
         <tr>
             <td>void</td>
-            <td>Set input values to a object from this action form. This member function mediates between the logic and the result of validations. For example, developers can use this method to set values to XoopsSimpleObject. This member function is abstract. But, the sub-class of this class doesn&#039;t have to implement this.</td>
+            <td></td>
         </tr>
     </table>
 
@@ -247,7 +216,7 @@
     </div>
 
                 <h3 id="method_validateTpl_tplset">
-        <div class="location">at line 27</div>
+        <div class="location">at line 30</div>
         <code>            public            
     <strong>validateTpl_tplset</strong>()</code>
     </h3>

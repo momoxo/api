@@ -22,34 +22,13 @@
     <h1><a href=".html"></a>ShadePlus_SoapClient</h1>
     </div>
         <div class="content">
-                <p>class    <strong>ShadePlus_SoapClient</strong>        extends <a href="XCube_AbstractServiceClient.html"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a></p>
+                <p>class    <strong>ShadePlus_SoapClient</strong>        extends <a href="XCore/Kernel/AbstractServiceClient.html"><abbr title="XCore\Kernel\AbstractServiceClient">AbstractServiceClient</abbr></a></p>
 
     
     
             <h2>Properties</h2>
 
             <table>
-                    <tr>
-                <td class="type" id="property_mService">
-                                                            
-                </td>
-                <td>$mService</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_mClientErrorStr">
-                                                            
-                </td>
-                <td>$mClientErrorStr</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_mUser">
-                                                            
-                </td>
-                <td>$mUser</td>
-                <td class="last"></td>
-            </tr>
                     <tr>
                 <td class="type" id="property_mClient">
                                                             
@@ -68,10 +47,10 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method___construct">__construct</a>($service)
+                    <a href="#method___construct">__construct</a>(<a href="XCube_Service.html"><abbr title="XCube_Service">XCube_Service</abbr></a> $service)
                     <p></p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_AbstractServiceClient.html#method___construct"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Kernel/AbstractServiceClient.html#method___construct"><abbr title="XCore\Kernel\AbstractServiceClient">AbstractServiceClient</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -81,7 +60,7 @@
                     <a href="#method_prepare">prepare</a>()
                     <p></p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_AbstractServiceClient.html#method_prepare"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Kernel/AbstractServiceClient.html#method_prepare"><abbr title="XCore\Kernel\AbstractServiceClient">AbstractServiceClient</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -91,7 +70,7 @@
                     <a href="#method_setUser">setUser</a>($user)
                     <p></p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_AbstractServiceClient.html#method_setUser"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Kernel/AbstractServiceClient.html#method_setUser"><abbr title="XCore\Kernel\AbstractServiceClient">AbstractServiceClient</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -111,7 +90,7 @@
                     <a href="#method_getOperationData">getOperationData</a>($operation)
                     <p></p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_AbstractServiceClient.html#method_getOperationData"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Kernel/AbstractServiceClient.html#method_getOperationData"><abbr title="XCore\Kernel\AbstractServiceClient">AbstractServiceClient</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -121,7 +100,7 @@
                     <a href="#method_setError">setError</a>($message)
                     <p></p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_AbstractServiceClient.html#method_setError"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Kernel/AbstractServiceClient.html#method_setError"><abbr title="XCore\Kernel\AbstractServiceClient">AbstractServiceClient</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -131,7 +110,7 @@
                     <a href="#method_getError">getError</a>()
                     <p></p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_AbstractServiceClient.html#method_getError"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Kernel/AbstractServiceClient.html#method_getError"><abbr title="XCore\Kernel\AbstractServiceClient">AbstractServiceClient</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -169,9 +148,9 @@
         <h2>Details</h2>
 
                         <h3 id="method___construct">
-        <div class="location">in <a href="XCube_AbstractServiceClient.html#method___construct"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a> at line 17</div>
+        <div class="location">in <a href="XCore/Kernel/AbstractServiceClient.html#method___construct"><abbr title="XCore\Kernel\AbstractServiceClient">AbstractServiceClient</abbr></a> at line 30</div>
         <code>            public            
-    <strong>__construct</strong>($service)</code>
+    <strong>__construct</strong>(<a href="XCube_Service.html"><abbr title="XCube_Service">XCube_Service</abbr></a> $service)</code>
     </h3>
     <div class="details">
         <p></p>
@@ -181,7 +160,7 @@
 
                     <table>
                     <tr>
-                <td></td>
+                <td><a href="XCube_Service.html"><abbr title="XCube_Service">XCube_Service</abbr></a></td>
                 <td>$service</td>
                 <td></td>
             </tr>
@@ -194,7 +173,7 @@
     </div>
 
                 <h3 id="method_prepare">
-        <div class="location">in <a href="XCube_AbstractServiceClient.html#method_prepare"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a> at line 22</div>
+        <div class="location">in <a href="XCore/Kernel/AbstractServiceClient.html#method_prepare"><abbr title="XCore\Kernel\AbstractServiceClient">AbstractServiceClient</abbr></a> at line 35</div>
         <code>            public            
     <strong>prepare</strong>()</code>
     </h3>
@@ -209,7 +188,7 @@
     </div>
 
                 <h3 id="method_setUser">
-        <div class="location">in <a href="XCube_AbstractServiceClient.html#method_setUser"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a> at line 26</div>
+        <div class="location">in <a href="XCore/Kernel/AbstractServiceClient.html#method_setUser"><abbr title="XCore\Kernel\AbstractServiceClient">AbstractServiceClient</abbr></a> at line 39</div>
         <code>            public            
     <strong>setUser</strong>($user)</code>
     </h3>
@@ -234,7 +213,7 @@
     </div>
 
                 <h3 id="method_call">
-        <div class="location">at line 16</div>
+        <div class="location">at line 17</div>
         <code>            public            
     <strong>call</strong>($operation, $args)</code>
     </h3>
@@ -264,7 +243,7 @@
     </div>
 
                 <h3 id="method_getOperationData">
-        <div class="location">in <a href="XCube_AbstractServiceClient.html#method_getOperationData"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a> at line 35</div>
+        <div class="location">in <a href="XCore/Kernel/AbstractServiceClient.html#method_getOperationData"><abbr title="XCore\Kernel\AbstractServiceClient">AbstractServiceClient</abbr></a> at line 48</div>
         <code>            public            
     <strong>getOperationData</strong>($operation)</code>
     </h3>
@@ -289,7 +268,7 @@
     </div>
 
                 <h3 id="method_setError">
-        <div class="location">in <a href="XCube_AbstractServiceClient.html#method_setError"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a> at line 39</div>
+        <div class="location">in <a href="XCore/Kernel/AbstractServiceClient.html#method_setError"><abbr title="XCore\Kernel\AbstractServiceClient">AbstractServiceClient</abbr></a> at line 52</div>
         <code>            public            
     <strong>setError</strong>($message)</code>
     </h3>
@@ -314,7 +293,7 @@
     </div>
 
                 <h3 id="method_getError">
-        <div class="location">in <a href="XCube_AbstractServiceClient.html#method_getError"><abbr title="XCube_AbstractServiceClient">XCube_AbstractServiceClient</abbr></a> at line 44</div>
+        <div class="location">in <a href="XCore/Kernel/AbstractServiceClient.html#method_getError"><abbr title="XCore\Kernel\AbstractServiceClient">AbstractServiceClient</abbr></a> at line 57</div>
         <code>            public            
     <strong>getError</strong>()</code>
     </h3>
@@ -329,7 +308,7 @@
     </div>
 
                 <h3 id="method_ShadePlus_SoapClient">
-        <div class="location">at line 9</div>
+        <div class="location">at line 10</div>
         <code>            public            
     <strong>ShadePlus_SoapClient</strong>($service)</code>
     </h3>
@@ -354,7 +333,7 @@
     </div>
 
                 <h3 id="method__encodeUTF8">
-        <div class="location">at line 34</div>
+        <div class="location">at line 35</div>
         <code>            public            
     <strong>_encodeUTF8</strong>($arr, $languageManager)</code>
     </h3>
@@ -384,7 +363,7 @@
     </div>
 
                 <h3 id="method__decodeUTF8">
-        <div class="location">at line 48</div>
+        <div class="location">at line 49</div>
         <code>            public            
     <strong>_decodeUTF8</strong>($arr, $languageManager)</code>
     </h3>

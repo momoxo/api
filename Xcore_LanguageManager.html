@@ -36,6 +36,13 @@
                 <td>$mLanguageName</td>
                 <td class="last"></td>
             </tr>
+                    <tr>
+                <td class="type" id="property_mLocaleName">
+                                                            string
+                </td>
+                <td>$mLocaleName</td>
+                <td class="last"></td>
+            </tr>
             </table>
 
     
@@ -47,10 +54,10 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method___construct">__construct</a>()
-                    <p>Return new LanguageManager instance</p>
+                    <a href="#method_LanguageManager">LanguageManager</a>()
+                    <p></p>
                 </td>
-                <td><small>from&nbsp;<a href="XCore/Kernel/LanguageManager.html#method___construct"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Kernel/LanguageManager.html#method_LanguageManager"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -67,7 +74,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_setLocale">setLocale</a>(string $locale)
+                    <a href="#method_setLocale">setLocale</a>($locale)
                     <p>Set locale name.</p>
                 </td>
                 <td><small>from&nbsp;<a href="XCore/Kernel/LanguageManager.html#method_setLocale"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a></small></td>
@@ -174,6 +181,26 @@
             </tr>
                     <tr>
                 <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getFallbackLanguage">getFallbackLanguage</a>()
+                    <p>Return default language name.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getFallbackLocale">getFallbackLocale</a>()
+                    <p>Return default locale name.</p>
+                </td>
+                <td><small>from&nbsp;<a href="XCore/Kernel/LanguageManager.html#method_getFallbackLocale"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
                     
                 </td>
                 <td class="last">
@@ -272,28 +299,18 @@
                 </td>
                 <td></td>
             </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method_getFallbackLanguage">getFallbackLanguage</a>()
-                    <p></p>
-                </td>
-                <td></td>
-            </tr>
             </table>
 
 
         <h2>Details</h2>
 
-                        <h3 id="method___construct">
-        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method___construct"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 38</div>
+                        <h3 id="method_LanguageManager">
+        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method_LanguageManager"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 35</div>
         <code>            public            
-    <strong>__construct</strong>()</code>
+    <strong>LanguageManager</strong>()</code>
     </h3>
     <div class="details">
-        <p>Return new LanguageManager instance</p>
+        <p></p>
         <p></p>
         <div class="tags">
             
@@ -318,9 +335,9 @@
     </div>
 
                 <h3 id="method_setLocale">
-        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method_setLocale"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 56</div>
+        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method_setLocale"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 54</div>
         <code>            public            
-    <strong>setLocale</strong>(string $locale)</code>
+    <strong>setLocale</strong>($locale)</code>
     </h3>
     <div class="details">
         <p>Set locale name.</p>
@@ -330,9 +347,9 @@
 
                     <table>
                     <tr>
-                <td>string</td>
+                <td></td>
                 <td>$locale</td>
-                <td>locale name</td>
+                <td></td>
             </tr>
             </table>
 
@@ -343,7 +360,7 @@
     </div>
 
                 <h3 id="method_getLocale">
-        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method_getLocale"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 65</div>
+        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method_getLocale"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 64</div>
         <code>            public            string
     <strong>getLocale</strong>()</code>
     </h3>
@@ -392,7 +409,7 @@
     </div>
 
                 <h3 id="method_getLanguage">
-        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method_getLanguage"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 83</div>
+        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method_getLanguage"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 84</div>
         <code>            public            string
     <strong>getLanguage</strong>()</code>
     </h3>
@@ -456,7 +473,7 @@
     </div>
 
                 <h3 id="method_loadThemeMessageCatalog">
-        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method_loadThemeMessageCatalog"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 107</div>
+        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method_loadThemeMessageCatalog"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 111</div>
         <code>            public            
     <strong>loadThemeMessageCatalog</strong>(string $themeName)</code>
     </h3>
@@ -598,7 +615,7 @@
     </div>
 
                 <h3 id="method_translate">
-        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method_translate"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 147</div>
+        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method_translate"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 159</div>
         <code>            public            string
     <strong>translate</strong>(string $word)</code>
     </h3>
@@ -616,6 +633,54 @@
             </tr>
             </table>
 
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getFallbackLanguage">
+        <div class="location">at line 226</div>
+        <code>            public            string
+    <strong>getFallbackLanguage</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Return default language name.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getFallbackLocale">
+        <div class="location">in <a href="XCore/Kernel/LanguageManager.html#method_getFallbackLocale"><abbr title="XCore\Kernel\LanguageManager">LanguageManager</abbr></a> at line 181</div>
+        <code>            public            string
+    <strong>getFallbackLocale</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Return default locale name.</p>
+        <p></p>
+        <div class="tags">
             
                             <h4>Return Value</h4>
 
@@ -865,21 +930,6 @@
             </tr>
             </table>
 
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_getFallbackLanguage">
-        <div class="location">at line 226</div>
-        <code>            public            
-    <strong>getFallbackLanguage</strong>()</code>
-    </h3>
-    <div class="details">
-        <p></p>
-        <p></p>
-        <div class="tags">
             
             
             

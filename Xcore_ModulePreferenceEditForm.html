@@ -30,53 +30,11 @@
 
             <table>
                     <tr>
-                <td class="type" id="property_mContext">
-                                                            
-                </td>
-                <td>$mContext</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_mUser">
-                                                            
-                </td>
-                <td>$mUser</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_mFormProperties">
-                                                            
-                </td>
-                <td>$mFormProperties</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_mFieldProperties">
-                                                            
-                </td>
-                <td>$mFieldProperties</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
                 <td class="type" id="property_mErrorFlag">
-                                                            
+                                                            bool
                 </td>
                 <td>$mErrorFlag</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_mErrorMessages">
-                                                            
-                </td>
-                <td>$mErrorMessages</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property__mToken">
-                                                            
-                </td>
-                <td>$_mToken</td>
-                <td class="last"></td>
+                <td class="last">Attention: This is temporary until we will decide the method of managing error.</td>
             </tr>
                     <tr>
                 <td class="type" id="property_mKeyName">
@@ -104,7 +62,7 @@
                 </td>
                 <td class="last">
                     <a href="#method___construct">__construct</a>($module)
-                    <p></p>
+                    <p>Constructor.</p>
                 </td>
                 <td></td>
             </tr>
@@ -114,7 +72,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_getTokenName">getTokenName</a>()
-                    <p></p>
+                    <p>Gets the token name of this actionform&#039;s token.</p>
                 </td>
                 <td></td>
             </tr>
@@ -144,7 +102,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_prepare">prepare</a>($configArr)
-                    <p></p>
+                    <p>Set up form properties and field properties.</p>
                 </td>
                 <td><small>from&nbsp;<a href="Xcore_PreferenceEditForm.html#method_prepare"><abbr title="Xcore_PreferenceEditForm">Xcore_PreferenceEditForm</abbr></a></small></td>
             </tr>
@@ -164,7 +122,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_update">update</a>($configArr)
-                    <p></p>
+                    <p>Updates an object with properties&#039; values.</p>
                 </td>
                 <td><small>from&nbsp;<a href="Xcore_PreferenceEditForm.html#method_update"><abbr title="Xcore_PreferenceEditForm">Xcore_PreferenceEditForm</abbr></a></small></td>
             </tr>
@@ -174,12 +132,12 @@
         <h2>Details</h2>
 
                         <h3 id="method___construct">
-        <div class="location">at line 119</div>
+        <div class="location">at line 127</div>
         <code>            public            
     <strong>__construct</strong>($module)</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Constructor.</p>
         <p></p>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -199,13 +157,14 @@
     </div>
 
                 <h3 id="method_getTokenName">
-        <div class="location">at line 125</div>
+        <div class="location">at line 133</div>
         <code>            public            string
     <strong>getTokenName</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Gets the token name of this actionform&#039;s token.</p>
+        <p>Return token name. If the sub-class doesn&#039;t override this member<br />
+ function, features about one time tokens aren&#039;t used.</p>
         <div class="tags">
             
                             <h4>Return Value</h4>
@@ -213,7 +172,7 @@
                     <table>
         <tr>
             <td>string</td>
-            <td>Return token name. If the sub-class doesn&#039;t override this member function, features about one time tokens aren&#039;t used.</td>
+            <td></td>
         </tr>
     </table>
 
@@ -223,7 +182,7 @@
     </div>
 
                 <h3 id="method_getCategoryId">
-        <div class="location">at line 130</div>
+        <div class="location">at line 138</div>
         <code>            public            
     <strong>getCategoryId</strong>()</code>
     </h3>
@@ -238,7 +197,7 @@
     </div>
 
                 <h3 id="method_getModuleId">
-        <div class="location">at line 135</div>
+        <div class="location">at line 143</div>
         <code>            public            
     <strong>getModuleId</strong>()</code>
     </h3>
@@ -253,12 +212,12 @@
     </div>
 
                 <h3 id="method_prepare">
-        <div class="location">in <a href="Xcore_PreferenceEditForm.html#method_prepare"><abbr title="Xcore_PreferenceEditForm">Xcore_PreferenceEditForm</abbr></a> at line 29</div>
+        <div class="location">in <a href="Xcore_PreferenceEditForm.html#method_prepare"><abbr title="Xcore_PreferenceEditForm">Xcore_PreferenceEditForm</abbr></a> at line 37</div>
         <code>            public            
     <strong>prepare</strong>($configArr)</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Set up form properties and field properties.</p>
         <p></p>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -278,7 +237,7 @@
     </div>
 
                 <h3 id="method_getImploadValue">
-        <div class="location">in <a href="Xcore_PreferenceEditForm.html#method_getImploadValue"><abbr title="Xcore_PreferenceEditForm">Xcore_PreferenceEditForm</abbr></a> at line 89</div>
+        <div class="location">in <a href="Xcore_PreferenceEditForm.html#method_getImploadValue"><abbr title="Xcore_PreferenceEditForm">Xcore_PreferenceEditForm</abbr></a> at line 97</div>
         <code>            public            
     <strong>getImploadValue</strong>($key)</code>
     </h3>
@@ -303,13 +262,18 @@
     </div>
 
                 <h3 id="method_update">
-        <div class="location">in <a href="Xcore_PreferenceEditForm.html#method_update"><abbr title="Xcore_PreferenceEditForm">Xcore_PreferenceEditForm</abbr></a> at line 95</div>
+        <div class="location">in <a href="Xcore_PreferenceEditForm.html#method_update"><abbr title="Xcore_PreferenceEditForm">Xcore_PreferenceEditForm</abbr></a> at line 103</div>
         <code>            public            void
     <strong>update</strong>($configArr)</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Updates an object with properties&#039; values.</p>
+        <p>Set input values to a object from this action form. This member function<br />
+ mediates between the logic and the result of validations. For example,<br />
+ developers can use this method to set values to XoopsSimpleObject.<br />
+<br />
+ This member function is abstract. But, the sub-class of this class<br />
+ doesn&#039;t have to implement this.</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
@@ -327,7 +291,7 @@
                     <table>
         <tr>
             <td>void</td>
-            <td>Set input values to a object from this action form. This member function mediates between the logic and the result of validations. For example, developers can use this method to set values to XoopsSimpleObject. This member function is abstract. But, the sub-class of this class doesn&#039;t have to implement this.</td>
+            <td></td>
         </tr>
     </table>
 

@@ -22,7 +22,7 @@
     <h1><a href=".html"></a>Xcore_BlockEditForm</h1>
     </div>
         <div class="content">
-                <p>class    <strong>Xcore_BlockEditForm</strong>        extends <a href="XCube_ActionForm.html"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a></p>
+                <p>class    <strong>Xcore_BlockEditForm</strong>        extends <a href="XCore/Form/ActionForm.html"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a></p>
 
     
     
@@ -30,53 +30,11 @@
 
             <table>
                     <tr>
-                <td class="type" id="property_mContext">
-                                                            
-                </td>
-                <td>$mContext</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_mUser">
-                                                            
-                </td>
-                <td>$mUser</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_mFormProperties">
-                                                            
-                </td>
-                <td>$mFormProperties</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_mFieldProperties">
-                                                            
-                </td>
-                <td>$mFieldProperties</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
                 <td class="type" id="property_mErrorFlag">
-                                                            
+                                                            bool
                 </td>
                 <td>$mErrorFlag</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_mErrorMessages">
-                                                            
-                </td>
-                <td>$mErrorMessages</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property__mToken">
-                                                            
-                </td>
-                <td>$_mToken</td>
-                <td class="last"></td>
+                <td class="last">Attention: This is temporary until we will decide the method of managing error.</td>
             </tr>
             </table>
 
@@ -90,9 +48,9 @@
                 </td>
                 <td class="last">
                     <a href="#method___construct">__construct</a>()
-                    <p></p>
+                    <p>Constructor.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_ActionForm.html#method___construct"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Form/ActionForm.html#method___construct"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -100,7 +58,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_prepare">prepare</a>()
-                    <p></p>
+                    <p>Set up form properties and field properties.</p>
                 </td>
                 <td></td>
             </tr>
@@ -110,7 +68,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_getTokenName">getTokenName</a>()
-                    <p></p>
+                    <p>Gets the token name of this actionform&#039;s token.</p>
                 </td>
                 <td></td>
             </tr>
@@ -120,9 +78,9 @@
                 </td>
                 <td class="last">
                     <a href="#method_getToken">getToken</a>()
-                    <p></p>
+                    <p>Gets the token value of this actionform&#039;s token.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_ActionForm.html#method_getToken"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Form/ActionForm.html#method_getToken"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -130,9 +88,9 @@
                 </td>
                 <td class="last">
                     <a href="#method_getTokenErrorMessage">getTokenErrorMessage</a>()
-                    <p></p>
+                    <p>Gets message about the failed validation of token.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_ActionForm.html#method_getTokenErrorMessage"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Form/ActionForm.html#method_getTokenErrorMessage"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -140,9 +98,9 @@
                 </td>
                 <td class="last">
                     <a href="#method_set">set</a>()
-                    <p></p>
+                    <p>Set raw value as the value of the form property.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_ActionForm.html#method_set"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Form/ActionForm.html#method_set"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -152,17 +110,17 @@
                     <a href="#method_setVar">setVar</a>()
                     <p></p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_ActionForm.html#method_setVar"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Form/ActionForm.html#method_setVar"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
                     mixed
                 </td>
                 <td class="last">
-                    <a href="#method_get">get</a>(<abbr title="$key">$key</abbr> $key, <abbr title="$index">$index</abbr> $index = null)
-                    <p></p>
+                    <a href="#method_get">get</a>(string $key, string $index = null)
+                    <p>Gets raw value.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_ActionForm.html#method_get"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Form/ActionForm.html#method_get"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -172,17 +130,17 @@
                     <a href="#method_getVar">getVar</a>($key, $index = null)
                     <p></p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_ActionForm.html#method_getVar"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Form/ActionForm.html#method_getVar"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
-                    <a href="XCube_AbstractProperty.html"><abbr title="XCube_AbstractProperty">XCube_AbstractProperty</abbr></a>[]
+                    <a href="XCore/Property/AbstractProperty.html"><abbr title="XCore\Property\AbstractProperty">AbstractProperty</abbr></a>[]
                 </td>
                 <td class="last">
                     <a href="#method_getFormProperties">getFormProperties</a>()
-                    <p></p>
+                    <p>Gets form properties of this member property.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_ActionForm.html#method_getFormProperties"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Form/ActionForm.html#method_getFormProperties"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -190,19 +148,9 @@
                 </td>
                 <td class="last">
                     <a href="#method_fetch">fetch</a>()
-                    <p></p>
+                    <p>Fetches values through the request object.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_ActionForm.html#method_fetch"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    void
-                </td>
-                <td class="last">
-                    <a href="#method__validateToken">_validateToken</a>()
-                    <p></p>
-                </td>
-                <td><small>from&nbsp;<a href="XCube_ActionForm.html#method__validateToken"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Form/ActionForm.html#method_fetch"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -210,9 +158,9 @@
                 </td>
                 <td class="last">
                     <a href="#method_validate">validate</a>()
-                    <p></p>
+                    <p>Validates fetched values.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_ActionForm.html#method_validate"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Form/ActionForm.html#method_validate"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -220,19 +168,19 @@
                 </td>
                 <td class="last">
                     <a href="#method_hasError">hasError</a>()
-                    <p></p>
+                    <p>Gets a value indicating whether this action form keeps error messages or error flag.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_ActionForm.html#method_hasError"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Form/ActionForm.html#method_hasError"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
                     
                 </td>
                 <td class="last">
-                    <a href="#method_addErrorMessage">addErrorMessage</a>(<abbr title="$message">$message</abbr> $message)
-                    <p></p>
+                    <a href="#method_addErrorMessage">addErrorMessage</a>(<abbr title="XCore\Form\$message">$message</abbr> $message)
+                    <p>Adds an message to error message buffer of the form.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_ActionForm.html#method_addErrorMessage"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Form/ActionForm.html#method_addErrorMessage"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -240,17 +188,17 @@
                 </td>
                 <td class="last">
                     <a href="#method_getErrorMessages">getErrorMessages</a>()
-                    <p></p>
+                    <p>Gets error messages.</p>
                 </td>
-                <td><small>from&nbsp;<a href="XCube_ActionForm.html#method_getErrorMessages"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="XCore/Form/ActionForm.html#method_getErrorMessages"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
                     void
                 </td>
                 <td class="last">
-                    <a href="#method_load">load</a>(<abbr title="$obj">$obj</abbr> $obj)
-                    <p></p>
+                    <a href="#method_load">load</a>(<abbr title="XCore\Form\$obj">$obj</abbr> $obj)
+                    <p>Initializes properties&#039; values from an object.</p>
                 </td>
                 <td></td>
             </tr>
@@ -259,8 +207,8 @@
                     void
                 </td>
                 <td class="last">
-                    <a href="#method_update">update</a>(<abbr title="$obj">$obj</abbr> $obj)
-                    <p></p>
+                    <a href="#method_update">update</a>(<abbr title="XCore\Form\$obj">$obj</abbr> $obj)
+                    <p>Updates an object with properties&#039; values.</p>
                 </td>
                 <td></td>
             </tr>
@@ -290,12 +238,12 @@
         <h2>Details</h2>
 
                         <h3 id="method___construct">
-        <div class="location">in <a href="XCube_ActionForm.html#method___construct"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a> at line 95</div>
+        <div class="location">in <a href="XCore/Form/ActionForm.html#method___construct"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a> at line 88</div>
         <code>            public            
     <strong>__construct</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Constructor.</p>
         <p></p>
         <div class="tags">
             
@@ -305,12 +253,12 @@
     </div>
 
                 <h3 id="method_prepare">
-        <div class="location">at line 10</div>
+        <div class="location">at line 18</div>
         <code>            public            
     <strong>prepare</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Set up form properties and field properties.</p>
         <p></p>
         <div class="tags">
             
@@ -320,13 +268,14 @@
     </div>
 
                 <h3 id="method_getTokenName">
-        <div class="location">at line 5</div>
+        <div class="location">at line 13</div>
         <code>            public            string
     <strong>getTokenName</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Gets the token name of this actionform&#039;s token.</p>
+        <p>Return token name. If the sub-class doesn&#039;t override this member<br />
+ function, features about one time tokens aren&#039;t used.</p>
         <div class="tags">
             
                             <h4>Return Value</h4>
@@ -334,7 +283,7 @@
                     <table>
         <tr>
             <td>string</td>
-            <td>Return token name. If the sub-class doesn&#039;t override this member function, features about one time tokens aren&#039;t used.</td>
+            <td></td>
         </tr>
     </table>
 
@@ -344,13 +293,15 @@
     </div>
 
                 <h3 id="method_getToken">
-        <div class="location">in <a href="XCube_ActionForm.html#method_getToken"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a> at line 132</div>
+        <div class="location">in <a href="XCore/Form/ActionForm.html#method_getToken"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a> at line 125</div>
         <code>            public            string
     <strong>getToken</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Gets the token value of this actionform&#039;s token.</p>
+        <p>Generate token value, register it to sessions, return it. This member<br />
+ function should be called in templates. The subclass can override this<br />
+ to change the logic for generating token value.</p>
         <div class="tags">
             
                             <h4>Return Value</h4>
@@ -358,7 +309,7 @@
                     <table>
         <tr>
             <td>string</td>
-            <td>Generate token value, register it to sessions, return it. This member function should be called in templates. The subclass can override this to change the logic for generating token value.</td>
+            <td></td>
         </tr>
     </table>
 
@@ -368,12 +319,12 @@
     </div>
 
                 <h3 id="method_getTokenErrorMessage">
-        <div class="location">in <a href="XCube_ActionForm.html#method_getTokenErrorMessage"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a> at line 151</div>
+        <div class="location">in <a href="XCore/Form/ActionForm.html#method_getTokenErrorMessage"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a> at line 143</div>
         <code>            public            string
     <strong>getTokenErrorMessage</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Gets message about the failed validation of token.</p>
         <p></p>
         <div class="tags">
             
@@ -392,13 +343,25 @@
     </div>
 
                 <h3 id="method_set">
-        <div class="location">in <a href="XCube_ActionForm.html#method_set"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a> at line 174</div>
+        <div class="location">in <a href="XCore/Form/ActionForm.html#method_set"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a> at line 165</div>
         <code>            public            
     <strong>set</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Set raw value as the value of the form property.</p>
+        <p>This method is overloaded function.<br />
+<br />
+ \par ActionForm::set($name, $value)<br />
+   Set $value to $name property.<br />
+   \code<br />
+     $this-&gt;set(&#039;name&#039;, &#039;Bob&#039;);  // Set &#039;Bob&#039; to &#039;name&#039;.<br />
+   \endcode<br />
+<br />
+ \par ActionForm::set($name, $index, $value)<br />
+   Set $value to $name array property[$index].<br />
+   \code<br />
+     $this-&gt;set(&#039;names&#039;, 0, &#039;Bob&#039;);  // Set &#039;Bob&#039; to &#039;names[0]&#039;.<br />
+   \endcode</p>
         <div class="tags">
             
             
@@ -407,7 +370,7 @@
     </div>
 
                 <h3 id="method_setVar">
-        <div class="location">in <a href="XCube_ActionForm.html#method_setVar"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a> at line 192</div>
+        <div class="location">in <a href="XCore/Form/ActionForm.html#method_setVar"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a> at line 182</div>
         <code>            public            
     <strong>setVar</strong>()</code>
     </h3>
@@ -422,26 +385,28 @@
     </div>
 
                 <h3 id="method_get">
-        <div class="location">in <a href="XCube_ActionForm.html#method_get"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a> at line 215</div>
+        <div class="location">in <a href="XCore/Form/ActionForm.html#method_get"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a> at line 204</div>
         <code>            public            mixed
-    <strong>get</strong>(<abbr title="$key">$key</abbr> $key, <abbr title="$index">$index</abbr> $index = null)</code>
+    <strong>get</strong>(string $key, string $index = null)</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Gets raw value.</p>
+        <p>Attention:<br />
+ This method returns raw values. Therefore if the value is used in templates,<br />
+ it must needs escaping.</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td><abbr title="$key">$key</abbr></td>
+                <td>string</td>
                 <td>$key</td>
-                <td>string Name of form property.</td>
+                <td>Name of form property.</td>
             </tr>
                     <tr>
-                <td><abbr title="$index">$index</abbr></td>
+                <td>string</td>
                 <td>$index</td>
-                <td>string Subscript for array.</td>
+                <td>Subscript for array.</td>
             </tr>
             </table>
 
@@ -461,7 +426,7 @@
     </div>
 
                 <h3 id="method_getVar">
-        <div class="location">in <a href="XCube_ActionForm.html#method_getVar"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a> at line 223</div>
+        <div class="location">in <a href="XCore/Form/ActionForm.html#method_getVar"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a> at line 212</div>
         <code>            public            
     <strong>getVar</strong>($key, $index = null)</code>
     </h3>
@@ -491,20 +456,21 @@
     </div>
 
                 <h3 id="method_getFormProperties">
-        <div class="location">in <a href="XCube_ActionForm.html#method_getFormProperties"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a> at line 236</div>
-        <code>            public            <a href="XCube_AbstractProperty.html"><abbr title="XCube_AbstractProperty">XCube_AbstractProperty</abbr></a>[]
+        <div class="location">in <a href="XCore/Form/ActionForm.html#method_getFormProperties"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a> at line 225</div>
+        <code>            public            <a href="XCore/Property/AbstractProperty.html"><abbr title="XCore\Property\AbstractProperty">AbstractProperty</abbr></a>[]
     <strong>getFormProperties</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Gets form properties of this member property.</p>
+        <p>Attention:<br />
+ This method may not be must. So it will be renamed in the near future.</p>
         <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table>
         <tr>
-            <td><a href="XCube_AbstractProperty.html"><abbr title="XCube_AbstractProperty">XCube_AbstractProperty</abbr></a>[]</td>
+            <td><a href="XCore/Property/AbstractProperty.html"><abbr title="XCore\Property\AbstractProperty">AbstractProperty</abbr></a>[]</td>
             <td></td>
         </tr>
     </table>
@@ -515,13 +481,24 @@
     </div>
 
                 <h3 id="method_fetch">
-        <div class="location">in <a href="XCube_ActionForm.html#method_fetch"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a> at line 259</div>
+        <div class="location">in <a href="XCore/Form/ActionForm.html#method_fetch"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a> at line 249</div>
         <code>            public            void
     <strong>fetch</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Fetches values through the request object.</p>
+        <p>Fetch the input value, set it and form properties. Those values can be<br />
+ got, through get() method. the sub-class can define own member function<br />
+ to fetch. Define member functions whose name is &quot;fetch&quot; + &quot;form name&quot;.<br />
+ For example, to fetch &quot;message&quot; define &quot;fetchMessage()&quot; function. Those<br />
+ function of the sub-class set value to this action form.<br />
+<br />
+ ```<br />
+ public function fetchModifytime()<br />
+ {<br />
+     $this-&gt;set(&#039;modifytime&#039;, time());<br />
+ }<br />
+ ```</p>
         <div class="tags">
             
                             <h4>Return Value</h4>
@@ -540,45 +517,32 @@
                     <table>
                     <tr>
                 <td>getFromRequest</td>
-                <td>Fetch the input value, set it and form properties. Those values can be got, through get() method. the sub-class can define own member function to fetch. Define member functions whose name is &quot;fetch&quot; + &quot;form name&quot;. For example, to fetch &quot;message&quot; define &quot;fetchMessage()&quot; function. Those function of the sub-class set value to this action form. \code function fetchModifytime() { $this-&gt;set(&#039;modifytime&#039;, time()); } \endcode</td>
+                <td></td>
             </tr>
             </table>
 
                     </div>
     </div>
 
-                <h3 id="method__validateToken">
-        <div class="location">in <a href="XCube_ActionForm.html#method__validateToken"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a> at line 287</div>
-        <code>            public            void
-    <strong>_validateToken</strong>()</code>
-    </h3>
-    <div class="details">
-        <p></p>
-        <p></p>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td>void</td>
-            <td>Validates the token. This method is deprecated, because XCube_Action will be changed for multi-layer. So this method is called by only this class.</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
                 <h3 id="method_validate">
-        <div class="location">in <a href="XCube_ActionForm.html#method_validate"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a> at line 346</div>
+        <div class="location">in <a href="XCore/Form/ActionForm.html#method_validate"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a> at line 329</div>
         <code>            public            void
     <strong>validate</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Validates fetched values.</p>
+        <p>Execute validation, so if a input value is wrong, error messages are<br />
+ added to error message buffer. The procedure of validation is the<br />
+ following:<br />
+<br />
+ 1. If this object have token name, validate one time tokens.<br />
+ 2. Call the validation member function of all field properties.<br />
+ 3. Call the member function that is defined in the sub-class.<br />
+<br />
+ For a basis, validations are done by functions of each field properties.<br />
+ But, the sub-class can define own validation logic. Define member<br />
+ functions whose name is &quot;validate&quot; + &quot;form name&quot;. For example, to<br />
+ validate &quot;message&quot; define &quot;validateMessage()&quot; function.</p>
         <div class="tags">
             
                             <h4>Return Value</h4>
@@ -586,7 +550,7 @@
                     <table>
         <tr>
             <td>void</td>
-            <td>Execute validation, so if a input value is wrong, error messages are added to error message buffer. The procedure of validation is the following: \li 1. If this object have token name, validate one time tokens. \li 2. Call the validation member function of all field properties. \li 3. Call the member function that is defined in the sub-class. For a basis, validations are done by functions of each field properties. But, the sub-class can define own validation logic. Define member functions whose name is &quot;validate&quot; + &quot;form name&quot;. For example, to validate &quot;message&quot; define &quot;validateMessage()&quot; function.</td>
+            <td></td>
         </tr>
     </table>
 
@@ -596,12 +560,12 @@
     </div>
 
                 <h3 id="method_hasError">
-        <div class="location">in <a href="XCube_ActionForm.html#method_hasError"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a> at line 380</div>
+        <div class="location">in <a href="XCore/Form/ActionForm.html#method_hasError"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a> at line 361</div>
         <code>            public            bool
     <strong>hasError</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Gets a value indicating whether this action form keeps error messages or error flag.</p>
         <p></p>
         <div class="tags">
             
@@ -610,7 +574,7 @@
                     <table>
         <tr>
             <td>bool</td>
-            <td>- If the action form is error status, returns true.</td>
+            <td>If the action form is error status, returns true.</td>
         </tr>
     </table>
 
@@ -620,19 +584,19 @@
     </div>
 
                 <h3 id="method_addErrorMessage">
-        <div class="location">in <a href="XCube_ActionForm.html#method_addErrorMessage"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a> at line 390</div>
+        <div class="location">in <a href="XCore/Form/ActionForm.html#method_addErrorMessage"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a> at line 370</div>
         <code>            public            
-    <strong>addErrorMessage</strong>(<abbr title="$message">$message</abbr> $message)</code>
+    <strong>addErrorMessage</strong>(<abbr title="XCore\Form\$message">$message</abbr> $message)</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Adds an message to error message buffer of the form.</p>
         <p></p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td><abbr title="$message">$message</abbr></td>
+                <td><abbr title="XCore\Form\$message">$message</abbr></td>
                 <td>$message</td>
                 <td>string</td>
             </tr>
@@ -645,12 +609,12 @@
     </div>
 
                 <h3 id="method_getErrorMessages">
-        <div class="location">in <a href="XCube_ActionForm.html#method_getErrorMessages"><abbr title="XCube_ActionForm">XCube_ActionForm</abbr></a> at line 400</div>
+        <div class="location">in <a href="XCore/Form/ActionForm.html#method_getErrorMessages"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a> at line 379</div>
         <code>            public            string[]
     <strong>getErrorMessages</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Gets error messages.</p>
         <p></p>
         <div class="tags">
             
@@ -669,19 +633,24 @@
     </div>
 
                 <h3 id="method_load">
-        <div class="location">at line 88</div>
+        <div class="location">at line 96</div>
         <code>            public            void
-    <strong>load</strong>(<abbr title="$obj">$obj</abbr> $obj)</code>
+    <strong>load</strong>(<abbr title="XCore\Form\$obj">$obj</abbr> $obj)</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Initializes properties&#039; values from an object.</p>
+        <p>Set initial values to this action form from a object. This member<br />
+ function mediates between the logic and the validation. For example,<br />
+ developers can use this method to load values from XoopsSimpleObject.<br />
+<br />
+ This member function is abstract. But, the sub-class of this class<br />
+ doesn&#039;t have to implement this.</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td><abbr title="$obj">$obj</abbr></td>
+                <td><abbr title="XCore\Form\$obj">$obj</abbr></td>
                 <td>$obj</td>
                 <td>mixed</td>
             </tr>
@@ -693,7 +662,7 @@
                     <table>
         <tr>
             <td>void</td>
-            <td>Set initial values to this action form from a object. This member function mediates between the logic and the validation. For example, developers can use this method to load values from XoopsSimpleObject. This member function is abstract. But, the sub-class of this class doesn&#039;t have to implement this.</td>
+            <td></td>
         </tr>
     </table>
 
@@ -703,19 +672,24 @@
     </div>
 
                 <h3 id="method_update">
-        <div class="location">at line 111</div>
+        <div class="location">at line 119</div>
         <code>            public            void
-    <strong>update</strong>(<abbr title="$obj">$obj</abbr> $obj)</code>
+    <strong>update</strong>(<abbr title="XCore\Form\$obj">$obj</abbr> $obj)</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Updates an object with properties&#039; values.</p>
+        <p>Set input values to a object from this action form. This member function<br />
+ mediates between the logic and the result of validations. For example,<br />
+ developers can use this method to set values to XoopsSimpleObject.<br />
+<br />
+ This member function is abstract. But, the sub-class of this class<br />
+ doesn&#039;t have to implement this.</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td><abbr title="$obj">$obj</abbr></td>
+                <td><abbr title="XCore\Form\$obj">$obj</abbr></td>
                 <td>$obj</td>
                 <td>mixed</td>
             </tr>
@@ -727,7 +701,7 @@
                     <table>
         <tr>
             <td>void</td>
-            <td>Set input values to a object from this action form. This member function mediates between the logic and the result of validations. For example, developers can use this method to set values to XoopsSimpleObject. This member function is abstract. But, the sub-class of this class doesn&#039;t have to implement this.</td>
+            <td></td>
         </tr>
     </table>
 
@@ -737,7 +711,7 @@
     </div>
 
                 <h3 id="method_validateBmodule">
-        <div class="location">at line 63</div>
+        <div class="location">at line 71</div>
         <code>            public            
     <strong>validateBmodule</strong>()</code>
     </h3>
@@ -752,7 +726,7 @@
     </div>
 
                 <h3 id="method_validateGroupid">
-        <div class="location">at line 80</div>
+        <div class="location">at line 88</div>
         <code>            public            
     <strong>validateGroupid</strong>()</code>
     </h3>

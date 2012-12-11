@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XCore\Form\FieldProperty | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../XCore/Form.html">XCore\Form</a>\FieldProperty</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>FieldProperty</strong></p>
+
+            <div class="description">
+            <p>Used for validating member property values of ActionForm.</p>
+            <p></p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>(<a href="../../XCore/Form/ActionForm.html"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a> $form)
+                    <p>Constructor.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_setDependsByArray">setDependsByArray</a>(string[] $dependsArr)
+                    <p>Initializes the validator list of this field property with the depend rule name list.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_addMessage">addMessage</a>(string $name, string $message)
+                    <p>Adds an error message which will be used in the case which &#039;$name rule&#039; validation is failed.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_renderMessage">renderMessage</a>(string $name)
+                    <p>Gets the error message rendered by Utils::formaString().</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addVar">addVar</a>(string $name, mixed $value)
+                    <p>Adds a virtual variable used by validators.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_validate">validate</a>($form)
+                    <p>Validates form-property with validators which this field property holds.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">at line 59</div>
+        <code>            public            
+    <strong>__construct</strong>(<a href="../../XCore/Form/ActionForm.html"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a> $form)</code>
+    </h3>
+    <div class="details">
+        <p>Constructor.</p>
+        <p>Remarks:<br />
+ Only sub-classes of ActionForm calls this constructor.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../XCore/Form/ActionForm.html"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a></td>
+                <td>$form</td>
+                <td>Parent form.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setDependsByArray">
+        <div class="location">at line 69</div>
+        <code>            public            void
+    <strong>setDependsByArray</strong>(string[] $dependsArr)</code>
+    </h3>
+    <div class="details">
+        <p>Initializes the validator list of this field property with the depend rule name list.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string[]</td>
+                <td>$dependsArr</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addMessage">
+        <div class="location">at line 94</div>
+        <code>            public            void
+    <strong>addMessage</strong>(string $name, string $message)</code>
+    </h3>
+    <div class="details">
+        <p>Adds an error message which will be used in the case which &#039;$name rule&#039; validation is failed.</p>
+        <p>It&#039;s possible to add 3 or greater parameters.<br />
+   These additional parameters are used by Utils::formatString().<br />
+ \code<br />
+   $field-&gt;addMessage(&#039;required&#039;, &quot;{0:ucFirst} is requred.&quot;, &quot;name&quot;);<br />
+ \endcode<br />
+   This feature is helpful for automatic ActionForm generators.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Depend rule name.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td>Error message.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_renderMessage">
+        <div class="location">at line 120</div>
+        <code>            public            string
+    <strong>renderMessage</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+        <p>Gets the error message rendered by Utils::formaString().</p>
+        <p>Gets the error message registered at addMessage(). If the message setting has some<br />
+   arguments, messages are rendered by Utils::formatString().<br />
+ \code<br />
+   $field-&gt;addMessage(&#039;required&#039;, &quot;{0:ucFirst} is requred.&quot;, &quot;name&quot;);<br />
+<br />
+   // Gets &quot;Name is required.&quot;<br />
+   $field-&gt;renderMessage(&#039;required&#039;);<br />
+ \endcode<br />
+   This feature is helpful for automatic ActionForm generators.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Depend rule name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addVar">
+        <div class="location">at line 147</div>
+        <code>            public            
+    <strong>addVar</strong>(string $name, mixed $value)</code>
+    </h3>
+    <div class="details">
+        <p>Adds a virtual variable used by validators.</p>
+        <p>Virtual variables are used for validating by validators. For example,<br />
+   MinlengthValidator needs a value indication a minimum length.<br />
+ \code<br />
+   $field-&gt;addVar(&#039;minlength&#039;, 2);<br />
+ \endcode</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>A name of the variable.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>A value of the variable.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_validate">
+        <div class="location">at line 158</div>
+        <code>            public            
+    <strong>validate</strong>($form)</code>
+    </h3>
+    <div class="details">
+        <p>Validates form-property with validators which this field property holds.</p>
+        <p>Attention:<br />
+ Only ActionForm and its sub-classes should call this method.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$form</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

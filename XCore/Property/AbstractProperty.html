@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>XCore\Property\AbstractProperty | Momoxo API</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Momoxo API</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../XCore/Property.html">XCore\Property</a>\AbstractProperty</h1>
+    </div>
+        <div class="content">
+                <p>abstract class    <strong>AbstractProperty</strong>        extends <a href="../../XCore/Property/PropertyInterface.html"><abbr title="XCore\Property\PropertyInterface">PropertyInterface</abbr></a></p>
+
+            <div class="description">
+            <p>The base class which implements PropertyInterface, for all properties.</p>
+            <p></p>
+        </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table>
+                    <tr>
+                <td class="type" id="property_mValue">
+                                                            <a href="../../XCore/FormFile/FormFile.html"><abbr title="XCore\FormFile\FormFile">FormFile</abbr></a>|string
+                </td>
+                <td>$mValue</td>
+                <td class="last"></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>(string $name)
+                    <p>Constructor.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_set">set</a>(mixed $value)
+                    <p>Sets $value as raw value to this property.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_get">get</a>(string|int $index = null)
+                    <p>Gets the value of this property.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setValue">setValue</a>($arg0 = null, $arg1 = null)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="../../XCore/Property/PropertyInterface.html#method_setValue"><abbr title="XCore\Property\PropertyInterface">PropertyInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getValue">getValue</a>($arg0 = null)
+                    <p></p>
+                </td>
+                <td><small>from&nbsp;<a href="../../XCore/Property/PropertyInterface.html#method_getValue"><abbr title="XCore\Property\PropertyInterface">PropertyInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_isArray">isArray</a>()
+                    <p>Gets a value indicating whether this object expresses Array.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_isNull">isNull</a>()
+                    <p>Gets a value indicating whether this object is null.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_toNumber">toNumber</a>()
+                    <p>Gets a value as integer.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_toString">toString</a>()
+                    <p>Gets a value as string.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_toHTML">toHTML</a>()
+                    <p>Gets a value as encoded HTML code.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_hasFetchControl">hasFetchControl</a>()
+                    <p>Gets a value indicating whether this object has a fetch control.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_fetch">fetch</a>(<a href="../../XCore/Form/ActionForm.html"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a> $form)
+                    <p>Fetches values.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../XCore/Property/PropertyInterface.html#method_fetch"><abbr title="XCore\Property\PropertyInterface">PropertyInterface</abbr></a></small></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">at line 28</div>
+        <code>            public            
+    <strong>__construct</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+        <p>Constructor.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>A name of this property.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_set">
+        <div class="location">at line 38</div>
+        <code>            public            
+    <strong>set</strong>(mixed $value)</code>
+    </h3>
+    <div class="details">
+        <p>Sets $value as raw value to this property.</p>
+        <p>And the value is casted by the property&#039;s type&#039;.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>mixed</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_get">
+        <div class="location">at line 48</div>
+        <code>            public            mixed
+    <strong>get</strong>(string|int $index = null)</code>
+    </h3>
+    <div class="details">
+        <p>Gets the value of this property.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string|int</td>
+                <td>$index</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setValue">
+        <div class="location">in <a href="../../XCore/Property/PropertyInterface.html#method_setValue"><abbr title="XCore\Property\PropertyInterface">PropertyInterface</abbr></a> at line 47</div>
+        <code>            public            
+    <strong>setValue</strong>($arg0 = null, $arg1 = null)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$arg0</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$arg1</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getValue">
+        <div class="location">in <a href="../../XCore/Property/PropertyInterface.html#method_getValue"><abbr title="XCore\Property\PropertyInterface">PropertyInterface</abbr></a> at line 55</div>
+        <code>            public            
+    <strong>getValue</strong>($arg0 = null)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$arg0</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isArray">
+        <div class="location">at line 62</div>
+        <code>            public            bool
+    <strong>isArray</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets a value indicating whether this object expresses Array.</p>
+        <p>Remarks:<br />
+ This class is a base class for none-array properties, so a sub-class of this<br />
+ does not override this method.</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isNull">
+        <div class="location">at line 71</div>
+        <code>            public            bool
+    <strong>isNull</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets a value indicating whether this object is null.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_toNumber">
+        <div class="location">at line 80</div>
+        <code>            public            int
+    <strong>toNumber</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets a value as integer.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_toString">
+        <div class="location">at line 89</div>
+        <code>            public            string
+    <strong>toString</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets a value as string.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_toHTML">
+        <div class="location">at line 99</div>
+        <code>            public            string
+    <strong>toHTML</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets a value as encoded HTML code.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>HTML</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_hasFetchControl">
+        <div class="location">at line 108</div>
+        <code>            public            bool
+    <strong>hasFetchControl</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets a value indicating whether this object has a fetch control.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_fetch">
+        <div class="location">in <a href="../../XCore/Property/PropertyInterface.html#method_fetch"><abbr title="XCore\Property\PropertyInterface">PropertyInterface</abbr></a> at line 120</div>
+        <code>            public            void
+    <strong>fetch</strong>(<a href="../../XCore/Form/ActionForm.html"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a> $form)</code>
+    </h3>
+    <div class="details">
+        <p>Fetches values.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../XCore/Form/ActionForm.html"><abbr title="XCore\Form\ActionForm">ActionForm</abbr></a></td>
+                <td>$form</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

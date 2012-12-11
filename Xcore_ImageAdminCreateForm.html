@@ -30,53 +30,11 @@
 
             <table>
                     <tr>
-                <td class="type" id="property_mContext">
-                                                            
-                </td>
-                <td>$mContext</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_mUser">
-                                                            
-                </td>
-                <td>$mUser</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_mFormProperties">
-                                                            
-                </td>
-                <td>$mFormProperties</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_mFieldProperties">
-                                                            
-                </td>
-                <td>$mFieldProperties</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
                 <td class="type" id="property_mErrorFlag">
-                                                            
+                                                            bool
                 </td>
                 <td>$mErrorFlag</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_mErrorMessages">
-                                                            
-                </td>
-                <td>$mErrorMessages</td>
-                <td class="last"></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property__mToken">
-                                                            
-                </td>
-                <td>$_mToken</td>
-                <td class="last"></td>
+                <td class="last">Attention: This is temporary until we will decide the method of managing error.</td>
             </tr>
                     <tr>
                 <td class="type" id="property_mOldFileName">
@@ -118,7 +76,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_getTokenName">getTokenName</a>()
-                    <p></p>
+                    <p>Gets the token name of this actionform&#039;s token.</p>
                 </td>
                 <td></td>
             </tr>
@@ -128,7 +86,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_prepare">prepare</a>()
-                    <p></p>
+                    <p>Set up form properties and field properties.</p>
                 </td>
                 <td></td>
             </tr>
@@ -158,7 +116,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_validate">validate</a>()
-                    <p></p>
+                    <p>Validates fetched values.</p>
                 </td>
                 <td><small>from&nbsp;<a href="Xcore_ImageUploadForm.html#method_validate"><abbr title="Xcore_ImageUploadForm">Xcore_ImageUploadForm</abbr></a></small></td>
             </tr>
@@ -167,8 +125,8 @@
                     void
                 </td>
                 <td class="last">
-                    <a href="#method_load">load</a>(<abbr title="$obj">$obj</abbr> $obj)
-                    <p></p>
+                    <a href="#method_load">load</a>(<abbr title="XCore\Form\$obj">$obj</abbr> $obj)
+                    <p>Initializes properties&#039; values from an object.</p>
                 </td>
                 <td></td>
             </tr>
@@ -177,8 +135,8 @@
                     void
                 </td>
                 <td class="last">
-                    <a href="#method_update">update</a>(<abbr title="$obj">$obj</abbr> $obj)
-                    <p></p>
+                    <a href="#method_update">update</a>(<abbr title="XCore\Form\$obj">$obj</abbr> $obj)
+                    <p>Updates an object with properties&#039; values.</p>
                 </td>
                 <td></td>
             </tr>
@@ -188,13 +146,14 @@
         <h2>Details</h2>
 
                         <h3 id="method_getTokenName">
-        <div class="location">at line 7</div>
+        <div class="location">at line 11</div>
         <code>            public            string
     <strong>getTokenName</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Gets the token name of this actionform&#039;s token.</p>
+        <p>Return token name. If the sub-class doesn&#039;t override this member<br />
+ function, features about one time tokens aren&#039;t used.</p>
         <div class="tags">
             
                             <h4>Return Value</h4>
@@ -202,7 +161,7 @@
                     <table>
         <tr>
             <td>string</td>
-            <td>Return token name. If the sub-class doesn&#039;t override this member function, features about one time tokens aren&#039;t used.</td>
+            <td></td>
         </tr>
     </table>
 
@@ -212,12 +171,12 @@
     </div>
 
                 <h3 id="method_prepare">
-        <div class="location">at line 12</div>
+        <div class="location">at line 16</div>
         <code>            public            
     <strong>prepare</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Set up form properties and field properties.</p>
         <p></p>
         <div class="tags">
             
@@ -227,7 +186,7 @@
     </div>
 
                 <h3 id="method_validateImgcat_id">
-        <div class="location">in <a href="Xcore_ImageUploadForm.html#method_validateImgcat_id"><abbr title="Xcore_ImageUploadForm">Xcore_ImageUploadForm</abbr></a> at line 56</div>
+        <div class="location">in <a href="Xcore_ImageUploadForm.html#method_validateImgcat_id"><abbr title="Xcore_ImageUploadForm">Xcore_ImageUploadForm</abbr></a> at line 61</div>
         <code>            public            
     <strong>validateImgcat_id</strong>()</code>
     </h3>
@@ -242,7 +201,7 @@
     </div>
 
                 <h3 id="method_validateImage_name">
-        <div class="location">in <a href="Xcore_ImageUploadForm.html#method_validateImage_name"><abbr title="Xcore_ImageUploadForm">Xcore_ImageUploadForm</abbr></a> at line 79</div>
+        <div class="location">in <a href="Xcore_ImageUploadForm.html#method_validateImage_name"><abbr title="Xcore_ImageUploadForm">Xcore_ImageUploadForm</abbr></a> at line 84</div>
         <code>            public            
     <strong>validateImage_name</strong>()</code>
     </h3>
@@ -257,13 +216,24 @@
     </div>
 
                 <h3 id="method_validate">
-        <div class="location">in <a href="Xcore_ImageUploadForm.html#method_validate"><abbr title="Xcore_ImageUploadForm">Xcore_ImageUploadForm</abbr></a> at line 88</div>
+        <div class="location">in <a href="Xcore_ImageUploadForm.html#method_validate"><abbr title="Xcore_ImageUploadForm">Xcore_ImageUploadForm</abbr></a> at line 93</div>
         <code>            public            void
     <strong>validate</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Validates fetched values.</p>
+        <p>Execute validation, so if a input value is wrong, error messages are<br />
+ added to error message buffer. The procedure of validation is the<br />
+ following:<br />
+<br />
+ 1. If this object have token name, validate one time tokens.<br />
+ 2. Call the validation member function of all field properties.<br />
+ 3. Call the member function that is defined in the sub-class.<br />
+<br />
+ For a basis, validations are done by functions of each field properties.<br />
+ But, the sub-class can define own validation logic. Define member<br />
+ functions whose name is &quot;validate&quot; + &quot;form name&quot;. For example, to<br />
+ validate &quot;message&quot; define &quot;validateMessage()&quot; function.</p>
         <div class="tags">
             
                             <h4>Return Value</h4>
@@ -271,7 +241,7 @@
                     <table>
         <tr>
             <td>void</td>
-            <td>Execute validation, so if a input value is wrong, error messages are added to error message buffer. The procedure of validation is the following: \li 1. If this object have token name, validate one time tokens. \li 2. Call the validation member function of all field properties. \li 3. Call the member function that is defined in the sub-class. For a basis, validations are done by functions of each field properties. But, the sub-class can define own validation logic. Define member functions whose name is &quot;validate&quot; + &quot;form name&quot;. For example, to validate &quot;message&quot; define &quot;validateMessage()&quot; function.</td>
+            <td></td>
         </tr>
     </table>
 
@@ -281,19 +251,24 @@
     </div>
 
                 <h3 id="method_load">
-        <div class="location">at line 35</div>
+        <div class="location">at line 39</div>
         <code>            public            void
-    <strong>load</strong>(<abbr title="$obj">$obj</abbr> $obj)</code>
+    <strong>load</strong>(<abbr title="XCore\Form\$obj">$obj</abbr> $obj)</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Initializes properties&#039; values from an object.</p>
+        <p>Set initial values to this action form from a object. This member<br />
+ function mediates between the logic and the validation. For example,<br />
+ developers can use this method to load values from XoopsSimpleObject.<br />
+<br />
+ This member function is abstract. But, the sub-class of this class<br />
+ doesn&#039;t have to implement this.</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td><abbr title="$obj">$obj</abbr></td>
+                <td><abbr title="XCore\Form\$obj">$obj</abbr></td>
                 <td>$obj</td>
                 <td>mixed</td>
             </tr>
@@ -305,7 +280,7 @@
                     <table>
         <tr>
             <td>void</td>
-            <td>Set initial values to this action form from a object. This member function mediates between the logic and the validation. For example, developers can use this method to load values from XoopsSimpleObject. This member function is abstract. But, the sub-class of this class doesn&#039;t have to implement this.</td>
+            <td></td>
         </tr>
     </table>
 
@@ -315,19 +290,24 @@
     </div>
 
                 <h3 id="method_update">
-        <div class="location">at line 45</div>
+        <div class="location">at line 49</div>
         <code>            public            void
-    <strong>update</strong>(<abbr title="$obj">$obj</abbr> $obj)</code>
+    <strong>update</strong>(<abbr title="XCore\Form\$obj">$obj</abbr> $obj)</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Updates an object with properties&#039; values.</p>
+        <p>Set input values to a object from this action form. This member function<br />
+ mediates between the logic and the result of validations. For example,<br />
+ developers can use this method to set values to XoopsSimpleObject.<br />
+<br />
+ This member function is abstract. But, the sub-class of this class<br />
+ doesn&#039;t have to implement this.</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td><abbr title="$obj">$obj</abbr></td>
+                <td><abbr title="XCore\Form\$obj">$obj</abbr></td>
                 <td>$obj</td>
                 <td>mixed</td>
             </tr>
@@ -339,7 +319,7 @@
                     <table>
         <tr>
             <td>void</td>
-            <td>Set input values to a object from this action form. This member function mediates between the logic and the result of validations. For example, developers can use this method to set values to XoopsSimpleObject. This member function is abstract. But, the sub-class of this class doesn&#039;t have to implement this.</td>
+            <td></td>
         </tr>
     </table>
 
