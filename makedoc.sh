@@ -14,6 +14,10 @@ fi
 
 if [ ! -d $WORKING_DIR/_deploy ]; then
   git clone -b gh-pages git@github.com:momoxo/api _deploy
+else
+  pushd $WORKING_DIR/_deploy
+    git pull --rebase
+  popd
 fi
 
 php composer.phar self-update
