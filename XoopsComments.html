@@ -167,7 +167,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_initVar">initVar</a>($key, $data_type, $value = null, $required = false, $maxlength = null, $options = &#039;&#039;)
-                    <p>initialize variables for the object</p>
+                    <p></p>
                 </td>
                 <td><small>from&nbsp;<a href="XoopsObject.html#method_initVar"><abbr title="XoopsObject">XoopsObject</abbr></a></small></td>
             </tr>
@@ -187,7 +187,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_assignVars">assignVars</a>($var_arr)
-                    <p>assign values to multiple variables in a batch</p>
+                    <p>You should use this method to initilize object&#039;s properties.</p>
                 </td>
                 <td><small>from&nbsp;<a href="XoopsObject.html#method_assignVars"><abbr title="XoopsObject">XoopsObject</abbr></a></small></td>
             </tr>
@@ -257,7 +257,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_set">set</a>(string $key, mixed $value)
-                    <p>Sets $value to $key property.</p>
+                    <p>You should use this method to change object&#039;s properties.</p>
                 </td>
                 <td><small>from&nbsp;<a href="XoopsObject.html#method_set"><abbr title="XoopsObject">XoopsObject</abbr></a></small></td>
             </tr>
@@ -616,7 +616,7 @@
     <strong>initVar</strong>($key, $data_type, $value = null, $required = false, $maxlength = null, $options = &#039;&#039;)</code>
     </h3>
     <div class="details">
-        <p>initialize variables for the object</p>
+        <p></p>
         <p></p>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -696,8 +696,8 @@
     <strong>assignVars</strong>($var_arr)</code>
     </h3>
     <div class="details">
-        <p>assign values to multiple variables in a batch</p>
-        <p></p>
+        <p>You should use this method to initilize object&#039;s properties.</p>
+        <p>This method may not trigger setDirty().</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
@@ -911,9 +911,8 @@
     <strong>set</strong>(string $key, mixed $value)</code>
     </h3>
     <div class="details">
-        <p>Sets $value to $key property.</p>
-        <p>This method calls setVar(), but make<br />
- not_gpc true for the compatibility with XoopsSimpleObject.</p>
+        <p>You should use this method to change object&#039;s properties.</p>
+        <p>This method may trigger setDirty().</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1163,7 +1162,7 @@
     </div>
 
                 <h3 id="method_XoopsComments">
-        <div class="location">at line 8</div>
+        <div class="location">at line 10</div>
         <code>            public            
     <strong>XoopsComments</strong>($ctable, $id = null)</code>
     </h3>
@@ -1193,7 +1192,7 @@
     </div>
 
                 <h3 id="method_load">
-        <div class="location">at line 37</div>
+        <div class="location">at line 39</div>
         <code>            public            
     <strong>load</strong>($id)</code>
     </h3>
@@ -1218,7 +1217,7 @@
     </div>
 
                 <h3 id="method_store">
-        <div class="location">at line 44</div>
+        <div class="location">at line 46</div>
         <code>            public            
     <strong>store</strong>()</code>
     </h3>
@@ -1233,7 +1232,7 @@
     </div>
 
                 <h3 id="method_delete">
-        <div class="location">at line 76</div>
+        <div class="location">at line 78</div>
         <code>            public            
     <strong>delete</strong>()</code>
     </h3>
@@ -1248,7 +1247,7 @@
     </div>
 
                 <h3 id="method_getCommentTree">
-        <div class="location">at line 104</div>
+        <div class="location">at line 106</div>
         <code>            public            
     <strong>getCommentTree</strong>()</code>
     </h3>
@@ -1263,7 +1262,7 @@
     </div>
 
                 <h3 id="method_getAllComments">
-        <div class="location">at line 115</div>
+        <div class="location">at line 117</div>
         <code>            public            
     <strong>getAllComments</strong>($criteria = array(), $asobject = true, $orderby = &#039;comment_id ASC&#039;, $limit, $start)</code>
     </h3>
@@ -1308,7 +1307,7 @@
     </div>
 
                 <h3 id="method_printNavBar">
-        <div class="location">at line 144</div>
+        <div class="location">at line 146</div>
         <code>            public            
     <strong>printNavBar</strong>($item_id, $mode = &#039;flat&#039;, $order = 1)</code>
     </h3>
@@ -1343,7 +1342,7 @@
     </div>
 
                 <h3 id="method_showThreadHead">
-        <div class="location">at line 177</div>
+        <div class="location">at line 179</div>
         <code>            public            
     <strong>showThreadHead</strong>()</code>
     </h3>
@@ -1358,7 +1357,7 @@
     </div>
 
                 <h3 id="method_showThreadPost">
-        <div class="location">at line 182</div>
+        <div class="location">at line 184</div>
         <code>            public            
     <strong>showThreadPost</strong>($order, $mode, $adminview, $color_num = 1)</code>
     </h3>
@@ -1398,7 +1397,7 @@
     </div>
 
                 <h3 id="method_showThreadFoot">
-        <div class="location">at line 281</div>
+        <div class="location">at line 283</div>
         <code>            public            
     <strong>showThreadFoot</strong>()</code>
     </h3>
@@ -1413,7 +1412,7 @@
     </div>
 
                 <h3 id="method_showTreeHead">
-        <div class="location">at line 286</div>
+        <div class="location">at line 288</div>
         <code>            public            
     <strong>showTreeHead</strong>($width = &#039;100%&#039;)</code>
     </h3>
@@ -1438,7 +1437,7 @@
     </div>
 
                 <h3 id="method_showTreeItem">
-        <div class="location">at line 291</div>
+        <div class="location">at line 293</div>
         <code>            public            
     <strong>showTreeItem</strong>($order, $mode, $color_num)</code>
     </h3>
@@ -1473,7 +1472,7 @@
     </div>
 
                 <h3 id="method_showTreeFoot">
-        <div class="location">at line 308</div>
+        <div class="location">at line 310</div>
         <code>            public            
     <strong>showTreeFoot</strong>()</code>
     </h3>
